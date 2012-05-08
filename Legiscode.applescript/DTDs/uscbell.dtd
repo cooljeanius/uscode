@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- document type definition for uscfrag: Fragment of the US Code -->
+<!-- 
+   Typeface - occurs in heads and text to shift font
+   For now we've given up on container TFs - 
+   too many splits over awkward boundaries.
+   These are just markers as to the beginning of a TF, and
+   and end psuedo-tag that is often just a guess at where 
+   the TF goes out of scope. -->
+<!ENTITY % tfset "tf1|tf2|tf3|tf4|tf5|etf1|etf2|etf3|etf4|etf5">
+<!-- 
+   ****ISOPUB.ENT**** extracted from house DTD
+<!ENTITY emsp     "&#x2003;"   >
+<!ENTITY ensp     "&#x2002;"   >
+<!ENTITY thinsp   "&#x2009;"   >
+temp workaround below (yes, prcocessors Should be able to handle horiz whitespace By Now)
+Note than the various dashes Are Handled in this same cope point region.  sigh.
+-->
+<!ENTITY emsp     "&#x20;"   ><!--=em space-->
+<!ENTITY ensp     "&#x20;"   ><!--=en space (1/2-em)-->
+<!ENTITY thinsp   "&#x20;"   ><!--=thin space (1/6-em)-->
+<!-- double dash is work-around while building xsl
+<!ENTITY mdash    " - "   >
+-->
+<!ENTITY mdash    "&#x2014;"   ><!--=em dash-->
+<!ENTITY ndash    "&#x2013;"   ><!--=en dash-->
+<!ENTITY dash     "&#x2010;"   ><!--=hyphen (true graphic)-->
+<!ENTITY bull     "&#x2022;"   ><!--/bullet B: =round bullet, filled-->
+<!ENTITY copysr   "&#x2117;" ><!--=sound recording copyright sign-->
+<!ENTITY caret    "&#x2041;"   ><!--=caret (insertion mark)-->
+<!ENTITY lsquor   "&#x201A;" ><!--=rising single quote, left (low)-->
+<!ENTITY ldquor   "&#x201E;" ><!--=rising dbl quote, left (low)-->
+<!ENTITY rdquor   "&#x201D;" ><!--rising dbl quote, right (high)-->
+<!ENTITY rsquor   "&#x2019;"   ><!--rising single quote, right (high)-->
+<!-- 
+   ****ISONUM.ENT**** extracted from house DTD -->
+<!ENTITY plusmn   "&#177;"    ><!--/pm B: =plus-or-minus sign-->
+<!ENTITY lt       "&#38;#60;" ><!--=less-than sign R:-->
+<!ENTITY equals   "&#61;"       ><!--=equals sign R:-->
+<!ENTITY gt       "&#62;"     ><!--Greater Than-->
+<!ENTITY percnt   "&#37;"     ><!--=percent sign-->
+<!ENTITY amp      "&#38;#38;"   ><!--=ampersand-->
+<!ENTITY deg      "&#176;"      ><!--=degree sign-->
+<!ENTITY sect     "&#167;"      ><!--=section sign-->
+<!ENTITY para     "&#182;"    ><!--=pilcrow (paragraph sign)-->
+<!ENTITY copy     "&#169;"      ><!--=copyright sign-->
+<!ENTITY reg      "&#174;"      ><!--/circledR =registered sign-->
+<!ENTITY trade    "&#x2122;"  ><!--=trade mark sign-->
+<!ENTITY quot     "&#34;"     ><!--=quotation mark-->
+<!ENTITY apos     "&#39;"     ><!--=apostrophe-->
+<!ENTITY hyphen   "&#x2010;"  ><!--=hyphen-->
+<!ENTITY laquo    "&#x2039;"  ><!--=angle quotation mark, left But note that Unicode 1 & Maler & el Andaloussi give &#xAB; -->
+<!ENTITY raquo    "&#x203A;"  ><!--=angle quotation mark, right But note that Unicode 1 & Maler & el Andaloussi give &#xBB; -->
+<!ENTITY lsquo    "&#x2018;"    ><!--=single quotation mark, left-->
+<!ENTITY rsquo    "&#x2019;"    ><!--=single quotation mark, right-->
+<!ENTITY ldquo    "&#x201C;"  ><!--=double quotation mark, left-->
+<!ENTITY rdquo    "&#x201D;"  ><!--=double quotation mark, right-->
+<!ENTITY nbsp     "&#160;"    ><!--=no break (required) space-->
+<!ENTITY shy      "&#173;"    ><!--=soft hyphen-->
+<!-- #################################### -->
+<!-- 
+     uscfrag: Fragment of the US Code
+     The primary element in this model.
+     The intention is to support anything from the US Code down to the smallest
+     sub-section, but so far we have only used it at the "section" level of
+     granularity, with each fragment containing either one USC section, or one
+     "super-section" of intermediate level grouping data.
+     -->
+<!ELEMENT uscfrag (procdata, hdnestgrp?, notegroup?, (supsec? | section?)*, toc?, nav?, stats)>
+<!ATTLIST uscfrag
+	    id CDATA #REQUIRED
+      titlenum CDATA #REQUIRED
+   releasedate CDATA #REQUIRED
+>
+<!-- 
+     procdata: Processing Data
+     A place to put any and all sorts of information about the process that
+     produced this data set.  In addition to the automation parts of the process,
+     it could include manual parts of the process.
+     Currently, we support
+     proctime: timestamp of translation start
+     procsys: identifying information about the host platform
+     procprog: identifying information about the processing software
+     sourcedata: identifying information about the source data
+     -->
+<!ELEMENT procdata (proctime, procsys, procprog, sourcedata, sourcedate)>
+<!ELEMENT proctime (#PCDATA)>
+<!ELEMENT procsys (#PCDATA)>
+<!ELEMENT procprog (#PCDATA)>
+<!ELEMENT sourcedata (#PCDATA)>
+<!ELEMENT sourcedate (#PCDATA)>
+<!-- 
+     hdnestgrp: Head Nest Group
+     Container for hdsup from higher level super-sections.
+     Each hdsupnest remembers one higher level heading containing this one,
+     in nesting order (order of occurrence in file).
+     This basically recapitulates the -EXPCITE- construct of the ASCII
+     distribution of the US Code.
+     -->
+<!ELEMENT hdnestgrp (hdsupnest*)>
+<!ELEMENT hdsupnest (#PCDATA)>
+<!ATTLIST hdsupnest
+	extid CDATA #REQUIRED
+	ty    CDATA #REQUIRED
+	seq   CDATA #REQUIRED
+>
+<!-- 
+     supsec: Super-section
+     This is a section grouping construct.  A section is uniquely identified
+     (by "section number") within its Title, but it also may belong to a
+     (possibly nested) chapter, part, division, etc. to which we refer
+     generically as "super-section."
+     Note: The strange inclusion of <head> with the repeating elements is due to
+     five instances of three text before <head> in title 10.
+     -->
+<!ELEMENT supsec ( hdnestgrp?, (head | text | etc | %tfset; | table)*, notegroup?)>
+<!ATTLIST supsec
+	key CDATA #REQUIRED
+	nomen CDATA #REQUIRED
+	extid CDATA #REQUIRED
+>
+<!-- 
+     hdsup: Super-section Heading
+     Primarily the first thing expected in a SUPSEC, it 
+     -->
+<!ELEMENT head (#PCDATA | etc | %tfset; | footref | aref | frac )*>
+<!ATTLIST head
+	lc CDATA #IMPLIED
+>
+<!-- 
+     notegroup:
+     note:
+     The portion of a section or super-section formally designated
+     to contain various categories of references and supplemental materials.
+     -->
+<!ELEMENT notegroup ( note* )>
+<!ELEMENT note ( leader?, (head | text | etc | %tfset; | table)*)>
+<!-- 
+     leader:
+     One of a number of special headings used in NOTES portion of a fragment
+     -->
+<!ELEMENT leader ( #PCDATA | etc | %tfset; | footref | aref )*>
+<!ATTLIST leader
+	ty CDATA #REQUIRED
+>
+<!-- 
+     etc: And so forth
+     Used for things not currently given their own tag.
+     VERTSPACE possibly should have its own tag.  See bell code docs.
+     GZR holds a code that has been translated to the readable representation,
+     but not otherwise tagged
+     BELLCD holds an ASCII representation of the raw bell code
+     -->
+<!ELEMENT etc (#PCDATA)>
+<!ATTLIST etc
+	vertspace   CDATA #IMPLIED
+	gzr         CDATA #IMPLIED
+	bellcd      CDATA #IMPLIED
+	pendtextlev CDATA #IMPLIED
+>
+<!-- 
+     section: Section of the US Code 
+     Attribute NUM holds the "section number," which can be a simple integer,
+     or may be complicated by up to three levels of extensions.
+     -->
+<!ELEMENT section ( hdnestgrp?, head, sectioncontent?, notegroup?)>
+<!ATTLIST section
+	num CDATA #REQUIRED
+	extid CDATA #REQUIRED
+>
+<!-- hdsec: -->
+<!-- retired - see head
+<!ELEMENT hdsec (#PCDATA | etc | %tfset; | footref | aref | frac )*>
+ -->
+<!ELEMENT sectioncontent ((text | etc | table | psection)*)>
+<!-- 
+     psection: Partial Section
+     Nested structure inside section.  It includes any of the nested levels,
+     including "subsection," "paragraph," etc.
+     -->
+<!ELEMENT psection (enum?, head?, (text | etc | %tfset; | table | psection)*)>
+<!ATTLIST psection
+	lev CDATA #REQUIRED
+	id CDATA #REQUIRED
+>
+<!-- 
+     enum:  Sub-section Label (enumerator)
+     A presentation-mode list item identifier of one of several types (TY), eg
+     (a), (1), (A), (i), (I), (aa)
+     They may be clustered, as in (c)(1)(A) or (c)(1) In General.-(A)
+     In this case, each label is individually tagged, and the cluster number (CLN)
+     becomes significant, the first being CLN="1", the second CLN="2", etc.
+     SEQ records the numerical sequence within the type.
+     lc records the bell code format and locator code.
+     -->
+<!ELEMENT enum (#PCDATA | %tfset; )*>
+<!ATTLIST enum
+	src CDATA #REQUIRED
+	ty (0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8) #REQUIRED
+	seq CDATA #REQUIRED
+	lc  CDATA #REQUIRED
+	cln CDATA #REQUIRED
+>
+<!-- 
+     hdsub: Sub-section Heading
+     This is an optional component sometimes associated with a sub-section label.
+     It is not used without a preceding enum
+     -->
+<!-- retired - see head
+<!ELEMENT hdsub (#PCDATA | etc | %tfset; | footref | aref | frac )*>
+ -->
+<!-- 
+     text: general text -->
+<!ELEMENT text (#PCDATA | etc | %tfset; | footref | footnote | frac | aref | sup | sub)*>
+<!ATTLIST text
+	lc       CDATA #IMPLIED
+	outdent  CDATA #IMPLIED
+>
+<!-- 
+     begin TABLE model -->
+<!-- 
+     table: USC bell code table model
+     As compliant as possible with the Text Encoding Initiative, CALS and similar
+     efforts, this table model needs much that is USC specific in order to
+     preserve the information.
+     The single attribute. PARMS, remembers the bell code file entry verbatim.
+     It is expected that any of it might be of some future use.  For details,
+     see the documentation for "Subformat Generation" in a file called bell-c.pdf
+     A sample parameter list: PARMS="2,L2,tp7,s10,xs102"
+     The quantifier for TITLE is zero or more: see T15F00496 (1/16/2002 das)
+     -->
+<!ELEMENT table ( (title | etc)*, boxheads, tablebody)>
+<!ATTLIST table
+	parms CDATA #IMPLIED
+>
+<!-- 
+     title: Table title
+     This may be useful elsewhere in the DTD, but is currently only used here.
+     It would be a good idea to keep any attribute names as generic as possible
+     to permit element re-use.
+     The LC attribute, eg. LC="SGL0-95", flavors the tag; a single table imstance
+     may have more than one TITLE tag.
+     Note:  In this content model, title is never used as a tag to indicate
+     "title of the USC."  USC Title 17 is just the top level super-section of the
+     data set containing Title 17.  The bell-R code for it translates to "Title"
+     in a look-up table.
+     -->
+<!ELEMENT title (#PCDATA | footref)*>
+<!ATTLIST title
+	lc CDATA #REQUIRED
+>
+<!-- 
+     headnote: In bell code spec.  May be what we currently call a
+     variant of TITLE -->
+<!ELEMENT headnote (#PCDATA)>
+<!-- 
+     boxheads: Name inherited from bell code spec.
+     Container for HDCOL, which contains heading text for one or more columns.
+     HDCOL nests, but this is not currently reflected in DTD structure; rather,
+     we simply bring forward the bell code parameter that is the nestedness
+     indicator, as the attribute called CD.
+     -->
+<!ELEMENT boxheads ((hdcol)+)>
+<!ELEMENT hdcol (#PCDATA | footref)*>
+<!ATTLIST hdcol
+	cd CDATA #REQUIRED
+>
+<!-- 
+     Table Body contains Row -->
+<!ELEMENT tablebody ((row)+)>
+<!-- 
+     Row contains Cell -->
+<!ELEMENT row ((cell)+)>
+<!ATTLIST row
+	number CDATA #REQUIRED
+	lc CDATA #REQUIRED
+>
+<!-- 
+     Row contains data -->
+<!ELEMENT cell (#PCDATA | footref | etc)*>
+<!ATTLIST cell
+	col CDATA #REQUIRED
+>
+<!-- end TABLE model -->
+<!-- 
+     Typeface - occurs in heads and text to shift font.
+     Every effort should be made to preserve this information, but that can
+     pose a substantial challenge. At least one usage, the one that places
+     a TF *before* a label in a new record, has had to be filtered by the current
+     translator code.
+     The attribute GRD is available in case a local grid is specified.
+     -->
+<!-- For now we've given up on container TFs - too many splits over awkward boundaries - das
+<!ELEMENT tf1      (( (#PCDATA) | footref | footnote | etc )+)>
+<!ATTLIST tf1 grd CDATA #IMPLIED >
+<!ELEMENT tf2      (( (#PCDATA) | footref | footnote | etc )+)>
+<!ATTLIST tf2 grd CDATA #IMPLIED >
+<!ELEMENT tf3      (( (#PCDATA) | footref | footnote | etc )+)>
+<!ATTLIST tf3 grd CDATA #IMPLIED >
+<!ELEMENT tf4      (( (#PCDATA) | footref | footnote | etc )+)>
+<!ATTLIST tf4 grd CDATA #IMPLIED >
+<!ELEMENT tf5      (( (#PCDATA) | footref | footnote | etc )+)>
+<!ATTLIST tf5 grd CDATA #IMPLIED >
+-->
+<!-- The approach now is for the TFs to be merely markers, wherever they want to be -->
+<!ELEMENT tf1 EMPTY>
+<!ATTLIST tf1
+	grd CDATA #IMPLIED
+>
+<!ELEMENT etf1 EMPTY>
+<!ELEMENT tf2 EMPTY>
+<!ATTLIST tf2
+	grd CDATA #IMPLIED
+>
+<!ELEMENT etf2 EMPTY>
+<!ELEMENT tf3 EMPTY>
+<!ATTLIST tf3
+	grd CDATA #IMPLIED
+>
+<!ELEMENT etf3 EMPTY>
+<!ELEMENT tf4 EMPTY>
+<!ATTLIST tf4
+	grd CDATA #IMPLIED
+>
+<!ELEMENT etf4 EMPTY>
+<!ELEMENT tf5 EMPTY>
+<!ATTLIST tf5
+	grd CDATA #IMPLIED
+>
+<!ELEMENT etf5 EMPTY>
+<!-- footnote and footref: Footnote and fn reference are derived from a somewhat 
+     ambiguous bell code (see <FRAC>) -->
+<!-- Footnote reference. -->
+<!ELEMENT footref (#PCDATA)>
+<!ATTLIST footref
+	target CDATA #REQUIRED
+>
+<!-- Footnote content. -->
+<!ELEMENT footnote ( #PCDATA | etc | aref | %tfset;)*>
+<!ATTLIST footnote
+	fnumber CDATA #REQUIRED
+	eid CDATA #REQUIRED
+>
+<!-- Fractional number, resulting from an alternate use of the footnote construct -->
+<!ELEMENT frac (#PCDATA)>
+<!-- Blank separated list of statistics, eg
+     <stats>FN(2) TF(15) HDSUB(3) LblCl(4)</stats>
+     where the preface characters indicate a counter type, and the following parentheses
+     contain the number of instances of that type in the current fragment.
+     The statistics could easily become more elaborate, and they could warrant
+     individual element types. As the current processing is sequential, this
+     is always at the end of the fragment. -->
+<!ELEMENT stats (#PCDATA)>
+<!-- AREF: Abstract Reference.
+     This tag encloses a string that has been scanned to be one of several
+     categories of reference candidate.  Specific links are typically made from
+     portions of this material, but the AREF may identify references not
+     currently useful as a source of XREFS (specific links).
+     -->
+<!ELEMENT aref ( #PCDATA | etc | aref | subref| footref | %tfset; )*>
+<!ATTLIST aref
+	type   CDATA #IMPLIED
+>
+<!-- subref: Cross Reference.
+     Specific link to a TARGET address
+     type   - target type (sec, supsec, publ, etc)
+     title  - title number pointed to, if a USC internal link
+     cq     - context qualifier (not used yet, but would discount validity for certain contextual cues)
+     tq     - target qualifier:
+          N=None or Normative, 
+          B=Beginning of range of a ranged target, 
+          R=(inside) Range of a ranged target, 
+          E=End of range of a ranged target, 
+          P=Previous section returned because no better candidates
+          X=Unable to make any guesses - do not generate link
+     target - the target URI
+-->
+<!ELEMENT subref ( #PCDATA | etc | %tfset; )*>
+<!ATTLIST subref
+	type   CDATA #IMPLIED
+	title  CDATA #IMPLIED
+	ch     CDATA #IMPLIED
+	date   CDATA #IMPLIED
+	cq     CDATA #IMPLIED
+	tq     CDATA #IMPLIED
+	target CDATA #IMPLIED
+>
+<!-- Superscript -->
+<!ELEMENT sup (#PCDATA)>
+<!-- Subscript -->
+<!ELEMENT sub (#PCDATA)>
+<!-- Table of contents (local to supsec fragment) -->
+<!ELEMENT toc ( ref* )>
+<!-- misc. navigational references (first used to host next/prev button info.) -->
+<!ELEMENT nav ( ref* )>
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref
+	ty      CDATA #IMPLIED
+	refid   CDATA #IMPLIED
+	fragid  CDATA #IMPLIED
+>
+<!-- End DTD -->

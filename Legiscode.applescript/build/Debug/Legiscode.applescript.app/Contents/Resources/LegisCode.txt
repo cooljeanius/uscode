@@ -1,0 +1,6 @@
+LegisCode
+
+An Act To Say “Hello World”
+	Be It Enacted by the Senate and House of Representatives of the United States of America in Congress assembled,
+		“hello world”
+Approved September 8, 2011

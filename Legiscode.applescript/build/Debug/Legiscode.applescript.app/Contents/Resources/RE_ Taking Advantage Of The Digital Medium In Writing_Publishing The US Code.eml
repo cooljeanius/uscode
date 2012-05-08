@@ -1,0 +1,344 @@
+Delivered-To: egall@gwmail.gwu.edu
+Received: by 10.100.164.9 with SMTP id m9cs39356ane;
+        Fri, 21 Oct 2011 08:10:21 -0700 (PDT)
+Received: by 10.52.72.104 with SMTP id c8mr6123666vdv.105.1319209821000;
+        Fri, 21 Oct 2011 08:10:21 -0700 (PDT)
+Return-Path: <uscwebmail@mail.house.gov>
+Received: from antila.house.gov (antila.house.gov. [143.228.150.138])
+        by mx.google.com with ESMTPS id b2si2426777vcp.39.2011.10.21.08.10.20
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 21 Oct 2011 08:10:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of uscwebmail@mail.house.gov designates 143.228.150.138 as permitted sender) client-ip=143.228.150.138;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of uscwebmail@mail.house.gov designates 143.228.150.138 as permitted sender) smtp.mail=uscwebmail@mail.house.gov
+Received: from HT01A.US.House.gov ([143.228.151.74])
+	by antila.house.gov  with ESMTP id p9LFAEm0001920
+	(using TLSv1/SSLv3 with cipher AES128-SHA (128 bits) verified FAIL)
+	for <egall@gwmail.gwu.edu>; Fri, 21 Oct 2011 11:10:20 -0400
+Received: from HRM21.US.House.gov ([fe80::6c69:219:24c0:d40f]) by
+ HT01A.US.House.gov ([::1]) with mapi; Fri, 21 Oct 2011 11:10:04 -0400
+From: uscwebmail <uscwebmail@mail.house.gov>
+To: Eric Gallager <egall@gwmail.gwu.edu>
+Date: Fri, 21 Oct 2011 11:09:19 -0400
+Subject: RE: Taking Advantage Of The Digital Medium In Writing/Publishing
+ The US Code
+Thread-Topic: Taking Advantage Of The Digital Medium In Writing/Publishing
+ The US Code
+Thread-Index: AcyJV5HMUA2dO/wGQ0KHoxWldIn4hgGq9ZPw
+Message-ID: <5A384163E2606E41B3B83ACE61338377F1BD0CBAE3@HRM21.US.House.gov>
+References: <5DDA20AD-7F42-4213-95C6-C27B1065E3E8@me.com>
+In-Reply-To: <5DDA20AD-7F42-4213-95C6-C27B1065E3E8@me.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_5A384163E2606E41B3B83ACE61338377F1BD0CBAE3HRM21USHouseg_"
+MIME-Version: 1.0
+
+--_000_5A384163E2606E41B3B83ACE61338377F1BD0CBAE3HRM21USHouseg_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Mr. Gallager:
+
+Thank you for your comments and suggestions. Version 2 of the website, now =
+in development, will have internal links to U.S. Code sections and the Stat=
+utes at Large and prior versions of the Code on a drop down menu. We apprec=
+iate your suggestions for versioning the Code and turning the Code into a p=
+rogramming language.
+
+
+Ralph V. Seep
+
+Law Revision Counsel
+
+U.S. House of Representatives
+
+
+________________________________
+From: Eric Gallager [egallager@me.com]
+Sent: Wednesday, October 12, 2011 11:23 PM
+To: uscode
+Subject: Taking Advantage Of The Digital Medium In Writing/Publishing The U=
+S Code
+
+Dear Sir or Madam,
+
+My name is Eric Gallager, and I am a student of political science at The Ge=
+orge Washington University in Foggy Bottom and an intern on Capitol Hill. I=
+ was recently looking at the US Code as published at http://uscodebeta.hous=
+e.gov/, and I was struck by how much potential it had to be reformatted to =
+take better advantage of the digital medium.
+
+First of all, there's the issue of internal links<http://en.wikipedia.org/w=
+iki/Internal_link>. I would expect that as the US Code is being published o=
+nline, it would have a level of inter-linking at least comparable to that s=
+een in Wikipedia<http://en.wikipedia.org/wiki/Wikipedia>. Laws constantly c=
+ross-reference each other, and it is disappointing that even in the HTML ve=
+rsion<http://uscodebeta.house.gov/download/downloadxhtml.shtml> (HTML being=
+ the language of links), none of these cross-references actually link to th=
+e other parts of the code they are cross-referencing (or if they do, it is =
+neither obvious nor consistent).
+
+Second, there is the issue of versioning<http://en.wikipedia.org/wiki/Versi=
+oning_system>. The US legal code is constantly revised, and yet the way tha=
+t revisions to it are handled online is done rather clumsily. MediaWiki<htt=
+p://en.wikipedia.org/wiki/MediaWiki> has an easy way of seeing changes betw=
+een documents called diffs<http://en.wikipedia.org/wiki/Diffs>, Microsoft W=
+ord has had the "Track Changes"<http://office.microsoft.com/en-us/word-help=
+/track-changes-while-you-edit-HA001218690.aspx> feature built into it since=
+ forever, and Mac OS X Lion<http://www.apple.com/macosx/whats-new/auto-save=
+.html> has a versioning system built into it at the OS level. Any of these =
+could be an easier way to visualize changes to the US Code. Instead of havi=
+ng to write out the procedural language to "Change line #x of =A7y to say z=
+" in the legislation, with laws being written on software with a versioning=
+ system, lawmakers could instead simply change the code to what they want t=
+o amend it to, and then the changes would automatically show in the version=
+ing system. Speaking of procedural language, that brings me to my third poi=
+nt.
+
+This proposal may be a little more ambitious than the previous two, but bea=
+r with me. One thing about all the procedural language in legislation is th=
+at it makes the legislation close to unreadable. So the idea I had, is what=
+ if we change the procedural language of legislation into a Turing-complete=
+<http://en.wikipedia.org/wiki/Turing_completeness> programming language? Th=
+is way all the procedural language would be used for would be as a method o=
+f organizing and displaying the actual content of the legislation. In other=
+ words, the US Code would become actual computer "code." Based only on my m=
+inimal knowledge of programming and procedural legislative language, I came=
+ up with a possible way a "hello world" program<http://en.wikipedia.org/wik=
+i/Hello_world_program> could look in a programming language based on US leg=
+islation:
+
+An Act To Say =93Hello World=94
+Be It Enacted by the Senate and House of Representatives of the United Stat=
+es of America in Congress assembled,
+=93hello world=94
+Approved September 8, 2011
+
+When compiled and run, the program/legislative act would simply say, "hello=
+ world". It is clear how much this cuts down on the length of laws. Besides=
+ making the displayed portions of the law more readable, making legislative=
+ language into a programming language could have added benefits. For exampl=
+e, by an act of legislation, Congress could require all computers to be abl=
+e to compile and run this legislative programming language, and then if Con=
+gress passes any future legislation regarding computers, it could automatic=
+ally push that legislation out to all computers, where it would run automat=
+ically. The government wouldn't even have to enforce cyber laws any more, b=
+ecause they would automatically be enforced by being coded into everyone's =
+computers. However, Congress doesn't have to go that far (I would also argu=
+e that it shouldn't go that far either, but that's another issue). The bene=
+fits of making legislative language into a programming language should be c=
+lear by now. And if you have any doubts about the possibilities of turning =
+natural language phrases into a programming language, I would simply point =
+to LOLCODE<http://en.wikipedia.org/wiki/LOLCODE>, which took internet lingo=
+ and turned it into a programming language. This sort of thing is definitel=
+y possible.
+
+So those are my 3 main proposals for bringing the US Legal Code into the 21=
+st Century and taking full advantage of the digital medium: hyperlinking th=
+e code, versioning the code, and turning the code into a programming langua=
+ge. Honestly, if even just the first proposal were completed, I would be ha=
+ppy, but I can still dream about the others. Thank you for your time and pl=
+ease let me know if you have any questions.
+
+Sincerely,
+Eric Gallager
+
+514 19th St. NW
+Mitchell Hall 435
+Washington, DC 20052
+(202) 538-1420
+
+--_000_5A384163E2606E41B3B83ACE61338377F1BD0CBAE3HRM21USHouseg_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html dir=3D"ltr"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 8.00.6001.19154">
+<style id=3D"owaTempEditStyle"></style><style title=3D"owaParaStyle"><!--P =
+{
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+--></style>
+</head>
+<body ocsi=3D"x">
+<div style=3D"FONT-FAMILY: Tahoma; DIRECTION: ltr; COLOR: #000000; FONT-SIZ=
+E: x-small">
+<div>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNormal"><span style=3D"FONT-FA=
+MILY: 'Calibri','sans-serif'; FONT-SIZE: 11pt"><font size=3D"3"><font face=
+=3D"Times New Roman">Mr. Gallager:
+<?xml:namespace prefix =3D o ns =3D "urn:schemas-microsoft-com:office:offic=
+e" />
+<o:p></o:p></font></font></span></p>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNormal"><span style=3D"FONT-FA=
+MILY: 'Calibri','sans-serif'; FONT-SIZE: 11pt"><o:p><font size=3D"3" face=
+=3D"Times New Roman">&nbsp;</font></o:p></span></p>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNormal"><span style=3D"FONT-FA=
+MILY: 'Calibri','sans-serif'; FONT-SIZE: 11pt"><font size=3D"3"><font face=
+=3D"Times New Roman">Thank you for your comments and suggestions. Version 2=
+ of the website, now in development, will have
+ i<span style=3D"COLOR: black">nternal links to U.S. Code sections and the =
+Statutes at Large and prior versions of the Code on a drop down menu.&nbsp;=
+We appreciate your suggestions for versioning the Code and turning the Code=
+ into a programming language.
+<o:p></o:p></span></font></font></span></p>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNormal"><span style=3D"FONT-FA=
+MILY: 'Calibri','sans-serif'; COLOR: black; FONT-SIZE: 11pt"><font size=3D"=
+3"><font face=3D"Times New Roman">&nbsp;<o:p></o:p></font></font></span></p=
+>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNoSpacing"><font size=3D"3"><f=
+ont face=3D"Times New Roman"><span style=3D"COLOR: black">Ralph V. Seep</sp=
+an><span style=3D"COLOR: black; mso-bidi-font-family: Tahoma"><o:p></o:p></=
+span></font></font></p>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNoSpacing"><font size=3D"3"><f=
+ont face=3D"Times New Roman"><span style=3D"COLOR: black">Law Revision Coun=
+sel</span><span style=3D"COLOR: black; mso-bidi-font-family: Tahoma"><o:p><=
+/o:p></span></font></font></p>
+<p style=3D"MARGIN: 0in 0in 0pt" class=3D"MsoNoSpacing"><span style=3D"COLO=
+R: black"><font size=3D"3" face=3D"Times New Roman">U.S. House of Represent=
+atives</font></span><span style=3D"COLOR: black; mso-bidi-font-family: Taho=
+ma"><o:p></o:p></span></p>
+</div>
+<div dir=3D"ltr"><font color=3D"#000000" size=3D"3" face=3D"Times New Roman=
+"></font>&nbsp;</div>
+<div style=3D"DIRECTION: ltr" id=3D"divRpF679307"><font size=3D"3" face=3D"=
+Times New Roman">
+<hr tabindex=3D"-1">
+</font><font color=3D"#000000" size=3D"2" face=3D"Tahoma"><b>From:</b> Eric=
+ Gallager [egallager@me.com]<br>
+<b>Sent:</b> Wednesday, October 12, 2011 11:23 PM<br>
+<b>To:</b> uscode<br>
+<b>Subject:</b> Taking Advantage Of The Digital Medium In Writing/Publishin=
+g The US Code<br>
+</font><br>
+</div>
+<div></div>
+<div>Dear Sir or Madam,
+<div><br>
+</div>
+<div>My name is Eric Gallager, and I am a student of political science at T=
+he George Washington University in Foggy Bottom and an intern on Capitol Hi=
+ll. I was recently looking at the US Code as published at&nbsp;<a href=3D"h=
+ttp://uscodebeta.house.gov/" target=3D"_blank">http://uscodebeta.house.gov/=
+</a>,
+ and I was struck by how much potential it had to be reformatted to take be=
+tter advantage of the digital medium.&nbsp;</div>
+<div><br>
+</div>
+<div>First of all, there's the issue of&nbsp;<a href=3D"http://en.wikipedia=
+.org/wiki/Internal_link" target=3D"_blank">internal links</a>. I would expe=
+ct that as the US Code is being published online, it would have a level of =
+inter-linking at least comparable to that
+ seen in&nbsp;<a href=3D"http://en.wikipedia.org/wiki/Wikipedia" target=3D"=
+_blank">Wikipedia</a>. Laws constantly cross-reference each other, and it i=
+s disappointing that even in the&nbsp;<a href=3D"http://uscodebeta.house.go=
+v/download/downloadxhtml.shtml" target=3D"_blank">HTML
+ version</a>&nbsp;(HTML being the language of links), none of these cross-r=
+eferences actually link to the other parts of the code they are cross-refer=
+encing (or if they do, it is neither obvious nor consistent).&nbsp;</div>
+<div><br>
+</div>
+<div>Second, there is the issue of&nbsp;<a href=3D"http://en.wikipedia.org/=
+wiki/Versioning_system" target=3D"_blank">versioning</a>. The US legal code=
+ is constantly revised, and yet the way that revisions to it are handled on=
+line is done rather clumsily.&nbsp;<a href=3D"http://en.wikipedia.org/wiki/=
+MediaWiki" target=3D"_blank">MediaWiki</a>&nbsp;has
+ an easy way of seeing changes between documents called&nbsp;<a href=3D"htt=
+p://en.wikipedia.org/wiki/Diffs" target=3D"_blank">diffs</a>, Microsoft Wor=
+d has had the&nbsp;<a href=3D"http://office.microsoft.com/en-us/word-help/t=
+rack-changes-while-you-edit-HA001218690.aspx" target=3D"_blank">&quot;Track
+ Changes&quot;</a>&nbsp;feature built into it since forever, and&nbsp;<a hr=
+ef=3D"http://www.apple.com/macosx/whats-new/auto-save.html" target=3D"_blan=
+k">Mac OS X Lion</a>&nbsp;has a versioning system built into it at the OS l=
+evel. Any of these could be an easier way to visualize changes
+ to the US Code. Instead of having to write out the procedural language to =
+&quot;Change line #x of =A7y to say z&quot; in the legislation, with laws b=
+eing written on software with a versioning system, lawmakers could instead =
+simply change the code to what they want to
+ amend it to, and then the changes would automatically show in the versioni=
+ng system. Speaking of procedural language, that brings me to my third poin=
+t.&nbsp;</div>
+<div><br>
+</div>
+<div>This proposal may be a little more ambitious than the previous two, bu=
+t bear with me. One thing about all the procedural language in legislation =
+is that it makes the legislation close to unreadable. So the idea I had, is=
+ what if we change the procedural
+ language of legislation into a&nbsp;<a href=3D"http://en.wikipedia.org/wik=
+i/Turing_completeness" target=3D"_blank">Turing-complete</a>&nbsp;programmi=
+ng language? This way all the procedural language would be used for would b=
+e as a method of organizing and displaying the
+ actual content of the legislation. In other words, the US Code would becom=
+e actual computer &quot;code.&quot; Based only on my minimal knowledge of p=
+rogramming and procedural legislative language, I came up with a possible w=
+ay a&nbsp;<a href=3D"http://en.wikipedia.org/wiki/Hello_world_program" targ=
+et=3D"_blank">&quot;hello
+ world&quot; program</a>&nbsp;could look in a programming language based on=
+ US legislation:</div>
+<div>
+<div><font class=3D"Apple-style-span" face=3D"Monaco"><br>
+</font></div>
+<div><font class=3D"Apple-style-span" face=3D"Monaco">An Act To Say =93Hell=
+o World=94</font></div>
+<div><font class=3D"Apple-style-span" face=3D"Monaco"><span style=3D"WHITE-=
+SPACE: pre" class=3D"Apple-tab-span"></span>Be It Enacted by the Senate and=
+ House of Representatives of the United States of America in Congress assem=
+bled,</font></div>
+<div><font class=3D"Apple-style-span" face=3D"Monaco"><span style=3D"WHITE-=
+SPACE: pre" class=3D"Apple-tab-span"></span>=93hello world=94</font></div>
+<div><font class=3D"Apple-style-span" face=3D"Monaco">Approved September 8,=
+ 2011</font></div>
+</div>
+<div><br>
+</div>
+<div>When compiled and run, the program/legislative act would simply say, &=
+quot;hello world&quot;. It is clear how much this cuts down on the length o=
+f laws. Besides making the displayed portions of the law more readable, mak=
+ing legislative language into a programming
+ language could have added benefits. For example, by an act of legislation,=
+ Congress could require all computers to be able to compile and run this le=
+gislative programming language, and then if Congress passes any future legi=
+slation regarding computers, it
+ could automatically push that legislation out to all computers, where it w=
+ould run automatically. The government wouldn't even have to enforce cyber =
+laws any more, because they would automatically be enforced by being coded =
+into everyone's computers. However,
+ Congress doesn't have to go that far (I would also argue that it <i>should=
+n't</i> go that far either, but that's another issue). The benefits of maki=
+ng legislative language into a programming language should be clear by now.=
+ And if you have any doubts about
+ the possibilities of turning natural language phrases into a programming l=
+anguage, I would simply point to&nbsp;<a href=3D"http://en.wikipedia.org/wi=
+ki/LOLCODE" target=3D"_blank">LOLCODE</a>, which took internet lingo and tu=
+rned it into a programming language. This
+ sort of thing is definitely possible.</div>
+<div><br>
+</div>
+<div>So those are my 3 main proposals for bringing the US Legal Code into t=
+he 21st Century and taking full advantage of the digital medium: hyperlinki=
+ng the code, versioning the code, and turning the code into a programming l=
+anguage. Honestly, if even just
+ the first proposal were completed, I would be happy, but I can still dream=
+ about the others. Thank you for your time and please let me know if you ha=
+ve any questions.</div>
+<div><br>
+</div>
+<div>Sincerely,</div>
+<div>Eric Gallager</div>
+<div><br>
+</div>
+<div>514 19th St. NW</div>
+<div>Mitchell Hall 435</div>
+<div>Washington, DC 20052</div>
+<div>(202) 538-1420</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_5A384163E2606E41B3B83ACE61338377F1BD0CBAE3HRM21USHouseg_--
