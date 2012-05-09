@@ -1,1 +1,0 @@
-This test makes sure that integer division by 0 raises an error.

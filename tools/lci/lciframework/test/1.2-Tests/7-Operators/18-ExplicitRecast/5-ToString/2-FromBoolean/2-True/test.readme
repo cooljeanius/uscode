@@ -1,2 +1,0 @@
-This test checks that the explicit recast operator results in an error when
-casting true boolean values to string types.

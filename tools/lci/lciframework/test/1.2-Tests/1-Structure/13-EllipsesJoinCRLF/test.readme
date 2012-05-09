@@ -1,2 +1,0 @@
-This test checks that ellipses followed by the carriage return and linefeed
-characters (\r\n) join multiple portions of a statement on separate lines.

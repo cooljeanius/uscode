@@ -1,2 +1,0 @@
-This test makes sure the concatenation operator raises an error on boolean
-arguments.

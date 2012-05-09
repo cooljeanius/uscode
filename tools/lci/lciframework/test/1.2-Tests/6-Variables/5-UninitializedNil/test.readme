@@ -1,2 +1,0 @@
-This test checks that an uninitialized variable starts out as nil and thus
-raises an error if printed.

@@ -1,2 +1,0 @@
-This test makes sure a nil typed value can NOT be cast to a floating point
-decimal typed value.

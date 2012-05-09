@@ -1,2 +1,0 @@
-This test checks that the bell escape character sequence (:o) is correctly
-handled within strings.

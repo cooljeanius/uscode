@@ -1,2 +1,0 @@
-This test checks that when Unicode code points are inserted into strings, they
-are translated correctly.

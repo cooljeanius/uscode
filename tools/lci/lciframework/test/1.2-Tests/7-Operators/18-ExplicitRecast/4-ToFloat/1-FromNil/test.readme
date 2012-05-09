@@ -1,2 +1,0 @@
-This test checks that the explicit recast operator correctly casts nil values
-to floating point decimal types.

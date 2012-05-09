@@ -1,2 +1,0 @@
-This test checks that the newline escape character sequence (:)) is correctly
-handled within strings.

@@ -1,0 +1,7 @@
+[submodule "tools/lci"]
+	path = tools/lci
+	url = git@github.com:cooljeanius/lci.git
+[submodule "tools/uscites"]
+	path = tools/uscites
+	url = git@github.com:cooljeanius/uscites.git
+

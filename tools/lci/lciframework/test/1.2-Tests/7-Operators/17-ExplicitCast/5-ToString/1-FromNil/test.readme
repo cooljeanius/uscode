@@ -1,2 +1,0 @@
-This test checks that the explicit cast operator correctly casts nil values to
-string types.

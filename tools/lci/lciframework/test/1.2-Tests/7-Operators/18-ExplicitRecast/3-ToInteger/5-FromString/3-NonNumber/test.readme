@@ -1,2 +1,0 @@
-This test checks to make sure explicitly recasting a non-number string to an
-integer type results in an error.

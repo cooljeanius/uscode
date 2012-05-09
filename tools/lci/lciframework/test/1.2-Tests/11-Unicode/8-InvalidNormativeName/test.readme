@@ -1,2 +1,0 @@
-This test checks that when an invalid Unicode normative name is inserted into a
-string an error occurs.
