@@ -1,6 +1,0 @@
-[submodule "uscites"]
-	path = tools/uscites
-	url = ./tools/uscites
-[submodule "lci"]
-	path = tools/lci
-	url = ./tools/lci

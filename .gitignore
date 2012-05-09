@@ -9,3 +9,4 @@ build
 CMakeFiles/*
 CMakeLists.txt
 CMakeFiles
+docs/*

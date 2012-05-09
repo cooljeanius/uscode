@@ -1,0 +1,151 @@
+
+body{
+ position:absolute;
+ 
+
+}
+
+div{
+ position: absolute; 
+ width: 650px;
+ left: 90px;
+}
+
+div.headmenu{
+ width: 750px; 
+ left:10px;
+ padding: 10px;
+}
+
+div.footmenu{
+  width: 750px;
+  left:10px;
+  top: 1920px;
+  padding: 10px;
+}
+div.oldolrcstyleheader{
+ /*position: absolute;*/
+ top:40px;
+ left:20px;
+}
+
+div.ushrgif{
+  left:0px;
+  
+}
+
+div.olrcname{
+ top:16px;
+ left:120px;  
+}
+
+
+div.pagetopichead{
+  top:155px;
+  margin-bottom: 0px;
+}
+
+
+div.pagecontentclassificationtabledates{
+  top:220px;
+}
+
+div.pagecontentsearchable{
+  top:300px;
+}
+
+div.pagecontentuscprelim{
+  top:505px;
+}
+
+div.pagecontentdownloadable{
+  top:708px;
+  
+}
+
+div.pagecontentpriors{
+  top:900px;  
+}
+
+div.currencyexpl{
+  top: 1055px;
+  
+}
+
+div.updatingexpl{
+  top:1325px;
+}
+
+
+h1.olrcname{
+ color: #000080;
+}
+
+
+h3.pagetopichead{
+ color: red;
+ margin-bottom: 0px;
+}
+
+h4.pagesubhead{
+  margin-bottom: 0px;
+}
+
+p.pagetopictext{
+  margin:0px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p.classificationtablecurrency{
+  width: 630px;
+  margin:0px;
+  border-top: double;
+  border-bottom:double;
+}
+
+p.pagecontentsearchablenote{
+  width: 600px;
+  margin:0px;
+  font-size: .8em;
+  padding-left: 1em;
+}
+
+p.pagecontentdownloadablenote{
+  width: 600px;
+  margin:0px;
+  font-size: .8em;
+  padding-left: 1em;
+}
+
+
+table{
+  width: 630px;
+  border-top: double;
+  border-bottom: double;
+  
+  
+}
+
+th{
+  padding-left: .5em;
+  padding-right: .5em;
+  text-align: left;
+  font-size: .8em;
+  font-variant: small-caps;
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+
+
+th.col1of4{
+  width: 200px;
+}
+
+td{
+  font-size: .8em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+
