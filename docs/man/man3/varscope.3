@@ -1,0 +1,19 @@
+.TH "varscope" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+varscope \- Variable Scope 
+The specification states that variables are local to the scope of the main block or any function they are contained within--except for temporary loop variables which are local to the loop they are instantiated within\&. This behavior, combined with the fact that variables must be declared before being used, means that variables may not be shadowed in different control scopes (such as loops and conditional statements) and, more importantly, programmers must keep track of whether variables have been previously declared within conditionally executed code (for example, under this scoping if a variable is declared in a conditional block it cannot be safely used in later code)\&.
+.PP
+One advantage of a flat scoping scheme is that nearly everything can be stored in a single structure, making lookups faster\&. However, I believe that this advantage is not worth the extra frustration transferred to the programmer and so scoping in lci is done in a similar manner to other programming languages, to wit, within
+.IP "\(bu" 2
+the main block of code,
+.IP "\(bu" 2
+the body of functions,
+.IP "\(bu" 2
+the body of loop statements, and
+.IP "\(bu" 2
+the bodies of conditional statements\&.
+.PP
+.PP
+This should alleviate any confusion which may have been caused by using a completely local free-for-all scope\&. Also, there seems to be a general consensus on the LOLCODE forums that this is the way to go and flat scoping causes too many problems for the programmer\&. 

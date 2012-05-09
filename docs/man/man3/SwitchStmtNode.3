@@ -1,0 +1,55 @@
+.TH "SwitchStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SwitchStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBExprNodeList\fP * \fBguards\fP"
+.br
+.ti -1c
+.RI "\fBBlockNodeList\fP * \fBblocks\fP"
+.br
+.ti -1c
+.RI "\fBBlockNode\fP * \fBdef\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a switch statement\&. A switch statement compares the value of the \fBimplicit variable\fP to each of the \fIguards\fP and executes the respective block of code in \fIblocks\fP if they match\&. If no matches are found between the \fBimplicit variable\fP and one of the \fIguards\fP, the optional default block of code, \fIdef\fP, is executed\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createSwitchStmtNode(ExprNodeList *, BlockNodeList *, BlockNode *) 
+.PP
+deleteSwitchStmtNode(SwitchStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 436 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBlockNodeList\fP* \fBSwitchStmtNode::blocks\fP"
+A pointer to the respective blocks of code to execute if one of the \fIguards\fP matches the \fBimplicit variable\fP\&. 
+.PP
+Definition at line 438 of file parser\&.h\&.
+.SS "\fBBlockNode\fP* \fBSwitchStmtNode::def\fP"
+A pointer to the default block of code to execute if none of the \fIguards\fP match the \fBimplicit variable\fP\&. 
+.PP
+Definition at line 439 of file parser\&.h\&.
+.SS "\fBExprNodeList\fP* \fBSwitchStmtNode::guards\fP"
+A pointer to the expressions to evaluate and compare to the \fBimplicit variable\fP\&. 
+.PP
+Definition at line 437 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

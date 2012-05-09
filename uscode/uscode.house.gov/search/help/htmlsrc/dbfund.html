@@ -1,0 +1,33 @@
+<HTML>
+<HEAD> <TITLE>Text Database Fundamentals</TITLE> </HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<H1>Text Database Fundamentals</H1>
+<HR>
+<H2>Databases, Records, and <A NAME="xfields">Fields</A></H2>
+A text <I>database</I> is a collection of related documents assembled into a single searchable unit. The individual documents 
+can be massive or minuscule, but they should bear some relation to each other.
+<P>
+A database is composed of smaller units called <I>records</I>. In a text database, a record can be an entire document, a 
+section within a document, a single page, or a fragment of text within a page. When you search a database, you will 
+retrieve one or more records containing information that satisfies your query.
+<P>
+A record can contain smaller regions of data called <I>fields</I>. A field usually defines a particular type of data common to 
+several or all records within a database. For instance, in a database of corporate memos, wherein each memo makes up 
+a record, the following fields might be used: <I>TO, FROM, DATE, SUBJECT,</I> and <I>TEXT</I>. You can narrow the scope of a 
+search by <A HREF="fld1op.html">restricting</A> it to one or more fields. In this example, you might limit your search to the <I>FROM</I> field when 
+searching for a sender's name. Only those records with the specified name in that field would be retrieved.
+<P>
+<H2><A NAME="xstopwords">Stopwords</A></H2>
+As opposed to a keyword-based system, PLWeb Turbo is full-text retrieval software, meaning that it indexes every word in a 
+document, with the exception of <I>stopwords</I>. Stopwords are those terms that PLWeb Turbo is programmed to ignore during the 
+indexing and retrieval processes, in order to prevent the retrieval of extraneous records. Generally, a stopword list 
+includes articles, pronouns, adjectives, adverbs, and prepositions (<I>the, they, very, not, of,</I> etc.) that are most common in 
+the English language. After reading about <A HREF="relrank.html">relevance</A> ranking, you'll understand why a stopword list is used.
+<P>
+<STRONG>[<A HREF="srchweb.html">Previous</A> Topic]     [<A HREF="oltoc.html">Contents</A>]     [<A HREF="relrank.html">Next</A> Topic]</STRONG>
+<P>
+
+
+</BODY>
+</HTML>

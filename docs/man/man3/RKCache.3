@@ -1,0 +1,206 @@
+.TH "RKCache" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RKCache \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBinitWithDescription:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetDescription:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstatus\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBdescription\fP"
+.br
+.ti -1c
+.RI "(id) - \fBobjectForHash:description:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBobjectForHash:description:autorelease:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBaddObjectToCache:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBaddObjectToCache:withHash:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBremoveObjectFromCache:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBremoveObjectWithHash:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBclearCache\fP"
+.br
+.ti -1c
+.RI "(NSSet *) - \fBcacheSet\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheEnabled:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcacheCount\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithDescription:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetDescription:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstatus\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBdescription\fP"
+.br
+.ti -1c
+.RI "(id) - \fBobjectForHash:description:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBobjectForHash:description:autorelease:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBaddObjectToCache:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBaddObjectToCache:withHash:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBremoveObjectFromCache:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBremoveObjectWithHash:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBclearCache\fP"
+.br
+.ti -1c
+.RI "(NSSet *) - \fBcacheSet\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheEnabled:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcacheCount\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheAddingEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheAddingEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheAddingEnabled:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheAddingEnabled:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheLookupEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisCacheLookupEnabled\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheLookupEnabled:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBsetCacheLookupEnabled:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetDebug:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetDebug:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBclearCounters\fP"
+.br
+.ti -1c
+.RI "(void) - \fBclearCounters\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBreadBusyCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBreadBusyCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBreadSpinCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBreadSpinCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBwriteBusyCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBwriteBusyCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBwriteSpinCount\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBwriteSpinCount\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "RK_STRONG_REF RKReadWriteLock * \fBcacheRWLock\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF NSMapTable * \fBcacheMapTable\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF NSString * \fBcacheDescriptionString\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcacheHits\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcacheMisses\fP"
+.br
+.ti -1c
+.RI "int \fBcacheInitialized\fP"
+.br
+.ti -1c
+.RI "int \fBcacheIsEnabled\fP"
+.br
+.ti -1c
+.RI "int \fBcacheAddingIsEnabled\fP"
+.br
+.ti -1c
+.RI "int \fBcacheLookupIsEnabled\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF char * \fBcacheDescriptionUTF8String\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcacheClearedCount\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 53 of file RKCache\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD> <TITLE>Understanding the Default Operator</TITLE> </HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<H1>Understanding the Default Operator</H1>
+<HR>
+Unless you enter an explicit logical search operator (i.e., <A HREF="boolops.html#xorop">OR</A>, <A HREF="boolops.html#xandop">AND</A>, <A HREF="boolops.html#xnotop">NOT</A>, <A HREF="nearops.html#xproxop">W</A>/<I>n</I>, <A HREF="nearops.html#xadjop">ADJ</A>, <A HREF="nearops.html#xnearop">NEAR</A>) in your query, 
+PLWeb Turbo will interpret the query using a predetermined <I>default operator</I>.
+<P>
+The default operator is OR; it is automatically used in the absence of any manually entered operators. If you enter a 
+multi-word query, PLWeb Turbo will retrieve all records that contain at least one of the words. For example, the following 
+query:
+<P>
+<PRE>
+tribal politics in South Africa
+</PRE>
+would be interpreted as:
+<P>
+<PRE>
+tribal OR politics OR South OR Africa
+</PRE>
+Any record in the current database that contains one or more of those terms would satisfy the conditions of the search 
+and therefore, be retrieved.
+<P>
+<STRONG>[<A HREF="natlang.html">Previous</A> Topic]     [<A HREF="oltoc.html">Contents</A>]     [<A HREF="consrch.html">Next</A> Topic]</STRONG>
+<P>
+
+
+</BODY>
+</HTML>

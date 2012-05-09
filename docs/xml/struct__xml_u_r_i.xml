@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_u_r_i" kind="struct" prot="public">
+    <compoundname>_xmlURI</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a98213a6dab42b0d5a3f8c87eed72acf4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::scheme</definition>
+        <argsstring></argsstring>
+        <name>scheme</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="34" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a335b3ef2183b31f15f51dd1b2c6241b9" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="35" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a9fc857bdd1702385e563977c2116fe95" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::authority</definition>
+        <argsstring></argsstring>
+        <name>authority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="36" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a638c9f05ef24bf892d7a00ebf803b98a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="37" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1ab620b70b2d63af398fc84281c4af421a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="38" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a8460fd17316181c550e4f5b04e212eba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlURI::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="39" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1ad592348964cebdf912086a3f3f8d686c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="40" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1ae7949d2e45af4b2fea60b3b51f6f991e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="41" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1ad9ebb4fe051996bba69c4db86836db7b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::fragment</definition>
+        <argsstring></argsstring>
+        <name>fragment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="42" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1a88f7bca5886e16c467eb1e1d4e729059" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlURI::cleanup</definition>
+        <argsstring></argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="43" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_u_r_i_1aad140cbc01f17eb488e4a798d91211e9" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlURI::query_raw</definition>
+        <argsstring></argsstring>
+        <name>query_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="44" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" line="33" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/uri.h" bodystart="33" bodyend="45"/>
+    <listofallmembers>
+      <member refid="struct__xml_u_r_i_1a9fc857bdd1702385e563977c2116fe95" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>authority</name></member>
+      <member refid="struct__xml_u_r_i_1a88f7bca5886e16c467eb1e1d4e729059" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>cleanup</name></member>
+      <member refid="struct__xml_u_r_i_1ad9ebb4fe051996bba69c4db86836db7b" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>fragment</name></member>
+      <member refid="struct__xml_u_r_i_1a335b3ef2183b31f15f51dd1b2c6241b9" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>opaque</name></member>
+      <member refid="struct__xml_u_r_i_1ad592348964cebdf912086a3f3f8d686c" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>path</name></member>
+      <member refid="struct__xml_u_r_i_1a8460fd17316181c550e4f5b04e212eba" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>port</name></member>
+      <member refid="struct__xml_u_r_i_1ae7949d2e45af4b2fea60b3b51f6f991e" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>query</name></member>
+      <member refid="struct__xml_u_r_i_1aad140cbc01f17eb488e4a798d91211e9" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>query_raw</name></member>
+      <member refid="struct__xml_u_r_i_1a98213a6dab42b0d5a3f8c87eed72acf4" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>scheme</name></member>
+      <member refid="struct__xml_u_r_i_1a638c9f05ef24bf892d7a00ebf803b98a" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>server</name></member>
+      <member refid="struct__xml_u_r_i_1ab620b70b2d63af398fc84281c4af421a" prot="public" virt="non-virtual"><scope>_xmlURI</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

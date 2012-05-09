@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_function_table" kind="struct" prot="public">
+    <compoundname>FunctionTable</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_function_table_1a568ae3641aaf56327da625e668c4aa51" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FunctionTable::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of declared functions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="334" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_function_table_1a1c1544bb6db2f638619e21fc60ca2ba8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_func_def_stmt_node" kindref="compound">FuncDefStmtNode</ref> **</type>
+        <definition>FuncDefStmtNode** FunctionTable::funcs</definition>
+        <argsstring></argsstring>
+        <name>funcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to an array of declared functions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="335" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores the contents of the function table. The function table contains the definitions of all declared functions. It is used for making sure function calls provide a valid arity, typechecking, however, is performed at runtime. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="630">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="627">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="628">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="629" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="624">
+        <label>FunctionTable</label>
+        <link refid="struct_function_table"/>
+        <childnode refid="625" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="626">
+        <label>IdentifierNodeList</label>
+        <link refid="struct_identifier_node_list"/>
+        <childnode refid="627" relation="usage">
+          <edgelabel>ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="625">
+        <label>FuncDefStmtNode</label>
+        <link refid="struct_func_def_stmt_node"/>
+        <childnode refid="626" relation="usage">
+          <edgelabel>args</edgelabel>
+        </childnode>
+        <childnode refid="628" relation="usage">
+          <edgelabel>body</edgelabel>
+        </childnode>
+        <childnode refid="627" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>scope</edgelabel>
+        </childnode>
+      </node>
+      <node id="629">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="630" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="333" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="333" bodyend="336"/>
+    <listofallmembers>
+      <member refid="struct_function_table_1a1c1544bb6db2f638619e21fc60ca2ba8" prot="public" virt="non-virtual"><scope>FunctionTable</scope><name>funcs</name></member>
+      <member refid="struct_function_table_1a568ae3641aaf56327da625e668c4aa51" prot="public" virt="non-virtual"><scope>FunctionTable</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

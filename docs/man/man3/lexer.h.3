@@ -1,0 +1,239 @@
+.TH "tools/lci/lciframework/lexer.h" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tools/lci/lciframework/lexer.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBLexeme\fP"
+.br
+.ti -1c
+.RI "struct \fBLexemeList\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLexeme\fP * \fBcreateLexeme\fP (char *, const char *, unsigned int)"
+.br
+.ti -1c
+.RI "void \fBdeleteLexeme\fP (\fBLexeme\fP *)"
+.br
+.ti -1c
+.RI "\fBLexemeList\fP * \fBcreateLexemeList\fP (void)"
+.br
+.ti -1c
+.RI "\fBLexeme\fP * \fBaddLexeme\fP (\fBLexemeList\fP *, \fBLexeme\fP *)"
+.br
+.ti -1c
+.RI "void \fBdeleteLexemeList\fP (\fBLexemeList\fP *)"
+.br
+.ti -1c
+.RI "\fBLexemeList\fP * \fBscanBuffer\fP (const char *, unsigned int, const char *)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structures and functions for separating a character buffer into lexemes\&. The lexer reads through a buffer of characters (themselves typically read from standard input), strips whitespace, and breaks them up into logical atoms of character strings which, in turn, may be passed on to later processes (such as a tokenizer)\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Justin J\&. Meza
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBlexer\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBLexeme\fP* \fBaddLexeme\fP (\fBLexemeList\fP *list, \fBLexeme\fP *lexeme)"
+Adds a \fBLexeme\fP structure to a \fBLexemeList\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIlist\fP was created by \fBcreateLexemeList(void)\fP\&. 
+.PP
+\fIlexeme\fP was created by \fBcreateLexeme(char *, const char *, unsigned int)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+\fIlexeme\fP will be added on to the end of \fIlist\fP and the size of \fIlist\fP will be updated accordingly\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to the added \fBLexeme\fP structure (will be the same as \fIlexeme\fP)\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP realloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlist\fP A pointer to the \fBLexemeList\fP structure to add \fIlex\fP to\&. 
+.br
+\fIlexeme\fP A pointer to the \fBLexeme\fP structure to add to \fIlist\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file lexer\&.c\&.
+.SS "\fBLexeme\fP* \fBcreateLexeme\fP (char *image, const char *fname, unsigned intline)"
+Creates a \fBLexeme\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBLexeme\fP structure with the desired properties\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBdeleteLexeme(Lexeme *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+fname is not copied because it would only one copy is stored for all \fBLexeme\fP structures that share it\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIimage\fP An array of characters that describe the lexeme\&. 
+.br
+\fIfname\fP A pointer to the name of the file containing the lexeme\&. 
+.br
+\fIline\fP The line number from the source file that the lexeme occurred on\&. 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file lexer\&.c\&.
+.SS "\fBLexemeList\fP* \fBcreateLexemeList\fP (void)"
+Creates a \fBLexemeList\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBLexemeList\fP structure with the desired properties\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBdeleteLexemeList(LexemeList *)\fP 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file lexer\&.c\&.
+.SS "void \fBdeleteLexeme\fP (\fBLexeme\fP *lexeme)"
+Deletes a \fBLexeme\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIlexeme\fP points to a \fBLexeme\fP structure created by \fBcreateLexeme(char *, const char *, unsigned int)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+The memory at \fIlexeme\fP and all of its elements will be freed\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateLexeme(char *, const char *, unsigned int)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+We do not free (*lex)->fname because it is shared between many \fBLexeme\fP structures and is free'd by whoever created them\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file lexer\&.c\&.
+.SS "void \fBdeleteLexemeList\fP (\fBLexemeList\fP *list)"
+Deletes a \fBLexemeList\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIlist\fP was created by \fBcreateLexemeList(void)\fP and contains items added by \fBaddLexeme(LexemeList *, Lexeme *)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+The memory at \fIlist\fP and any of its associated members will be freed\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateLexemeList(void)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlist\fP A pointer to the \fBLexemeList\fP structure to delete\&. 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file lexer\&.c\&.
+.SS "\fBLexemeList\fP* \fBscanBuffer\fP (const char *buffer, unsigned intsize, const char *fname)"
+Scans through a character buffer, removing unecessary characters and generating lexemes\&. Lexemes are separated by whitespace (but newline characters are kept as their own lexeme)\&. String literals are handled a bit differently: starting at the first quotation character, characters are collected until either an unescaped quotation character is read (that is, a quotation character not preceeded by a colon which itself is not proceeded by a colon) or a newline or carriage return character is read, whichever comes first\&. This handles the odd case of strings such as '::' which print out a single colon\&. Also handled are the effects of commas, ellipses, and bangs (!)\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIsize\fP is the number of characters starting at the memory location pointed to by \fIbuffer\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBLexemeList\fP structure\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuffer\fP An array of characters to tokenize\&. 
+.br
+\fIsize\fP The number of characters in \fIbuffer\fP\&. 
+.br
+\fIfname\fP An array of characters representing the name of the file used to read \fIbuffer\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file lexer\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

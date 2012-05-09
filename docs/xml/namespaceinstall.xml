@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="namespaceinstall" kind="namespace">
+    <compoundname>install</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceinstall_1ac6b8188528a555fc6a9c4fdb4295e1ac" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple install.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>argparse.ArgumentParser(description=&quot;Installation script for lci&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="38" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall_1a286f4b3092e2b95aae618114c2f75638" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple install.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <initializer>parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="45" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall_1aa539d64bbb698d6dbfa4138552ecc452" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple install.j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <initializer>str(args.j)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="46" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall_1aedad617dcd6116209fccacafd0d60230" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list install.cmakeCommand</definition>
+        <argsstring></argsstring>
+        <name>cmakeCommand</name>
+        <initializer>[&quot;cmake&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="48" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceinstall_1a5b24af462df0fb182861e1ac63daf03e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def install.positiveInt</definition>
+        <argsstring></argsstring>
+        <name>positiveInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="8" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="8" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinstall_1ad62dec4b893a83155e5670c27a22ae25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def install.runSubProc</definition>
+        <argsstring></argsstring>
+        <name>runSubProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="22" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" bodystart="22" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/install.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_parser_node_info_seq" kind="struct" prot="public">
+    <compoundname>_xmlParserNodeInfoSeq</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_parser_node_info_seq_1aa8546837e510e099b0e8790700b9c8ff" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long _xmlParserNodeInfoSeq::maximum</definition>
+        <argsstring></argsstring>
+        <name>maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="101" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_node_info_seq_1a09bd6c0f172702df82cfbef8b03f7e0a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long _xmlParserNodeInfoSeq::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="102" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_node_info_seq_1a8a93a30b4af39a99ed22dc4b007683e2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_parser_node_info" kindref="compound">xmlParserNodeInfo</ref> *</type>
+        <definition>xmlParserNodeInfo * _xmlParserNodeInfoSeq::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="103" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="519">
+        <label>_xmlAttr</label>
+        <link refid="struct__xml_attr"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="520" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="521" relation="usage">
+          <edgelabel>ns</edgelabel>
+        </childnode>
+      </node>
+      <node id="520">
+        <label>_xmlDoc</label>
+        <link refid="struct__xml_doc"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="520" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="521" relation="usage">
+          <edgelabel>oldNs</edgelabel>
+        </childnode>
+        <childnode refid="522" relation="usage">
+          <edgelabel>intSubset</edgelabel>
+          <edgelabel>extSubset</edgelabel>
+        </childnode>
+      </node>
+      <node id="517">
+        <label>_xmlParserNodeInfo</label>
+        <link refid="struct__xml_parser_node_info"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+      </node>
+      <node id="516">
+        <label>_xmlParserNodeInfoSeq</label>
+        <link refid="struct__xml_parser_node_info_seq"/>
+        <childnode refid="517" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="522">
+        <label>_xmlDtd</label>
+        <link refid="struct__xml_dtd"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="520" relation="usage">
+          <edgelabel>doc</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="521">
+        <label>_xmlNs</label>
+        <link refid="struct__xml_ns"/>
+        <childnode refid="520" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="521" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="518">
+        <label>_xmlNode</label>
+        <link refid="struct__xml_node"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="520" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="521" relation="usage">
+          <edgelabel>ns</edgelabel>
+          <edgelabel>nsDef</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="100" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="100" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct__xml_parser_node_info_seq_1a8a93a30b4af39a99ed22dc4b007683e2" prot="public" virt="non-virtual"><scope>_xmlParserNodeInfoSeq</scope><name>buffer</name></member>
+      <member refid="struct__xml_parser_node_info_seq_1a09bd6c0f172702df82cfbef8b03f7e0a" prot="public" virt="non-virtual"><scope>_xmlParserNodeInfoSeq</scope><name>length</name></member>
+      <member refid="struct__xml_parser_node_info_seq_1aa8546837e510e099b0e8790700b9c8ff" prot="public" virt="non-virtual"><scope>_xmlParserNodeInfoSeq</scope><name>maximum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

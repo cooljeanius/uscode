@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_d72a0a4977c1887e1f5496c64daf5036" kind="dir">
+    <compoundname>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/</compoundname>
+    <innerfile refid="_legiscode_8applescript_2build_2_debug_2_legiscode_8applescript_8app_2_contents_2_resources_2autoparser_8py">autoparser.py</innerfile>
+    <innerfile refid="_legiscode_8applescript_2build_2_debug_2_legiscode_8applescript_8app_2_contents_2_resources_2retrieve__code_8py">retrieve_code.py</innerfile>
+    <innerfile refid="_legiscode_8applescript_2build_2_debug_2_legiscode_8applescript_8app_2_contents_2_resources_2splithtml_8py">splithtml.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/"/>
+  </compounddef>
+</doxygen>

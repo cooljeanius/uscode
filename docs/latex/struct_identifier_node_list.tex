@@ -1,0 +1,62 @@
+\hypertarget{struct_identifier_node_list}{\section{Identifier\-Node\-List Struct Reference}
+\label{struct_identifier_node_list}\index{Identifier\-Node\-List@{Identifier\-Node\-List}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Identifier\-Node\-List\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{struct_identifier_node_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{struct_identifier_node_list_a7ee19db1c4e05eafe5df277542e01dd1}{num}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$$\ast$ \hyperlink{struct_identifier_node_list_a61b371619c07f89846ae0780d5403dc0}{ids}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a list of identifiers. This structure allows sets of identifiers to be grouped together.
+
+\begin{DoxySeeAlso}{See also}
+create\-Identifier\-Node\-List(void) 
+
+add\-Identifier\-Node(\-Identifier\-Node\-List $\ast$, Identifier\-Node $\ast$) 
+
+delete\-Identifier\-Node\-List(\-Identifier\-Node\-List $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 196 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_identifier_node_list_a61b371619c07f89846ae0780d5403dc0}{\index{Identifier\-Node\-List@{Identifier\-Node\-List}!ids@{ids}}
+\index{ids@{ids}!IdentifierNodeList@{Identifier\-Node\-List}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$$\ast$ {\bf Identifier\-Node\-List\-::ids}}}\label{struct_identifier_node_list_a61b371619c07f89846ae0780d5403dc0}
+A pointer to the array of \hyperlink{struct_identifier_node}{Identifier\-Node} structures. 
+
+Definition at line 198 of file parser.\-h.
+
+\hypertarget{struct_identifier_node_list_a7ee19db1c4e05eafe5df277542e01dd1}{\index{Identifier\-Node\-List@{Identifier\-Node\-List}!num@{num}}
+\index{num@{num}!IdentifierNodeList@{Identifier\-Node\-List}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Identifier\-Node\-List\-::num}}}\label{struct_identifier_node_list_a7ee19db1c4e05eafe5df277542e01dd1}
+The number of \hyperlink{struct_identifier_node}{Identifier\-Node} structures stored. 
+
+Definition at line 197 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

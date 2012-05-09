@@ -1,0 +1,55 @@
+.TH "IdentifierNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IdentifierNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "char * \fBimage\fP"
+.br
+.ti -1c
+.RI "const char * \fBfname\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBline\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores an identifier\&. An identifier is the string of characters that are used to uniquely name a particular variable\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createIdentifierNode(char *) 
+.PP
+deleteIdentifierNode(IdentifierNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 184 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const char* \fBIdentifierNode::fname\fP"
+A pointer to the name of the file containing the identifier\&. 
+.PP
+Definition at line 186 of file parser\&.h\&.
+.SS "char* \fBIdentifierNode::image\fP"
+An array of characters that name the identifier\&. 
+.PP
+Definition at line 185 of file parser\&.h\&.
+.SS "unsigned int \fBIdentifierNode::line\fP"
+The line number from the source file that the identifier occurred on\&. 
+.PP
+Definition at line 187 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_error" kind="struct" prot="public">
+    <compoundname>_xmlError</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_error_1aab2c2106653999b10a5927fbef170134" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlError::domain</definition>
+        <argsstring></argsstring>
+        <name>domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="76" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a26d37a9627e5767d10642f7575b456cb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlError::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="77" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1ae0ba72e4e1632af08a3943c408acb46e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlError::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="78" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a51d46e073d52e80e09c1968833549dcc" prot="public" static="no" mutable="no">
+        <type>xmlErrorLevel</type>
+        <definition>xmlErrorLevel _xmlError::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="79" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1ab0e31add4b58d0eb2f926d02b325f68c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlError::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="80" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1af25357d13a171f2eeed7b74297d21eb1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlError::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="81" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a48ead6f286486bec46ba91310142fe6f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlError::str1</definition>
+        <argsstring></argsstring>
+        <name>str1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="82" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a6f6e2ab2fd6872090042188d7ad1a3db" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlError::str2</definition>
+        <argsstring></argsstring>
+        <name>str2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="83" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a26ae14b14ec723039d6b9a268c8c2f81" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * _xmlError::str3</definition>
+        <argsstring></argsstring>
+        <name>str3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="84" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a6f9278bc2b797ad7f6a92b765aead611" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlError::int1</definition>
+        <argsstring></argsstring>
+        <name>int1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="85" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1af540575ab3235c19f72574b54ba727dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlError::int2</definition>
+        <argsstring></argsstring>
+        <name>int2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="86" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a6d52fa27b0b230af14e11686f70d94ca" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlError::ctxt</definition>
+        <argsstring></argsstring>
+        <name>ctxt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="87" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_error_1a5e31a62d29a94a8dc040e18f4eb19668" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlError::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="88" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" line="75" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlerror.h" bodystart="75" bodyend="89"/>
+    <listofallmembers>
+      <member refid="struct__xml_error_1a26d37a9627e5767d10642f7575b456cb" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>code</name></member>
+      <member refid="struct__xml_error_1a6d52fa27b0b230af14e11686f70d94ca" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>ctxt</name></member>
+      <member refid="struct__xml_error_1aab2c2106653999b10a5927fbef170134" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>domain</name></member>
+      <member refid="struct__xml_error_1ab0e31add4b58d0eb2f926d02b325f68c" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>file</name></member>
+      <member refid="struct__xml_error_1a6f9278bc2b797ad7f6a92b765aead611" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>int1</name></member>
+      <member refid="struct__xml_error_1af540575ab3235c19f72574b54ba727dd" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>int2</name></member>
+      <member refid="struct__xml_error_1a51d46e073d52e80e09c1968833549dcc" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>level</name></member>
+      <member refid="struct__xml_error_1af25357d13a171f2eeed7b74297d21eb1" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>line</name></member>
+      <member refid="struct__xml_error_1ae0ba72e4e1632af08a3943c408acb46e" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>message</name></member>
+      <member refid="struct__xml_error_1a5e31a62d29a94a8dc040e18f4eb19668" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>node</name></member>
+      <member refid="struct__xml_error_1a48ead6f286486bec46ba91310142fe6f" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>str1</name></member>
+      <member refid="struct__xml_error_1a6f6e2ab2fd6872090042188d7ad1a3db" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>str2</name></member>
+      <member refid="struct__xml_error_1a26ae14b14ec723039d6b9a268c8c2f81" prot="public" virt="non-virtual"><scope>_xmlError</scope><name>str3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

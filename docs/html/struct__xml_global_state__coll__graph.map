@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct__xml_node.html" title="_xmlNode" alt="" coords="5,707,91,733"/>
+<area shape="rect" id="node5" href="$struct__xml_attr.html" title="_xmlAttr" alt="" coords="977,855,1052,881"/>
+<area shape="rect" id="node9" href="$struct__xml_doc.html" title="_xmlDoc" alt="" coords="241,699,317,725"/>
+<area shape="rect" id="node17" href="$struct__xml_dtd.html" title="_xmlDtd" alt="" coords="531,605,605,632"/>
+<area shape="rect" id="node46" href="$struct__xml_entity.html" title="_xmlEntity" alt="" coords="971,533,1058,560"/>
+<area shape="rect" id="node13" href="$struct__xml_ns.html" title="_xmlNs" alt="" coords="534,824,602,851"/>
+<area shape="rect" id="node24" href="$struct__xml_s_a_x_locator.html" title="_xmlSAXLocator" alt="" coords="951,135,1078,161"/>
+<area shape="rect" id="node35" href="$struct__xml_s_a_x_handler_v1.html" title="_xmlSAXHandlerV1" alt="" coords="1450,312,1593,339"/>
+<area shape="rect" id="node26" href="$struct__xml_error.html" title="_xmlError" alt="" coords="1481,124,1561,151"/>
+<area shape="rect" id="node28" href="$struct__xml_char_encoding_handler.html" title="_xmlCharEncodingHandler" alt="" coords="187,147,370,173"/>
+<area shape="rect" id="node30" href="$struct__xml_parser_input_buffer.html" title="_xmlParserInputBuffer" alt="" coords="489,391,647,417"/>
+<area shape="rect" id="node43" href="$struct__xml_parser_input.html" title="_xmlParserInput" alt="" coords="954,393,1075,420"/>
+<area shape="rect" id="node32" href="$struct__xml_buffer.html" title="_xmlBuffer" alt="" coords="235,391,323,417"/>
+<area shape="rect" id="node37" href="$struct__xml_element_content.html" title="_xmlElementContent" alt="" coords="939,253,1091,280"/>
+<area shape="rect" id="node40" href="$struct__xml_enumeration.html" title="_xmlEnumeration" alt="" coords="951,343,1078,369"/>
+</map>

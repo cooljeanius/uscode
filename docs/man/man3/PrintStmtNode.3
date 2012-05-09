@@ -1,0 +1,48 @@
+.TH "PrintStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PrintStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBExprNodeList\fP * \fBargs\fP"
+.br
+.ti -1c
+.RI "int \fBnonl\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a print statement\&. A print statement prints its arguments to some output device (by default standard output)\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createPrintStmtNode(ExprNodeList *, int) 
+.PP
+deletePrintStmtNode(PrintStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 373 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNodeList\fP* \fBPrintStmtNode::args\fP"
+A pointer to the list of expressions to evaluate and print\&. 
+.PP
+Definition at line 374 of file parser\&.h\&.
+.SS "int \fBPrintStmtNode::nonl\fP"
+Denotes an ending newline should be surpressed if not \fC0\fP and printed if \fC0\fP\&. 
+.PP
+Definition at line 375 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

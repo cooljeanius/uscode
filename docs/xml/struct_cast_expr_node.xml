@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_cast_expr_node" kind="struct" prot="public">
+    <compoundname>CastExprNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_cast_expr_node_1a90d1ac82b5b4a63a6842fc4e33f4e3bb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node" kindref="compound">ExprNode</ref> *</type>
+        <definition>ExprNode* CastExprNode::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expression to cast. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="471" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="471" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a8836d5dd711beb5cd96336fe51cdc185" compoundref="interpreter_8c" startline="1017" endline="1049">interpretCastExprNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cast_expr_node_1a0198b8265e221f2a52609a2d117585ef" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_type_node" kindref="compound">TypeNode</ref> *</type>
+        <definition>TypeNode* CastExprNode::newtype</definition>
+        <argsstring></argsstring>
+        <name>newtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the type to cast the copy of <emphasis>target</emphasis> to. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="472" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="472" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a8836d5dd711beb5cd96336fe51cdc185" compoundref="interpreter_8c" startline="1017" endline="1049">interpretCastExprNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a cast expression. A cast expression evaluates an expression and casts it to a particular type.</para><para><simplesect kind="see"><para>createCastExprNode(ExprNode *, TypeNode *) </para><simplesectsep/><para>deleteCastExprNode(CastExprNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="587">
+        <label>TypeNode</label>
+        <link refid="struct_type_node"/>
+      </node>
+      <node id="586">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="585">
+        <label>CastExprNode</label>
+        <link refid="struct_cast_expr_node"/>
+        <childnode refid="586" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="587" relation="usage">
+          <edgelabel>newtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="470" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="470" bodyend="473"/>
+    <listofallmembers>
+      <member refid="struct_cast_expr_node_1a0198b8265e221f2a52609a2d117585ef" prot="public" virt="non-virtual"><scope>CastExprNode</scope><name>newtype</name></member>
+      <member refid="struct_cast_expr_node_1a90d1ac82b5b4a63a6842fc4e33f4e3bb" prot="public" virt="non-virtual"><scope>CastExprNode</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

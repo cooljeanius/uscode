@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="test_driver_8py" kind="file">
+    <compoundname>testDriver.py</compoundname>
+    <innernamespace refid="namespacetest_driver">testDriver</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tempfile</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>argparse</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">MEMERR<sp/>=<sp/>127</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">parser<sp/>=<sp/>argparse.ArgumentParser(description=</highlight><highlight class="stringliteral">&quot;Driver<sp/>for<sp/>lci<sp/>tests&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;pathToLCI&apos;</highlight><highlight class="normal">,<sp/>help=</highlight><highlight class="stringliteral">&quot;The<sp/>absolute<sp/>path<sp/>the<sp/>the<sp/>lci<sp/>executable&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;lolcodeFile&apos;</highlight><highlight class="normal">,<sp/>help=</highlight><highlight class="stringliteral">&quot;The<sp/>absolute<sp/>path<sp/>to<sp/>the<sp/>lolcode<sp/>file<sp/>to<sp/>test&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-o&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--outputFile&apos;</highlight><highlight class="normal">,<sp/>type=argparse.FileType(</highlight><highlight class="stringliteral">&apos;</highlight><highlight class="stringliteral">r&apos;),<sp/>default=None,<sp/>help=&quot;The<sp/>expected<sp/>output&quot;)</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-i&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--inputFile&apos;</highlight><highlight class="normal">,<sp/>type=argparse.FileType(</highlight><highlight class="stringliteral">&apos;</highlight><highlight class="stringliteral">r&apos;),<sp/>default=None,<sp/>help=&quot;File<sp/>to<sp/>be<sp/>used<sp/>as<sp/>input&quot;)</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-e&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--expectError&apos;</highlight><highlight class="normal">,<sp/>action=</highlight><highlight class="stringliteral">&quot;store_true&quot;</highlight><highlight class="normal">,<sp/>help=</highlight><highlight class="stringliteral">&quot;Specify<sp/>that<sp/>an<sp/>error<sp/>should<sp/>occur&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-m&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--memCheck&apos;</highlight><highlight class="normal">,<sp/>action=</highlight><highlight class="stringliteral">&apos;store_true&apos;</highlight><highlight class="normal">,<sp/>help=</highlight><highlight class="stringliteral">&quot;Do<sp/>a<sp/>memory<sp/>check&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">args<sp/>=<sp/>parser.parse_args()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.inputFile<sp/>==<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Not<sp/>using<sp/>an<sp/>input<sp/>file&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Using<sp/>input<sp/>file:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>args.inputFile.name)<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.expectError:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>an<sp/>error&quot;</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Not<sp/>expecting<sp/>an<sp/>error&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.outputFile<sp/>==<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Not<sp/>using<sp/>an<sp/>output<sp/>file&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Using<sp/>output<sp/>file:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>args.outputFile.name)<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.memCheck:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Doing<sp/>memory<sp/>check.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Not<sp/>doing<sp/>memory<sp/>check.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">expectedOutput<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.outputFile<sp/>!=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>expectedOutput<sp/>=<sp/>args.outputFile.read()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>args.outputFile.close()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">command<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.memCheck:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>command.append(</highlight><highlight class="stringliteral">&quot;valgrind&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>command.append(</highlight><highlight class="stringliteral">&quot;-q&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>command.append(</highlight><highlight class="stringliteral">&quot;--leak-check=full&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>command.append(</highlight><highlight class="stringliteral">&quot;--error-exitcode=&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(MEMERR))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">command.append(args.pathToLCI)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">command.append(args.lolcodeFile)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Command:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">.join(command))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">p<sp/>=<sp/>subprocess.Popen(command,<sp/>stdin=args.inputFile,<sp/>stdout=subprocess.PIPE,<sp/>stderr=subprocess.PIPE)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">results<sp/>=<sp/>p.communicate()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>p.returncode<sp/>==<sp/>MEMERR:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Failure!\n<sp/>Memory<sp/>leak<sp/>detected,<sp/>check<sp/>output<sp/>for<sp/>more<sp/>information.)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.expectError:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>p.returncode<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Failure!<sp/>Expected<sp/>an<sp/>error<sp/>but<sp/>did<sp/>not<sp/>recieve<sp/>one&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Success!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Error:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>print(results[1])</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.outputFile:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>p.returncode<sp/>!=<sp/>0:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Failure!<sp/>Return<sp/>error<sp/>code:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(p.returncode))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>expectedOutput<sp/>!=<sp/>results[0]:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Expected<sp/>output<sp/>didn&apos;t<sp/>match!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Expected<sp/>output:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>print(expectedOutput)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Actual<sp/>output:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>print(results[0])</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Success!\n\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.inputFile<sp/>!=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>args.inputFile</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py"/>
+  </compounddef>
+</doxygen>

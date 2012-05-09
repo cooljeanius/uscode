@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb" kind="file">
+    <compoundname>entities.h</compoundname>
+    <includes local="no">libxml/xmlversion.h</includes>
+    <includes local="no">libxml/tree.h</includes>
+    <incdepgraph>
+      <node id="105">
+        <label>libxml/xmlversion.h</label>
+      </node>
+      <node id="104">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h</label>
+        <link refid="build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>libxml/tree.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__xml_entity" prot="public">_xmlEntity</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3a" prot="public" static="no">
+        <name>xmlEntityType</name>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa2654dd5f0be8b42242a8d3277b113733" prot="public">
+          <name>XML_INTERNAL_GENERAL_ENTITY</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa1a49e6afecf51ab290c9738a8f12002b" prot="public">
+          <name>XML_EXTERNAL_GENERAL_PARSED_ENTITY</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa1e5f87ace9c3f5527397e478f5593f72" prot="public">
+          <name>XML_EXTERNAL_GENERAL_UNPARSED_ENTITY</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa50d15142122d54bae419cb0e0060c4f5" prot="public">
+          <name>XML_INTERNAL_PARAMETER_ENTITY</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa758d194d1de36f8da47f4535dcb82c62" prot="public">
+          <name>XML_EXTERNAL_PARAMETER_ENTITY</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a64131e2e263dff72c78d311eff342f3aa1c4c38566da907f4b479191c31fb181e" prot="public">
+          <name>XML_INTERNAL_PREDEFINED_ENTITY</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa2654dd5f0be8b42242a8d3277b113733" prot="public">
+          <name>XML_INTERNAL_GENERAL_ENTITY</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa1a49e6afecf51ab290c9738a8f12002b" prot="public">
+          <name>XML_EXTERNAL_GENERAL_PARSED_ENTITY</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa1e5f87ace9c3f5527397e478f5593f72" prot="public">
+          <name>XML_EXTERNAL_GENERAL_UNPARSED_ENTITY</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa50d15142122d54bae419cb0e0060c4f5" prot="public">
+          <name>XML_INTERNAL_PARAMETER_ENTITY</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa758d194d1de36f8da47f4535dcb82c62" prot="public">
+          <name>XML_EXTERNAL_PARAMETER_ENTITY</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h_1a64131e2e263dff72c78d311eff342f3aa1c4c38566da907f4b479191c31fb181e" prot="public">
+          <name>XML_INTERNAL_PREDEFINED_ENTITY</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="24" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" bodystart="24" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1ac84314955e11b459d70eaad8bb3da56c" prot="public" static="no">
+        <type>struct _xmlHashTable</type>
+        <definition>typedef struct _xmlHashTable xmlEntitiesTable</definition>
+        <argsstring></argsstring>
+        <name>xmlEntitiesTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="67" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1abef54d4a1f4f16db0101286e8ee6d98c" prot="public" static="no">
+        <type>xmlEntitiesTable *</type>
+        <definition>typedef xmlEntitiesTable* xmlEntitiesTablePtr</definition>
+        <argsstring></argsstring>
+        <name>xmlEntitiesTablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="68" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a7e04cd251c3b78b3b8d8517e3f02f37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlAddDocEntity</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *name, int type, const xmlChar *ExternalID, const xmlChar *SystemID, const xmlChar *content)</argsstring>
+        <name>xmlAddDocEntity</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ExternalID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>SystemID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a97190183777fd7a49b4706dbadeb2b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlAddDtdEntity</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *name, int type, const xmlChar *ExternalID, const xmlChar *SystemID, const xmlChar *content)</argsstring>
+        <name>xmlAddDtdEntity</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ExternalID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>SystemID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1af4e82772788a44688b062c8f672e8d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlGetPredefinedEntity</definition>
+        <argsstring>(const xmlChar *name)</argsstring>
+        <name>xmlGetPredefinedEntity</name>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a387dc8e529b16ea0a5cfe79615e1ab61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlGetDocEntity</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *name)</argsstring>
+        <name>xmlGetDocEntity</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a051c21fd03bb101baafa4e3202370760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlGetDtdEntity</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *name)</argsstring>
+        <name>xmlGetDtdEntity</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a7921d4942c24be4c853cdac9001f2895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlGetParameterEntity</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *name)</argsstring>
+        <name>xmlGetParameterEntity</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1ae89beda78e561885fbb7b6f4f1592e04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN xmlChar *XMLCALL</type>
+        <definition>XMLPUBFUN xmlChar* XMLCALL xmlEncodeEntitiesReentrant</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *input)</argsstring>
+        <name>xmlEncodeEntitiesReentrant</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a273d574447d9700034b0b09a1fec2917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN xmlChar *XMLCALL</type>
+        <definition>XMLPUBFUN xmlChar* XMLCALL xmlEncodeSpecialChars</definition>
+        <argsstring>(xmlDocPtr doc, const xmlChar *input)</argsstring>
+        <name>xmlEncodeSpecialChars</name>
+        <param>
+          <type><ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref></type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a00b6405f3ed3c5ab2d44f32c01e49333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN xmlEntitiesTablePtr XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntitiesTablePtr XMLCALL xmlCreateEntitiesTable</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlCreateEntitiesTable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb_1a2f84c0650b5fbc4df6d514a559821996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlFreeEntitiesTable</definition>
+        <argsstring>(xmlEntitiesTablePtr table)</argsstring>
+        <name>xmlFreeEntitiesTable</name>
+        <param>
+          <type>xmlEntitiesTablePtr</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h" line="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Summary:<sp/>interface<sp/>for<sp/>the<sp/>XML<sp/>entities<sp/>handling</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>this<sp/>module<sp/>provides<sp/>some<sp/>of<sp/>the<sp/>entity<sp/>API<sp/>needed</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>the<sp/>parser<sp/>and<sp/>applications.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Copy:<sp/>See<sp/>Copyright<sp/>for<sp/>the<sp/>status<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Daniel<sp/>Veillard</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_ENTITIES_H__</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__XML_ENTITIES_H__</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xmlversion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/tree.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>The<sp/>different<sp/>valid<sp/>entity<sp/>types.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_INTERNAL_GENERAL_ENTITY<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_EXTERNAL_GENERAL_PARSED_ENTITY<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_EXTERNAL_GENERAL_UNPARSED_ENTITY<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_INTERNAL_PARAMETER_ENTITY<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_EXTERNAL_PARAMETER_ENTITY<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>XML_INTERNAL_PREDEFINED_ENTITY<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/>xmlEntityType;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>An<sp/>unit<sp/>of<sp/>storage<sp/>for<sp/>an<sp/>entity,<sp/>contains<sp/>the<sp/>string,<sp/>the<sp/>value</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>and<sp/>the<sp/>linkind<sp/>data<sp/>needed<sp/>for<sp/>the<sp/>linking<sp/>in<sp/>the<sp/>hash<sp/>table.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="struct__xml_entity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_entity" kindref="compound">_xmlEntity</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_private;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>application<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlElementType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>XML_ENTITY_DECL,<sp/>must<sp/>be<sp/>second<sp/>!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*name;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Entity<sp/>name<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_node" kindref="compound">_xmlNode</ref><sp/><sp/><sp/><sp/>*children;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>First<sp/>child<sp/>link<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_node" kindref="compound">_xmlNode</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*last;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Last<sp/>child<sp/>link<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_dtd" kindref="compound">_xmlDtd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*parent;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>-&gt;<sp/>DTD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_node" kindref="compound">_xmlNode</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*next;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>next<sp/>sibling<sp/>link<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_node" kindref="compound">_xmlNode</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*prev;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>previous<sp/>sibling<sp/>link<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_doc" kindref="compound">_xmlDoc</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*doc;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>containing<sp/>document<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlChar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*orig;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>content<sp/>without<sp/>ref<sp/>substitution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlChar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*content;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>content<sp/>or<sp/>ndata<sp/>if<sp/>unparsed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>content<sp/>length<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlEntityType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>etype;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>entity<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/><sp/><sp/><sp/>*ExternalID;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>External<sp/>identifier<sp/>for<sp/>PUBLIC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/><sp/><sp/><sp/><sp/><sp/>*SystemID;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>URI<sp/>for<sp/>a<sp/>SYSTEM<sp/>or<sp/>PUBLIC<sp/>Entity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_entity" kindref="compound">_xmlEntity</ref><sp/><sp/><sp/><sp/><sp/>*nexte;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unused<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*URI;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>full<sp/>URI<sp/>as<sp/>computed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>owner;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>does<sp/>the<sp/>entity<sp/>own<sp/>the<sp/>childrens<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>checked;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>was<sp/>the<sp/>entity<sp/>content<sp/>checked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>All<sp/>entities<sp/>are<sp/>stored<sp/>in<sp/>an<sp/>hash<sp/>table.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>There<sp/>is<sp/>2<sp/>separate<sp/>hash<sp/>tables<sp/>for<sp/>global<sp/>and<sp/>parameter<sp/>entities.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_xmlHashTable<sp/>xmlEntitiesTable;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>xmlEntitiesTable<sp/>*xmlEntitiesTablePtr;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>External<sp/>functions:</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_LEGACY_ENABLED</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInitializePredefinedEntities<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_LEGACY_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlAddDocEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ExternalID,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*SystemID,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*content);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlAddDtdEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ExternalID,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*SystemID,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*content);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGetPredefinedEntity<sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGetDocEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGetDtdEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGetParameterEntity<sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_LEGACY_ENABLED</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlEncodeEntities<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*input);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_LEGACY_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">XMLPUBFUN<sp/>xmlChar<sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlEncodeEntitiesReentrant(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*input);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">XMLPUBFUN<sp/>xmlChar<sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlEncodeSpecialChars<sp/><sp/><sp/>(<ref refid="struct__xml_doc" kindref="compound">xmlDocPtr</ref><sp/>doc,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*input);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">XMLPUBFUN<sp/>xmlEntitiesTablePtr<sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCreateEntitiesTable<sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_TREE_ENABLED</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/>xmlEntitiesTablePtr<sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCopyEntitiesTable<sp/><sp/><sp/><sp/>(xmlEntitiesTablePtr<sp/>table);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_TREE_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFreeEntitiesTable<sp/><sp/><sp/><sp/>(xmlEntitiesTablePtr<sp/>table);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_OUTPUT_ENABLED</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlDumpEntitiesTable<sp/><sp/><sp/><sp/>(<ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>buf,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlEntitiesTablePtr<sp/>table);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlDumpEntityDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>buf,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>ent);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_OUTPUT_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_LEGACY_ENABLED</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCleanupPredefinedEntities(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_LEGACY_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif<sp/></highlight><highlight class="comment">/*<sp/>__XML_ENTITIES_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/entities.h"/>
+  </compounddef>
+</doxygen>

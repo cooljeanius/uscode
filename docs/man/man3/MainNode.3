@@ -1,0 +1,48 @@
+.TH "MainNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBBlockNode\fP * \fBblock\fP"
+.br
+.ti -1c
+.RI "\fBFunctionTable\fP * \fBfunctab\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores the main block of code a program executes\&. This structure could be accomplished using only a \fBBlockNode\fP instead, but its logical importance to program control flow (namely, it is the first portion of code executed) merits its own structure\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createMainNode(BlockNode *) 
+.PP
+deleteMainNode(MainNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 345 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBlockNode\fP* \fBMainNode::block\fP"
+A pointer to the block of code to execute first\&. 
+.PP
+Definition at line 346 of file parser\&.h\&.
+.SS "\fBFunctionTable\fP* \fBMainNode::functab\fP"
+A pointer to the function table associated with this block of code\&. 
+.PP
+Definition at line 347 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

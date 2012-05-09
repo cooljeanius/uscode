@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="lexer_8h" kind="file">
+    <compoundname>lexer.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includedby refid="tokenizer_8h" local="yes">tools/lci/lciframework/tokenizer.h</includedby>
+    <includedby refid="lexer_8c" local="yes">tools/lci/lciframework/lexer.c</includedby>
+    <includedby refid="main_8c" local="yes">tools/lci/lciframework/main.c</includedby>
+    <incdepgraph>
+      <node id="755">
+        <label>stdlib.h</label>
+      </node>
+      <node id="754">
+        <label>tools/lci/lciframework/lexer.h</label>
+        <link refid="lexer.h"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>string.h</label>
+      </node>
+      <node id="758">
+        <label>ctype.h</label>
+      </node>
+      <node id="756">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="767">
+        <label>tools/lci/lciframework/lexer.c</label>
+        <link refid="lexer_8c_source"/>
+      </node>
+      <node id="759">
+        <label>tools/lci/lciframework/lexer.h</label>
+        <link refid="lexer.h"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>tools/lci/lciframework/interpreter.c</label>
+        <link refid="interpreter_8c_source"/>
+      </node>
+      <node id="762">
+        <label>tools/lci/lciframework/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>tools/lci/lciframework/main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="766">
+        <label>tools/lci/lciframework/tokenizer.c</label>
+        <link refid="tokenizer_8c_source"/>
+      </node>
+      <node id="760">
+        <label>tools/lci/lciframework/tokenizer.h</label>
+        <link refid="tokenizer_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>tools/lci/lciframework/parser.c</label>
+        <link refid="parser_8c_source"/>
+      </node>
+      <node id="761">
+        <label>tools/lci/lciframework/parser.h</label>
+        <link refid="tools_2lci_2lciframework_2parser_8h_source"/>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_lexeme" prot="public">Lexeme</innerclass>
+    <innerclass refid="struct_lexeme_list" prot="public">LexemeList</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_lexeme" kindref="compound">Lexeme</ref> *</type>
+        <definition>Lexeme* createLexeme</definition>
+        <argsstring>(char *, const char *, unsigned int)</argsstring>
+        <name>createLexeme</name>
+        <param>
+          <type>char *</type>
+          <defname>image</defname>
+          <briefdescription><para>An array of characters that describe the lexeme. </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>fname</defname>
+          <briefdescription><para>A pointer to the name of the file containing the lexeme. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>int</declname>
+          <defname>line</defname>
+          <briefdescription><para>The line number from the source file that the lexeme occurred on. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure.</para><para><simplesect kind="return"><para>A pointer to a <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure with the desired properties.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>malloc was unable to allocate memory.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="lexer_8h_1a4391032df55eda3e7768792818a7737a" kindref="member">deleteLexeme(Lexeme *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><simplesect kind="note"><para>fname is not copied because it would only one copy is stored for all <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structures that share it. </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="48" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="10" bodyend="34"/>
+        <references refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" compoundref="lexer_8h" startline="32">Lexeme::image</references>
+        <references refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" compoundref="lexer_8h" startline="33">Lexeme::fname</references>
+        <references refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" compoundref="lexer_8h" startline="34">Lexeme::line</references>
+      </memberdef>
+      <memberdef kind="function" id="lexer_8h_1a4391032df55eda3e7768792818a7737a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deleteLexeme</definition>
+        <argsstring>(Lexeme *)</argsstring>
+        <name>deleteLexeme</name>
+        <param>
+          <type><ref refid="struct_lexeme" kindref="compound">Lexeme</ref> *</type>
+          <defname>lexeme</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deletes a <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure.</para><para><simplesect kind="pre"><para><emphasis>lexeme</emphasis> points to a <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure created by <ref refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" kindref="member">createLexeme(char *, const char *, unsigned int)</ref>.</para></simplesect>
+<simplesect kind="post"><para>The memory at <emphasis>lexeme</emphasis> and all of its elements will be freed.</para></simplesect>
+<simplesect kind="see"><para><ref refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" kindref="member">createLexeme(char *, const char *, unsigned int)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><simplesect kind="note"><para>We do not free (*lex)-&gt;fname because it is shared between many <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structures and is free&apos;d by whoever created them. </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="49" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="43" bodyend="50"/>
+        <references refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" compoundref="lexer_8h" startline="32">Lexeme::image</references>
+      </memberdef>
+      <memberdef kind="function" id="lexer_8h_1a03a7275accd6e39d369c689760bd15df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+        <definition>LexemeList* createLexemeList</definition>
+        <argsstring>(void)</argsstring>
+        <name>createLexemeList</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure.</para><para><simplesect kind="return"><para>A pointer to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure with the desired properties.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>malloc was unable to allocate memory.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="lexer_8h_1a3a834cd76633550e9b8be7368cdeae3d" kindref="member">deleteLexemeList(LexemeList *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="50" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="59" bodyend="69"/>
+        <references refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" compoundref="lexer_8h" startline="44">LexemeList::num</references>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+      </memberdef>
+      <memberdef kind="function" id="lexer_8h_1af9ec30b004772b01fb38f6dc4f54d102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_lexeme" kindref="compound">Lexeme</ref> *</type>
+        <definition>Lexeme* addLexeme</definition>
+        <argsstring>(LexemeList *, Lexeme *)</argsstring>
+        <name>addLexeme</name>
+        <param>
+          <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+          <defname>list</defname>
+          <briefdescription><para>A pointer to the <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure to add <emphasis>lex</emphasis> to. </para></briefdescription>
+        </param>
+        <param>
+          <type><ref refid="struct_lexeme" kindref="compound">Lexeme</ref> *</type>
+          <defname>lexeme</defname>
+          <briefdescription><para>A pointer to the <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure to add to <emphasis>list</emphasis>. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure.</para><para><simplesect kind="pre"><para><emphasis>list</emphasis> was created by <ref refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" kindref="member">createLexemeList(void)</ref>. </para><simplesectsep/><para><emphasis>lexeme</emphasis> was created by <ref refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" kindref="member">createLexeme(char *, const char *, unsigned int)</ref>.</para></simplesect>
+<simplesect kind="post"><para><emphasis>lexeme</emphasis> will be added on to the end of <emphasis>list</emphasis> and the size of <emphasis>list</emphasis> will be updated accordingly.</para></simplesect>
+<simplesect kind="return"><para>A pointer to the added <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structure (will be the same as <emphasis>lexeme</emphasis>).</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc was unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="51" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="83" bodyend="99"/>
+        <references refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" compoundref="lexer_8h" startline="44">LexemeList::num</references>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+      </memberdef>
+      <memberdef kind="function" id="lexer_8h_1a3a834cd76633550e9b8be7368cdeae3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deleteLexemeList</definition>
+        <argsstring>(LexemeList *)</argsstring>
+        <name>deleteLexemeList</name>
+        <param>
+          <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+          <defname>list</defname>
+          <briefdescription><para>A pointer to the <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure to delete. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deletes a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure.</para><para><simplesect kind="pre"><para><emphasis>list</emphasis> was created by <ref refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" kindref="member">createLexemeList(void)</ref> and contains items added by <ref refid="lexer_8h_1af9ec30b004772b01fb38f6dc4f54d102" kindref="member">addLexeme(LexemeList *, Lexeme *)</ref>.</para></simplesect>
+<simplesect kind="post"><para>The memory at <emphasis>list</emphasis> and any of its associated members will be freed.</para></simplesect>
+<simplesect kind="see"><para><ref refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" kindref="member">createLexemeList(void)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="52" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="110" bodyend="118"/>
+        <references refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" compoundref="lexer_8h" startline="44">LexemeList::num</references>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+      </memberdef>
+      <memberdef kind="function" id="lexer_8h_1af36072386b3b9de0e932afcd33db5169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+        <definition>LexemeList* scanBuffer</definition>
+        <argsstring>(const char *, unsigned int, const char *)</argsstring>
+        <name>scanBuffer</name>
+        <param>
+          <type>const char *</type>
+          <defname>buffer</defname>
+          <briefdescription><para>An array of characters to tokenize. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>int</declname>
+          <defname>size</defname>
+          <briefdescription><para>The number of characters in <emphasis>buffer</emphasis>. </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>fname</defname>
+          <briefdescription><para>An array of characters representing the name of the file used to read <emphasis>buffer</emphasis>. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scans through a character buffer, removing unecessary characters and generating lexemes. Lexemes are separated by whitespace (but newline characters are kept as their own lexeme). String literals are handled a bit differently: starting at the first quotation character, characters are collected until either an unescaped quotation character is read (that is, a quotation character not preceeded by a colon which itself is not proceeded by a colon) or a newline or carriage return character is read, whichever comes first. This handles the odd case of strings such as &quot;::&quot; which print out a single colon. Also handled are the effects of commas, ellipses, and bangs (!).</para><para><simplesect kind="pre"><para><emphasis>size</emphasis> is the number of characters starting at the memory location pointed to by <emphasis>buffer</emphasis>.</para></simplesect>
+<simplesect kind="return"><para>A pointer to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="53" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.c" bodystart="135" bodyend="322"/>
+        <references refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" compoundref="lexer_8h" startline="44">LexemeList::num</references>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+        <references refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" compoundref="lexer_8h" startline="32">Lexeme::image</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structures and functions for separating a character buffer into lexemes. The lexer reads through a buffer of characters (themselves typically read from standard input), strips whitespace, and breaks them up into logical atoms of character strings which, in turn, may be passed on to later processes (such as a tokenizer).</para><para><simplesect kind="author"><para>Justin J. Meza</para></simplesect>
+<simplesect kind="date"><para>2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>__LEXER_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__LEXER_H__</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="31" refid="struct_lexeme" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32" refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" kindref="member">image</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" kindref="member">fname</ref>;<sp/></highlight></codeline>
+<codeline lineno="34" refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" kindref="member">line</ref>;<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="struct_lexeme" kindref="compound">Lexeme</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="struct_lexeme_list" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44" refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" kindref="member">num</ref>;<sp/></highlight></codeline>
+<codeline lineno="45" refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_lexeme" kindref="compound">Lexeme</ref><sp/>**<ref refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" kindref="member">lexemes</ref>;<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="struct_lexeme" kindref="compound">Lexeme</ref><sp/>*createLexeme(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteLexeme(<ref refid="struct_lexeme" kindref="compound">Lexeme</ref><sp/>*);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*createLexemeList(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="struct_lexeme" kindref="compound">Lexeme</ref><sp/>*addLexeme(<ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*,<sp/><ref refid="struct_lexeme" kindref="compound">Lexeme</ref>*);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteLexemeList(<ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*scanBuffer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__LEXER_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h"/>
+  </compounddef>
+</doxygen>

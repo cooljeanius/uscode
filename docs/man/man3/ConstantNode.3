@@ -1,0 +1,54 @@
+.TH "ConstantNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConstantNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "ConstantType \fBtype\fP"
+.br
+.ti -1c
+.RI "\fBConstantData\fP \fBdata\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a constant value\&. A constant value evaluates to its contents, depending on its \fItype\fP\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createBooleanConstantNode(int) 
+.PP
+createIntegerConstantNode(int) 
+.PP
+createFloatConstantNode(float) 
+.PP
+createStringConstantNode(char *) 
+.PP
+deleteConstantNode(ConstantNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 312 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBConstantData\fP \fBConstantNode::data\fP"
+The stored data of type \fItype\fP\&. 
+.PP
+Definition at line 314 of file parser\&.h\&.
+.SS "ConstantType \fBConstantNode::type\fP"
+The type of the constant\&. 
+.PP
+Definition at line 313 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

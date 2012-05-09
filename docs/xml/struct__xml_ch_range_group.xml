@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_ch_range_group" kind="struct" prot="public">
+    <compoundname>_xmlChRangeGroup</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_ch_range_group_1a586ec6ff0df5781a799120268c917581" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlChRangeGroup::nbShortRange</definition>
+        <argsstring></argsstring>
+        <name>nbShortRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" line="45" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_ch_range_group_1a8c00ae5937f0d5489444fd8c264f7640" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlChRangeGroup::nbLongRange</definition>
+        <argsstring></argsstring>
+        <name>nbLongRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" line="46" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_ch_range_group_1ab437c33acae9b5d5d2bc8ef547baf6fe" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct__xml_ch_s_range" kindref="compound">xmlChSRange</ref> *</type>
+        <definition>const xmlChSRange * _xmlChRangeGroup::shortRange</definition>
+        <argsstring></argsstring>
+        <name>shortRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" line="47" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_ch_range_group_1a16b89c83778fd557add093f4235cb976" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct__xml_ch_l_range" kindref="compound">xmlChLRange</ref> *</type>
+        <definition>const xmlChLRange * _xmlChRangeGroup::longRange</definition>
+        <argsstring></argsstring>
+        <name>longRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" line="48" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="395">
+        <label>_xmlChSRange</label>
+        <link refid="struct__xml_ch_s_range"/>
+      </node>
+      <node id="394">
+        <label>_xmlChRangeGroup</label>
+        <link refid="struct__xml_ch_range_group"/>
+        <childnode refid="395" relation="usage">
+          <edgelabel>shortRange</edgelabel>
+        </childnode>
+        <childnode refid="396" relation="usage">
+          <edgelabel>longRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="396">
+        <label>_xmlChLRange</label>
+        <link refid="struct__xml_ch_l_range"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" line="44" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/chvalid.h" bodystart="44" bodyend="49"/>
+    <listofallmembers>
+      <member refid="struct__xml_ch_range_group_1a16b89c83778fd557add093f4235cb976" prot="public" virt="non-virtual"><scope>_xmlChRangeGroup</scope><name>longRange</name></member>
+      <member refid="struct__xml_ch_range_group_1a8c00ae5937f0d5489444fd8c264f7640" prot="public" virt="non-virtual"><scope>_xmlChRangeGroup</scope><name>nbLongRange</name></member>
+      <member refid="struct__xml_ch_range_group_1a586ec6ff0df5781a799120268c917581" prot="public" virt="non-virtual"><scope>_xmlChRangeGroup</scope><name>nbShortRange</name></member>
+      <member refid="struct__xml_ch_range_group_1ab437c33acae9b5d5d2bc8ef547baf6fe" prot="public" virt="non-virtual"><scope>_xmlChRangeGroup</scope><name>shortRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

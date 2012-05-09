@@ -1,0 +1,50 @@
+.TH "ExprNodeList" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExprNodeList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnum\fP"
+.br
+.ti -1c
+.RI "\fBExprNode\fP ** \fBexprs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a list of expressions\&. This structure allows sets of expressions to be grouped together\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createExprNodeList(void) 
+.PP
+addExprNode(ExprNodeList *, ExprNode *) 
+.PP
+deleteExprNodeList(ExprNodeList *) 
+.RE
+.PP
+
+.PP
+Definition at line 264 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNode\fP** \fBExprNodeList::exprs\fP"
+A pointer to an array of \fBExprNode\fP structures\&. 
+.PP
+Definition at line 266 of file parser\&.h\&.
+.SS "unsigned int \fBExprNodeList::num\fP"
+The number of \fBExprNode\fP structures stored\&. 
+.PP
+Definition at line 265 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

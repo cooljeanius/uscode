@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_39f9dae9f07f69ce49622fa7def2e4fa" kind="dir">
+    <compoundname>Legiscode.applescript/RegexKit.framework/Versions/A/Headers/</compoundname>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_array_8h">NSArray.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_data_8h">NSData.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_dictionary_8h">NSDictionary.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_object_8h">NSObject.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_set_8h">NSSet.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_n_s_string_8h">NSString.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h">pcre.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_regex_kit_8h">RegexKit.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_regex_kit_defines_8h">RegexKitDefines.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_regex_kit_types_8h">RegexKitTypes.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_r_k_cache_8h">RKCache.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_r_k_enumerator_8h">RKEnumerator.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_r_k_regex_8h">RKRegex.h</innerfile>
+    <innerfile refid="_regex_kit_8framework_2_versions_2_a_2_headers_2_r_k_utility_8h">RKUtility.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/"/>
+  </compounddef>
+</doxygen>

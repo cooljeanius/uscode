@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h" kind="file">
+    <compoundname>triop.h</compoundname>
+    <includes refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona998d9f2ce4924e98ae60e0863fe0247" local="yes">triodef.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">varargs.h</includes>
+    <includedby refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versioncedb54b4c81542417da98403da62cadb" local="yes">Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triostr.h</includedby>
+    <incdepgraph>
+      <node id="343">
+        <label>triodef.h</label>
+        <link refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona998d9f2ce4924e98ae60e0863fe0247_source"/>
+      </node>
+      <node id="344">
+        <label>stdlib.h</label>
+      </node>
+      <node id="345">
+        <label>varargs.h</label>
+      </node>
+      <node id="342">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h</label>
+        <link refid="build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="346">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h</label>
+        <link refid="build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triostr.h</label>
+        <link refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versioncedb54b4c81542417da98403da62cadb_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a3561231f7c583e5bdc75ea79ca829f4a" prot="public" static="no">
+        <name>TRIO_C99</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="43" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a139c9bf1a8b82a26178fc81ccd2f2b30" prot="public" static="no">
+        <name>TRIO_BSD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="46" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a5c798954fff7f76b1dc88450e87c6de7" prot="public" static="no">
+        <name>TRIO_GNU</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="49" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a05ceca58792e467b604fc37c1e94fbc5" prot="public" static="no">
+        <name>TRIO_MISC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="52" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a072f270948f960e1aa6a038155a95d1d" prot="public" static="no">
+        <name>TRIO_UNIX98</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="55" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a7284869a1681e6ac0c38479b5dbd4cbe" prot="public" static="no">
+        <name>TRIO_MICROSOFT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="58" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a9a6bb780dce46d221a1e0db71806bf90" prot="public" static="no">
+        <name>TRIO_EXTENSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="61" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a1991204153e6a16a49810d28b4730bbe" prot="public" static="no">
+        <name>TRIO_WIDECHAR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="64" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1aca2e69d96bfcf928708445d55176d556" prot="public" static="no">
+        <name>TRIO_ERRORS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="67" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a4b1be97f0885ab75607047c433fa7178" prot="public" static="no">
+        <name>TRIO_MALLOC</name>
+        <param><defname>n</defname></param>
+        <initializer>malloc(n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="71" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a0cae0bf308df7f1f1e96e162ca1b81c0" prot="public" static="no">
+        <name>TRIO_REALLOC</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>realloc((x),(n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="74" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a3d1d87a84e2c18d9c90ef1a34193f077" prot="public" static="no">
+        <name>TRIO_FREE</name>
+        <param><defname>x</defname></param>
+        <initializer>free(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="77" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a5db5a7d50221b69e143a09d34c52b554" prot="public" static="no">
+        <type>int trio_callback_t</type>
+        <definition>typedef int trio_callback_t TRIO_PROTO((trio_pointer_t))</definition>
+        <argsstring>((trio_pointer_t))</argsstring>
+        <name>TRIO_PROTO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="85" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1aff858811e547b8db7b0aff21fefe5b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>trio_pointer_t trio_register</type>
+        <definition>trio_pointer_t trio_register TRIO_PROTO</definition>
+        <argsstring>((trio_callback_t callback, const char *name))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_callback_t callback, const char *name)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1ace9689f26d4af204c2f6239443c966eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_unregister</type>
+        <definition>void trio_unregister TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t handle))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t handle)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a9300f6fe8b29db7e15a2d9d968435804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_CONST char *trio_get_format</type>
+        <definition>TRIO_CONST char* trio_get_format TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a12b8a0c790b6185616af2e8a1a702910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_width</type>
+        <definition>void trio_set_width TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int width))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int width)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a175fd3653ce909f6000f3f6ba7513fb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_precision</type>
+        <definition>void trio_set_precision TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int precision))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int precision)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a59489a52fba45fec48f9205cd7194b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_base</type>
+        <definition>void trio_set_base TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int base))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int base)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a6094b9c01623626f9ad8da2f00d53c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_padding</type>
+        <definition>void trio_set_padding TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_padding))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_padding)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a336118e3102935a99fe408d1adf894a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_shortshort</type>
+        <definition>void trio_set_shortshort TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_shortshort))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_shortshort)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1ae4415e5a23c82c7f2a3f5a1b27f4ce0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_short</type>
+        <definition>void trio_set_short TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_short))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_short)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1ac01465c279b979313c0fb9b13cbd1016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_long</type>
+        <definition>void trio_set_long TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_long))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_long)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a9f9bab85d0b90a0bdfd7ce87fc62c84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_longlong</type>
+        <definition>void trio_set_longlong TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_longlong))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_longlong)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1ac6efb53d9708555696e3eaa49ffaf4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_longdouble</type>
+        <definition>void trio_set_longdouble TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_longdouble))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_longdouble)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a9895ab0b38cc93022a7c80a5832ad34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_alternative</type>
+        <definition>void trio_set_alternative TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_alternative))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_alternative)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a5acd8627d9487951d72d95ff4435c7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_alignment</type>
+        <definition>void trio_set_alignment TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_leftaligned))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_leftaligned)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1af7d7728016cb9d9f1d623abb82f8ddfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_spacing</type>
+        <definition>void trio_set_spacing TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_space))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_space)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a89242d86a6b4587a164941b1f662212a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_sign</type>
+        <definition>void trio_set_sign TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_showsign))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_showsign)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a17057022020c507713c463061be209e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_quote</type>
+        <definition>void trio_set_quote TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_quote))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_quote)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1aabbf72c1df24b97f5cad96fcafcc33e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_upper</type>
+        <definition>void trio_set_upper TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_upper))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_upper)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1affc4457b3641b5b606fcd118be9bb7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_largest</type>
+        <definition>void trio_set_largest TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_largest))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_largest)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a6ddae797592d3fd34363dbf5d7fda585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_ptrdiff</type>
+        <definition>void trio_set_ptrdiff TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_ptrdiff))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_ptrdiff)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a65cbc91fbef90a46166e62f01624143b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_set_size</type>
+        <definition>void trio_set_size TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int is_size))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int is_size)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1af28297579e85961f99d11ac668ebf3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int trio_print_ref</type>
+        <definition>int trio_print_ref TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, const char *format,...))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, const char *format,...)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1afc966c65eff0072d16400e4a7bb047bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int trio_vprint_ref</type>
+        <definition>int trio_vprint_ref TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, const char *format, va_list args))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, const char *format, va_list args)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1af875c7c07f5cba848062928d745edf81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int trio_printv_ref</type>
+        <definition>int trio_printv_ref TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, const char *format, trio_pointer_t *args))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, const char *format, trio_pointer_t *args)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a4b3e3c8fdcb16d3175f2966da8ce06fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_print_int</type>
+        <definition>void trio_print_int TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, int number))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, int number)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a726275e2b223a4e6991f1332b0bc5fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_print_uint</type>
+        <definition>void trio_print_uint TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, unsigned int number))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, unsigned int number)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1aec3353543ed3c3d818c2c5b7b01421ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_print_double</type>
+        <definition>void trio_print_double TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, double number))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, double number)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a69022b2d6f2684a832c5c113fb6be1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_print_string</type>
+        <definition>void trio_print_string TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, char *string))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, char *string)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_1a2bfb61672410ad465d88963cda024aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void trio_print_pointer</type>
+        <definition>void trio_print_pointer TRIO_PROTO</definition>
+        <argsstring>((trio_pointer_t ref, trio_pointer_t pointer))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_pointer_t ref, trio_pointer_t pointer)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h" line="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>$Id:<sp/>triop.h<sp/>1886<sp/>2003-04-03<sp/>15:28:28Z<sp/>veillard<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2000<sp/>Bjorn<sp/>Reese<sp/>and<sp/>Daniel<sp/>Stenberg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>and<sp/>distribute<sp/>this<sp/>software<sp/>for<sp/>any</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>purpose<sp/>with<sp/>or<sp/>without<sp/>fee<sp/>is<sp/>hereby<sp/>granted,<sp/>provided<sp/>that<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>appear<sp/>in<sp/>all<sp/>copies.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>WITHOUT<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>WITHOUT<sp/>LIMITATION,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTIBILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>THE<sp/>AUTHORS<sp/>AND</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>ACCEPT<sp/>NO<sp/>RESPONSIBILITY<sp/>IN<sp/>ANY<sp/>CONCEIVABLE<sp/>MANNER.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>************************************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Private<sp/>functions,<sp/>types,<sp/>etc.<sp/>used<sp/>for<sp/>callback<sp/>functions.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>The<sp/>ref<sp/>pointer<sp/>is<sp/>an<sp/>opaque<sp/>type<sp/>and<sp/>should<sp/>remain<sp/>as<sp/>such.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Private<sp/>data<sp/>must<sp/>only<sp/>be<sp/>accessible<sp/>through<sp/>the<sp/>getter<sp/>and</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>setter<sp/>functions.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_TRIOP_H</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRIO_TRIOP_H</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;triodef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRIO_COMPILER_ANCIENT)</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;varargs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_C99</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_C99<sp/>1</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_BSD</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_BSD<sp/>1</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_GNU</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_GNU<sp/>1</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_MISC</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_MISC<sp/>1</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_UNIX98</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_UNIX98<sp/>1</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_MICROSOFT</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_MICROSOFT<sp/>1</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_EXTENSION</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_EXTENSION<sp/>1</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_WIDECHAR<sp/></highlight><highlight class="comment">/*<sp/>Does<sp/>not<sp/>work<sp/>yet.<sp/>Do<sp/>not<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_WIDECHAR<sp/>0</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_ERRORS</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ERRORS<sp/>1</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_MALLOC</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_MALLOC(n)<sp/>malloc(n)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_REALLOC</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_REALLOC(x,n)<sp/>realloc((x),(n))</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_FREE</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_FREE(x)<sp/>free(x)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>User-defined<sp/>specifiers</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*trio_callback_t)<sp/>TRIO_PROTO((trio_pointer_t));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">trio_pointer_t<sp/>trio_register<sp/>TRIO_PROTO((trio_callback_t<sp/>callback,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_unregister<sp/>TRIO_PROTO((trio_pointer_t<sp/>handle));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">TRIO_CONST<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_get_format<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">trio_pointer_t<sp/>trio_get_argument<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Modifiers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_width<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_width<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_precision<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_precision<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_base<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_base<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>base));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_padding<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_padding<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_padding));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_short<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_shortshort<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_shortshort));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_shortshort<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>hh<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_short<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_short));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_long<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>l<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_long<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_long));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_longlong<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>ll<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_longlong<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_longlong));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_longdouble<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>L<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_longdouble<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_longdouble));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_alternative<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>#<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_alternative<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_alternative));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_alignment<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_alignment<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_leftaligned));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_spacing<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/><sp/>TRIO_PROTO((space)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_spacing<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_space));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_sign<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>+<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_sign<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_showsign));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_quote<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_quote<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_quote));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_upper<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_upper<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_upper));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TRIO_C99</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_largest<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>j<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_largest<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_largest));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_ptrdiff<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_ptrdiff<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_ptrdiff));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>trio_get_size<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref));<sp/></highlight><highlight class="comment">/*<sp/>z<sp/>/<sp/>Z<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_set_size<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_size));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Printing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_print_ref<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_vprint_ref<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>args));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_printv_ref<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>trio_pointer_t<sp/>*args));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_print_int<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_print_uint<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>void<sp/>trio_print_long<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/>long<sp/>number));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>void<sp/>trio_print_ulong<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/>unsigned<sp/>long<sp/>number));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_print_double<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_print_string<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_print_pointer<sp/>TRIO_PROTO((trio_pointer_t<sp/>ref,<sp/>trio_pointer_t<sp/>pointer));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TRIO_TRIOP_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/triop.h"/>
+  </compounddef>
+</doxygen>

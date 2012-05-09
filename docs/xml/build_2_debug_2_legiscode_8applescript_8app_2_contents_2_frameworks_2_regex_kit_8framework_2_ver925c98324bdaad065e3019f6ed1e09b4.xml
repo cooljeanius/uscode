@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver925c98324bdaad065e3019f6ed1e09b4" kind="file">
+    <compoundname>RKRegex.h</compoundname>
+    <includes local="no">RegexKit/RegexKitDefines.h</includes>
+    <includes local="no">RegexKit/RegexKitTypes.h</includes>
+    <includes local="no">RegexKit/RegexKit.h</includes>
+    <includes local="no">RegexKit/pcre.h</includes>
+    <incdepgraph>
+      <node id="684">
+        <label>RegexKit/pcre.h</label>
+      </node>
+      <node id="683">
+        <label>RegexKit/RegexKit.h</label>
+      </node>
+      <node id="680">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h</label>
+        <link refid="build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h"/>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>RegexKit/RegexKitDefines.h</label>
+      </node>
+      <node id="682">
+        <label>RegexKit/RegexKitTypes.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_k_regex" prot="public">RKRegex</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver925c98324bdaad065e3019f6ed1e09b4_1ada958156f09a249fb73b888305f6ca07" prot="public" static="no">
+        <name>_REGEXKIT_RKREGEX_H_</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="44" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RKRegex.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RegexKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>http://regexkit.sourceforge.net/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>Copyright<sp/>©<sp/>2007-2008,<sp/>John<sp/>Engelhart</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Zang<sp/>Industries<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_REGEXKIT_RKREGEX_H_</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_REGEXKIT_RKREGEX_H_<sp/>1</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;RegexKit/RegexKitDefines.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;RegexKit/RegexKitTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;RegexKit/RegexKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;RegexKit/pcre.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="interface_r_k_regex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref><sp/>:<sp/>NSObject<sp/>&lt;NSCoding,<sp/>NSCopying&gt;<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>RK_STRONG_REF<sp/>pcre<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_compiledPCRE;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>pcre<sp/>library<sp/>type<sp/>pcre.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>RK_STRONG_REF<sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/><sp/><sp/><sp/><sp/><sp/>*_extraPCRE;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>pcre<sp/>library<sp/>type<sp/>pcre_extra.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NSString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*compiledRegexString;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>copy<sp/>of<sp/>the<sp/>regex<sp/>string<sp/>that<sp/>was<sp/>compiled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKCompileOption<sp/><sp/>compileOption;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>options<sp/>used<sp/>to<sp/>compile<sp/>this<sp/>regex.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKUInteger<sp/><sp/><sp/><sp/><sp/><sp/><sp/>captureCount;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>number<sp/>of<sp/>captures<sp/>in<sp/>the<sp/>compiled<sp/>regex<sp/>string.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>RK_STRONG_REF<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*captureNameTable;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>capture<sp/>names<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKUInteger<sp/><sp/><sp/><sp/><sp/><sp/><sp/>captureNameTableLength;<sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>entries<sp/>in<sp/>the<sp/>capture<sp/>name<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKUInteger<sp/><sp/><sp/><sp/><sp/><sp/><sp/>captureNameLength;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>length<sp/>of<sp/>a<sp/>capture<sp/>name<sp/>entry.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NSArray<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*captureNameArray;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>An<sp/>array<sp/>that<sp/>maps<sp/>capture<sp/>index<sp/>values<sp/>to<sp/>capture<sp/>names.<sp/><sp/>nil<sp/>if<sp/>no<sp/>named<sp/>captures.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKInteger<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>referenceCountMinusOne;<sp/></highlight><highlight class="comment">//<sp/>Keep<sp/>track<sp/>of<sp/>the<sp/>reference<sp/>count<sp/>ourselves.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RKUInteger<sp/><sp/><sp/><sp/><sp/><sp/><sp/>hash;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hash<sp/>value<sp/>for<sp/>this<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>RK_STRONG_REF<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*compiledRegexUTF8String;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>RK_STRONG_REF<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*compiledOptionUTF8String;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">+<sp/>(<ref refid="interface_r_k_cache" kindref="compound">RKCache</ref><sp/>*)regexCache;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">+<sp/>(NSString<sp/>*)PCREVersionString;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">+<sp/>(int32_t)PCREMajorVersion;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">+<sp/>(int32_t)PCREMinorVersion;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">+<sp/>(RKBuildConfig)PCREBuildConfig;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">+<sp/>(BOOL)isValidRegexString:(NSString<sp/>*<sp/>const)regexString<sp/>options:(const<sp/>RKCompileOption)options;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">+<sp/>(id)regexWithRegexString:(NSString<sp/>*<sp/>const)regexString<sp/>options:(const<sp/>RKCompileOption)options;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">+<sp/>(id)regexWithRegexString:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))regexString<sp/>library:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))libraryString<sp/>options:(const<sp/>RKCompileOption)libraryOptions<sp/>error:(NSError<sp/>**)error;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">-<sp/>(id)initWithRegexString:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))regexString<sp/>options:(const<sp/>RKCompileOption)options;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">-<sp/>(id)initWithRegexString:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))regexString<sp/>library:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))library<sp/>options:(const<sp/>RKCompileOption)libraryOptions<sp/>error:(NSError<sp/>**)error;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">-<sp/>(NSString<sp/>*)regexString;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">-<sp/>(RKCompileOption)compileOption;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">-<sp/>(RKUInteger)captureCount;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">-<sp/>(NSArray<sp/>*)captureNameArray;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">-<sp/>(BOOL)isValidCaptureName:(NSString<sp/>*<sp/>const)captureNameString;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">-<sp/>(RKUInteger)captureIndexForCaptureName:(NSString<sp/>*<sp/>const)captureNameString;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">-<sp/>(NSString<sp/>*)captureNameForCaptureIndex:(const<sp/>RKUInteger)captureIndex;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">-<sp/>(RKUInteger)captureIndexForCaptureName:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))captureNameString<sp/>inMatchedRanges:(const<sp/>NSRange<sp/>*<sp/>const<sp/>RK_C99(restrict))matchedRanges;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">-<sp/>(RKUInteger)captureIndexForCaptureName:(NSString<sp/>*<sp/>const<sp/>RK_C99(restrict))captureNameString<sp/>inMatchedRanges:(const<sp/>NSRange<sp/>*<sp/>const<sp/>RK_C99(restrict))matchedRanges<sp/>error:(NSError<sp/>**)error;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">-<sp/>(BOOL)matchesCharacters:(const<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>const<sp/>RK_C99(restrict))matchCharacters<sp/>length:(const<sp/>RKUInteger)length<sp/>inRange:(const<sp/>NSRange)searchRange<sp/>options:(const<sp/>RKMatchOption)options;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">-<sp/>(NSRange)rangeForCharacters:(const<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>const<sp/>RK_C99(restrict))matchCharacters<sp/>length:(const<sp/>RKUInteger)length<sp/>inRange:(const<sp/>NSRange)searchRange<sp/>captureIndex:(const<sp/>RKUInteger)captureIndex<sp/>options:(const<sp/>RKMatchOption)options;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">-<sp/>(NSRange<sp/>*)rangesForCharacters:(const<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>const<sp/>RK_C99(restrict))matchCharacters<sp/>length:(const<sp/>RKUInteger)length<sp/>inRange:(const<sp/>NSRange)searchRange<sp/>options:(const<sp/>RKMatchOption)options;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">-<sp/>(RKMatchErrorCode)getRanges:(NSRange<sp/>*<sp/>const<sp/>RK_C99(restrict))ranges<sp/>withCharacters:(const<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>const<sp/>RK_C99(restrict))charactersBuffer<sp/>length:(const<sp/>RKUInteger)length<sp/>inRange:(const<sp/>NSRange)searchRange<sp/>options:(const<sp/>RKMatchOption)options;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_REGEXKIT_RKREGEX_H_</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h"/>
+  </compounddef>
+</doxygen>

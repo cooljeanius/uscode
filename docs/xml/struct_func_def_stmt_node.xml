@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_func_def_stmt_node" kind="struct" prot="public">
+    <compoundname>FuncDefStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_func_def_stmt_node_1a545e8a727dbe8786ab90afa0a4608d68" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* FuncDefStmtNode::scope</definition>
+        <argsstring></argsstring>
+        <name>scope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the scope to define the function in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="323" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_func_def_stmt_node_1ab047936127219724532e25ba6890265a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* FuncDefStmtNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="324" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_func_def_stmt_node_1a2a9f4d580b7252e5576873d2252a187a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node_list" kindref="compound">IdentifierNodeList</ref> *</type>
+        <definition>IdentifierNodeList* FuncDefStmtNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to a list of the names of the arguments of the function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="325" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="325" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aeacd50079f0ce4daf99a11f922182c08" compoundref="interpreter_8c" startline="1069" endline="1123">interpretFuncCallExprNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_func_def_stmt_node_1a9e50b6a41f7abe43b433fe4fd714b002" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> *</type>
+        <definition>BlockNode* FuncDefStmtNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the block of code defined by the function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="326" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="326" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aeacd50079f0ce4daf99a11f922182c08" compoundref="interpreter_8c" startline="1069" endline="1123">interpretFuncCallExprNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a function definition statement. A function definition statement defines the prototype and contents of a function.</para><para><simplesect kind="see"><para>createFuncDefStmtNode(IdentifierNode *, IdentifierNode *, IdentifierNodeList *, BlockNode *) </para><simplesectsep/><para>deleteFuncDefStmtNode(FuncDefStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="622">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="619">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="620">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="621" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="618">
+        <label>IdentifierNodeList</label>
+        <link refid="struct_identifier_node_list"/>
+        <childnode refid="619" relation="usage">
+          <edgelabel>ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="617">
+        <label>FuncDefStmtNode</label>
+        <link refid="struct_func_def_stmt_node"/>
+        <childnode refid="618" relation="usage">
+          <edgelabel>args</edgelabel>
+        </childnode>
+        <childnode refid="620" relation="usage">
+          <edgelabel>body</edgelabel>
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>scope</edgelabel>
+        </childnode>
+      </node>
+      <node id="621">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="622" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="322" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="322" bodyend="327"/>
+    <listofallmembers>
+      <member refid="struct_func_def_stmt_node_1a2a9f4d580b7252e5576873d2252a187a" prot="public" virt="non-virtual"><scope>FuncDefStmtNode</scope><name>args</name></member>
+      <member refid="struct_func_def_stmt_node_1a9e50b6a41f7abe43b433fe4fd714b002" prot="public" virt="non-virtual"><scope>FuncDefStmtNode</scope><name>body</name></member>
+      <member refid="struct_func_def_stmt_node_1ab047936127219724532e25ba6890265a" prot="public" virt="non-virtual"><scope>FuncDefStmtNode</scope><name>name</name></member>
+      <member refid="struct_func_def_stmt_node_1a545e8a727dbe8786ab90afa0a4608d68" prot="public" virt="non-virtual"><scope>FuncDefStmtNode</scope><name>scope</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_if_then_else_stmt_node" kind="struct" prot="public">
+    <compoundname>IfThenElseStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_if_then_else_stmt_node_1ae28470757cf61cab67dd9096114f4710" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> *</type>
+        <definition>BlockNode* IfThenElseStmtNode::yes</definition>
+        <argsstring></argsstring>
+        <name>yes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the block of code to execute if the <ref refid="impvar" kindref="compound">implicit variable</ref> casts to false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="422" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="422" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_if_then_else_stmt_node_1aeb7d6e0fb8dad0d6e894bcdc887306fe" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> *</type>
+        <definition>BlockNode* IfThenElseStmtNode::no</definition>
+        <argsstring></argsstring>
+        <name>no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the block of code to execute if the <ref refid="impvar" kindref="compound">implicit variable</ref> casts to false <bold>and</bold> the evaluations of all of the <emphasis>guards</emphasis> cast to false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="423" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="423" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_if_then_else_stmt_node_1ad94295fb6d16e9815a85e0d8e930f079" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node_list" kindref="compound">ExprNodeList</ref> *</type>
+        <definition>ExprNodeList* IfThenElseStmtNode::guards</definition>
+        <argsstring></argsstring>
+        <name>guards</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expressions to test if the <ref refid="impvar" kindref="compound">implicit variable</ref> casts to false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="424" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="424" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_if_then_else_stmt_node_1ab4b9831a1e7db13c206997a45ee84a95" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node_list" kindref="compound">BlockNodeList</ref> *</type>
+        <definition>BlockNodeList* IfThenElseStmtNode::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the respective blocks of code to execute if one of the evaluated <emphasis>guards</emphasis> casts to true. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="425" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="425" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores an if/then/else statement. A conditional statement checks the value of the <ref refid="impvar" kindref="compound">implicit variable</ref> and executes <emphasis>yes</emphasis> if it casts to <computeroutput>true</computeroutput>. If the value of the <ref refid="impvar" kindref="compound">implicit variable</ref> casts to <computeroutput>false</computeroutput>, each of the optional expressions in <emphasis>guards</emphasis> is evaluated and if it casts to true, the corresponding block in <emphasis>blocks</emphasis> is executes. If the value of the <ref refid="impvar" kindref="compound">implicit variable</ref> casts to false <bold>and</bold> all of the guards cast to false, the contents of <emphasis>no</emphasis> is executed.</para><para><simplesect kind="see"><para>createIfThenElseStmtNode(BlockNode *, BlockNode *, ExprNodeList *, BlockNodeList *) </para><simplesectsep/><para>deleteIfThenElseStmtNode(IfThenElseStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="641">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="639">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="640" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="643">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="637">
+        <label>IfThenElseStmtNode</label>
+        <link refid="struct_if_then_else_stmt_node"/>
+        <childnode refid="638" relation="usage">
+          <edgelabel>blocks</edgelabel>
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>no</edgelabel>
+          <edgelabel>yes</edgelabel>
+        </childnode>
+        <childnode refid="642" relation="usage">
+          <edgelabel>guards</edgelabel>
+        </childnode>
+      </node>
+      <node id="640">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="641" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="638">
+        <label>BlockNodeList</label>
+        <link refid="struct_block_node_list"/>
+        <childnode refid="639" relation="usage">
+          <edgelabel>blocks</edgelabel>
+        </childnode>
+      </node>
+      <node id="642">
+        <label>ExprNodeList</label>
+        <link refid="struct_expr_node_list"/>
+        <childnode refid="643" relation="usage">
+          <edgelabel>exprs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="421" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="421" bodyend="426"/>
+    <listofallmembers>
+      <member refid="struct_if_then_else_stmt_node_1ab4b9831a1e7db13c206997a45ee84a95" prot="public" virt="non-virtual"><scope>IfThenElseStmtNode</scope><name>blocks</name></member>
+      <member refid="struct_if_then_else_stmt_node_1ad94295fb6d16e9815a85e0d8e930f079" prot="public" virt="non-virtual"><scope>IfThenElseStmtNode</scope><name>guards</name></member>
+      <member refid="struct_if_then_else_stmt_node_1aeb7d6e0fb8dad0d6e894bcdc887306fe" prot="public" virt="non-virtual"><scope>IfThenElseStmtNode</scope><name>no</name></member>
+      <member refid="struct_if_then_else_stmt_node_1ae28470757cf61cab67dd9096114f4710" prot="public" virt="non-virtual"><scope>IfThenElseStmtNode</scope><name>yes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

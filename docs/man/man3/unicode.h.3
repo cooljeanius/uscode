@@ -1,0 +1,119 @@
+.TH "tools/lci/lciframework/unicode.h" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tools/lci/lciframework/unicode.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBbinarySearch\fP (const char **, int, int, const char *)"
+.br
+.ti -1c
+.RI "long \fBconvertNormativeNameToCodePoint\fP (const char *)"
+.br
+.ti -1c
+.RI "unsigned int \fBconvertCodePointToUTF8\fP (long, char *)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Data and functions for converting from Unicode normative names to codepoints\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Justin J\&. Meza
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBunicode\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "int \fBbinarySearch\fP (const char **strings, intstart, intend, const char *find)"
+Performs a binary search on an array of strings\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The index of the matching entry, if found\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI-1\fP The entry does not exist in the array\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstrings\fP A pointer to an array of character strings to search through\&. 
+.br
+\fIstart\fP The start of the range to search through\&. 
+.br
+\fIend\fP The end of the range to search through\&. 
+.br
+\fIfind\fP The entry to search for\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43498 of file unicode\&.c\&.
+.SS "unsigned int \fBconvertCodePointToUTF8\fP (longcodepoint, char *out)"
+Converts the bits in a long integer representing a Unicode code point to a series of one or more bytes representing a UTF-8 character\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The number of characters in the converted multi-byte character\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI0\fP An invalid Unicode code point was supplied\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcodepoint\fP The Unicode code point to convert to UTF-8\&. 
+.br
+\fIout\fP A pointer to the location to store the resulting UTF-8 bytes\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43539 of file unicode\&.c\&.
+.SS "long \fBconvertNormativeNameToCodePoint\fP (const char *name)"
+Converts a Unicode normative name to a Unicode code point\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The Unicode code point corresponding to the given Unicode name\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI-1\fP An invalid Unicode normative name was supplied\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP A pointer to a string of characters representing the Unicode normative name desired\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43522 of file unicode\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

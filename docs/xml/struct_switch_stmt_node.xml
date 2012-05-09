@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_switch_stmt_node" kind="struct" prot="public">
+    <compoundname>SwitchStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_switch_stmt_node_1a125319a6fd02d72d96d41193daffb4a2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node_list" kindref="compound">ExprNodeList</ref> *</type>
+        <definition>ExprNodeList* SwitchStmtNode::guards</definition>
+        <argsstring></argsstring>
+        <name>guards</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expressions to evaluate and compare to the <ref refid="impvar" kindref="compound">implicit variable</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="437" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="437" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_switch_stmt_node_1a6cdb5c66044261b28302b6ca682d7564" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node_list" kindref="compound">BlockNodeList</ref> *</type>
+        <definition>BlockNodeList* SwitchStmtNode::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the respective blocks of code to execute if one of the <emphasis>guards</emphasis> matches the <ref refid="impvar" kindref="compound">implicit variable</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="438" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="438" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_switch_stmt_node_1ad75de1632a46c451d251959e56d53d44" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> *</type>
+        <definition>BlockNode* SwitchStmtNode::def</definition>
+        <argsstring></argsstring>
+        <name>def</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the default block of code to execute if none of the <emphasis>guards</emphasis> match the <ref refid="impvar" kindref="compound">implicit variable</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="439" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="439" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a switch statement. A switch statement compares the value of the <ref refid="impvar" kindref="compound">implicit variable</ref> to each of the <emphasis>guards</emphasis> and executes the respective block of code in <emphasis>blocks</emphasis> if they match. If no matches are found between the <ref refid="impvar" kindref="compound">implicit variable</ref> and one of the <emphasis>guards</emphasis>, the optional default block of code, <emphasis>def</emphasis>, is executed.</para><para><simplesect kind="see"><para>createSwitchStmtNode(ExprNodeList *, BlockNodeList *, BlockNode *) </para><simplesectsep/><para>deleteSwitchStmtNode(SwitchStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="735">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="733">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="734" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="737">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="734">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="735" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="731">
+        <label>SwitchStmtNode</label>
+        <link refid="struct_switch_stmt_node"/>
+        <childnode refid="732" relation="usage">
+          <edgelabel>blocks</edgelabel>
+        </childnode>
+        <childnode refid="733" relation="usage">
+          <edgelabel>def</edgelabel>
+        </childnode>
+        <childnode refid="736" relation="usage">
+          <edgelabel>guards</edgelabel>
+        </childnode>
+      </node>
+      <node id="732">
+        <label>BlockNodeList</label>
+        <link refid="struct_block_node_list"/>
+        <childnode refid="733" relation="usage">
+          <edgelabel>blocks</edgelabel>
+        </childnode>
+      </node>
+      <node id="736">
+        <label>ExprNodeList</label>
+        <link refid="struct_expr_node_list"/>
+        <childnode refid="737" relation="usage">
+          <edgelabel>exprs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="436" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="436" bodyend="440"/>
+    <listofallmembers>
+      <member refid="struct_switch_stmt_node_1a6cdb5c66044261b28302b6ca682d7564" prot="public" virt="non-virtual"><scope>SwitchStmtNode</scope><name>blocks</name></member>
+      <member refid="struct_switch_stmt_node_1ad75de1632a46c451d251959e56d53d44" prot="public" virt="non-virtual"><scope>SwitchStmtNode</scope><name>def</name></member>
+      <member refid="struct_switch_stmt_node_1a125319a6fd02d72d96d41193daffb4a2" prot="public" virt="non-virtual"><scope>SwitchStmtNode</scope><name>guards</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

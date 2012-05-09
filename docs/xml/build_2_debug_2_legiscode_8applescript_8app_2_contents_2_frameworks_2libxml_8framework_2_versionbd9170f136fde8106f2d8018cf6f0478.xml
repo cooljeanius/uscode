@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478" kind="file">
+    <compoundname>xmlexports.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478_1a36ddbbadb405791f616e9108ad21f7b8" prot="public" static="no">
+        <name>XMLPUBFUN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>XMLPUBFUN, XMLPUBVAR, XMLCALL</para><para>Macros which declare an exportable function, an exportable variable and the calling convention used for functions.</para><para>Please use an extra block for every platform/compiler combination when modifying this, rather than overlong #ifdef lines. This helps readability as well as the fact that different compilers on the same platform might need different definitions. XMLPUBFUN:</para><para>Macros which declare an exportable function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" line="30" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478_1a6963fac5c152a8064dc5c2179b945291" prot="public" static="no">
+        <name>XMLPUBVAR</name>
+        <initializer>extern</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>XMLPUBVAR:</para><para>Macros which declare an exportable variable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" line="36" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478_1aad85d290912c3ffed7a2ec0b6173dad3" prot="public" static="no">
+        <name>XMLCALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>XMLCALL:</para><para>Macros which declare the called convention for exported functions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" line="42" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478_1a39b032898040feb8a6758e8c0ed702e4" prot="public" static="no">
+        <name>XMLCDECL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>XMLCDECL:</para><para>Macro which declares the calling convention for exported functions that use &apos;...&apos;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" line="49" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478_1a8b28c47074210b7bf4c6e411fd5089fe" prot="public" static="no">
+        <name>LIBXML_DLL_IMPORT</name>
+        <initializer>XMLPUBVAR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DOC_DISABLE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" line="152" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Summary:<sp/>macros<sp/>for<sp/>marking<sp/>symbols<sp/>as<sp/>exportable/importable.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>macros<sp/>for<sp/>marking<sp/>symbols<sp/>as<sp/>exportable/importable.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copy:<sp/>See<sp/>Copyright<sp/>for<sp/>the<sp/>status<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Igor<sp/>Zlatovic<sp/>&lt;igor@zlatkovic.com&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_EXPORTS_H__</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__XML_EXPORTS_H__</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#define<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#define<sp/>XMLPUBVAR<sp/>extern</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#define<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">#define<sp/>XMLCDECL</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">/*<sp/>Windows<sp/>platform<sp/>with<sp/>MS<sp/>compiler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>defined(_MSC_VER)</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCDECL</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(IN_LIBXML)<sp/>&amp;&amp;<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllimport)<sp/>extern</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>extern</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(LIBXML_FASTCALL)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLCALL<sp/>__fastcall</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLCALL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCDECL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>!defined<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Windows<sp/>platform<sp/>with<sp/>Borland<sp/>compiler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>defined(__BORLANDC__)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCDECL</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(IN_LIBXML)<sp/>&amp;&amp;<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllexport)<sp/>extern</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllimport)<sp/>extern</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>extern</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCALL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCDECL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>!defined<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Windows<sp/>platform<sp/>with<sp/>GNU<sp/>compiler<sp/>(Mingw)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>defined(__MINGW32__)</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCDECL</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(IN_LIBXML)<sp/>&amp;&amp;<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllimport)<sp/>extern</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>extern</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCALL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCDECL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>!defined<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_REENTRANT</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Cygwin<sp/>platform,<sp/>GNU<sp/>compiler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>defined(__CYGWIN__)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>XMLCDECL</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(IN_LIBXML)<sp/>&amp;&amp;<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBFUN</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>!defined(LIBXML_STATIC)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR<sp/>__declspec(dllimport)<sp/>extern</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCALL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>XMLCDECL<sp/>__cdecl</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Compatibility<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(LIBXML_DLL_IMPORT)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LIBXML_DLL_IMPORT<sp/>XMLPUBVAR</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__XML_EXPORTS_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/xmlexports.h"/>
+  </compounddef>
+</doxygen>

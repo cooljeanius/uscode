@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h" kind="file">
+    <compoundname>triodef.h</compoundname>
+    <includedby refid="libxml_8framework_2_versions_22_86_830_2_headers_2trio_8h" local="yes">Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trio.h</includedby>
+    <includedby refid="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h" local="yes">Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h</includedby>
+    <includedby refid="libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h" local="yes">Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triop.h</includedby>
+    <includedby refid="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h" local="yes">Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h</includedby>
+    <invincdepgraph>
+      <node id="331">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/triodef.h"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trio.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2trio_8h_source"/>
+      </node>
+      <node id="333">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_source"/>
+      </node>
+      <node id="334">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triop.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_source"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a67e4d1cc2ce7a9476e6d778602a6c5f1" prot="public" static="no">
+        <name>TRIO_PUBLIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="120" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1ac08e0d056705046c36894bba1ee4f728" prot="public" static="no">
+        <name>TRIO_PRIVATE</name>
+        <initializer>static</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="123" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a6cbf53c98e1044b9286f54ae977382d8" prot="public" static="no">
+        <name>TRIO_COMPILER_ANCIENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="127" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1af99297d90b5fb2aaadb5072f4a42efd8" prot="public" static="no">
+        <name>TRIO_CONST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="131" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1ac19e2ac03fdd051b69142b0c37b292b0" prot="public" static="no">
+        <name>TRIO_VOLATILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="132" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a41647faca7c99b70fdd1a77c8593b013" prot="public" static="no">
+        <name>TRIO_SIGNED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="133" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a446d4e40b51d87b9db7f9c9989fccda6" prot="public" static="no">
+        <name>TRIO_SUFFIX_LONG</name>
+        <param><defname>x</defname></param>
+        <initializer>x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="136" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a4241bb98a65675d853f36baf5028c3da" prot="public" static="no">
+        <name>TRIO_PROTO</name>
+        <param><defname>x</defname></param>
+        <initializer>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="137" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a464784073ec7542ca11ec5b6e3cc618b" prot="public" static="no">
+        <name>TRIO_NOARGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="138" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1ae1c283b92aa8f2e0e69dc6b1da538828" prot="public" static="no">
+        <name>TRIO_ARGS1</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <initializer>list a1;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="139" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a18dfd4ce29ca69c1f7e828b2fb76fa06" prot="public" static="no">
+        <name>TRIO_ARGS2</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <initializer>list a1; a2;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="140" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1aae4d9a2aa904fad3a76af8b6abb93b8f" prot="public" static="no">
+        <name>TRIO_ARGS3</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <initializer>list a1; a2; a3;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="141" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a128736539354d528a5029e3057388241" prot="public" static="no">
+        <name>TRIO_ARGS4</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <initializer>list a1; a2; a3; a4;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="142" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1adff81989a92e489f5727f70cff2ca82f" prot="public" static="no">
+        <name>TRIO_ARGS5</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <param><defname>a5</defname></param>
+        <initializer>list a1; a2; a3; a4; a5;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="143" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1ac27461149fa1a00fa0ac5545c1b8a3a0" prot="public" static="no">
+        <name>TRIO_ARGS6</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <param><defname>a5</defname></param>
+        <param><defname>a6</defname></param>
+        <initializer>list a1; a2; a3; a4; a5; a6;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="144" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a4b211c987ec0eceb6f3fc362230d982a" prot="public" static="no">
+        <name>TRIO_VARGS2</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <initializer>list a1; a2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="145" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a34b2eb6b98c2bf07e5d53063e1509f84" prot="public" static="no">
+        <name>TRIO_VARGS3</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <initializer>list a1; a2; a3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="146" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a3510d628fa5ea98b54e08041656aff8f" prot="public" static="no">
+        <name>TRIO_VARGS4</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <initializer>list a1; a2; a3; a4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="147" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a3e51b3476d3469bf555cce220205e685" prot="public" static="no">
+        <name>TRIO_VARGS5</name>
+        <param><defname>list</defname></param>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <param><defname>a5</defname></param>
+        <initializer>list a1; a2; a3; a4; a5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="148" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a5c1b9fc17cfe3eaddb56e275cbc40e71" prot="public" static="no">
+        <name>TRIO_VA_DECL</name>
+        <initializer>va_dcl</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="149" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a0399d97cce542e092e485af18da3b2a8" prot="public" static="no">
+        <name>TRIO_VA_START</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>va_start(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="150" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1ae035b5dbf77c3418a351c087ead8b974" prot="public" static="no">
+        <name>TRIO_VA_END</name>
+        <param><defname>x</defname></param>
+        <initializer>va_end(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="151" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a0af3cb90183fffe7ad7eec723e5d2284" prot="public" static="no">
+        <name>TRIO_INLINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="185" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1addac12dc43a70c1302a8becc4c7d4194" prot="public" static="no">
+        <name>TRIO_COMPILER_SUPPORTS_LL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="219" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a9fb479834596b213712a3a78e9764309" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double trio_long_double_t</definition>
+        <argsstring></argsstring>
+        <name>trio_long_double_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="134" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_1a4e3d65612cad2363aba44c238b2c4359" prot="public" static="no">
+        <type>char *</type>
+        <definition>typedef char* trio_pointer_t</definition>
+        <argsstring></argsstring>
+        <name>trio_pointer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" line="135" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>$Id:<sp/>triodef.h<sp/>3473<sp/>2006-05-31<sp/>13:35:28Z<sp/>veillard<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2001<sp/>Bjorn<sp/>Reese<sp/>&lt;breese@users.sourceforge.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>and<sp/>distribute<sp/>this<sp/>software<sp/>for<sp/>any</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>purpose<sp/>with<sp/>or<sp/>without<sp/>fee<sp/>is<sp/>hereby<sp/>granted,<sp/>provided<sp/>that<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>appear<sp/>in<sp/>all<sp/>copies.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>WITHOUT<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>WITHOUT<sp/>LIMITATION,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTIBILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>THE<sp/>AUTHORS<sp/>AND</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>ACCEPT<sp/>NO<sp/>RESPONSIBILITY<sp/>IN<sp/>ANY<sp/>CONCEIVABLE<sp/>MANNER.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_TRIODEF_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRIO_TRIODEF_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Platform<sp/>and<sp/>compiler<sp/>support<sp/>detection</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNUC__)</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_GCC</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__SUNPRO_C)</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_SUNPRO</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__SUNPRO_CC)</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_SUNPRO</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__SUNPRO_C<sp/>__SUNPRO_CC</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__xlC__)<sp/>||<sp/>defined(__IBMC__)<sp/>||<sp/>defined(__IBMCPP__)</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_XLC</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(_AIX)<sp/>&amp;&amp;<sp/>!defined(__GNUC__)</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_XLC<sp/></highlight><highlight class="comment">/*<sp/>Workaround<sp/>for<sp/>old<sp/>xlc<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__DECC)<sp/>||<sp/>defined(__DECCXX)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_DECC</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__osf__)<sp/>&amp;&amp;<sp/>defined(__LANGUAGE_C__)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_DECC<sp/></highlight><highlight class="comment">/*<sp/>Workaround<sp/>for<sp/>old<sp/>DEC<sp/>C<sp/>compilers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_MSC_VER)</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_MSVC</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__BORLANDC__)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_BCB</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VMS)<sp/>||<sp/>defined(__VMS)</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>VMS<sp/>is<sp/>placed<sp/>first<sp/>to<sp/>avoid<sp/>identifying<sp/>the<sp/>platform<sp/>as<sp/>Unix</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>based<sp/>on<sp/>the<sp/>DECC<sp/>compiler<sp/>later<sp/>on.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_VMS</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(unix)<sp/>||<sp/>defined(__unix)<sp/>||<sp/>defined(__unix__)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_XLC)<sp/>||<sp/>defined(_AIX)</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_DECC)<sp/>||<sp/>defined(__osf___)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__NetBSD__)</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__Lynx__)</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__QNX__)</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_QNX</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__CYGWIN__)</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(AMIGA)<sp/>&amp;&amp;<sp/>defined(TRIO_COMPILER_GCC)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_UNIX</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_MSVC)<sp/>||<sp/>defined(WIN32)<sp/>||<sp/>defined(_WIN32)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_WIN32</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(mpeix)<sp/>||<sp/>defined(__mpexl)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_MPEIX</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_AIX)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_AIX</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(__hpux)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PLATFORM_HPUX</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(sun)<sp/>||<sp/>defined(__sun__)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__SVR4)<sp/>||<sp/>defined(__svr4__)</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_PLATFORM_SOLARIS</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>else</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_PLATFORM_SUNOS</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__STDC__)<sp/>||<sp/>defined(TRIO_COMPILER_MSVC)<sp/>||<sp/>defined(TRIO_COMPILER_BCB)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_SUPPORTS_C89</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__STDC_VERSION__)</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_C90</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>(__STDC_VERSION__<sp/>&gt;=<sp/>199409L)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_C94</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>(__STDC_VERSION__<sp/>&gt;=<sp/>199901L)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_C99</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(TRIO_COMPILER_SUNPRO)</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>(__SUNPRO_C<sp/>&gt;=<sp/>0x420)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_C94</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_XOPEN_SOURCE)</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(_XOPEN_SOURCE_EXTENDED)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_UNIX95</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>(_XOPEN_VERSION<sp/>&gt;=<sp/>500)</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_UNIX98</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>(_XOPEN_VERSION<sp/>&gt;=<sp/>600)</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_COMPILER_SUPPORTS_UNIX01</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/>Generic<sp/>defines</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(TRIO_PUBLIC)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PUBLIC</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>!defined(TRIO_PRIVATE)</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PRIVATE<sp/>static</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(defined(TRIO_COMPILER_SUPPORTS_C89)<sp/>||<sp/>defined(__cplusplus))</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_ANCIENT</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRIO_COMPILER_ANCIENT)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_CONST</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VOLATILE</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_SIGNED</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_long_double_t;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>trio_pointer_t;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_SUFFIX_LONG(x)<sp/>x</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PROTO(x)<sp/>()</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_NOARGS</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS1(list,a1)<sp/>list<sp/>a1;</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS2(list,a1,a2)<sp/>list<sp/>a1;<sp/>a2;</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS3(list,a1,a2,a3)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS4(list,a1,a2,a3,a4)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;<sp/>a4;</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS5(list,a1,a2,a3,a4,a5)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;<sp/>a4;<sp/>a5;</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS6(list,a1,a2,a3,a4,a5,a6)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;<sp/>a4;<sp/>a5;<sp/>a6;</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS2(list,a1,a2)<sp/>list<sp/>a1;<sp/>a2</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS3(list,a1,a2,a3)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS4(list,a1,a2,a3,a4)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;<sp/>a4</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS5(list,a1,a2,a3,a4,a5)<sp/>list<sp/>a1;<sp/>a2;<sp/>a3;<sp/>a4;<sp/>a5</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_DECL<sp/>va_dcl</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_START(x,y)<sp/>va_start(x)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_END(x)<sp/>va_end(x)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>ANSI<sp/>C<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_CONST<sp/>const</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VOLATILE<sp/>volatile</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_SIGNED<sp/>signed</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_long_double_t;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>trio_pointer_t;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_SUFFIX_LONG(x)<sp/>x<sp/>##<sp/>L</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_PROTO(x)<sp/>x</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_NOARGS<sp/>void</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS1(list,a1)<sp/>(a1)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS2(list,a1,a2)<sp/>(a1,a2)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS3(list,a1,a2,a3)<sp/>(a1,a2,a3)</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS4(list,a1,a2,a3,a4)<sp/>(a1,a2,a3,a4)</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS5(list,a1,a2,a3,a4,a5)<sp/>(a1,a2,a3,a4,a5)</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_ARGS6(list,a1,a2,a3,a4,a5,a6)<sp/>(a1,a2,a3,a4,a5,a6)</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS2<sp/>TRIO_ARGS2</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS3<sp/>TRIO_ARGS3</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS4<sp/>TRIO_ARGS4</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VARGS5<sp/>TRIO_ARGS5</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_DECL<sp/>...</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_START(x,y)<sp/>va_start(x,y)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_VA_END(x)<sp/>va_end(x)</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRIO_COMPILER_SUPPORTS_C99)<sp/>||<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_INLINE<sp/>inline</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_GCC)</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_INLINE<sp/>__inline__</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_MSVC)</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_INLINE<sp/>_inline</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRIO_COMPILER_BCB)</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_INLINE<sp/>__inline</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_INLINE</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*<sp/>Workarounds</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRIO_PLATFORM_VMS)</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/>*<sp/>Computations<sp/>done<sp/>with<sp/>constants<sp/>at<sp/>compile<sp/>time<sp/>can<sp/>trigger<sp/>these</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/>*<sp/>even<sp/>when<sp/>compiling<sp/>with<sp/>IEEE<sp/>enabled.</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>message<sp/>disable<sp/>(UNDERFLOW,<sp/>FLOATOVERFL)</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>(__CRTL_VER<sp/>&lt;<sp/>80000000)</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/>Although<sp/>the<sp/>compiler<sp/>supports<sp/>C99<sp/>language<sp/>constructs,<sp/>the<sp/>C</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*<sp/>run-time<sp/>library<sp/>does<sp/>not<sp/>contain<sp/>all<sp/>C99<sp/>functions.</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/>*<sp/>This<sp/>was<sp/>the<sp/>case<sp/>for<sp/>70300022.<sp/>Update<sp/>the<sp/>80000000<sp/>value<sp/>when</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/>it<sp/>has<sp/>been<sp/>accurately<sp/>determined<sp/>what<sp/>version<sp/>of<sp/>the<sp/>library</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*<sp/>supports<sp/>C99.</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>defined(TRIO_COMPILER_SUPPORTS_C99)</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>undef<sp/>TRIO_COMPILER_SUPPORTS_C99</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/>Not<sp/>all<sp/>preprocessors<sp/>supports<sp/>the<sp/>LL<sp/>token.</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRIO_COMPILER_BCB)</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_COMPILER_SUPPORTS_LL</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TRIO_TRIODEF_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triodef.h"/>
+  </compounddef>
+</doxygen>

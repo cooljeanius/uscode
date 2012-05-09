@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_mutable_set_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSMutableSet(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1a40f6873a5b8da8a65e6bb302bf305ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::removeObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>removeObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSSet.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1af2258966a47a1c8f726c4ff096894ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::addObjectsFromArray:matchingRegex:</definition>
+        <argsstring>(NSArray *otherArray,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromArray:matchingRegex:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>otherArray</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSSet.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1af43b01cfc99083f3e976c153717b2408" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::addObjectsFromSet:matchingRegex:</definition>
+        <argsstring>(NSSet *otherSet,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromSet:matchingRegex:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>otherSet</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSSet.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1a40f6873a5b8da8a65e6bb302bf305ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::removeObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>removeObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSSet.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1af2258966a47a1c8f726c4ff096894ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::addObjectsFromArray:matchingRegex:</definition>
+        <argsstring>(NSArray *otherArray,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromArray:matchingRegex:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>otherArray</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSSet.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_set_07_regex_kit_additions_08_1af43b01cfc99083f3e976c153717b2408" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableSet(RegexKitAdditions)::addObjectsFromSet:matchingRegex:</definition>
+        <argsstring>(NSSet *otherSet,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromSet:matchingRegex:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>otherSet</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSSet.h" line="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSSet.h" line="59" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSSet.h" bodystart="59" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1af2258966a47a1c8f726c4ff096894ae7" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>addObjectsFromArray:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1af2258966a47a1c8f726c4ff096894ae7" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>addObjectsFromArray:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1af43b01cfc99083f3e976c153717b2408" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>addObjectsFromSet:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1af43b01cfc99083f3e976c153717b2408" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>addObjectsFromSet:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1a40f6873a5b8da8a65e6bb302bf305ce7" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_set_07_regex_kit_additions_08_1a40f6873a5b8da8a65e6bb302bf305ce7" prot="public" virt="virtual"><scope>NSMutableSet(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

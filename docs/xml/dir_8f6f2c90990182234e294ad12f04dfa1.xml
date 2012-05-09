@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_8f6f2c90990182234e294ad12f04dfa1" kind="dir">
+    <compoundname>Legiscode.applescript/libxml.framework/</compoundname>
+    <innerdir refid="dir_db2daa9f7637ed13a1545098873d8f58">Legiscode.applescript/libxml.framework/Versions/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/"/>
+  </compounddef>
+</doxygen>

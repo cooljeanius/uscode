@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html><head>
+<title>U.S. Code Search [2000 Ed. and Supp. II]</title>
+
+<meta name="keywords" content="United States Code, USC,  United States, code, law, federal, congress"><link rel="schema.DC" href="http://purl.org/DC/elements/1.1/">
+<meta name="DC.Title" content="Office of the Law Revision Counsel">
+<meta name="DC.Title.Alternative" content="Office of the Law Revision Counsel Homepage">
+<meta name="DC.Subject" scheme="LCSH" content="Law--United States">
+<meta name="DC.Subject.Classification" scheme="DDC" content="348.73">
+<meta name="DC.Subject.Classification" scheme="LCC" content="KF62">
+<meta name="DC.Description.TableofContents" lang="eng" content="Aboutthe Office and the U.S. Code database --
+                              Search the U.S. Code --
+                              Download titles and chapters of the U.S. Code or viewlist of names --
+                              Classification Tables listing sections of the U.S. Code affected by recently enacted laws --
+                              Codification legislativon of the Office --
+                              Thomas, a legislative service of the Library of Congress">
+<meta name="DC.Description.Abstract" content="Home page of the Office of the Law Revision Counsel of the United State House of Representatives">
+<meta name="DC.Type" scheme="DCMIType" content="Text">
+<meta name="DC.Coverage.Spatial" scheme="ISO3166" content="US">
+<meta name="DC.Coverage.Spatial" scheme="TGN" content="United States (C,V)">
+<meta name="DC.Creator" content="United States. Congress. House of Representatives. Office of the Law Revision Counsel">
+<meta name="DC.Rights" content="United States Government work under 17 USC secs. 105, 403">
+<meta name="DC.Date.Modified" scheme="WTN8601" content="2002-02-05">
+<meta name="DC.Format.Medium" scheme="IMT" content="text/html">
+<meta name="DC.Format.Extent" content="6 Kb">
+<meta name="DC.Identifier" scheme="URI" content="http://uscode.house.gov/uscode.htm">
+<meta name="DC.Language" scheme="rfc1766" content="en-US">
+
+
+
+<LINK href="mailto:usc@mail.house.gov" REL="AUTHOR" TITLE="Feedback by e-mail">
+<LINK href="http://www.house.gov/lawlib/law_comments.html" REL="EDITOR"  TITLE="Feedback form">
+<META http-equiv="Owner" content="Law Revision Counsel, U.S. House of Representatives">
+<META http-equiv="Reply-To" content="usc@mail.house.gov">
+
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://uscode.house.gov/" r (SS~~000 6 SS~~003 3 SS~~004 3 SS~~005 3 SS~~006 3 SS~~007 3 SS~~009 3 SS~~00A 3))'>
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://uscode.house.gov" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://uscode.house.gov" r (n 0 s 0 v 0 l 0))'>
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://vancouver-webpages.com/VWP1.0/" l gen true comment "VWP1.0" by "elliot.chabot@mail.house.gov" on "1998.12.08T07:59-0800" for "http://uscode.house.gov/"  r (MC 0 Gam -1 Com 1 SF -1 Edu -1 S 2 Can -1 V 1 Env -2 P 0 Tol -2 ))'>
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.weburbia.com/safe/ratings.htm" l r (s 0))'>
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.adequate.com/ratings/" l gen true comment "ADEQUATE.com" for "http://uscode.house.gov/" r (WEB 3 v 0 s 0 l 0 d 0))'>
+
+<META name="robots" content="all">
+
+<script language-JavaScript>
+  <!--
+
+function CheckTitle(Title)
+{
+  if (Title.value != "")
+    {
+    if (Title.value < 1)
+      {
+      alert("Title number should be 1 or greater.  Please re-enter the title number.");
+      Title.value = "";
+      }
+    else if (Title.value > 50)
+      {
+      alert("Title number should not be greater than 50.  Please re-enter the title number.");
+      Title.value = "";
+      }
+    }
+}
+
+function CheckSec(Section)
+{
+  var OPENP ="("
+  var NewStr=""
+  var OPPtr = 0
+  var Temp = Section.value
+  if (Section.value != "")
+    {
+    OPPtr = Section.value.indexOf(OPENP);
+    }
+
+  if (OPPtr >= 0)
+    {
+    NewStr = Section.value.substring(0,OPPtr);
+    Section.value = NewStr;
+    }
+}
+
+function CheckDocRtv(DocNum)
+{
+  var Document = eval(DocNum.value)
+  if (Document < 1 || Document > 4096)
+    {
+    alert("The maximum number of sections to be retrieved at one time should be from 1 to 4096.");
+    DocNum.value = 100;
+    }
+}
+
+function VerifyInput(form, InStr)
+{
+  var DOUBLEQUOTE ='"'
+  var SINGLEQUOTE ="'"
+  var NewStr=""
+  var status = 0
+  var DQuotePtr = 0
+
+  if (InStr.value == "")
+    {
+    alert("No search word(s) were entered. Please enter your search first.");
+    }
+  else
+    {
+    DQuotePtr = InStr.value.indexOf(DOUBLEQUOTE);
+    }
+
+  if (DQuotePtr >= 0)
+    {
+    for (DQuotePtr = 0; StrChar = InStr.value.substring(DQuotePtr, DQuotePtr+1); DQuotePtr++)
+      {
+      if (StrChar == DOUBLEQUOTE)
+        {
+        StrChar =  SINGLEQUOTE;
+        NewStr += StrChar;
+        }
+      else
+        NewStr += StrChar;
+      }
+    InStr.value = NewStr;
+    }
+}
+
+  // -->
+</script></head>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+	<FONT SIZE="2">
+		<A HREF="/lawrevisioncounsel.shtml">Home</A> &nbsp;&nbsp;
+		<A HREF="/search/criteria.shtml">Search</A>&nbsp;&nbsp;
+		<A HREF="/uscprelim/uscprelim.shtml">USCprelim</A>&nbsp;&nbsp;
+	 	<A HREF="/download/download.shtml">Download</A>&nbsp;&nbsp;
+	 	<A HREF="/classification/tables.shtml">Classification</A>&nbsp;&nbsp;
+		<A HREF="/codification/legislation.shtml">Codification</A>&nbsp;&nbsp;
+		<A HREF="/popularnames/popularnames.htm">Popular Names</A>&nbsp;&nbsp;
+		<A HREF="/table3/table3years.htm">Table III</A>&nbsp;&nbsp;
+		<A HREF="/tables/usctable1.htm">Other Tables</A>&nbsp;&nbsp;
+		<A HREF="/about/info.shtml">About</A> &nbsp;&nbsp;
+		<A HREF="/about/currency.shtml">Currency</A> &nbsp;&nbsp;
+  </FONT>
+</CENTER>
+
+<!-- table border=0 cols=2 cellpadding=10 -->
+
+<!-- /table -->
+
+<!-- ======= BASIC SEARCH ======= -->
+
+
+
+<FORM METHOD=POST ACTION="http://uscode.house.gov/uscode-cgi/fastweb.exe?search">
+<input type=hidden name=view value="uscview">
+
+<input type=hidden name=db7 value="code03">
+
+
+
+
+
+
+
+
+<table cols=5 border=0 cellspacing=13 width=510>
+
+<tr>
+<td align=center colspan=2>
+<p><img src="/images/site/Uscode.gif" border=0 width=112 height=112 alt="Seal">
+</td>
+<td align=center valign=center colspan=3>
+<font color="#000080">
+<h1><a name="search">Search Prior Version of the U.S. Code</a></h1>
+<h2>Office of the Law Revision Counsel</h2>
+</font>
+</td>
+</tr>
+
+<tr><td colspan=5>To view a section or group of sections, specify the title and section or other subdivision, leaving the search words blank. To search for a phrase, enclose it in single quotes. You can use <a href="help/uschelp.shtml#connectors">boolean and proximity connectors</a> and parentheses. Upper/lower case does not matter. Additional search options (e.g., concept, fuzzy) appear below. Or click <a href="help/uschelp.shtml">help</a> for more detail.
+</td></tr>
+
+<tr>
+<td align="center" colspan=5><font color="#000080"><font size=5>Laws in force on January 6, 2003;<br>
+                                                                2000 Edition and Supplement II</font></td>
+</tr>
+
+<tr>
+<td align=right>Search Word(s):</td>
+<td colspan=3><input type=text name=query size=65 value="" onChange="VerifyInput(this.form, this)">
+<td align=center><input type=submit value="    Search     "></td>
+</tr>
+
+<tr>
+<td colspan=4>You may limit your search to part of the Code using any of the following fields.</td>
+<td align=center><input type=reset value="Reset Form"></td>
+</tr>
+
+<tr>
+<td align=right>Title:</td>
+<td align=left><input type=text name=query0 size=2 value="" onChange="CheckTitle(this)"></td>
+<td align=right>Section:</td>
+<td align=left><input type=text name=query1 size=15 value="" onChange="CheckSec(this)"></td>
+</tr>
+
+<tr>
+<td align=right>Appendix:</td>
+<td align=left><input type=checkbox name=query10 value="APPENDIX"></td>
+<td></td> <td></td>
+</td>
+</tr>
+
+<tr>
+<td align=right>Subtitle:</td>
+<td align=left><input type=text name=query3 size=15 value=""></td>
+<td align=right>Division:</td>
+<td align=left><input type=text name=query11 size=15 value=""></td>
+</tr>
+
+<tr>
+<td align=right>Chapter:</td>
+<td align=left><input type=text name=query4 size=15 value=""></td>
+<td align=right>Part:</td>
+<td align=left><input type=text name=query6 size=15 value=""></td>
+</tr>
+
+<tr>
+<td align=right>Subchapter:</td>
+<td align=left><input type=text name=query5 size=15 value=""></td>
+<td align=right>Subpart:</td>
+<td align=left><input type=text name=query7 size=15 value=""></td>
+</tr>
+
+<tr>
+<td align=right>Rule:</td>
+<td align=left><input type=text name=query8 size=15 value=""></td>
+<td align=right>Form:</td>
+<td align=left><input type=text name=query9 size=15 value=""></td>
+</tr>
+
+</table>
+
+<input type=hidden name="query_rule" size=60 value="(($query)) [ AND ((($query0)) ADJ USC):CITE][ AND (USC w/10 (($query1))):CITE] [AND (SUBTITLE ADJ (($query3))):EXPCITE] [AND (CHAPTER ADJ (($query4))):EXPCITE] [AND (SUBCHAPTER ADJ (($query5))):EXPCITE] [AND (PART ADJ (($query6))):EXPCITE] [AND (SUBPART ADJ (($query7))):EXPCITE] [AND (RULE* ADJ (($query8))):CITE] [AND (FORM* ADJ (($query9))):CITE] [AND (($query10)):EXPCITE] [AND (DIVISION ADJ (($query11))):EXPCITE]" >
+<input type=hidden name=operation value=simplesearch>
+
+Set the maximum (up to 4096) number of sections to be retrieved at a time:
+<input type=text name=numresults size=4 value="100" maxlength=4 onChange="CheckDocRtv(this)">
+
+</form>
+
+<!-- ======= ADDITIONAL SEARCH OPTIONS ======= -->
+<p><hr>
+<h3><a name="AdditSrch">Additional Search Options</a></h3>
+
+<FORM METHOD=POST  ACTION="http://uscode.house.gov/uscode-cgi/fastweb.exe?search">
+<input type=hidden name=view value="uscview">
+
+<input type=hidden name=db7 value="code03">
+
+
+
+
+
+
+<p>Search Query:
+<input type=text name=query size=65 value="" onChange="VerifyInput(this.form, this)">
+
+<p>Click radio button to select option or click underlined word for detailed explanation.
+
+<!--
+<p><input type=radio checked name=operation value=simplesearch>
+<a href="help/uschelp.shtml">Simple</a> (ordinary search)
+-->
+
+<p><input type=radio checked name=operation value=concept>
+<a href="help/htmlsrc/consrch.html">Concept</a> (searches for documents statistically related to your query)
+
+<p><input type=radio name=operation value=relate>
+<a href="help/htmlsrc/reladv.html">Relate</a> (suggests words related to your query, based on co-occurrence within database)
+
+<p><input type=radio name=operation value=fuzzy>
+<a href="help/htmlsrc/fuzadv.html">Fuzzy</a> (suggests words spelled similarly to the first word in your query)
+
+<p><input type=radio name=operation value=dictionary>
+<a href="help/htmlsrc/dicadv.html">Dictionary</a> (verifies existence and popularity of a word in the database)
+
+<p>Set the maximum (up to 4096) number of sections to be retrieved at a time:
+<input type=text name=numresults size=4 value="100" maxlength=4 onChange="CheckDocRtv(this)">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=submit value=" Search ">
+
+</FORM>
+
+<!-- ======= CROSS REFERENCE SEARCH ======= -->
+<p><hr>
+<h3><a name="XRefSrch">Cross Reference Search</a></h3>
+
+<FORM METHOD=POST  ACTION="http://uscode.house.gov/uscode-cgi/fastweb.exe?search">
+<input type=hidden name=view value="uscview">
+
+<input type=hidden name=db7 value="code03">
+
+
+
+
+
+<input type=hidden name=operation value=simplesearch>
+
+<input type=hidden name="query_rule" value="((('U.S.C.' ADJ sec) w/20 ((($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC) OR
+('section' ADJ (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE) OR
+('sections' w/20 (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE))
+
+AND
+
+(((($query0)) ADJ 'usc':cite) AND (('U.S.C.' ADJ sec) w/20  ((($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC) OR
+('section' ADJ (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE) OR
+('sections' w/20 (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE)))
+
+OR
+
+(('title' ADJ (($query0))) near/20 (('U.S.C.' ADJ sec) w/20  ((($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC) OR
+('section' ADJ (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE) OR
+('sections' w/20 (($query1)):CITE,EXPCITE,HEAD,STATAMEND,STATUTE,MISC1,MISC2,MISC3,MISC4,MISC5,MISC6,MISC7,MISC8,REFTEXT,COD,CHANGE,TRANS,EXEC,SOURCE))))" >
+
+Find sections containing a reference to the following title and section:
+<p>
+Title:
+<input type=text name=query0 size=2 value="" onChange="CheckTitle(this)">
+&nbsp;&nbsp;&nbsp;&nbsp;
+Section:
+<input type=text name=query1 size=15 value="" onChange="CheckSec(this)">
+
+<p>Set the maximum (up to 4096) number of sections to be retrieved at a time:
+<input type=text name=numresults size=4 value="100" maxlength=4 onChange="CheckDocRtv(this)">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=submit value=" Search ">
+
+</FORM>
+
+<p><hr>
+
+<CENTER>
+	<FONT SIZE="2">
+		<A HREF="/lawrevisioncounsel.shtml">Home</A> &nbsp;&nbsp;
+		<A HREF="/search/criteria.shtml">Search</A>&nbsp;&nbsp;
+		<A HREF="/uscprelim/uscprelim.shtml">USCprelim</A>&nbsp;&nbsp;
+	 	<A HREF="/download/download.shtml">Download</A>&nbsp;&nbsp;
+	 	<A HREF="/classification/tables.shtml">Classification</A>&nbsp;&nbsp;
+		<A HREF="/codification/legislation.shtml">Codification</A>&nbsp;&nbsp;
+		<A HREF="/popularnames/popularnames.htm">Popular Names</A>&nbsp;&nbsp;
+		<A HREF="/table3/table3years.htm">Table III</A>&nbsp;&nbsp;
+		<A HREF="/tables/usctable1.htm">Other Tables</A>&nbsp;&nbsp;
+		<A HREF="/about/info.shtml">About</A> &nbsp;&nbsp;
+		<A HREF="/about/currency.shtml">Currency</A> &nbsp;&nbsp;
+  </FONT>
+</CENTER>
+
+</body></html>

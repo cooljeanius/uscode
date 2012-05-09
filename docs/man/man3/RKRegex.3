@@ -1,0 +1,204 @@
+.TH "RKRegex" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RKRegex \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBinitWithRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegexString:library:options:error:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBregexString\fP"
+.br
+.ti -1c
+.RI "(RKCompileOption) - \fBcompileOption\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureCount\fP"
+.br
+.ti -1c
+.RI "(NSArray *) - \fBcaptureNameArray\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisValidCaptureName:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBcaptureNameForCaptureIndex:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:inMatchedRanges:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:inMatchedRanges:error:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBmatchesCharacters:length:inRange:options:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBrangeForCharacters:length:inRange:captureIndex:options:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBrangesForCharacters:length:inRange:options:\fP"
+.br
+.ti -1c
+.RI "(RKMatchErrorCode) - \fBgetRanges:withCharacters:length:inRange:options:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegexString:library:options:error:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBregexString\fP"
+.br
+.ti -1c
+.RI "(RKCompileOption) - \fBcompileOption\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureCount\fP"
+.br
+.ti -1c
+.RI "(NSArray *) - \fBcaptureNameArray\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBisValidCaptureName:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBcaptureNameForCaptureIndex:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:inMatchedRanges:\fP"
+.br
+.ti -1c
+.RI "(RKUInteger) - \fBcaptureIndexForCaptureName:inMatchedRanges:error:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBmatchesCharacters:length:inRange:options:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBrangeForCharacters:length:inRange:captureIndex:options:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBrangesForCharacters:length:inRange:options:\fP"
+.br
+.ti -1c
+.RI "(RKMatchErrorCode) - \fBgetRanges:withCharacters:length:inRange:options:\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(\fBRKCache\fP *) + \fBregexCache\fP"
+.br
+.ti -1c
+.RI "(NSString *) + \fBPCREVersionString\fP"
+.br
+.ti -1c
+.RI "(int32_t) + \fBPCREMajorVersion\fP"
+.br
+.ti -1c
+.RI "(int32_t) + \fBPCREMinorVersion\fP"
+.br
+.ti -1c
+.RI "(RKBuildConfig) + \fBPCREBuildConfig\fP"
+.br
+.ti -1c
+.RI "(BOOL) + \fBisValidRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBregexWithRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBregexWithRegexString:library:options:error:\fP"
+.br
+.ti -1c
+.RI "(\fBRKCache\fP *) + \fBregexCache\fP"
+.br
+.ti -1c
+.RI "(NSString *) + \fBPCREVersionString\fP"
+.br
+.ti -1c
+.RI "(int32_t) + \fBPCREMajorVersion\fP"
+.br
+.ti -1c
+.RI "(int32_t) + \fBPCREMinorVersion\fP"
+.br
+.ti -1c
+.RI "(RKBuildConfig) + \fBPCREBuildConfig\fP"
+.br
+.ti -1c
+.RI "(BOOL) + \fBisValidRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBregexWithRegexString:options:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBregexWithRegexString:library:options:error:\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "RK_STRONG_REF pcre * \fB_compiledPCRE\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF \fBpcre_extra\fP * \fB_extraPCRE\fP"
+.br
+.ti -1c
+.RI "NSString * \fBcompiledRegexString\fP"
+.br
+.ti -1c
+.RI "RKCompileOption \fBcompileOption\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcaptureCount\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF char * \fBcaptureNameTable\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcaptureNameTableLength\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBcaptureNameLength\fP"
+.br
+.ti -1c
+.RI "NSArray * \fBcaptureNameArray\fP"
+.br
+.ti -1c
+.RI "RKInteger \fBreferenceCountMinusOne\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBhash\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF char * \fBcompiledRegexUTF8String\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF char * \fBcompiledOptionUTF8String\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 51 of file RKRegex\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

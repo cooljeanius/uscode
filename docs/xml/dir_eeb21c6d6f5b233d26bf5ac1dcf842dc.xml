@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_eeb21c6d6f5b233d26bf5ac1dcf842dc" kind="dir">
+    <compoundname>Legiscode.applescript/libxml.framework/Versions/2.6.30/Resources/en.lproj/</compoundname>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_resources_2en_8lproj_2search_8php">search.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Resources/en.lproj/"/>
+  </compounddef>
+</doxygen>

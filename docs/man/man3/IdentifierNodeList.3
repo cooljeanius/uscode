@@ -1,0 +1,50 @@
+.TH "IdentifierNodeList" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IdentifierNodeList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnum\fP"
+.br
+.ti -1c
+.RI "\fBIdentifierNode\fP ** \fBids\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a list of identifiers\&. This structure allows sets of identifiers to be grouped together\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createIdentifierNodeList(void) 
+.PP
+addIdentifierNode(IdentifierNodeList *, IdentifierNode *) 
+.PP
+deleteIdentifierNodeList(IdentifierNodeList *) 
+.RE
+.PP
+
+.PP
+Definition at line 196 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBIdentifierNode\fP** \fBIdentifierNodeList::ids\fP"
+A pointer to the array of \fBIdentifierNode\fP structures\&. 
+.PP
+Definition at line 198 of file parser\&.h\&.
+.SS "unsigned int \fBIdentifierNodeList::num\fP"
+The number of \fBIdentifierNode\fP structures stored\&. 
+.PP
+Definition at line 197 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

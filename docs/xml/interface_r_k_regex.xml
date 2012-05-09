@@ -1,0 +1,918 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_r_k_regex" kind="class" prot="public">
+    <compoundname>RKRegex</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_r_k_regex_1aba50ee6e939ad021ecb102f54b8100b9" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF pcre *</type>
+        <definition>RK_STRONG_REF pcre * RKRegex::_compiledPCRE</definition>
+        <argsstring></argsstring>
+        <name>_compiledPCRE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="52" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a8e19d0ef588583038126bebf45a48cdd" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref> *</type>
+        <definition>RK_STRONG_REF pcre_extra * RKRegex::_extraPCRE</definition>
+        <argsstring></argsstring>
+        <name>_extraPCRE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="53" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1ae146bb4ea5f568a5b4ffb541291da639" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::compiledRegexString</definition>
+        <argsstring></argsstring>
+        <name>compiledRegexString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="55" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a4b15de7c1dadf827b3eb21454686c7f3" prot="protected" static="no" mutable="no">
+        <type>RKCompileOption</type>
+        <definition>RKCompileOption RKRegex::compileOption</definition>
+        <argsstring></argsstring>
+        <name>compileOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="56" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a2835832938eec8af92255759fc6278e4" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureCount</definition>
+        <argsstring></argsstring>
+        <name>captureCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="57" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a986245e019741a2c91b2fd6470adef0b" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF char *</type>
+        <definition>RK_STRONG_REF char * RKRegex::captureNameTable</definition>
+        <argsstring></argsstring>
+        <name>captureNameTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="58" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a4d23812f239a36f5d6a611ffab3a6938" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureNameTableLength</definition>
+        <argsstring></argsstring>
+        <name>captureNameTableLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="59" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1ac05b2b2d84f5680728b23438c86d9ab5" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureNameLength</definition>
+        <argsstring></argsstring>
+        <name>captureNameLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="60" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a0c2a48115226cca8bdeeb1c886d7bbf0" prot="protected" static="no" mutable="no">
+        <type>NSArray *</type>
+        <definition>NSArray * RKRegex::captureNameArray</definition>
+        <argsstring></argsstring>
+        <name>captureNameArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="61" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1aa821e58d12e7065a25228b59d983da7f" prot="protected" static="no" mutable="no">
+        <type>RKInteger</type>
+        <definition>RKInteger RKRegex::referenceCountMinusOne</definition>
+        <argsstring></argsstring>
+        <name>referenceCountMinusOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="63" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a3869fc68f83830cfaf6f379043d36328" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="64" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1aecbf394cc0b19998f4d805e4a29acf8f" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF char *</type>
+        <definition>RK_STRONG_REF char * RKRegex::compiledRegexUTF8String</definition>
+        <argsstring></argsstring>
+        <name>compiledRegexUTF8String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="66" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_regex_1a9812824ffb4958269b8f3f40b12bdb9e" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF char *</type>
+        <definition>RK_STRONG_REF char * RKRegex::compiledOptionUTF8String</definition>
+        <argsstring></argsstring>
+        <name>compiledOptionUTF8String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="67" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_r_k_regex_1a0df9191ede8f223b3965e064eef8a92d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_cache" kindref="compound">RKCache</ref> *</type>
+        <definition>RKCache * RKRegex::regexCache</definition>
+        <argsstring>()</argsstring>
+        <name>regexCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a5c0527782846c2e8b203b6a696253dec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::PCREVersionString</definition>
+        <argsstring>()</argsstring>
+        <name>PCREVersionString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1abd8b65cafa5f7307ab695a55c768d57f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t RKRegex::PCREMajorVersion</definition>
+        <argsstring>()</argsstring>
+        <name>PCREMajorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1afd9f97672fb4f9ea18320ff196b2fc5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t RKRegex::PCREMinorVersion</definition>
+        <argsstring>()</argsstring>
+        <name>PCREMinorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a13027f32da44ae7ac6f1e436c3aefba3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKBuildConfig</type>
+        <definition>RKBuildConfig RKRegex::PCREBuildConfig</definition>
+        <argsstring>()</argsstring>
+        <name>PCREBuildConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a7a32c67fbe4f41a4ef7607f637d53254" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::isValidRegexString:options:</definition>
+        <argsstring>(NSString *const regexString,[options] const RKCompileOption options)</argsstring>
+        <name>isValidRegexString:options:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>regexString</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>const RKCompileOption</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1ae2518fd9c82197099249faf23f772d9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::regexWithRegexString:options:</definition>
+        <argsstring>(NSString *const regexString,[options] const RKCompileOption options)</argsstring>
+        <name>regexWithRegexString:options:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>regexString</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>const RKCompileOption</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1aaaa85c739d69fbe02031fdf93a7986b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::regexWithRegexString:library:options:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[library] NSString *const RK_C99(restrict libraryString,[options] const RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>regexWithRegexString:library:options:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a0df9191ede8f223b3965e064eef8a92d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_cache" kindref="compound">RKCache</ref> *</type>
+        <definition>RKCache * RKRegex::regexCache</definition>
+        <argsstring>()</argsstring>
+        <name>regexCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a5c0527782846c2e8b203b6a696253dec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::PCREVersionString</definition>
+        <argsstring>()</argsstring>
+        <name>PCREVersionString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1abd8b65cafa5f7307ab695a55c768d57f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t RKRegex::PCREMajorVersion</definition>
+        <argsstring>()</argsstring>
+        <name>PCREMajorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1afd9f97672fb4f9ea18320ff196b2fc5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t RKRegex::PCREMinorVersion</definition>
+        <argsstring>()</argsstring>
+        <name>PCREMinorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a13027f32da44ae7ac6f1e436c3aefba3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKBuildConfig</type>
+        <definition>RKBuildConfig RKRegex::PCREBuildConfig</definition>
+        <argsstring>()</argsstring>
+        <name>PCREBuildConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a7a32c67fbe4f41a4ef7607f637d53254" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::isValidRegexString:options:</definition>
+        <argsstring>(NSString *const regexString,[options] const RKCompileOption options)</argsstring>
+        <name>isValidRegexString:options:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>regexString</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>const RKCompileOption</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1ae2518fd9c82197099249faf23f772d9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::regexWithRegexString:options:</definition>
+        <argsstring>(NSString *const regexString,[options] const RKCompileOption options)</argsstring>
+        <name>regexWithRegexString:options:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>regexString</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>const RKCompileOption</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1aaaa85c739d69fbe02031fdf93a7986b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::regexWithRegexString:library:options:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[library] NSString *const RK_C99(restrict libraryString,[options] const RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>regexWithRegexString:library:options:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_k_regex_1a09c782cb88bbf39417598d137cd2f179" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::initWithRegexString:options:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[options] const RKCompileOption options)</argsstring>
+        <name>initWithRegexString:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a7c3af7648115f2edb42bb59beafafc9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::initWithRegexString:library:options:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[library] NSString *const RK_C99(restrict library,[options] const RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>initWithRegexString:library:options:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a14f61c1e7cdd39971963e66988e7f60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::regexString</definition>
+        <argsstring>()</argsstring>
+        <name>regexString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a4a46ed536513f45f934098109159e86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKCompileOption</type>
+        <definition>RKCompileOption RKRegex::compileOption</definition>
+        <argsstring>()</argsstring>
+        <name>compileOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a933d645e53bc3011cf043bbe69647191" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureCount</definition>
+        <argsstring>()</argsstring>
+        <name>captureCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a85c7c3e1008c41063a3cef874bb09e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * RKRegex::captureNameArray</definition>
+        <argsstring>()</argsstring>
+        <name>captureNameArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a41148691b39fea4c7abeb85498044470" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::isValidCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>isValidCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a64f0e9b631149094cc7227adb0a2ec39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>captureIndexForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1adea1582c8fc35ad3408445c8467b3828" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::captureNameForCaptureIndex:</definition>
+        <argsstring>(const RKUInteger captureIndex)</argsstring>
+        <name>captureNameForCaptureIndex:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>captureIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1ac006c9fee29acc444c2596bf99e415cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:inMatchedRanges:</definition>
+        <argsstring>(NSString *const RK_C99(restrict captureNameString,[inMatchedRanges] const NSRange *const RK_C99(restrict matchedRanges)</argsstring>
+        <name>captureIndexForCaptureName:inMatchedRanges:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a54f94fa012e48e42c376908f58164e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:inMatchedRanges:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict captureNameString,[inMatchedRanges] const NSRange *const RK_C99(restrict matchedRanges,[error] NSError **error)</argsstring>
+        <name>captureIndexForCaptureName:inMatchedRanges:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1aa33efb469a55abee4c508f748d703aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::matchesCharacters:length:inRange:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>matchesCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a9da47043b99002e9b5b3cb60e34a7d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKRegex::rangeForCharacters:length:inRange:captureIndex:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[captureIndex] const RKUInteger captureIndex,[options] const RKMatchOption options)</argsstring>
+        <name>rangeForCharacters:length:inRange:captureIndex:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a2b084eb136061edc6a39253709d145d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKRegex::rangesForCharacters:length:inRange:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>rangesForCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a81365eb7d809043ed0a1a27ec99c09c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKMatchErrorCode</type>
+        <definition>RKMatchErrorCode RKRegex::getRanges:withCharacters:length:inRange:options:</definition>
+        <argsstring>(NSRange *const RK_C99(restrict ranges,[withCharacters] const void *const RK_C99(restrict charactersBuffer,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>getRanges:withCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a09c782cb88bbf39417598d137cd2f179" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::initWithRegexString:options:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[options] const RKCompileOption options)</argsstring>
+        <name>initWithRegexString:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a7c3af7648115f2edb42bb59beafafc9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKRegex::initWithRegexString:library:options:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict regexString,[library] NSString *const RK_C99(restrict library,[options] const RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>initWithRegexString:library:options:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a14f61c1e7cdd39971963e66988e7f60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::regexString</definition>
+        <argsstring>()</argsstring>
+        <name>regexString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a4a46ed536513f45f934098109159e86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKCompileOption</type>
+        <definition>RKCompileOption RKRegex::compileOption</definition>
+        <argsstring>()</argsstring>
+        <name>compileOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a933d645e53bc3011cf043bbe69647191" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureCount</definition>
+        <argsstring>()</argsstring>
+        <name>captureCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a85c7c3e1008c41063a3cef874bb09e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * RKRegex::captureNameArray</definition>
+        <argsstring>()</argsstring>
+        <name>captureNameArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a41148691b39fea4c7abeb85498044470" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::isValidCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>isValidCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a64f0e9b631149094cc7227adb0a2ec39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>captureIndexForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1adea1582c8fc35ad3408445c8467b3828" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKRegex::captureNameForCaptureIndex:</definition>
+        <argsstring>(const RKUInteger captureIndex)</argsstring>
+        <name>captureNameForCaptureIndex:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>captureIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1ac006c9fee29acc444c2596bf99e415cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:inMatchedRanges:</definition>
+        <argsstring>(NSString *const RK_C99(restrict captureNameString,[inMatchedRanges] const NSRange *const RK_C99(restrict matchedRanges)</argsstring>
+        <name>captureIndexForCaptureName:inMatchedRanges:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a54f94fa012e48e42c376908f58164e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKRegex::captureIndexForCaptureName:inMatchedRanges:error:</definition>
+        <argsstring>(NSString *const RK_C99(restrict captureNameString,[inMatchedRanges] const NSRange *const RK_C99(restrict matchedRanges,[error] NSError **error)</argsstring>
+        <name>captureIndexForCaptureName:inMatchedRanges:error:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1aa33efb469a55abee4c508f748d703aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKRegex::matchesCharacters:length:inRange:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>matchesCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a9da47043b99002e9b5b3cb60e34a7d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKRegex::rangeForCharacters:length:inRange:captureIndex:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[captureIndex] const RKUInteger captureIndex,[options] const RKMatchOption options)</argsstring>
+        <name>rangeForCharacters:length:inRange:captureIndex:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a2b084eb136061edc6a39253709d145d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKRegex::rangesForCharacters:length:inRange:options:</definition>
+        <argsstring>(const void *const RK_C99(restrict matchCharacters,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>rangesForCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_regex_1a81365eb7d809043ed0a1a27ec99c09c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKMatchErrorCode</type>
+        <definition>RKMatchErrorCode RKRegex::getRanges:withCharacters:length:inRange:options:</definition>
+        <argsstring>(NSRange *const RK_C99(restrict ranges,[withCharacters] const void *const RK_C99(restrict charactersBuffer,[length] const RKUInteger length,[inRange] const NSRange searchRange,[options] const RKMatchOption options)</argsstring>
+        <name>getRanges:withCharacters:length:inRange:options:</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="719">
+        <label>pcre_extra</label>
+        <link refid="structpcre__extra"/>
+      </node>
+      <node id="718">
+        <label>RKRegex</label>
+        <link refid="interface_r_k_regex"/>
+        <childnode refid="719" relation="usage">
+          <edgelabel>_extraPCRE</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" line="51" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKRegex.h" bodystart="51" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_k_regex_1aba50ee6e939ad021ecb102f54b8100b9" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>_compiledPCRE</name></member>
+      <member refid="interface_r_k_regex_1a8e19d0ef588583038126bebf45a48cdd" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>_extraPCRE</name></member>
+      <member refid="interface_r_k_regex_1a2835832938eec8af92255759fc6278e4" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>captureCount</name></member>
+      <member refid="interface_r_k_regex_1a933d645e53bc3011cf043bbe69647191" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureCount</name></member>
+      <member refid="interface_r_k_regex_1a933d645e53bc3011cf043bbe69647191" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureCount</name></member>
+      <member refid="interface_r_k_regex_1a64f0e9b631149094cc7227adb0a2ec39" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:</name></member>
+      <member refid="interface_r_k_regex_1a64f0e9b631149094cc7227adb0a2ec39" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:</name></member>
+      <member refid="interface_r_k_regex_1ac006c9fee29acc444c2596bf99e415cc" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:inMatchedRanges:</name></member>
+      <member refid="interface_r_k_regex_1ac006c9fee29acc444c2596bf99e415cc" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:inMatchedRanges:</name></member>
+      <member refid="interface_r_k_regex_1a54f94fa012e48e42c376908f58164e1c" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:inMatchedRanges:error:</name></member>
+      <member refid="interface_r_k_regex_1a54f94fa012e48e42c376908f58164e1c" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureIndexForCaptureName:inMatchedRanges:error:</name></member>
+      <member refid="interface_r_k_regex_1a0c2a48115226cca8bdeeb1c886d7bbf0" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>captureNameArray</name></member>
+      <member refid="interface_r_k_regex_1a85c7c3e1008c41063a3cef874bb09e5f" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureNameArray</name></member>
+      <member refid="interface_r_k_regex_1a85c7c3e1008c41063a3cef874bb09e5f" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureNameArray</name></member>
+      <member refid="interface_r_k_regex_1adea1582c8fc35ad3408445c8467b3828" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureNameForCaptureIndex:</name></member>
+      <member refid="interface_r_k_regex_1adea1582c8fc35ad3408445c8467b3828" prot="public" virt="virtual"><scope>RKRegex</scope><name>captureNameForCaptureIndex:</name></member>
+      <member refid="interface_r_k_regex_1ac05b2b2d84f5680728b23438c86d9ab5" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>captureNameLength</name></member>
+      <member refid="interface_r_k_regex_1a986245e019741a2c91b2fd6470adef0b" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>captureNameTable</name></member>
+      <member refid="interface_r_k_regex_1a4d23812f239a36f5d6a611ffab3a6938" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>captureNameTableLength</name></member>
+      <member refid="interface_r_k_regex_1a9812824ffb4958269b8f3f40b12bdb9e" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>compiledOptionUTF8String</name></member>
+      <member refid="interface_r_k_regex_1ae146bb4ea5f568a5b4ffb541291da639" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>compiledRegexString</name></member>
+      <member refid="interface_r_k_regex_1aecbf394cc0b19998f4d805e4a29acf8f" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>compiledRegexUTF8String</name></member>
+      <member refid="interface_r_k_regex_1a4b15de7c1dadf827b3eb21454686c7f3" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>compileOption</name></member>
+      <member refid="interface_r_k_regex_1a4a46ed536513f45f934098109159e86f" prot="public" virt="virtual"><scope>RKRegex</scope><name>compileOption</name></member>
+      <member refid="interface_r_k_regex_1a4a46ed536513f45f934098109159e86f" prot="public" virt="virtual"><scope>RKRegex</scope><name>compileOption</name></member>
+      <member refid="interface_r_k_regex_1a81365eb7d809043ed0a1a27ec99c09c7" prot="public" virt="virtual"><scope>RKRegex</scope><name>getRanges:withCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1a81365eb7d809043ed0a1a27ec99c09c7" prot="public" virt="virtual"><scope>RKRegex</scope><name>getRanges:withCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1a3869fc68f83830cfaf6f379043d36328" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>hash</name></member>
+      <member refid="interface_r_k_regex_1a7c3af7648115f2edb42bb59beafafc9c" prot="public" virt="virtual"><scope>RKRegex</scope><name>initWithRegexString:library:options:error:</name></member>
+      <member refid="interface_r_k_regex_1a7c3af7648115f2edb42bb59beafafc9c" prot="public" virt="virtual"><scope>RKRegex</scope><name>initWithRegexString:library:options:error:</name></member>
+      <member refid="interface_r_k_regex_1a09c782cb88bbf39417598d137cd2f179" prot="public" virt="virtual"><scope>RKRegex</scope><name>initWithRegexString:options:</name></member>
+      <member refid="interface_r_k_regex_1a09c782cb88bbf39417598d137cd2f179" prot="public" virt="virtual"><scope>RKRegex</scope><name>initWithRegexString:options:</name></member>
+      <member refid="interface_r_k_regex_1a41148691b39fea4c7abeb85498044470" prot="public" virt="virtual"><scope>RKRegex</scope><name>isValidCaptureName:</name></member>
+      <member refid="interface_r_k_regex_1a41148691b39fea4c7abeb85498044470" prot="public" virt="virtual"><scope>RKRegex</scope><name>isValidCaptureName:</name></member>
+      <member refid="interface_r_k_regex_1a7a32c67fbe4f41a4ef7607f637d53254" prot="public" virt="virtual"><scope>RKRegex</scope><name>isValidRegexString:options:</name></member>
+      <member refid="interface_r_k_regex_1a7a32c67fbe4f41a4ef7607f637d53254" prot="public" virt="virtual"><scope>RKRegex</scope><name>isValidRegexString:options:</name></member>
+      <member refid="interface_r_k_regex_1aa33efb469a55abee4c508f748d703aef" prot="public" virt="virtual"><scope>RKRegex</scope><name>matchesCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1aa33efb469a55abee4c508f748d703aef" prot="public" virt="virtual"><scope>RKRegex</scope><name>matchesCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1a13027f32da44ae7ac6f1e436c3aefba3" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREBuildConfig</name></member>
+      <member refid="interface_r_k_regex_1a13027f32da44ae7ac6f1e436c3aefba3" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREBuildConfig</name></member>
+      <member refid="interface_r_k_regex_1abd8b65cafa5f7307ab695a55c768d57f" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREMajorVersion</name></member>
+      <member refid="interface_r_k_regex_1abd8b65cafa5f7307ab695a55c768d57f" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREMajorVersion</name></member>
+      <member refid="interface_r_k_regex_1afd9f97672fb4f9ea18320ff196b2fc5f" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREMinorVersion</name></member>
+      <member refid="interface_r_k_regex_1afd9f97672fb4f9ea18320ff196b2fc5f" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREMinorVersion</name></member>
+      <member refid="interface_r_k_regex_1a5c0527782846c2e8b203b6a696253dec" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREVersionString</name></member>
+      <member refid="interface_r_k_regex_1a5c0527782846c2e8b203b6a696253dec" prot="public" virt="virtual"><scope>RKRegex</scope><name>PCREVersionString</name></member>
+      <member refid="interface_r_k_regex_1a9da47043b99002e9b5b3cb60e34a7d19" prot="public" virt="virtual"><scope>RKRegex</scope><name>rangeForCharacters:length:inRange:captureIndex:options:</name></member>
+      <member refid="interface_r_k_regex_1a9da47043b99002e9b5b3cb60e34a7d19" prot="public" virt="virtual"><scope>RKRegex</scope><name>rangeForCharacters:length:inRange:captureIndex:options:</name></member>
+      <member refid="interface_r_k_regex_1a2b084eb136061edc6a39253709d145d3" prot="public" virt="virtual"><scope>RKRegex</scope><name>rangesForCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1a2b084eb136061edc6a39253709d145d3" prot="public" virt="virtual"><scope>RKRegex</scope><name>rangesForCharacters:length:inRange:options:</name></member>
+      <member refid="interface_r_k_regex_1aa821e58d12e7065a25228b59d983da7f" prot="protected" virt="non-virtual"><scope>RKRegex</scope><name>referenceCountMinusOne</name></member>
+      <member refid="interface_r_k_regex_1a0df9191ede8f223b3965e064eef8a92d" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexCache</name></member>
+      <member refid="interface_r_k_regex_1a0df9191ede8f223b3965e064eef8a92d" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexCache</name></member>
+      <member refid="interface_r_k_regex_1a14f61c1e7cdd39971963e66988e7f60f" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexString</name></member>
+      <member refid="interface_r_k_regex_1a14f61c1e7cdd39971963e66988e7f60f" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexString</name></member>
+      <member refid="interface_r_k_regex_1aaaa85c739d69fbe02031fdf93a7986b8" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexWithRegexString:library:options:error:</name></member>
+      <member refid="interface_r_k_regex_1aaaa85c739d69fbe02031fdf93a7986b8" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexWithRegexString:library:options:error:</name></member>
+      <member refid="interface_r_k_regex_1ae2518fd9c82197099249faf23f772d9a" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexWithRegexString:options:</name></member>
+      <member refid="interface_r_k_regex_1ae2518fd9c82197099249faf23f772d9a" prot="public" virt="virtual"><scope>RKRegex</scope><name>regexWithRegexString:options:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

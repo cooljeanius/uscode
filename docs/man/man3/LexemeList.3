@@ -1,0 +1,50 @@
+.TH "LexemeList" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LexemeList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <lexer\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnum\fP"
+.br
+.ti -1c
+.RI "\fBLexeme\fP ** \fBlexemes\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a list of lexemes\&. This structure allows sets of lexemes to be grouped together\&.
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateLexemeList(void)\fP 
+.PP
+\fBaddLexeme(LexemeList *, Lexeme *)\fP 
+.PP
+\fBdeleteLexemeList(LexemeList *)\fP 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file lexer\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBLexeme\fP** \fBLexemeList::lexemes\fP"
+A pointer to the array of \fBLexeme\fP structures\&. 
+.PP
+Definition at line 45 of file lexer\&.h\&.
+.SS "unsigned int \fBLexemeList::num\fP"
+The number of \fBLexeme\fP structures stored\&. 
+.PP
+Definition at line 44 of file lexer\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

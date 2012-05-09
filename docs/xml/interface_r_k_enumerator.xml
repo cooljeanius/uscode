@@ -1,0 +1,1014 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_r_k_enumerator" kind="class" prot="public">
+    <compoundname>RKEnumerator</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a0332230c5efcec00b481ba3a4c698962" prot="protected" static="no" mutable="no">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * RKEnumerator::regex</definition>
+        <argsstring></argsstring>
+        <name>regex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="53" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a02cc03bccf9bf32ce91677032a1bc364" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="54" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1aee680d24622d627fee40ff7a67d4933a" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKEnumerator::atBufferLocation</definition>
+        <argsstring></argsstring>
+        <name>atBufferLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="55" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a07ede92e2a0d5717b917f4ac23739418" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKEnumerator::regexCaptureCount</definition>
+        <argsstring></argsstring>
+        <name>regexCaptureCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="56" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1afd419d9a74cdd9aadb6f835dc9104a45" prot="protected" static="no" mutable="no">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::searchByteRange</definition>
+        <argsstring></argsstring>
+        <name>searchByteRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="57" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a72243e26252a6a5c6aee95715be79167" prot="protected" static="no" mutable="no">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::searchUTF16Range</definition>
+        <argsstring></argsstring>
+        <name>searchUTF16Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="58" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a6877d05a7d43c4f27c45f0f6870592ab" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF NSRange *</type>
+        <definition>RK_STRONG_REF NSRange * RKEnumerator::resultUTF8Ranges</definition>
+        <argsstring></argsstring>
+        <name>resultUTF8Ranges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="59" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1ad0520356509cf2b3e500b7a1277a56ea" prot="protected" static="no" mutable="no">
+        <type>RK_STRONG_REF NSRange *</type>
+        <definition>RK_STRONG_REF NSRange * RKEnumerator::resultUTF16Ranges</definition>
+        <argsstring></argsstring>
+        <name>resultUTF16Ranges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="60" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_r_k_enumerator_1a77c40111f73bb1c3c2ffca44e7d68b41" prot="protected" static="no" mutable="no">
+        <type>RKUInteger</type>
+        <definition>RKUInteger RKEnumerator::hasPerformedMatch</definition>
+        <argsstring></argsstring>
+        <name>hasPerformedMatch</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="61" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_r_k_enumerator_1a68e613dc4d7b465896311f90242d9ec0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:</definition>
+        <argsstring>(id aRegex,[string] NSString *const string)</argsstring>
+        <name>enumeratorWithRegex:string:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a42ca094bc7747676b568ff967140e8cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:inRange:</definition>
+        <argsstring>(id aRegex,[string] NSString *const string,[inRange] const NSRange range)</argsstring>
+        <name>enumeratorWithRegex:string:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a19eb1be48091d8d15d97dff122c64a17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:inRange:error:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange,[error] NSError **error)</argsstring>
+        <name>enumeratorWithRegex:string:inRange:error:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a68e613dc4d7b465896311f90242d9ec0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:</definition>
+        <argsstring>(id aRegex,[string] NSString *const string)</argsstring>
+        <name>enumeratorWithRegex:string:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a42ca094bc7747676b568ff967140e8cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:inRange:</definition>
+        <argsstring>(id aRegex,[string] NSString *const string,[inRange] const NSRange range)</argsstring>
+        <name>enumeratorWithRegex:string:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a19eb1be48091d8d15d97dff122c64a17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::enumeratorWithRegex:string:inRange:error:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange,[error] NSError **error)</argsstring>
+        <name>enumeratorWithRegex:string:inRange:error:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_k_enumerator_1ab45fb744d0bc3a2aee41f469f4b0a986" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString)</argsstring>
+        <name>initWithRegex:string:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ad1bad36f2d3bd3eba6de33fcafaf8e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:inRange:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange)</argsstring>
+        <name>initWithRegex:string:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a4f1db961c794b75d4317c4a8e8208051" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:inRange:error:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange,[error] NSError **error)</argsstring>
+        <name>initWithRegex:string:inRange:error:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ac308ce07de2295cc25e79ba95e8d1dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * RKEnumerator::regex</definition>
+        <argsstring>()</argsstring>
+        <name>regex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a65957082b543324f052a437183733b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::string</definition>
+        <argsstring>()</argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ae5528582796723abbb37baca026f43e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRange</definition>
+        <argsstring>()</argsstring>
+        <name>currentRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1afcf75c6d91df537643c95fa25a66de92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRangeForCapture:</definition>
+        <argsstring>(const RKUInteger capture)</argsstring>
+        <name>currentRangeForCapture:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a0495dff66d2fb56a77565dfc394d3ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRangeForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>currentRangeForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a7dbff5d0073d593ce26461924da6d781" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKEnumerator::currentRanges</definition>
+        <argsstring>()</argsstring>
+        <name>currentRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a61ed4826271f0a4b28442c3068938cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::nextObject</definition>
+        <argsstring>()</argsstring>
+        <name>nextObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a91fbeeac55fb651ff57d2dde85dda012" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRange</definition>
+        <argsstring>()</argsstring>
+        <name>nextRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a52cf789fbf7fb3cbf4ed1032fa136017" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRangeForCapture:</definition>
+        <argsstring>(const RKUInteger capture)</argsstring>
+        <name>nextRangeForCapture:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a4095a601af15dd62836adeb7105f88da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRangeForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>nextRangeForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1abbc9000769aeff849cf72e7ab527f760" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKEnumerator::nextRanges</definition>
+        <argsstring>()</argsstring>
+        <name>nextRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a1c0b4f336d4d2d43502f1589eab6023e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKEnumerator::getCapturesWithReferences:</definition>
+        <argsstring>(NSString *const firstReference,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithReferences:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>firstReference</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a5fb7502952ee16f65bf61fa9c4ac72f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceString:</definition>
+        <argsstring>(NSString *const referenceString)</argsstring>
+        <name>stringWithReferenceString:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a541989a32e34fd28d84006904a96bd31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceFormat:</definition>
+        <argsstring>(NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringWithReferenceFormat:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a22ac0d889cf2c09c315ac08f2c750cf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceFormat:arguments:</definition>
+        <argsstring>(NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringWithReferenceFormat:arguments:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ab45fb744d0bc3a2aee41f469f4b0a986" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString)</argsstring>
+        <name>initWithRegex:string:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ad1bad36f2d3bd3eba6de33fcafaf8e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:inRange:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange)</argsstring>
+        <name>initWithRegex:string:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a4f1db961c794b75d4317c4a8e8208051" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::initWithRegex:string:inRange:error:</definition>
+        <argsstring>(id initRegex,[string] NSString *const initString,[inRange] const NSRange initRange,[error] NSError **error)</argsstring>
+        <name>initWithRegex:string:inRange:error:</name>
+        <param>
+          <type>id</type>
+          <declname>initRegex</declname>
+        </param>
+        <param>
+          <attributes>[string]</attributes>
+          <type>NSString *const</type>
+          <declname>initString</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>initRange</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ac308ce07de2295cc25e79ba95e8d1dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * RKEnumerator::regex</definition>
+        <argsstring>()</argsstring>
+        <name>regex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a65957082b543324f052a437183733b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::string</definition>
+        <argsstring>()</argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1ae5528582796723abbb37baca026f43e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRange</definition>
+        <argsstring>()</argsstring>
+        <name>currentRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1afcf75c6d91df537643c95fa25a66de92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRangeForCapture:</definition>
+        <argsstring>(const RKUInteger capture)</argsstring>
+        <name>currentRangeForCapture:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a0495dff66d2fb56a77565dfc394d3ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::currentRangeForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>currentRangeForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a7dbff5d0073d593ce26461924da6d781" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKEnumerator::currentRanges</definition>
+        <argsstring>()</argsstring>
+        <name>currentRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a61ed4826271f0a4b28442c3068938cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RKEnumerator::nextObject</definition>
+        <argsstring>()</argsstring>
+        <name>nextObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a91fbeeac55fb651ff57d2dde85dda012" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRange</definition>
+        <argsstring>()</argsstring>
+        <name>nextRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a52cf789fbf7fb3cbf4ed1032fa136017" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRangeForCapture:</definition>
+        <argsstring>(const RKUInteger capture)</argsstring>
+        <name>nextRangeForCapture:</name>
+        <param>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a4095a601af15dd62836adeb7105f88da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange RKEnumerator::nextRangeForCaptureName:</definition>
+        <argsstring>(NSString *const captureNameString)</argsstring>
+        <name>nextRangeForCaptureName:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>captureNameString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1abbc9000769aeff849cf72e7ab527f760" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * RKEnumerator::nextRanges</definition>
+        <argsstring>()</argsstring>
+        <name>nextRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a1c0b4f336d4d2d43502f1589eab6023e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKEnumerator::getCapturesWithReferences:</definition>
+        <argsstring>(NSString *const firstReference,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithReferences:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>firstReference</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a5fb7502952ee16f65bf61fa9c4ac72f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceString:</definition>
+        <argsstring>(NSString *const referenceString)</argsstring>
+        <name>stringWithReferenceString:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a541989a32e34fd28d84006904a96bd31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceFormat:</definition>
+        <argsstring>(NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringWithReferenceFormat:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_enumerator_1a22ac0d889cf2c09c315ac08f2c750cf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RKEnumerator::stringWithReferenceFormat:arguments:</definition>
+        <argsstring>(NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringWithReferenceFormat:arguments:</name>
+        <param>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="716">
+        <label>pcre_extra</label>
+        <link refid="structpcre__extra"/>
+      </node>
+      <node id="715">
+        <label>RKRegex</label>
+        <link refid="interface_r_k_regex"/>
+        <childnode refid="716" relation="usage">
+          <edgelabel>_extraPCRE</edgelabel>
+        </childnode>
+      </node>
+      <node id="714">
+        <label>RKEnumerator</label>
+        <link refid="interface_r_k_enumerator"/>
+        <childnode refid="715" relation="usage">
+          <edgelabel>regex</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" line="52" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKEnumerator.h" bodystart="52" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_k_enumerator_1aee680d24622d627fee40ff7a67d4933a" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>atBufferLocation</name></member>
+      <member refid="interface_r_k_enumerator_1ae5528582796723abbb37baca026f43e8" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRange</name></member>
+      <member refid="interface_r_k_enumerator_1ae5528582796723abbb37baca026f43e8" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRange</name></member>
+      <member refid="interface_r_k_enumerator_1afcf75c6d91df537643c95fa25a66de92" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRangeForCapture:</name></member>
+      <member refid="interface_r_k_enumerator_1afcf75c6d91df537643c95fa25a66de92" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRangeForCapture:</name></member>
+      <member refid="interface_r_k_enumerator_1a0495dff66d2fb56a77565dfc394d3ec0" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRangeForCaptureName:</name></member>
+      <member refid="interface_r_k_enumerator_1a0495dff66d2fb56a77565dfc394d3ec0" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRangeForCaptureName:</name></member>
+      <member refid="interface_r_k_enumerator_1a7dbff5d0073d593ce26461924da6d781" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRanges</name></member>
+      <member refid="interface_r_k_enumerator_1a7dbff5d0073d593ce26461924da6d781" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>currentRanges</name></member>
+      <member refid="interface_r_k_enumerator_1a68e613dc4d7b465896311f90242d9ec0" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:</name></member>
+      <member refid="interface_r_k_enumerator_1a68e613dc4d7b465896311f90242d9ec0" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:</name></member>
+      <member refid="interface_r_k_enumerator_1a42ca094bc7747676b568ff967140e8cb" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:inRange:</name></member>
+      <member refid="interface_r_k_enumerator_1a42ca094bc7747676b568ff967140e8cb" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:inRange:</name></member>
+      <member refid="interface_r_k_enumerator_1a19eb1be48091d8d15d97dff122c64a17" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:inRange:error:</name></member>
+      <member refid="interface_r_k_enumerator_1a19eb1be48091d8d15d97dff122c64a17" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>enumeratorWithRegex:string:inRange:error:</name></member>
+      <member refid="interface_r_k_enumerator_1a1c0b4f336d4d2d43502f1589eab6023e" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>getCapturesWithReferences:</name></member>
+      <member refid="interface_r_k_enumerator_1a1c0b4f336d4d2d43502f1589eab6023e" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>getCapturesWithReferences:</name></member>
+      <member refid="interface_r_k_enumerator_1a77c40111f73bb1c3c2ffca44e7d68b41" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>hasPerformedMatch</name></member>
+      <member refid="interface_r_k_enumerator_1ab45fb744d0bc3a2aee41f469f4b0a986" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:</name></member>
+      <member refid="interface_r_k_enumerator_1ab45fb744d0bc3a2aee41f469f4b0a986" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:</name></member>
+      <member refid="interface_r_k_enumerator_1ad1bad36f2d3bd3eba6de33fcafaf8e7b" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:inRange:</name></member>
+      <member refid="interface_r_k_enumerator_1ad1bad36f2d3bd3eba6de33fcafaf8e7b" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:inRange:</name></member>
+      <member refid="interface_r_k_enumerator_1a4f1db961c794b75d4317c4a8e8208051" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:inRange:error:</name></member>
+      <member refid="interface_r_k_enumerator_1a4f1db961c794b75d4317c4a8e8208051" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>initWithRegex:string:inRange:error:</name></member>
+      <member refid="interface_r_k_enumerator_1a61ed4826271f0a4b28442c3068938cb4" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextObject</name></member>
+      <member refid="interface_r_k_enumerator_1a61ed4826271f0a4b28442c3068938cb4" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextObject</name></member>
+      <member refid="interface_r_k_enumerator_1a91fbeeac55fb651ff57d2dde85dda012" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRange</name></member>
+      <member refid="interface_r_k_enumerator_1a91fbeeac55fb651ff57d2dde85dda012" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRange</name></member>
+      <member refid="interface_r_k_enumerator_1a52cf789fbf7fb3cbf4ed1032fa136017" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRangeForCapture:</name></member>
+      <member refid="interface_r_k_enumerator_1a52cf789fbf7fb3cbf4ed1032fa136017" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRangeForCapture:</name></member>
+      <member refid="interface_r_k_enumerator_1a4095a601af15dd62836adeb7105f88da" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRangeForCaptureName:</name></member>
+      <member refid="interface_r_k_enumerator_1a4095a601af15dd62836adeb7105f88da" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRangeForCaptureName:</name></member>
+      <member refid="interface_r_k_enumerator_1abbc9000769aeff849cf72e7ab527f760" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRanges</name></member>
+      <member refid="interface_r_k_enumerator_1abbc9000769aeff849cf72e7ab527f760" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>nextRanges</name></member>
+      <member refid="interface_r_k_enumerator_1a0332230c5efcec00b481ba3a4c698962" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>regex</name></member>
+      <member refid="interface_r_k_enumerator_1ac308ce07de2295cc25e79ba95e8d1dee" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>regex</name></member>
+      <member refid="interface_r_k_enumerator_1ac308ce07de2295cc25e79ba95e8d1dee" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>regex</name></member>
+      <member refid="interface_r_k_enumerator_1a07ede92e2a0d5717b917f4ac23739418" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>regexCaptureCount</name></member>
+      <member refid="interface_r_k_enumerator_1ad0520356509cf2b3e500b7a1277a56ea" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>resultUTF16Ranges</name></member>
+      <member refid="interface_r_k_enumerator_1a6877d05a7d43c4f27c45f0f6870592ab" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>resultUTF8Ranges</name></member>
+      <member refid="interface_r_k_enumerator_1afd419d9a74cdd9aadb6f835dc9104a45" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>searchByteRange</name></member>
+      <member refid="interface_r_k_enumerator_1a72243e26252a6a5c6aee95715be79167" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>searchUTF16Range</name></member>
+      <member refid="interface_r_k_enumerator_1a02cc03bccf9bf32ce91677032a1bc364" prot="protected" virt="non-virtual"><scope>RKEnumerator</scope><name>string</name></member>
+      <member refid="interface_r_k_enumerator_1a65957082b543324f052a437183733b03" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>string</name></member>
+      <member refid="interface_r_k_enumerator_1a65957082b543324f052a437183733b03" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>string</name></member>
+      <member refid="interface_r_k_enumerator_1a541989a32e34fd28d84006904a96bd31" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceFormat:</name></member>
+      <member refid="interface_r_k_enumerator_1a541989a32e34fd28d84006904a96bd31" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceFormat:</name></member>
+      <member refid="interface_r_k_enumerator_1a22ac0d889cf2c09c315ac08f2c750cf7" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceFormat:arguments:</name></member>
+      <member refid="interface_r_k_enumerator_1a22ac0d889cf2c09c315ac08f2c750cf7" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceFormat:arguments:</name></member>
+      <member refid="interface_r_k_enumerator_1a5fb7502952ee16f65bf61fa9c4ac72f3" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceString:</name></member>
+      <member refid="interface_r_k_enumerator_1a5fb7502952ee16f65bf61fa9c4ac72f3" prot="public" virt="virtual"><scope>RKEnumerator</scope><name>stringWithReferenceString:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

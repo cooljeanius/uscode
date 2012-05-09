@@ -5,3 +5,7 @@ build/*
 *.pbxuser
 *.perspectivev3
 *.build
+build
+CMakeFiles/*
+CMakeLists.txt
+CMakeFiles

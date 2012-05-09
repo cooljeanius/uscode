@@ -1,0 +1,53 @@
+.TH "FuncCallExprNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FuncCallExprNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFuncDefStmtNode\fP * \fBdef\fP"
+.br
+.ti -1c
+.RI "\fBExprNodeList\fP * \fBargs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a function call expression\&. A function call expression evaluates to the return value of the function defined in \fIdef\fP called with the arguments listed in \fIargs\fP\&.
+.PP
+\fBNote:\fP
+.RS 4
+\fIargs\fP is not an \fBExprNodeList\fP because its arity is known in advance (because a \fBFuncDefStmtNode\fP for it has presumably been created) and thus the benefit of an \fBExprNodeList\fP (easy syntax for adding new elements) would not be relevant\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+createFuncCallExprNode(FuncDefStmtNode *, ExprNodeList *) 
+.PP
+deleteFuncCallExprNode(FuncCallExprNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 486 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNodeList\fP* \fBFuncCallExprNode::args\fP"
+A pointer to a list of \fBExprNode\fP structure arguments to be supplied to the function defined by \fIdef\fP\&. 
+.PP
+Definition at line 488 of file parser\&.h\&.
+.SS "\fBFuncDefStmtNode\fP* \fBFuncCallExprNode::def\fP"
+A pointer to the function definition to call\&. 
+.PP
+Definition at line 487 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

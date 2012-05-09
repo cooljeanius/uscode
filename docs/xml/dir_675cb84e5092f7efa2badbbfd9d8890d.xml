@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_675cb84e5092f7efa2badbbfd9d8890d" kind="dir">
+    <compoundname>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/</compoundname>
+    <innerdir refid="dir_e0e858194c90723f37ac087e70988f7a">Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/"/>
+  </compounddef>
+</doxygen>

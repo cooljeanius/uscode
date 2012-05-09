@@ -1,0 +1,143 @@
+Presented below is the E\-B\-N\-F (see \href{http://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Extended\-\_\-\-Backus\%\-E2\%80\%93\-Naur\-\_\-\-Form}) for L\-O\-L\-C\-O\-D\-E that {\ttfamily lci} parses. Note that by this stage, the scanner has\-:
+\begin{DoxyItemize}
+\item already removed any whitespace between tokens,
+\item added in and truncated newline tokens at logical line breaks, and
+\item added an end-\/of-\/file ({\ttfamily \$}) token.
+\end{DoxyItemize}\hypertarget{lolebnf_progebnf}{}\section{Program Structure}\label{lolebnf_progebnf}
+These production rules dictate the overall form of the program.
+
+\begin{DoxyParagraph}{}
+\hyperlink{struct_main_node}{Main\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-H\-A\-I} {\itshape version\/} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node} {\ttfamily \$} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_block_node}{Block\-Node} \-:\-:= \hyperlink{struct_stmt_node}{Stmt\-Node} $\ast$
+\end{DoxyParagraph}
+\hypertarget{lolebnf_stmtebnf}{}\section{Statements}\label{lolebnf_stmtebnf}
+These production rules specify some general types of parse structures.
+
+\begin{DoxyParagraph}{}
+\hyperlink{struct_constant_node}{Constant\-Node} \-:\-:= Boolean $|$ Integer $|$ Float $|$ String
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_identifier_node}{Identifier\-Node} \-:\-:= Identifier
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_type_node}{Type\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-N\-O\-O\-B} $|$ {\ttfamily T\-T\-\_\-\-T\-R\-O\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-N\-U\-M\-B\-R} $|$ {\ttfamily T\-T\-\_\-\-N\-U\-M\-B\-A\-R} $|$ {\ttfamily T\-T\-\_\-\-Y\-A\-R\-N} 
+\end{DoxyParagraph}
+\hypertarget{lolebnf_stmtebnf}{}\section{Statements}\label{lolebnf_stmtebnf}
+These production rules specify the types of statements formed.
+
+\begin{DoxyParagraph}{}
+\hyperlink{struct_stmt_node}{Stmt\-Node} \-:\-:= \hyperlink{struct_cast_stmt_node}{Cast\-Stmt\-Node} $|$ \hyperlink{struct_print_stmt_node}{Print\-Stmt\-Node} $|$ \hyperlink{struct_input_stmt_node}{Input\-Stmt\-Node} $|$ \hyperlink{struct_assignment_stmt_node}{Assignment\-Stmt\-Node} $|$ \hyperlink{struct_declaration_stmt_node}{Declaration\-Stmt\-Node} $|$ \hyperlink{struct_if_then_else_stmt_node}{If\-Then\-Else\-Stmt\-Node} $|$ \hyperlink{struct_switch_stmt_node}{Switch\-Stmt\-Node} $|$ Break\-Stmt $|$ \hyperlink{struct_return_stmt_node}{Return\-Stmt\-Node} $|$ \hyperlink{struct_loop_stmt_node}{Loop\-Stmt\-Node} $|$ \hyperlink{struct_func_def_stmt_node}{Func\-Def\-Stmt\-Node} $|$ Expr\-Stmt
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_cast_stmt_node}{Cast\-Stmt\-Node} \-:\-:= \hyperlink{struct_identifier_node}{Identifier\-Node} {\ttfamily T\-T\-\_\-\-I\-S\-N\-O\-W\-A} \hyperlink{struct_type_node}{Type\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_print_stmt_node}{Print\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E} \hyperlink{struct_expr_node_list}{Expr\-Node\-List} {\ttfamily }\mbox{[} {\ttfamily T\-T\-\_\-\-B\-A\-N\-G} \mbox{]} T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_input_stmt_node}{Input\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-G\-I\-M\-M\-E\-H} \hyperlink{struct_identifier_node}{Identifier\-Node} T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_assignment_stmt_node}{Assignment\-Stmt\-Node} \-:\-:= \hyperlink{struct_identifier_node}{Identifier\-Node} {\ttfamily T\-T\-\_\-\-R} \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_declaration_stmt_node}{Declaration\-Stmt\-Node} \-:\-:= \hyperlink{struct_identifier_node}{Identifier\-Node} {\ttfamily T\-T\-\_\-\-H\-A\-S\-A} \hyperlink{struct_identifier_node}{Identifier\-Node} \mbox{[} Initialization \mbox{]} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Initialization \-:\-:= {\ttfamily T\-T\-\_\-\-I\-T\-Z} \hyperlink{struct_expr_node}{Expr\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_if_then_else_stmt_node}{If\-Then\-Else\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-O\-R\-L\-Y} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} {\ttfamily T\-T\-\_\-\-Y\-A\-R\-L\-Y} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node} Else\-If $\ast$ \mbox{[} Else \mbox{]} {\ttfamily T\-T\-\_\-\-O\-I\-C} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Else\-If \-:\-:= {\ttfamily T\-T\-\_\-\-M\-E\-B\-B\-E} \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Else \-:\-:= {\ttfamily T\-T\-\_\-\-N\-O\-W\-A\-I} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_switch_stmt_node}{Switch\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-W\-T\-F} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} Case + \mbox{[} Default\-Case \mbox{]} {\ttfamily T\-T\-\_\-\-O\-I\-C} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Case \-:\-:= {\ttfamily T\-T\-\_\-\-O\-M\-G} \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Default\-Case \-:\-:= {\ttfamily T\-T\-\_\-\-O\-M\-G\-W\-T\-F} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Break\-Stmt \-:\-:= {\ttfamily T\-T\-\_\-\-G\-T\-F\-O} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_return_stmt_node}{Return\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-F\-O\-U\-N\-D\-Y\-R} \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_loop_stmt_node}{Loop\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-I\-M\-I\-N\-Y\-R} \hyperlink{struct_identifier_node}{Identifier\-Node} \mbox{[} Loop\-Update \mbox{]} \mbox{[} Loop\-Guard \mbox{]} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} {\ttfamily T\-T\-\_\-\-I\-M\-O\-U\-T\-T\-A\-Y\-R} \hyperlink{struct_identifier_node}{Identifier\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Loop\-Update \-:\-:= Loop\-Update\-Op {\ttfamily T\-T\-\_\-\-Y\-R} \hyperlink{struct_identifier_node}{Identifier\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Loop\-Update\-Op \-:\-:= {\ttfamily T\-T\-\_\-\-U\-P\-P\-I\-N} $|$ {\ttfamily T\-T\-\_\-\-N\-E\-R\-F\-I\-N} $|$ Unary\-Function
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Unary\-Function \-:\-:= The name of a previously defined unary function.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Loop\-Guard \-:\-:= {\ttfamily T\-T\-\_\-\-T\-I\-L} \hyperlink{struct_expr_node}{Expr\-Node} $|$ {\ttfamily T\-T\-\_\-\-W\-I\-L\-E} \hyperlink{struct_expr_node}{Expr\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_func_def_stmt_node}{Func\-Def\-Stmt\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-H\-O\-W\-D\-U\-Z} \hyperlink{struct_identifier_node}{Identifier\-Node} \hyperlink{struct_identifier_node}{Identifier\-Node} \mbox{[} Function\-Def\-Args \mbox{]} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} \hyperlink{struct_block_node}{Block\-Node} {\ttfamily T\-T\-\_\-\-I\-F\-U\-S\-A\-Y\-S\-O} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Function\-Def\-Args \-:\-:= {\ttfamily T\-T\-\_\-\-Y\-R} \hyperlink{struct_identifier_node}{Identifier\-Node} Function\-Def\-Arg $\ast$
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Function\-Def\-Arg \-:\-:= {\ttfamily T\-T\-\_\-\-A\-N\-Y\-R} \hyperlink{struct_identifier_node}{Identifier\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Expr\-Stmt \-:\-:= \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E} 
+\end{DoxyParagraph}
+\hypertarget{lolebnf_exprebnf}{}\section{Expressions}\label{lolebnf_exprebnf}
+These production rules specify the types of expressions formed.
+
+\begin{DoxyParagraph}{}
+\hyperlink{struct_expr_node}{Expr\-Node} \-:\-:= \hyperlink{struct_cast_expr_node}{Cast\-Expr\-Node} $|$ \hyperlink{struct_constant_node}{Constant\-Node} $|$ \hyperlink{struct_identifier_node}{Identifier\-Node} $|$ \hyperlink{struct_func_call_expr_node}{Func\-Call\-Expr\-Node} $|$ \hyperlink{struct_op_expr_node}{Op\-Expr\-Node} $|$ Implicit\-Variable
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_cast_expr_node}{Cast\-Expr\-Node} \-:\-:= {\ttfamily T\-T\-\_\-\-M\-A\-E\-K} \hyperlink{struct_expr_node}{Expr\-Node} {\ttfamily T\-T\-\_\-\-A} \hyperlink{struct_type_node}{Type\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_func_call_expr_node}{Func\-Call\-Expr\-Node} \-:\-:= \hyperlink{struct_identifier_node}{Identifier\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+\hyperlink{struct_op_expr_node}{Op\-Expr\-Node} \-:\-:= Unary\-Op $|$ Binary\-Op $|$ Nary\-Op
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Unary\-Op \-:\-:= Unary\-Op\-Type \hyperlink{struct_expr_node}{Expr\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Unary\-Op\-Type \-:\-:= {\ttfamily T\-T\-\_\-\-N\-O\-T} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Binary\-Op \-:\-:= Binary\-Op\-Type \hyperlink{struct_expr_node}{Expr\-Node} \mbox{[} {\ttfamily T\-T\-\_\-\-A\-N} \mbox{]} \hyperlink{struct_expr_node}{Expr\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Binary\-Op\-Type \-:\-:= {\ttfamily T\-T\-\_\-\-S\-U\-M\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-D\-I\-F\-F\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-P\-R\-O\-D\-U\-K\-T\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-Q\-U\-O\-S\-H\-U\-N\-T\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-M\-O\-D\-O\-F} $|$ {\ttfamily B\-I\-G\-G\-R\-O\-F} $|$ {\ttfamily S\-M\-A\-L\-L\-R\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-B\-O\-T\-H\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-E\-I\-T\-H\-E\-R\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-W\-O\-N\-O\-F} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Nary\-Op \-:\-:= Nary\-Op\-Type Nary\-Op\-Args {\ttfamily T\-T\-\_\-\-M\-K\-A\-Y} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Nary\-Op\-Type \-:\-:= {\ttfamily T\-T\-\_\-\-A\-L\-L\-O\-F} $|$ {\ttfamily T\-T\-\_\-\-A\-N\-Y\-O\-F} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Nary\-Op\-Args \-:\-:= \hyperlink{struct_expr_node}{Expr\-Node} Nary\-Op\-Arg +
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Nary\-Op\-Arg \-:\-:= \mbox{[} {\ttfamily T\-T\-\_\-\-A\-N} \mbox{]} \hyperlink{struct_expr_node}{Expr\-Node}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Implicit\-Variable \-:\-:= {\ttfamily T\-T\-\_\-\-I\-T} 
+\end{DoxyParagraph}

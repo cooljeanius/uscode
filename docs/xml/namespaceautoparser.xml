@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="namespaceautoparser" kind="namespace">
+    <compoundname>autoparser</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceautoparser_1ac19822a0702de00e9a68f4720bd831e0" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple autoparser::regfile</definition>
+        <argsstring></argsstring>
+        <name>regfile</name>
+        <initializer>os.path.abspath(os.path.dirname(__file__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="12" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceautoparser_1a0878f8c31cbb7e88439ea8bbec216794" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string autoparser::divider</definition>
+        <argsstring></argsstring>
+        <name>divider</name>
+        <initializer>&quot;&lt;!-- documentid:&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="13" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceautoparser_1af8b40934ad6d76cdc7ee3dbede459702" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>autoparser._DEBUG</definition>
+        <argsstring></argsstring>
+        <name>_DEBUG</name>
+        <initializer>False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="14" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceautoparser_1aaaaaf6b255f062eea2a59588d2cbc233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::makergxlist</definition>
+        <argsstring></argsstring>
+        <name>makergxlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="19" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1ac2502f8208aa63af13a89896dc23687b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::subfile</definition>
+        <argsstring></argsstring>
+        <name>subfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="30" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="30" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1acef18d61c3f74ffbfbbf383bfabf5ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::parsesections</definition>
+        <argsstring></argsstring>
+        <name>parsesections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="48" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1a4d5192e290d1c5504d66f45dd742ebc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::parsenamedacts</definition>
+        <argsstring></argsstring>
+        <name>parsenamedacts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="58" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1ad0c3bc229a21266d1d101b567afa30a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::encode_act</definition>
+        <argsstring></argsstring>
+        <name>encode_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="67" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1a321149ed414f3750d2c56e42ae998949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::parsers</definition>
+        <argsstring></argsstring>
+        <name>parsers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="77" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="77" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceautoparser_1af234ee13045f8a4f61cf5b9b0d6adf3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def autoparser::parse</definition>
+        <argsstring></argsstring>
+        <name>parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="109" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" bodystart="109" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/autoparser.py" line="1"/>
+  </compounddef>
+</doxygen>

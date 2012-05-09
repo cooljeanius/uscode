@@ -1,0 +1,69 @@
+\hypertarget{struct_switch_stmt_node}{\section{Switch\-Stmt\-Node Struct Reference}
+\label{struct_switch_stmt_node}\index{Switch\-Stmt\-Node@{Switch\-Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Switch\-Stmt\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{struct_switch_stmt_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_expr_node_list}{Expr\-Node\-List} $\ast$ \hyperlink{struct_switch_stmt_node_a125319a6fd02d72d96d41193daffb4a2}{guards}
+\item 
+\hyperlink{struct_block_node_list}{Block\-Node\-List} $\ast$ \hyperlink{struct_switch_stmt_node_a6cdb5c66044261b28302b6ca682d7564}{blocks}
+\item 
+\hyperlink{struct_block_node}{Block\-Node} $\ast$ \hyperlink{struct_switch_stmt_node_ad75de1632a46c451d251959e56d53d44}{def}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a switch statement. A switch statement compares the value of the \hyperlink{impvar}{implicit variable} to each of the {\itshape guards\/} and executes the respective block of code in {\itshape blocks\/} if they match. If no matches are found between the \hyperlink{impvar}{implicit variable} and one of the {\itshape guards\/}, the optional default block of code, {\itshape def\/}, is executed.
+
+\begin{DoxySeeAlso}{See also}
+create\-Switch\-Stmt\-Node(\-Expr\-Node\-List $\ast$, Block\-Node\-List $\ast$, Block\-Node $\ast$) 
+
+delete\-Switch\-Stmt\-Node(\-Switch\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 436 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_switch_stmt_node_a6cdb5c66044261b28302b6ca682d7564}{\index{Switch\-Stmt\-Node@{Switch\-Stmt\-Node}!blocks@{blocks}}
+\index{blocks@{blocks}!SwitchStmtNode@{Switch\-Stmt\-Node}}
+\subsubsection[{blocks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\-Node\-List}$\ast$ {\bf Switch\-Stmt\-Node\-::blocks}}}\label{struct_switch_stmt_node_a6cdb5c66044261b28302b6ca682d7564}
+A pointer to the respective blocks of code to execute if one of the {\itshape guards\/} matches the \hyperlink{impvar}{implicit variable}. 
+
+Definition at line 438 of file parser.\-h.
+
+\hypertarget{struct_switch_stmt_node_ad75de1632a46c451d251959e56d53d44}{\index{Switch\-Stmt\-Node@{Switch\-Stmt\-Node}!def@{def}}
+\index{def@{def}!SwitchStmtNode@{Switch\-Stmt\-Node}}
+\subsubsection[{def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\-Node}$\ast$ {\bf Switch\-Stmt\-Node\-::def}}}\label{struct_switch_stmt_node_ad75de1632a46c451d251959e56d53d44}
+A pointer to the default block of code to execute if none of the {\itshape guards\/} match the \hyperlink{impvar}{implicit variable}. 
+
+Definition at line 439 of file parser.\-h.
+
+\hypertarget{struct_switch_stmt_node_a125319a6fd02d72d96d41193daffb4a2}{\index{Switch\-Stmt\-Node@{Switch\-Stmt\-Node}!guards@{guards}}
+\index{guards@{guards}!SwitchStmtNode@{Switch\-Stmt\-Node}}
+\subsubsection[{guards}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node\-List}$\ast$ {\bf Switch\-Stmt\-Node\-::guards}}}\label{struct_switch_stmt_node_a125319a6fd02d72d96d41193daffb4a2}
+A pointer to the expressions to evaluate and compare to the \hyperlink{impvar}{implicit variable}. 
+
+Definition at line 437 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

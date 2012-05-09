@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_buffer" kind="struct" prot="public">
+    <compoundname>_xmlBuffer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_buffer_1a44d91a1073f8b07bc55196bf656ce2fa" prot="public" static="no" mutable="no">
+        <type>xmlChar *</type>
+        <definition>xmlChar * _xmlBuffer::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="87" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_buffer_1aaf67415a2fbcd5030c7d3f828b735ad6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _xmlBuffer::use</definition>
+        <argsstring></argsstring>
+        <name>use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="88" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_buffer_1a9729e805b7736692f496eefac6103210" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _xmlBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="89" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_buffer_1acac8aee322443ed7a9d0854ee5a87b02" prot="public" static="no" mutable="no">
+        <type>xmlBufferAllocationScheme</type>
+        <definition>xmlBufferAllocationScheme _xmlBuffer::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="90" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="86" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="86" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct__xml_buffer_1acac8aee322443ed7a9d0854ee5a87b02" prot="public" virt="non-virtual"><scope>_xmlBuffer</scope><name>alloc</name></member>
+      <member refid="struct__xml_buffer_1a44d91a1073f8b07bc55196bf656ce2fa" prot="public" virt="non-virtual"><scope>_xmlBuffer</scope><name>content</name></member>
+      <member refid="struct__xml_buffer_1a9729e805b7736692f496eefac6103210" prot="public" virt="non-virtual"><scope>_xmlBuffer</scope><name>size</name></member>
+      <member refid="struct__xml_buffer_1aaf67415a2fbcd5030c7d3f828b735ad6" prot="public" virt="non-virtual"><scope>_xmlBuffer</scope><name>use</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

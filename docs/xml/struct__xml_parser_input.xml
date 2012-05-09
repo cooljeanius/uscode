@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_parser_input" kind="struct" prot="public">
+    <compoundname>_xmlParserInput</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_parser_input_1ab50ed3b4b2f13d9c298d901395dfa531" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+        <definition>xmlParserInputBufferPtr _xmlParserInput::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="56" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a8c84814dc9a4d5545dc5bd6a5bebf5e3" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char * _xmlParserInput::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="58" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1af7ab0de725e8086ef73ac8d12e61c1c9" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char * _xmlParserInput::directory</definition>
+        <argsstring></argsstring>
+        <name>directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="59" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a19611a369c8af841f220210ad7d936b4" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlParserInput::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="60" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1aba8f39b65dfcd6a2f8adc403d6cbf01b" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlParserInput::cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="61" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a56257ad30a6806f118fa73db08c775fe" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlParserInput::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="62" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a12d4752740620b43cc8fd64d13a7f91d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlParserInput::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="63" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a52689e7ee99ea4f70fea0da521371d43" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlParserInput::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="64" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a9be0a6d559062188aec7158b94cdde29" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlParserInput::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="65" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1aa4dbae4bbb1c3ffa212ad5d41402e587" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long _xmlParserInput::consumed</definition>
+        <argsstring></argsstring>
+        <name>consumed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="71" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a7c55373e42c374bc9df1c542274398fa" prot="public" static="no" mutable="no">
+        <type>xmlParserInputDeallocate</type>
+        <definition>xmlParserInputDeallocate _xmlParserInput::free</definition>
+        <argsstring></argsstring>
+        <name>free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="72" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a5da2bb3d589073b7d472e6aa41ef4d81" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlParserInput::encoding</definition>
+        <argsstring></argsstring>
+        <name>encoding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="73" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a83d340bb1a9cfacc2ac37ed0cc9d492d" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlParserInput::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="74" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a2799e20f843ea79b753d9f8b60d4b793" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlParserInput::standalone</definition>
+        <argsstring></argsstring>
+        <name>standalone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="75" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_parser_input_1a20347691b442d481465e18f6777efecd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlParserInput::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="76" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="503">
+        <label>_xmlCharEncodingHandler</label>
+        <link refid="struct__xml_char_encoding_handler"/>
+      </node>
+      <node id="500">
+        <label>_xmlParserInput</label>
+        <link refid="struct__xml_parser_input"/>
+        <childnode refid="501" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="501">
+        <label>_xmlParserInputBuffer</label>
+        <link refid="struct__xml_parser_input_buffer"/>
+        <childnode refid="502" relation="usage">
+          <edgelabel>raw</edgelabel>
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+        <childnode refid="503" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+      </node>
+      <node id="502">
+        <label>_xmlBuffer</label>
+        <link refid="struct__xml_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="54" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="54" bodyend="77"/>
+    <listofallmembers>
+      <member refid="struct__xml_parser_input_1a19611a369c8af841f220210ad7d936b4" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>base</name></member>
+      <member refid="struct__xml_parser_input_1ab50ed3b4b2f13d9c298d901395dfa531" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>buf</name></member>
+      <member refid="struct__xml_parser_input_1a9be0a6d559062188aec7158b94cdde29" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>col</name></member>
+      <member refid="struct__xml_parser_input_1aa4dbae4bbb1c3ffa212ad5d41402e587" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>consumed</name></member>
+      <member refid="struct__xml_parser_input_1aba8f39b65dfcd6a2f8adc403d6cbf01b" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>cur</name></member>
+      <member refid="struct__xml_parser_input_1af7ab0de725e8086ef73ac8d12e61c1c9" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>directory</name></member>
+      <member refid="struct__xml_parser_input_1a5da2bb3d589073b7d472e6aa41ef4d81" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>encoding</name></member>
+      <member refid="struct__xml_parser_input_1a56257ad30a6806f118fa73db08c775fe" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>end</name></member>
+      <member refid="struct__xml_parser_input_1a8c84814dc9a4d5545dc5bd6a5bebf5e3" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>filename</name></member>
+      <member refid="struct__xml_parser_input_1a7c55373e42c374bc9df1c542274398fa" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>free</name></member>
+      <member refid="struct__xml_parser_input_1a20347691b442d481465e18f6777efecd" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>id</name></member>
+      <member refid="struct__xml_parser_input_1a12d4752740620b43cc8fd64d13a7f91d" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>length</name></member>
+      <member refid="struct__xml_parser_input_1a52689e7ee99ea4f70fea0da521371d43" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>line</name></member>
+      <member refid="struct__xml_parser_input_1a2799e20f843ea79b753d9f8b60d4b793" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>standalone</name></member>
+      <member refid="struct__xml_parser_input_1a83d340bb1a9cfacc2ac37ed0cc9d492d" prot="public" virt="non-virtual"><scope>_xmlParserInput</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

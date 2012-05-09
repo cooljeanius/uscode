@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_print_stmt_node" kind="struct" prot="public">
+    <compoundname>PrintStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_print_stmt_node_1a9ee87b79d331dc05b6a4bb27462a5f69" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node_list" kindref="compound">ExprNodeList</ref> *</type>
+        <definition>ExprNodeList* PrintStmtNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the list of expressions to evaluate and print. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="374" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="374" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3099ebd9282870922a92b1b59f675458" compoundref="interpreter_8c" startline="2567" endline="2587">interpretPrintStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_print_stmt_node_1a147ba34eeda7bcfb39f2846a678d091c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PrintStmtNode::nonl</definition>
+        <argsstring></argsstring>
+        <name>nonl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Denotes an ending newline should be surpressed if not <computeroutput>0</computeroutput> and printed if <computeroutput>0</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="375" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="375" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3099ebd9282870922a92b1b59f675458" compoundref="interpreter_8c" startline="2567" endline="2587">interpretPrintStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a print statement. A print statement prints its arguments to some output device (by default standard output).</para><para><simplesect kind="see"><para>createPrintStmtNode(ExprNodeList *, int) </para><simplesectsep/><para>deletePrintStmtNode(PrintStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="699">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="697">
+        <label>PrintStmtNode</label>
+        <link refid="struct_print_stmt_node"/>
+        <childnode refid="698" relation="usage">
+          <edgelabel>args</edgelabel>
+        </childnode>
+      </node>
+      <node id="698">
+        <label>ExprNodeList</label>
+        <link refid="struct_expr_node_list"/>
+        <childnode refid="699" relation="usage">
+          <edgelabel>exprs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="373" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="373" bodyend="376"/>
+    <listofallmembers>
+      <member refid="struct_print_stmt_node_1a9ee87b79d331dc05b6a4bb27462a5f69" prot="public" virt="non-virtual"><scope>PrintStmtNode</scope><name>args</name></member>
+      <member refid="struct_print_stmt_node_1a147ba34eeda7bcfb39f2846a678d091c" prot="public" virt="non-virtual"><scope>PrintStmtNode</scope><name>nonl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

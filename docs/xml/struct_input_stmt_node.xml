@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_input_stmt_node" kind="struct" prot="public">
+    <compoundname>InputStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_input_stmt_node_1ad7cb247683faf94a9da01d08055349f2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* InputStmtNode::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the variable to store the input in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="385" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="385" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1ababafcbe6b8e86ed3284bb6643baafa4" compoundref="interpreter_8c" startline="2612" endline="2652">interpretInputStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores an input statement. An input statement accepts a line of input from the use on an input device (by default standard input) and stores it in a variable.</para><para><simplesect kind="see"><para>createInputStmtNode(IdentifierNode *) </para><simplesectsep/><para>deleteInputStmtNode(InputStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="646">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="645">
+        <label>InputStmtNode</label>
+        <link refid="struct_input_stmt_node"/>
+        <childnode refid="646" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="384" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="384" bodyend="386"/>
+    <listofallmembers>
+      <member refid="struct_input_stmt_node_1ad7cb247683faf94a9da01d08055349f2" prot="public" virt="non-virtual"><scope>InputStmtNode</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h" kind="file">
+    <compoundname>trionan.h</compoundname>
+    <includes refid="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h" local="yes">triodef.h</includes>
+    <incdepgraph>
+      <node id="340">
+        <label>triodef.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_source"/>
+      </node>
+      <node id="339">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/trionan.h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no">
+        <name>@4</name>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06cacbe5002857f674372aa60b0d542f64d3" prot="public">
+          <name>TRIO_FP_INFINITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06caca47042d339ae928867ebd709cfe1adf" prot="public">
+          <name>TRIO_FP_NAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06cae8504887b0aca769088a50fee49ccfe4" prot="public">
+          <name>TRIO_FP_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06cab095aa34d2cd063e3b504d39f2561137" prot="public">
+          <name>TRIO_FP_SUBNORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1adc29c2ff13d900c2f185ee95427fb06ca19020fd8c7a7ee4600ace222de2d9813" prot="public">
+          <name>TRIO_FP_ZERO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" line="27" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1a26457a7c3c09991ea4366129f32ad7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_PUBLIC double trio_nan</type>
+        <definition>TRIO_PUBLIC double trio_nan TRIO_PROTO</definition>
+        <argsstring>((void))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(void)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1a255a2178f42b872e9041f4af35c43c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_PUBLIC double trio_nzero</type>
+        <definition>TRIO_PUBLIC double trio_nzero TRIO_PROTO</definition>
+        <argsstring>((TRIO_NOARGS))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(TRIO_NOARGS)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1aa2a4ef40676a0b4b437ec637f8c322ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_PUBLIC int trio_isnan</type>
+        <definition>TRIO_PUBLIC int trio_isnan TRIO_PROTO</definition>
+        <argsstring>((double number))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(double number)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h_1a72f0162046cebd8879a22ad40d06b251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_PUBLIC int trio_fpclassify_and_signbit</type>
+        <definition>TRIO_PUBLIC int trio_fpclassify_and_signbit TRIO_PROTO</definition>
+        <argsstring>((double number, int *is_negative))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(double number, int *is_negative)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>$Id:<sp/>trionan.h<sp/>2026<sp/>2003-08-06<sp/>04:43:55Z<sp/>wbrack<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2001<sp/>Bjorn<sp/>Reese<sp/>&lt;breese@users.sourceforge.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>and<sp/>distribute<sp/>this<sp/>software<sp/>for<sp/>any</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>purpose<sp/>with<sp/>or<sp/>without<sp/>fee<sp/>is<sp/>hereby<sp/>granted,<sp/>provided<sp/>that<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>appear<sp/>in<sp/>all<sp/>copies.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>WITHOUT<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>WITHOUT<sp/>LIMITATION,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTIBILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>THE<sp/>AUTHORS<sp/>AND</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>ACCEPT<sp/>NO<sp/>RESPONSIBILITY<sp/>IN<sp/>ANY<sp/>CONCEIVABLE<sp/>MANNER.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_NAN_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRIO_NAN_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;triodef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>TRIO_FP_INFINITE,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>TRIO_FP_NAN,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>TRIO_FP_NORMAL,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>TRIO_FP_SUBNORMAL,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>TRIO_FP_ZERO</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>Return<sp/>NaN<sp/>(Not-a-Number).</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_nan<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>Return<sp/>positive<sp/>infinity.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_pinf<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>Return<sp/>negative<sp/>infinity.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_ninf<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>Return<sp/>negative<sp/>zero.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_nzero<sp/>TRIO_PROTO((TRIO_NOARGS));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>If<sp/>number<sp/>is<sp/>a<sp/>NaN<sp/>return<sp/>non-zero,<sp/>otherwise<sp/>return<sp/>zero.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_isnan<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>If<sp/>number<sp/>is<sp/>positive<sp/>infinity<sp/>return<sp/>1,<sp/>if<sp/>number<sp/>is<sp/>negative</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>infinity<sp/>return<sp/>-1,<sp/>otherwise<sp/>return<sp/>0.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_isinf<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>If<sp/>number<sp/>is<sp/>finite<sp/>return<sp/>non-zero,<sp/>otherwise<sp/>return<sp/>zero.</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Temporary<sp/>fix<sp/>-<sp/>these<sp/>2<sp/>routines<sp/>not<sp/>used<sp/>in<sp/>libxml<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_isfinite<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_fpclassify<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_signbit<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">TRIO_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_fpclassify_and_signbit<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*is_negative));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TRIO_NAN_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/trionan.h"/>
+  </compounddef>
+</doxygen>

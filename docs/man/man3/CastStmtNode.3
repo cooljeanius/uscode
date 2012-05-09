@@ -1,0 +1,48 @@
+.TH "CastStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CastStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIdentifierNode\fP * \fBtarget\fP"
+.br
+.ti -1c
+.RI "\fBTypeNode\fP * \fBnewtype\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a cast statement\&. A cast statement changes the type of a variable identified by \fItarget\fP to the type given by \fInewtype\fP\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createCastStmtNode(IdentifierNode *, TypeNode *) 
+.PP
+deleteCastStmtNode(CastStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 363 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBTypeNode\fP* \fBCastStmtNode::newtype\fP"
+A pointer to the type to change \fItarget\fP to\&. 
+.PP
+Definition at line 365 of file parser\&.h\&.
+.SS "\fBIdentifierNode\fP* \fBCastStmtNode::target\fP"
+A pointer to the name of the variable whose type is to be changed to \fInewtype\fP\&. 
+.PP
+Definition at line 364 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295" kind="file">
+    <compoundname>RegexKitDefines.h</compoundname>
+    <includes local="no">mach-o/loader.h</includes>
+    <incdepgraph>
+      <node id="649">
+        <label>mach-o/loader.h</label>
+      </node>
+      <node id="648">
+        <label>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h</label>
+        <link refid="build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h"/>
+        <childnode refid="649" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1aff5af198fe42fcf824430d3556ba8885" prot="public" static="no">
+        <name>_REGEXKIT_REGEXKITDEFINES_H_</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="44" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a3ac4c00fada28ef3118de122beeb88e3" prot="public" static="no">
+        <name>__REGEXKIT__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="48" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ac6ba6e7dc32e6823370edb79c6b9db9c" prot="public" static="no">
+        <name>RKInteger</name>
+        <initializer>int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="77" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ae1eef943f30d39e33deca0146e80b72d" prot="public" static="no">
+        <name>RKUInteger</name>
+        <initializer>unsigned int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="78" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a608f9f2c68b67d88fac7cf7cf0010ce9" prot="public" static="no">
+        <name>RKIntegerMax</name>
+        <initializer>INT_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="79" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ae763469f673fcf9600cf66d1badee0d8" prot="public" static="no">
+        <name>RKIntegerMin</name>
+        <initializer>INT_MIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="80" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1afa89542603424da0fbe775446124d2b3" prot="public" static="no">
+        <name>RKUIntegerMax</name>
+        <initializer>UINT_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="81" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a167d808898792fc83dbeaa24bd747d77" prot="public" static="no">
+        <name>RKREGEX_STATIC_INLINE</name>
+        <initializer>static __inline__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="90" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ab83496cb9668b3e9048e626061f6576a" prot="public" static="no">
+        <name>RKREGEX_STATIC_PURE_INLINE</name>
+        <initializer>static __inline__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="91" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ab4855ce9a6fd376fecc6ab44bf83f598" prot="public" static="no">
+        <name>RK_EXPECTED</name>
+        <param><defname>cond</defname></param>
+        <param><defname>expect</defname></param>
+        <initializer>cond</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="92" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a26a6b15ed2839d1177cd0176bc3e59cf" prot="public" static="no">
+        <name>RK_ATTRIBUTES</name>
+        <param><defname>attr</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="93" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a25c317bb917122057dc0673f1493af1c" prot="public" static="no">
+        <name>RK_REQUIRES_NIL_TERMINATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="99" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a703a3cc8f76c31086f4ef3c0662b7993" prot="public" static="no">
+        <name>RK_C99</name>
+        <param><defname>keyword</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="109" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a737ae804447137f7c8c07b68a48e8014" prot="public" static="no">
+        <name>REGEXKIT_EXTERN</name>
+        <initializer>extern</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="116" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1af1a2beac8b9684962ae626e6999cf384" prot="public" static="no">
+        <name>REGEXKIT_PRIVATE_EXTERN</name>
+        <initializer>__private_extern__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="117" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a96d9580e7c5e4c95c4429f85d6e45a24" prot="public" static="no">
+        <name>RKReplaceAll</name>
+        <initializer>RKIntegerMax</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="119" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a49a90114f7b85775a4a427454997745b" prot="public" static="no">
+        <name>RK_PRESIZE_CAPTURE_COUNT</name>
+        <param><defname>x</defname></param>
+        <initializer>(256 + x + (x &gt;&gt; 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="122" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1ae3145156d6dd8842a67d7a2c215bfea9" prot="public" static="no">
+        <name>RK_MINIMUM_CAPTURE_COUNT</name>
+        <param><defname>x</defname></param>
+        <initializer>(x + ((x / 3) + ((3 - (x % 3)) % 3)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="123" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a40e6eabfb7f5786e9f492cef78d4353b" prot="public" static="no">
+        <name>USE_PLACEHOLDER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="128" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a640be44500fabd3d873e3c74072ea095" prot="public" static="no">
+        <name>USE_AUTORELEASED_MALLOC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="131" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a7bb8de88e9d98491e9744699ef3131ca" prot="public" static="no">
+        <name>RK_STRONG_REF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="151" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a052267f5742124f6687905dc3c0fe404" prot="public" static="no">
+        <name>RK_WEAK_REF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="152" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295_1a3d158a2a3a2346bde8e6be668d928ad3" prot="public" static="no">
+        <name>USE_MACRO_EXCEPTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" line="166" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RegexKitDefines.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RegexKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>http://regexkit.sourceforge.net/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>Copyright<sp/>©<sp/>2007-2008,<sp/>John<sp/>Engelhart</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Zang<sp/>Industries<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_REGEXKIT_REGEXKITDEFINES_H_</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_REGEXKIT_REGEXKITDEFINES_H_<sp/>1</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;mach-o/loader.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__REGEXKIT__</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Determine<sp/>runtime<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>!defined(__GNUSTEP_RUNTIME__)</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__APPLE__)<sp/>&amp;&amp;<sp/>defined(__MACH__)<sp/>&amp;&amp;<sp/>!defined(GNUSTEP)</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__MACOSX_RUNTIME__</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>If<sp/>not<sp/>Mac<sp/>OS<sp/>X,<sp/>GNUstep?</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(GNUSTEP)<sp/>&amp;&amp;<sp/>!defined(__MACOSX_RUNTIME__)</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__GNUSTEP_RUNTIME__</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>Not<sp/>Mac<sp/>OS<sp/>X<sp/>or<sp/>GNUstep,<sp/>that&apos;s<sp/>a<sp/>problem.</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>!defined(__GNUSTEP_RUNTIME__)</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>above<sp/>did<sp/>not<sp/>set<sp/>the<sp/>run<sp/>time<sp/>environment,<sp/>error<sp/>out.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>!defined(__GNUSTEP_RUNTIME__)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>Unable<sp/>to<sp/>determine<sp/>run<sp/>time<sp/>environment,<sp/>automatic<sp/>Mac<sp/>OS<sp/>X<sp/>and<sp/>GNUstep<sp/>detection<sp/>failed</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(NSINTEGER_DEFINED)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKInteger<sp/><sp/><sp/><sp/><sp/>NSInteger</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKUInteger<sp/><sp/><sp/><sp/>NSUInteger</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKIntegerMax<sp/><sp/>NSIntegerMax</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKIntegerMin<sp/><sp/>NSIntegerMin</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKUIntegerMax<sp/>NSUIntegerMax</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKInteger<sp/><sp/><sp/><sp/><sp/>int</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKUInteger<sp/><sp/><sp/><sp/>unsigned<sp/>int</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKIntegerMax<sp/><sp/>INT_MAX</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKIntegerMin<sp/><sp/>INT_MIN</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKUIntegerMax<sp/>UINT_MAX</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__GNUC__)<sp/>&amp;&amp;<sp/>(__GNUC__<sp/>&gt;=<sp/>4)</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKREGEX_STATIC_INLINE<sp/>static<sp/>__inline__<sp/>__attribute__((always_inline))</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKREGEX_STATIC_PURE_INLINE<sp/>static<sp/>__inline__<sp/>__attribute__((always_inline,<sp/>pure))</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_EXPECTED(cond,<sp/>expect)<sp/>__builtin_expect(cond,<sp/>expect)</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_ATTRIBUTES(attr,<sp/>...)<sp/>__attribute__((attr,<sp/>##__VA_ARGS__))</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKREGEX_STATIC_INLINE<sp/>static<sp/>__inline__</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKREGEX_STATIC_PURE_INLINE<sp/>static<sp/>__inline__</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_EXPECTED(cond,<sp/>expect)<sp/>cond</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_ATTRIBUTES(attr,<sp/>...)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>defined(MAC_OS_X_VERSION_10_5)<sp/>&amp;&amp;<sp/>defined(NS_REQUIRES_NIL_TERMINATION)</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_REQUIRES_NIL_TERMINATION<sp/>NS_REQUIRES_NIL_TERMINATION</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_REQUIRES_NIL_TERMINATION</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Other<sp/>compilers<sp/>and<sp/>platforms<sp/>may<sp/>be<sp/>able<sp/>to<sp/>use<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>RK_REQUIRES_NIL_TERMINATION<sp/>RK_ATTRIBUTES(sentinel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_C99(keyword)<sp/>keyword</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_C99(keyword)<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REGEXKIT_EXTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extern<sp/>&quot;C&quot;</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REGEXKIT_PRIVATE_EXTERN<sp/><sp/><sp/>__private_extern__</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REGEXKIT_EXTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extern</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REGEXKIT_PRIVATE_EXTERN<sp/><sp/><sp/>__private_extern__</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RKReplaceAll<sp/>RKIntegerMax</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Used<sp/>to<sp/>size/check<sp/>buffers<sp/>when<sp/>calling<sp/>private<sp/>RKRegex<sp/>getRanges:count:withCharacters:length:inRange:options:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RK_PRESIZE_CAPTURE_COUNT(x)<sp/>(256<sp/>+<sp/>x<sp/>+<sp/>(x<sp/>&gt;&gt;<sp/>1))</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_MINIMUM_CAPTURE_COUNT(x)<sp/>(x<sp/>+<sp/>((x<sp/>/<sp/>3)<sp/>+<sp/>((3<sp/>-<sp/>(x<sp/>%<sp/>3))<sp/>%<sp/>3)))</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/***************<sp/>Feature<sp/>and<sp/>config<sp/>knobs<sp/>***************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Default<sp/>enabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_PLACEHOLDER</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>OBJC_API_VERSION<sp/>&lt;<sp/>2<sp/>&amp;&amp;<sp/>!defined<sp/>(MAC_OS_X_VERSION_10_5)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_AUTORELEASED_MALLOC</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>Not<sp/>enabled<sp/>on<sp/>Objective-C<sp/>2.0<sp/>(Mac<sp/>OS<sp/>X<sp/>10.5)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__COREFOUNDATION__</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_CORE_FOUNDATION</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__MACOSX_RUNTIME__</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAVE_NSNUMBERFORMATTER_CONVERSIONS</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_NSNUMBERFORMATTER_CONVERSIONS)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_ENABLE_THREAD_LOCAL_STORAGE</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>defined(MAC_OS_X_VERSION_10_5)<sp/>&amp;&amp;<sp/>defined(__OBJC_GC__)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ENABLE_MACOSX_GARBAGE_COLLECTION</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_STRONG_REF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strong</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_WEAK_REF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__weak</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_STRONG_REF</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RK_WEAK_REF</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ENABLE_MACOSX_GARBAGE_COLLECTION)<sp/>&amp;&amp;<sp/>!defined(MAC_OS_X_VERSION_10_5)</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>The<sp/>Mac<sp/>OS<sp/>X<sp/>Garbage<sp/>Collection<sp/>feature<sp/>requires<sp/>at<sp/>least<sp/>Mac<sp/>OS<sp/>X<sp/>10.5</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__MACOSX_RUNTIME__)<sp/>&amp;&amp;<sp/>defined(MAC_OS_X_VERSION_10_5)<sp/>&amp;&amp;<sp/>defined(S_DTRACE_DOF)</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ENABLE_DTRACE_INSTRUMENTATION</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AFAIK,<sp/>only<sp/>the<sp/>GCC<sp/>3.3+<sp/>Mac<sp/>OSX<sp/>objc<sp/>runtime<sp/>has<sp/>-fobjc-exception<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined(__MACOSX_RUNTIME__))<sp/>||<sp/>(!defined(__GNUC__))<sp/>||<sp/>((__GNUC__<sp/>==<sp/>3)<sp/>&amp;&amp;<sp/>(__GNUC_MINOR__<sp/>&lt;<sp/>3))<sp/>||<sp/>(!defined(MAC_OS_X_VERSION_10_3))</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>Otherwise,<sp/>use<sp/>NS_DURING<sp/>/<sp/>NS_HANDLER<sp/>and<sp/>friends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_MACRO_EXCEPTIONS</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">/***************<sp/>END<sp/>Feature<sp/>and<sp/>config<sp/>knobs<sp/>***************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//_REGEXKIT_REGEXKITDEFINES_H_</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RegexKitDefines.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+\hypertarget{struct_func_def_stmt_node}{\section{Func\-Def\-Stmt\-Node Struct Reference}
+\label{struct_func_def_stmt_node}\index{Func\-Def\-Stmt\-Node@{Func\-Def\-Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Func\-Def\-Stmt\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{struct_func_def_stmt_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_func_def_stmt_node_a545e8a727dbe8786ab90afa0a4608d68}{scope}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_func_def_stmt_node_ab047936127219724532e25ba6890265a}{name}
+\item 
+\hyperlink{struct_identifier_node_list}{Identifier\-Node\-List} $\ast$ \hyperlink{struct_func_def_stmt_node_a2a9f4d580b7252e5576873d2252a187a}{args}
+\item 
+\hyperlink{struct_block_node}{Block\-Node} $\ast$ \hyperlink{struct_func_def_stmt_node_a9e50b6a41f7abe43b433fe4fd714b002}{body}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a function definition statement. A function definition statement defines the prototype and contents of a function.
+
+\begin{DoxySeeAlso}{See also}
+create\-Func\-Def\-Stmt\-Node(\-Identifier\-Node $\ast$, Identifier\-Node $\ast$, Identifier\-Node\-List $\ast$, Block\-Node $\ast$) 
+
+delete\-Func\-Def\-Stmt\-Node(\-Func\-Def\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 322 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_func_def_stmt_node_a2a9f4d580b7252e5576873d2252a187a}{\index{Func\-Def\-Stmt\-Node@{Func\-Def\-Stmt\-Node}!args@{args}}
+\index{args@{args}!FuncDefStmtNode@{Func\-Def\-Stmt\-Node}}
+\subsubsection[{args}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node\-List}$\ast$ {\bf Func\-Def\-Stmt\-Node\-::args}}}\label{struct_func_def_stmt_node_a2a9f4d580b7252e5576873d2252a187a}
+A pointer to a list of the names of the arguments of the function. 
+
+Definition at line 325 of file parser.\-h.
+
+\hypertarget{struct_func_def_stmt_node_a9e50b6a41f7abe43b433fe4fd714b002}{\index{Func\-Def\-Stmt\-Node@{Func\-Def\-Stmt\-Node}!body@{body}}
+\index{body@{body}!FuncDefStmtNode@{Func\-Def\-Stmt\-Node}}
+\subsubsection[{body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\-Node}$\ast$ {\bf Func\-Def\-Stmt\-Node\-::body}}}\label{struct_func_def_stmt_node_a9e50b6a41f7abe43b433fe4fd714b002}
+A pointer to the block of code defined by the function. 
+
+Definition at line 326 of file parser.\-h.
+
+\hypertarget{struct_func_def_stmt_node_ab047936127219724532e25ba6890265a}{\index{Func\-Def\-Stmt\-Node@{Func\-Def\-Stmt\-Node}!name@{name}}
+\index{name@{name}!FuncDefStmtNode@{Func\-Def\-Stmt\-Node}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Func\-Def\-Stmt\-Node\-::name}}}\label{struct_func_def_stmt_node_ab047936127219724532e25ba6890265a}
+A pointer to the name of the function. 
+
+Definition at line 324 of file parser.\-h.
+
+\hypertarget{struct_func_def_stmt_node_a545e8a727dbe8786ab90afa0a4608d68}{\index{Func\-Def\-Stmt\-Node@{Func\-Def\-Stmt\-Node}!scope@{scope}}
+\index{scope@{scope}!FuncDefStmtNode@{Func\-Def\-Stmt\-Node}}
+\subsubsection[{scope}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Func\-Def\-Stmt\-Node\-::scope}}}\label{struct_func_def_stmt_node_a545e8a727dbe8786ab90afa0a4608d68}
+A pointer to the scope to define the function in. 
+
+Definition at line 323 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

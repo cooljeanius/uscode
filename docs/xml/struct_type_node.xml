@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_type_node" kind="struct" prot="public">
+    <compoundname>TypeNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_type_node_1abd5fc196a6f39c15eb33e94eec269ac7" prot="public" static="no" mutable="no">
+        <type>ConstantType</type>
+        <definition>ConstantType TypeNode::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of the variable. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="355" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="355" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a8836d5dd711beb5cd96336fe51cdc185" compoundref="interpreter_8c" startline="1017" endline="1049">interpretCastExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a5742a88c672e9e224aecef05663d41ea" compoundref="interpreter_8c" startline="2509" endline="2542">interpretCastStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a variable type.</para><para><simplesect kind="see"><para>createTypeNode(ConstantType) </para><simplesectsep/><para>deleteTypeNode(TypeNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="354" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="354" bodyend="356"/>
+    <listofallmembers>
+      <member refid="struct_type_node_1abd5fc196a6f39c15eb33e94eec269ac7" prot="public" virt="non-virtual"><scope>TypeNode</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

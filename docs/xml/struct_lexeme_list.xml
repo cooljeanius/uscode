@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_lexeme_list" kind="struct" prot="public">
+    <compoundname>LexemeList</compoundname>
+    <includes refid="lexer_8h" local="no">lexer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int LexemeList::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structures stored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="44" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" compoundref="lexer_8c" startline="59" endline="69">createLexemeList</referencedby>
+        <referencedby refid="lexer_8h_1af9ec30b004772b01fb38f6dc4f54d102" compoundref="lexer_8c" startline="83" endline="99">addLexeme</referencedby>
+        <referencedby refid="lexer_8h_1a3a834cd76633550e9b8be7368cdeae3d" compoundref="lexer_8c" startline="110" endline="118">deleteLexemeList</referencedby>
+        <referencedby refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" compoundref="lexer_8c" startline="135" endline="322">scanBuffer</referencedby>
+        <referencedby refid="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" compoundref="tokenizer_8c" startline="256" endline="355">tokenizeLexemes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_lexeme" kindref="compound">Lexeme</ref> **</type>
+        <definition>Lexeme** LexemeList::lexemes</definition>
+        <argsstring></argsstring>
+        <name>lexemes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the array of <ref refid="struct_lexeme" kindref="compound">Lexeme</ref> structures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="45" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" compoundref="lexer_8c" startline="59" endline="69">createLexemeList</referencedby>
+        <referencedby refid="lexer_8h_1af9ec30b004772b01fb38f6dc4f54d102" compoundref="lexer_8c" startline="83" endline="99">addLexeme</referencedby>
+        <referencedby refid="lexer_8h_1a3a834cd76633550e9b8be7368cdeae3d" compoundref="lexer_8c" startline="110" endline="118">deleteLexemeList</referencedby>
+        <referencedby refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" compoundref="lexer_8c" startline="135" endline="322">scanBuffer</referencedby>
+        <referencedby refid="tokenizer_8h_1ade1b429790c63fac86fd57b4dccd540c" compoundref="tokenizer_8c" startline="195" endline="212">acceptLexemes</referencedby>
+        <referencedby refid="tokenizer_8h_1ad6b372e0e6ec9d44601e89db77ae903c" compoundref="tokenizer_8c" startline="229" endline="244">isKeyword</referencedby>
+        <referencedby refid="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" compoundref="tokenizer_8c" startline="256" endline="355">tokenizeLexemes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a list of lexemes. This structure allows sets of lexemes to be grouped together.</para><para><simplesect kind="see"><para><ref refid="lexer_8h_1a03a7275accd6e39d369c689760bd15df" kindref="member">createLexemeList(void)</ref> </para><simplesectsep/><para><ref refid="lexer_8h_1af9ec30b004772b01fb38f6dc4f54d102" kindref="member">addLexeme(LexemeList *, Lexeme *)</ref> </para><simplesectsep/><para><ref refid="lexer_8h_1a3a834cd76633550e9b8be7368cdeae3d" kindref="member">deleteLexemeList(LexemeList *)</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="650">
+        <label>LexemeList</label>
+        <link refid="struct_lexeme_list"/>
+        <childnode refid="651" relation="usage">
+          <edgelabel>lexemes</edgelabel>
+        </childnode>
+      </node>
+      <node id="651">
+        <label>Lexeme</label>
+        <link refid="struct_lexeme"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="43" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="43" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" prot="public" virt="non-virtual"><scope>LexemeList</scope><name>lexemes</name></member>
+      <member refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" prot="public" virt="non-virtual"><scope>LexemeList</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

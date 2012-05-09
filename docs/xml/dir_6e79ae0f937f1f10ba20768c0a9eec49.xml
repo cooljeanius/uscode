@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_6e79ae0f937f1f10ba20768c0a9eec49" kind="dir">
+    <compoundname>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/</compoundname>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2c14n_8h">c14n.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version0cb29c6f28eee7c6001402e4816fc602">catalog.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionaebec40e691204cf898bac475dcdb2fb">chvalid.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version5d9a0a3059057ef207c927b208983afe">debugXML.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2dict_8h">dict.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version127e68057cf60f6a86b4806f49904d8a">DOCBparser.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbce5c157f0f058c6db86ffd0079101de">encoding.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3bb08ef3d1f84c7bcc0ee69d62cd56cb">entities.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version9abb238683e1acdde4d2ae5736cba60b">globals.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2hash_8h">hash.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona9895df9cafce53ec43475deaaedda01">HTMLparser.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiond29609ef7f30c951a6ac25d306efa6f5">HTMLtree.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2list_8h">list.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versioneb0689163a928eba25fa235c052c7c1d">nanoftp.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionf551eb91079d019ce0b15e632ea2d236">nanohttp.h</innerfile>
+    <innerfile refid="_legiscode_8applescript_2build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2li5d3535a130d9ed85e60363c504206a6c">parser.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiond0fd30e0de32fb5ad4038ae242d1db05">parserInternals.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version9332bf7e7db4df097f7ff5d5913a9278">pattern.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version3ebb98920fce6cd0d904c8b5a0a34b7e">relaxng.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona4322092223e24aefb2ee966c2068cc2">SAX.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version1de624b36ab32fbd7eb64a32f5d22644">SAX2.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionc19e5f93f7ff8a9c8ca63caf98cb8816">schemasInternals.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version2fbf9f9d8a8d5b80ac3d524f6ee82d7e">schematron.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version7f166c37bd930310be823aed18d78721">threads.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2tree_8h">tree.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2trio_8h">trio.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona998d9f2ce4924e98ae60e0863fe0247">triodef.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version45b492367559ffd7ab5acc576726e609">trionan.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h">triop.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versioncedb54b4c81542417da98403da62cadb">triostr.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2uri_8h">uri.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2valid_8h">valid.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionb93b4ba684d4e74cc2f65fe77c834cd0">xinclude.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2xlink_8h">xlink.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionef650addef24287af07222d74222e4bb">xmlautomata.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiona951646d06ceefa3d6ffece4125b6c2d">xmlerror.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionbd9170f136fde8106f2d8018cf6f0478">xmlexports.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version4e3db31eecea69b99604fe12e0567ed3">xmlIO.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version83c114adb4562613385d9df51c801441">xmlmemory.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version98f99764155411b35459f1fde7d891b6">xmlmodule.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version5a9f9762b45fd9038522198b93d00d9d">xmlreader.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionfbcdf8fb7163b2edb63c5c161cb7a97b">xmlregexp.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version5794cd1b80f5caf92b4f6461cf24ce92">xmlsave.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versionfaf567878d94c0a75b0ac5a9ac69aa3b">xmlschemas.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versione9d134b890bc189c6bebf8306e7836f8">xmlschemastypes.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versiond87fe22cbaaefdcfae2bb4d74c8aded6">xmlstring.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version73bcb19ae12ef5aaa74f72d61a3193fd">xmlunicode.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version54024c80d822ee16d69cc9603b1fa60c">xmlversion.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versione77f2c06d6a632023eeaab7b28871457">xmlwriter.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2xpath_8h">xpath.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version90c1f4f7ad360c12e67ebe9e9ecf3c5e">xpathInternals.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_version12aa2ecfac868cb279ec50ab528edce7">xpointer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/"/>
+  </compounddef>
+</doxygen>

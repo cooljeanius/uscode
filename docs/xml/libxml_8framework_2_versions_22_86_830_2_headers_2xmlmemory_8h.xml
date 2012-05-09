@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h" kind="file">
+    <compoundname>xmlmemory.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">libxml/xmlversion.h</includes>
+    <includes local="no">libxml/threads.h</includes>
+    <includes local="no">libxml/globals.h</includes>
+    <incdepgraph>
+      <node id="452">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/xmlmemory.h"/>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>libxml/xmlversion.h</label>
+      </node>
+      <node id="455">
+        <label>libxml/threads.h</label>
+      </node>
+      <node id="456">
+        <label>libxml/globals.h</label>
+      </node>
+      <node id="453">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1ac7d32bd7c48695d8acf6cad62f82f0ed" prot="public" static="no">
+        <type>void(XMLCALL *</type>
+        <definition>typedef void(XMLCALL * xmlFreeFunc)(void *mem)</definition>
+        <argsstring>)(void *mem)</argsstring>
+        <name>xmlFreeFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DEBUG_MEMORY:</para><para>DEBUG_MEMORY replaces the allocator with a collect and debug shell to the libc allocator. DEBUG_MEMORY should only be activated when debugging libxml i.e. if libxml has been configured with --with-debug-mem too. DEBUG_MEMORY_LOCATION:</para><para>DEBUG_MEMORY_LOCATION should be activated only when debugging libxml i.e. if libxml has been configured with --with-debug-mem too. xmlFreeFunc: : an already allocated block of memory</para><para>Signature for a free() implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="57" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1aa5e73208197d56475b1d0cfab926d26c" prot="public" static="no">
+        <type>void *(XMLCALL *</type>
+        <definition>typedef void*(XMLCALL * xmlMallocFunc)(size_t size)</definition>
+        <argsstring>)(size_t size)</argsstring>
+        <name>xmlMallocFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xmlMallocFunc: : the size requested in bytes</para><para>Signature for a malloc() implementation.</para><para>Returns a pointer to the newly allocated block or NULL in case of error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="66" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a4ec0447463e8e181c63a4cf3e31e10d2" prot="public" static="no">
+        <type>void *(XMLCALL *</type>
+        <definition>typedef void*(XMLCALL * xmlReallocFunc)(void *mem, size_t size)</definition>
+        <argsstring>)(void *mem, size_t size)</argsstring>
+        <name>xmlReallocFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xmlReallocFunc: : an already allocated block of memory : the new size requested in bytes</para><para>Signature for a realloc() implementation.</para><para>Returns a pointer to the newly reallocated block or NULL in case of error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="77" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a06c6daadeba6392c54e9830c0d408d39" prot="public" static="no">
+        <type>char *(XMLCALL *</type>
+        <definition>typedef char*(XMLCALL * xmlStrdupFunc)(const char *str)</definition>
+        <argsstring>)(const char *str)</argsstring>
+        <name>xmlStrdupFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xmlStrdupFunc: : a zero terminated string</para><para>Signature for an strdup() implementation.</para><para>Returns the copy of the string or NULL in case of error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="87" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a8755b013a29c1a302453679c616a7787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlMemSetup</definition>
+        <argsstring>(xmlFreeFunc freeFunc, xmlMallocFunc mallocFunc, xmlReallocFunc reallocFunc, xmlStrdupFunc strdupFunc)</argsstring>
+        <name>xmlMemSetup</name>
+        <param>
+          <type>xmlFreeFunc</type>
+          <declname>freeFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc</type>
+          <declname>mallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlReallocFunc</type>
+          <declname>reallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlStrdupFunc</type>
+          <declname>strdupFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1aa3b9f8872e1daff13304b69b56160d9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlMemGet</definition>
+        <argsstring>(xmlFreeFunc *freeFunc, xmlMallocFunc *mallocFunc, xmlReallocFunc *reallocFunc, xmlStrdupFunc *strdupFunc)</argsstring>
+        <name>xmlMemGet</name>
+        <param>
+          <type>xmlFreeFunc *</type>
+          <declname>freeFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc *</type>
+          <declname>mallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlReallocFunc *</type>
+          <declname>reallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlStrdupFunc *</type>
+          <declname>strdupFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a103aea4f625d713b5b6ad440e1156ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlGcMemSetup</definition>
+        <argsstring>(xmlFreeFunc freeFunc, xmlMallocFunc mallocFunc, xmlMallocFunc mallocAtomicFunc, xmlReallocFunc reallocFunc, xmlStrdupFunc strdupFunc)</argsstring>
+        <name>xmlGcMemSetup</name>
+        <param>
+          <type>xmlFreeFunc</type>
+          <declname>freeFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc</type>
+          <declname>mallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc</type>
+          <declname>mallocAtomicFunc</declname>
+        </param>
+        <param>
+          <type>xmlReallocFunc</type>
+          <declname>reallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlStrdupFunc</type>
+          <declname>strdupFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a6756b41bc01eb0c83557da97a1ae41ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlGcMemGet</definition>
+        <argsstring>(xmlFreeFunc *freeFunc, xmlMallocFunc *mallocFunc, xmlMallocFunc *mallocAtomicFunc, xmlReallocFunc *reallocFunc, xmlStrdupFunc *strdupFunc)</argsstring>
+        <name>xmlGcMemGet</name>
+        <param>
+          <type>xmlFreeFunc *</type>
+          <declname>freeFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc *</type>
+          <declname>mallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlMallocFunc *</type>
+          <declname>mallocAtomicFunc</declname>
+        </param>
+        <param>
+          <type>xmlReallocFunc *</type>
+          <declname>reallocFunc</declname>
+        </param>
+        <param>
+          <type>xmlStrdupFunc *</type>
+          <declname>strdupFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a34fe5f1eeb0bebbc44016283b2ce32d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlInitMemory</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlInitMemory</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1aa637c5df5298f7777936d95d9327951a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlCleanupMemory</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlCleanupMemory</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a01c5d46e6db4add179f3a15142659889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlMemUsed</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlMemUsed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a20f1ab25f2110e71cbd47f6ce49864e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlMemBlocks</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlMemBlocks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a481ac8782e8f19eb6e87259f163a2f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlMemDisplay</definition>
+        <argsstring>(FILE *fp)</argsstring>
+        <name>xmlMemDisplay</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a18cb9039e694031347922525d29f7b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlMemShow</definition>
+        <argsstring>(FILE *fp, int nr)</argsstring>
+        <name>xmlMemShow</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a7eb2c723be7fda2424a730d374bc9f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlMemoryDump</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlMemoryDump</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1ae37f0cdd5d9258dba3fd7d109c9c9fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlMemMalloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>xmlMemMalloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1ace2053c01954b6d90a866c7018a9fec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlMemRealloc</definition>
+        <argsstring>(void *ptr, size_t size)</argsstring>
+        <name>xmlMemRealloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a44cddd6d52cfe35d46654148aed1b491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlMemFree</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>xmlMemFree</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a12dab7b8ff81bac60e5db0f26176cd05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN char *XMLCALL</type>
+        <definition>XMLPUBFUN char* XMLCALL xmlMemoryStrdup</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>xmlMemoryStrdup</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a88af4d0df40013a2bca2c72f88e1301b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlMallocLoc</definition>
+        <argsstring>(size_t size, const char *file, int line)</argsstring>
+        <name>xmlMallocLoc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1adba1da2d78814dac75906fc3040108bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlReallocLoc</definition>
+        <argsstring>(void *ptr, size_t size, const char *file, int line)</argsstring>
+        <name>xmlReallocLoc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1ab3323f29be1cabd05d74bf2c9cf0c919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlMallocAtomicLoc</definition>
+        <argsstring>(size_t size, const char *file, int line)</argsstring>
+        <name>xmlMallocAtomicLoc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h_1a069ed73e18dea3876535177314d133c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN char *XMLCALL</type>
+        <definition>XMLPUBFUN char* XMLCALL xmlMemStrdupLoc</definition>
+        <argsstring>(const char *str, const char *file, int line)</argsstring>
+        <name>xmlMemStrdupLoc</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h" line="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Summary:<sp/>interface<sp/>for<sp/>the<sp/>memory<sp/>allocator</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>provides<sp/>interfaces<sp/>for<sp/>the<sp/>memory<sp/>allocator,</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>including<sp/>debugging<sp/>capabilities.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Copy:<sp/>See<sp/>Copyright<sp/>for<sp/>the<sp/>status<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Daniel<sp/>Veillard</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__DEBUG_MEMORY_ALLOC__</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__DEBUG_MEMORY_ALLOC__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xmlversion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/*<sp/>#define<sp/>DEBUG_MEMORY_FREED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#define<sp/>DEBUG_MEMORY_LOCATION<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>DEBUG_MEMORY</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_MEMORY</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#ifdef<sp/>DEBUG_MEMORY_LOCATION</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>The<sp/>XML<sp/>memory<sp/>wrapper<sp/>support<sp/>4<sp/>basic<sp/>overloadable<sp/>functions.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(XMLCALL<sp/>*xmlFreeFunc)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem);</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(XMLCALL<sp/>*xmlMallocFunc)(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(XMLCALL<sp/>*xmlReallocFunc)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*(XMLCALL<sp/>*xmlStrdupFunc)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/>The<sp/>4<sp/>interfaces<sp/>used<sp/>for<sp/>all<sp/>memory<sp/>handling<sp/>within<sp/>libxml.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">LIBXML_DLL_IMPORT<sp/>extern<sp/>xmlFreeFunc<sp/>xmlFree;</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">LIBXML_DLL_IMPORT<sp/>extern<sp/>xmlMallocFunc<sp/>xmlMalloc;</highlight></codeline>
+<codeline lineno="93"><highlight class="comment">LIBXML_DLL_IMPORT<sp/>extern<sp/>xmlMallocFunc<sp/>xmlMallocAtomic;</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">LIBXML_DLL_IMPORT<sp/>extern<sp/>xmlReallocFunc<sp/>xmlRealloc;</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">LIBXML_DLL_IMPORT<sp/>extern<sp/>xmlStrdupFunc<sp/>xmlMemStrdup;</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>The<sp/>way<sp/>to<sp/>overload<sp/>the<sp/>existing<sp/>functions.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>The<sp/>xmlGc<sp/>function<sp/>have<sp/>an<sp/>extra<sp/>entry<sp/>for<sp/>atomic<sp/>block</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>allocations<sp/>useful<sp/>for<sp/>garbage<sp/>collected<sp/>memory<sp/>allocators</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemSetup<sp/><sp/><sp/><sp/><sp/>(xmlFreeFunc<sp/>freeFunc,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>mallocFunc,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlReallocFunc<sp/>reallocFunc,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlStrdupFunc<sp/>strdupFunc);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemGet<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlFreeFunc<sp/>*freeFunc,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>*mallocFunc,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlReallocFunc<sp/>*reallocFunc,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlStrdupFunc<sp/>*strdupFunc);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGcMemSetup<sp/><sp/><sp/>(xmlFreeFunc<sp/>freeFunc,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>mallocFunc,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>mallocAtomicFunc,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlReallocFunc<sp/>reallocFunc,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlStrdupFunc<sp/>strdupFunc);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlGcMemGet<sp/><sp/><sp/><sp/><sp/>(xmlFreeFunc<sp/>*freeFunc,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>*mallocFunc,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocFunc<sp/>*mallocAtomicFunc,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlReallocFunc<sp/>*reallocFunc,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlStrdupFunc<sp/>*strdupFunc);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>Initialization<sp/>of<sp/>the<sp/>memory<sp/>layer.</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInitMemory<sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/>Cleanup<sp/>of<sp/>the<sp/>memory<sp/>layer.</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCleanupMemory<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*<sp/>These<sp/>are<sp/>specific<sp/>to<sp/>the<sp/>XML<sp/>debug<sp/>memory<sp/>wrapper.</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemUsed<sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemBlocks<sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemDisplay<sp/><sp/><sp/>(FILE<sp/>*fp);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemShow<sp/><sp/><sp/><sp/><sp/><sp/>(FILE<sp/>*fp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nr);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemoryDump<sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemMalloc<sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemRealloc<sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemFree<sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemoryStrdup<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocLoc<sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlReallocLoc<sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMallocAtomicLoc<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlMemStrdupLoc<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG_MEMORY_LOCATION</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor">#define<sp/>xmlMalloc(size)<sp/>xmlMallocLoc((size),<sp/>__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor">#define<sp/>xmlMallocAtomic(size)<sp/>xmlMallocAtomicLoc((size),<sp/>__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor">#define<sp/>xmlRealloc(ptr,<sp/>size)<sp/>xmlReallocLoc((ptr),<sp/>(size),<sp/>__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor">#define<sp/>xmlMemStrdup(str)<sp/>xmlMemStrdupLoc((str),<sp/>__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEBUG_MEMORY_LOCATION<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__cplusplus<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_GLOBALS_H</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_THREADS_H__</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/threads.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/globals.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__DEBUG_MEMORY_ALLOC__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlmemory.h"/>
+  </compounddef>
+</doxygen>

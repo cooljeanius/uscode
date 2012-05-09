@@ -1,0 +1,47 @@
+.TH "ReturnObject" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ReturnObject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <interpreter\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBReturnType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBvalue\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a return state\&. Returns are encountered when
+.IP "\(bu" 2
+a block of code evaluates all of its statements,
+.IP "\(bu" 2
+a block of code within a LoopStmt or SwitchStmt encountered a break statement, or
+.IP "\(bu" 2
+a block of code within a FunctionDefStmt called by a FunctionCallExpr encounters a ReturnStmt\&. 
+.PP
+
+.PP
+Definition at line 72 of file interpreter\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBReturnType\fP \fBReturnObject::type\fP"
+The type of return encountered\&. 
+.PP
+Definition at line 73 of file interpreter\&.h\&.
+.SS "\fBValueObject\fP* \fBReturnObject::value\fP"
+The optional return value\&. 
+.PP
+Definition at line 74 of file interpreter\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

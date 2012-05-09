@@ -1,0 +1,60 @@
+\hypertarget{struct_cast_stmt_node}{\section{Cast\-Stmt\-Node Struct Reference}
+\label{struct_cast_stmt_node}\index{Cast\-Stmt\-Node@{Cast\-Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Cast\-Stmt\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{struct_cast_stmt_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_cast_stmt_node_a89d56358f0a8fc4d4fb0df7029ea494e}{target}
+\item 
+\hyperlink{struct_type_node}{Type\-Node} $\ast$ \hyperlink{struct_cast_stmt_node_adbeebc6cefa4f2cb92079b82cb4f4df8}{newtype}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a cast statement. A cast statement changes the type of a variable identified by {\itshape target\/} to the type given by {\itshape newtype\/}.
+
+\begin{DoxySeeAlso}{See also}
+create\-Cast\-Stmt\-Node(\-Identifier\-Node $\ast$, Type\-Node $\ast$) 
+
+delete\-Cast\-Stmt\-Node(\-Cast\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 363 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_cast_stmt_node_adbeebc6cefa4f2cb92079b82cb4f4df8}{\index{Cast\-Stmt\-Node@{Cast\-Stmt\-Node}!newtype@{newtype}}
+\index{newtype@{newtype}!CastStmtNode@{Cast\-Stmt\-Node}}
+\subsubsection[{newtype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\-Node}$\ast$ {\bf Cast\-Stmt\-Node\-::newtype}}}\label{struct_cast_stmt_node_adbeebc6cefa4f2cb92079b82cb4f4df8}
+A pointer to the type to change {\itshape target\/} to. 
+
+Definition at line 365 of file parser.\-h.
+
+\hypertarget{struct_cast_stmt_node_a89d56358f0a8fc4d4fb0df7029ea494e}{\index{Cast\-Stmt\-Node@{Cast\-Stmt\-Node}!target@{target}}
+\index{target@{target}!CastStmtNode@{Cast\-Stmt\-Node}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Cast\-Stmt\-Node\-::target}}}\label{struct_cast_stmt_node_a89d56358f0a8fc4d4fb0df7029ea494e}
+A pointer to the name of the variable whose type is to be changed to {\itshape newtype\/}. 
+
+Definition at line 364 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

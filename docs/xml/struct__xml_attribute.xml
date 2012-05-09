@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_attribute" kind="struct" prot="public">
+    <compoundname>_xmlAttribute</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_attribute_1acc4f58cc1065583670c1c3c9b056b026" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlAttribute::_private</definition>
+        <argsstring></argsstring>
+        <name>_private</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="213" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1af3ca1a0e47ae810fbb710a8f07ea70cc" prot="public" static="no" mutable="no">
+        <type>xmlElementType</type>
+        <definition>xmlElementType _xmlAttribute::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="214" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a92e96fbec36b788653910920ed115569" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlAttribute::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="215" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1aba03cc6f9bbdb1f8bd57523f00a05a9d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_node" kindref="compound">_xmlNode</ref> *</type>
+        <definition>struct _xmlNode * _xmlAttribute::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="216" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a92ee81b06a25758ce0c70c7df304e5fb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_node" kindref="compound">_xmlNode</ref> *</type>
+        <definition>struct _xmlNode * _xmlAttribute::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="217" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a5c831f067fffc8fbf2ab96b0cd52bd53" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_dtd" kindref="compound">_xmlDtd</ref> *</type>
+        <definition>struct _xmlDtd * _xmlAttribute::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="218" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a9e323a5b7afa3f7cbb1723be8d41308f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_node" kindref="compound">_xmlNode</ref> *</type>
+        <definition>struct _xmlNode * _xmlAttribute::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="219" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a9c004a1c585b411841ac291a740bad2d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_node" kindref="compound">_xmlNode</ref> *</type>
+        <definition>struct _xmlNode * _xmlAttribute::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="220" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a33f607d419ebb499badcd68edc156a9e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_doc" kindref="compound">_xmlDoc</ref> *</type>
+        <definition>struct _xmlDoc * _xmlAttribute::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="221" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1ab9701a9ccf2d4578e52dba419cceb062" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__xml_attribute" kindref="compound">_xmlAttribute</ref> *</type>
+        <definition>struct _xmlAttribute * _xmlAttribute::nexth</definition>
+        <argsstring></argsstring>
+        <name>nexth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="223" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1ae3a8371d4d1d21b585c5d97895c3d6dd" prot="public" static="no" mutable="no">
+        <type>xmlAttributeType</type>
+        <definition>xmlAttributeType _xmlAttribute::atype</definition>
+        <argsstring></argsstring>
+        <name>atype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="224" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a4e0cc0380fd2d2009bb2853e7c34423b" prot="public" static="no" mutable="no">
+        <type>xmlAttributeDefault</type>
+        <definition>xmlAttributeDefault _xmlAttribute::def</definition>
+        <argsstring></argsstring>
+        <name>def</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="225" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a1a49b4e83ba33ca88f8ec799c520a285" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlAttribute::defaultValue</definition>
+        <argsstring></argsstring>
+        <name>defaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="226" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a630c42587e233ede3bbbd2c8e29d5108" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_enumeration" kindref="compound">xmlEnumerationPtr</ref></type>
+        <definition>xmlEnumerationPtr _xmlAttribute::tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="227" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1a6d9437a6df9377da706fdf9fcb78580d" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlAttribute::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="228" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_attribute_1aa188aba0a7827f8d4d5bac524568ddab" prot="public" static="no" mutable="no">
+        <type>const xmlChar *</type>
+        <definition>const xmlChar * _xmlAttribute::elem</definition>
+        <argsstring></argsstring>
+        <name>elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="229" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="380">
+        <label>_xmlAttribute</label>
+        <link refid="struct__xml_attribute"/>
+        <childnode refid="381" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="380" relation="usage">
+          <edgelabel>nexth</edgelabel>
+        </childnode>
+        <childnode refid="386" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="381">
+        <label>_xmlEnumeration</label>
+        <link refid="struct__xml_enumeration"/>
+        <childnode refid="381" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>_xmlAttr</label>
+        <link refid="struct__xml_attr"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="383" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="385" relation="usage">
+          <edgelabel>ns</edgelabel>
+        </childnode>
+      </node>
+      <node id="384">
+        <label>_xmlDoc</label>
+        <link refid="struct__xml_doc"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="385" relation="usage">
+          <edgelabel>oldNs</edgelabel>
+        </childnode>
+        <childnode refid="386" relation="usage">
+          <edgelabel>intSubset</edgelabel>
+          <edgelabel>extSubset</edgelabel>
+        </childnode>
+      </node>
+      <node id="386">
+        <label>_xmlDtd</label>
+        <link refid="struct__xml_dtd"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>doc</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="385">
+        <label>_xmlNs</label>
+        <link refid="struct__xml_ns"/>
+        <childnode refid="384" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="385" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="382">
+        <label>_xmlNode</label>
+        <link refid="struct__xml_node"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="383" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="385" relation="usage">
+          <edgelabel>ns</edgelabel>
+          <edgelabel>nsDef</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="212" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="212" bodyend="230"/>
+    <listofallmembers>
+      <member refid="struct__xml_attribute_1acc4f58cc1065583670c1c3c9b056b026" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>_private</name></member>
+      <member refid="struct__xml_attribute_1ae3a8371d4d1d21b585c5d97895c3d6dd" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>atype</name></member>
+      <member refid="struct__xml_attribute_1aba03cc6f9bbdb1f8bd57523f00a05a9d" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>children</name></member>
+      <member refid="struct__xml_attribute_1a4e0cc0380fd2d2009bb2853e7c34423b" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>def</name></member>
+      <member refid="struct__xml_attribute_1a1a49b4e83ba33ca88f8ec799c520a285" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>defaultValue</name></member>
+      <member refid="struct__xml_attribute_1a33f607d419ebb499badcd68edc156a9e" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>doc</name></member>
+      <member refid="struct__xml_attribute_1aa188aba0a7827f8d4d5bac524568ddab" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>elem</name></member>
+      <member refid="struct__xml_attribute_1a92ee81b06a25758ce0c70c7df304e5fb" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>last</name></member>
+      <member refid="struct__xml_attribute_1a92e96fbec36b788653910920ed115569" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>name</name></member>
+      <member refid="struct__xml_attribute_1a9e323a5b7afa3f7cbb1723be8d41308f" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>next</name></member>
+      <member refid="struct__xml_attribute_1ab9701a9ccf2d4578e52dba419cceb062" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>nexth</name></member>
+      <member refid="struct__xml_attribute_1a5c831f067fffc8fbf2ab96b0cd52bd53" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>parent</name></member>
+      <member refid="struct__xml_attribute_1a6d9437a6df9377da706fdf9fcb78580d" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>prefix</name></member>
+      <member refid="struct__xml_attribute_1a9c004a1c585b411841ac291a740bad2d" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>prev</name></member>
+      <member refid="struct__xml_attribute_1a630c42587e233ede3bbbd2c8e29d5108" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>tree</name></member>
+      <member refid="struct__xml_attribute_1af3ca1a0e47ae810fbb710a8f07ea70cc" prot="public" virt="non-virtual"><scope>_xmlAttribute</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

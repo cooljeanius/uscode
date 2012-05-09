@@ -1,0 +1,69 @@
+\hypertarget{struct_declaration_stmt_node}{\section{Declaration\-Stmt\-Node Struct Reference}
+\label{struct_declaration_stmt_node}\index{Declaration\-Stmt\-Node@{Declaration\-Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Declaration\-Stmt\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{struct_declaration_stmt_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_declaration_stmt_node_ab52e3859c15ef8b651f330bcd963c56c}{scope}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_declaration_stmt_node_a6fed156d07803ffd41487e873bcef98f}{target}
+\item 
+\hyperlink{struct_expr_node}{Expr\-Node} $\ast$ \hyperlink{struct_declaration_stmt_node_aba3f89fdd66c4b0264490aa639a6bd6f}{expr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a declaration statement. A declaration statement creates a new variable named by {\itshape target\/}, optionally initializing it to the evaluated contents of {\itshape expr\/}. {\itshape scope\/} determines which level of scope the variable is to be created in.
+
+\begin{DoxySeeAlso}{See also}
+create\-Declaration\-Stmt\-Node(\-Identifier\-Node $\ast$, Identifier\-Node $\ast$, Expr\-Node $\ast$) 
+
+delete\-Declaration\-Stmt\-Node(\-Declaration\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 405 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_declaration_stmt_node_aba3f89fdd66c4b0264490aa639a6bd6f}{\index{Declaration\-Stmt\-Node@{Declaration\-Stmt\-Node}!expr@{expr}}
+\index{expr@{expr}!DeclarationStmtNode@{Declaration\-Stmt\-Node}}
+\subsubsection[{expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node}$\ast$ {\bf Declaration\-Stmt\-Node\-::expr}}}\label{struct_declaration_stmt_node_aba3f89fdd66c4b0264490aa639a6bd6f}
+An optional pointer to the expression to initialize {\itshape target\/} to. 
+
+Definition at line 408 of file parser.\-h.
+
+\hypertarget{struct_declaration_stmt_node_ab52e3859c15ef8b651f330bcd963c56c}{\index{Declaration\-Stmt\-Node@{Declaration\-Stmt\-Node}!scope@{scope}}
+\index{scope@{scope}!DeclarationStmtNode@{Declaration\-Stmt\-Node}}
+\subsubsection[{scope}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Declaration\-Stmt\-Node\-::scope}}}\label{struct_declaration_stmt_node_ab52e3859c15ef8b651f330bcd963c56c}
+A pointer to the scope to create the variable in. 
+
+Definition at line 406 of file parser.\-h.
+
+\hypertarget{struct_declaration_stmt_node_a6fed156d07803ffd41487e873bcef98f}{\index{Declaration\-Stmt\-Node@{Declaration\-Stmt\-Node}!target@{target}}
+\index{target@{target}!DeclarationStmtNode@{Declaration\-Stmt\-Node}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Declaration\-Stmt\-Node\-::target}}}\label{struct_declaration_stmt_node_a6fed156d07803ffd41487e873bcef98f}
+A pointer to the name of the variable to create. 
+
+Definition at line 407 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_op_expr_node" kind="struct" prot="public">
+    <compoundname>OpExprNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_op_expr_node_1a69ff4baea505db8ed32f4c4027f24ac6" prot="public" static="no" mutable="no">
+        <type>OpType</type>
+        <definition>OpType OpExprNode::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of operation to perform on <emphasis>args</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="518" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="518" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1ac43fd9e88414ff9960db8a442ae9a0e8" compoundref="interpreter_8c" startline="1872" endline="1975">interpretArithOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ad0dc393a1a5f2ef0eb59742fe70f07d1" compoundref="interpreter_8c" startline="1996" endline="2043">interpretBoolOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ab84fa97762a03da8689f763fc3165b41" compoundref="interpreter_8c" startline="2302" endline="2337">interpretEqualityOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a14b3a72f8c575160185d3e1ddd9721c3" compoundref="interpreter_8c" startline="2447" endline="2452">interpretOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_op_expr_node_1a82d6f2c460a585ee3b0a46ce00ba186f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node_list" kindref="compound">ExprNodeList</ref> *</type>
+        <definition>ExprNodeList* OpExprNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the arguments to perform the operation on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="519" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="519" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a7795828f9fd573ff3670ade6f6955b07" compoundref="interpreter_8c" startline="1230" endline="1250">interpretNotOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ac43fd9e88414ff9960db8a442ae9a0e8" compoundref="interpreter_8c" startline="1872" endline="1975">interpretArithOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ad0dc393a1a5f2ef0eb59742fe70f07d1" compoundref="interpreter_8c" startline="1996" endline="2043">interpretBoolOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ab84fa97762a03da8689f763fc3165b41" compoundref="interpreter_8c" startline="2302" endline="2337">interpretEqualityOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a4f45d788f390ee7a01a9f7a13f512d03" compoundref="interpreter_8c" startline="2357" endline="2410">interpretConcatOpExprNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores an operation expression. An operation expression evaluates to the result of the operation performed on its arguments.</para><para><simplesect kind="see"><para>createOpExprNode(OpType, ExprNodeList *) </para><simplesectsep/><para>deleteOpExprNode(OpExprNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="691">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="689">
+        <label>OpExprNode</label>
+        <link refid="struct_op_expr_node"/>
+        <childnode refid="690" relation="usage">
+          <edgelabel>args</edgelabel>
+        </childnode>
+      </node>
+      <node id="690">
+        <label>ExprNodeList</label>
+        <link refid="struct_expr_node_list"/>
+        <childnode refid="691" relation="usage">
+          <edgelabel>exprs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="517" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="517" bodyend="520"/>
+    <listofallmembers>
+      <member refid="struct_op_expr_node_1a82d6f2c460a585ee3b0a46ce00ba186f" prot="public" virt="non-virtual"><scope>OpExprNode</scope><name>args</name></member>
+      <member refid="struct_op_expr_node_1a69ff4baea505db8ed32f4c4027f24ac6" prot="public" virt="non-virtual"><scope>OpExprNode</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

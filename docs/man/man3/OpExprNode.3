@@ -1,0 +1,48 @@
+.TH "OpExprNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpExprNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "OpType \fBtype\fP"
+.br
+.ti -1c
+.RI "\fBExprNodeList\fP * \fBargs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores an operation expression\&. An operation expression evaluates to the result of the operation performed on its arguments\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createOpExprNode(OpType, ExprNodeList *) 
+.PP
+deleteOpExprNode(OpExprNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 517 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNodeList\fP* \fBOpExprNode::args\fP"
+A pointer to the arguments to perform the operation on\&. 
+.PP
+Definition at line 519 of file parser\&.h\&.
+.SS "OpType \fBOpExprNode::type\fP"
+The type of operation to perform on \fIargs\fP\&. 
+.PP
+Definition at line 518 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

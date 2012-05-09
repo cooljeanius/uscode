@@ -1,0 +1,60 @@
+\hypertarget{struct_op_expr_node}{\section{Op\-Expr\-Node Struct Reference}
+\label{struct_op_expr_node}\index{Op\-Expr\-Node@{Op\-Expr\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Op\-Expr\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{struct_op_expr_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Op\-Type \hyperlink{struct_op_expr_node_a69ff4baea505db8ed32f4c4027f24ac6}{type}
+\item 
+\hyperlink{struct_expr_node_list}{Expr\-Node\-List} $\ast$ \hyperlink{struct_op_expr_node_a82d6f2c460a585ee3b0a46ce00ba186f}{args}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores an operation expression. An operation expression evaluates to the result of the operation performed on its arguments.
+
+\begin{DoxySeeAlso}{See also}
+create\-Op\-Expr\-Node(\-Op\-Type, Expr\-Node\-List $\ast$) 
+
+delete\-Op\-Expr\-Node(\-Op\-Expr\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 517 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_op_expr_node_a82d6f2c460a585ee3b0a46ce00ba186f}{\index{Op\-Expr\-Node@{Op\-Expr\-Node}!args@{args}}
+\index{args@{args}!OpExprNode@{Op\-Expr\-Node}}
+\subsubsection[{args}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node\-List}$\ast$ {\bf Op\-Expr\-Node\-::args}}}\label{struct_op_expr_node_a82d6f2c460a585ee3b0a46ce00ba186f}
+A pointer to the arguments to perform the operation on. 
+
+Definition at line 519 of file parser.\-h.
+
+\hypertarget{struct_op_expr_node_a69ff4baea505db8ed32f4c4027f24ac6}{\index{Op\-Expr\-Node@{Op\-Expr\-Node}!type@{type}}
+\index{type@{type}!OpExprNode@{Op\-Expr\-Node}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}Op\-Type {\bf Op\-Expr\-Node\-::type}}}\label{struct_op_expr_node_a69ff4baea505db8ed32f4c4027f24ac6}
+The type of operation to perform on {\itshape args\/}. 
+
+Definition at line 518 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="namespacesplithtml" kind="namespace">
+    <compoundname>splithtml</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesplithtml_1ab06a1b554958e1b994ad2b42c47021a9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string splithtml::uschtml</definition>
+        <argsstring></argsstring>
+        <name>uschtml</name>
+        <initializer>&apos;2010usc26.htm&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" line="10" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesplithtml_1aa870d538dcc6e3f2ab9337d9d7a9bc25" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string splithtml::divider</definition>
+        <argsstring></argsstring>
+        <name>divider</name>
+        <initializer>&quot;&lt;!-- documentid:&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" line="11" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesplithtml_1aa682089c5b8a2adaa6be0b395f610ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def splithtml::splithtml</definition>
+        <argsstring></argsstring>
+        <name>splithtml</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" line="13" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" bodystart="13" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Resources/splithtml.py" line="1"/>
+  </compounddef>
+</doxygen>

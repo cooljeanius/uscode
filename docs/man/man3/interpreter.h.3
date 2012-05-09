@@ -1,0 +1,4173 @@
+.TH "tools/lci/lciframework/interpreter.h" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tools/lci/lciframework/interpreter.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include 'parser\&.h'\fP
+.br
+\fC#include 'unicode\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "union \fBValueData\fP"
+.br
+.ti -1c
+.RI "struct \fBValueObject\fP"
+.br
+.ti -1c
+.RI "struct \fBReturnObject\fP"
+.br
+.ti -1c
+.RI "struct \fBscopeobject\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBgetInteger\fP(value)   (value->data\&.i)"
+.br
+.ti -1c
+.RI "#define \fBgetFloat\fP(value)   (value->data\&.f)"
+.br
+.ti -1c
+.RI "#define \fBgetString\fP(value)   (value->data\&.s)"
+.br
+.ti -1c
+.RI "#define \fBV\fP(value)   (value->semaphore++)"
+.br
+.ti -1c
+.RI "#define \fBP\fP(value)   (value->semaphore--)"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBscopeobject\fP \fBScopeObject\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBValueType\fP { \fBVT_INTEGER\fP, \fBVT_FLOAT\fP, \fBVT_BOOLEAN\fP, \fBVT_STRING\fP, \fBVT_NIL\fP }"
+.br
+.ti -1c
+.RI "enum \fBReturnType\fP { \fBRT_DEFAULT\fP, \fBRT_BREAK\fP, \fBRT_RETURN\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBcreateString\fP (char *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateNilValueObject\fP (void)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateBooleanValueObject\fP (int)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateIntegerValueObject\fP (int)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateFloatValueObject\fP (float)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateStringValueObject\fP (char *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcopyValueObject\fP (\fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "void \fBdeleteValueObject\fP (\fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBcreateReturnObject\fP (\fBReturnType\fP, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "void \fBdeleteReturnObject\fP (\fBReturnObject\fP *)"
+.br
+.ti -1c
+.RI "\fBScopeObject\fP * \fBcreateScopeObject\fP (\fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "void \fBdeleteScopeObject\fP (\fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBgetScopeValue\fP (\fBScopeObject\fP *, \fBIdentifierNode\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBgetLocalScopeValue\fP (\fBScopeObject\fP *, \fBIdentifierNode\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcreateScopeValue\fP (\fBScopeObject\fP *, \fBIdentifierNode\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBupdateScopeValue\fP (\fBScopeObject\fP *, \fBIdentifierNode\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "unsigned int \fBisNumString\fP (const char *)"
+.br
+.ti -1c
+.RI "unsigned int \fBisHexString\fP (const char *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastBooleanExplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastIntegerExplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastFloatExplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastStringExplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastBooleanImplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastIntegerImplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastFloatImplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBcastStringImplicit\fP (\fBValueObject\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretStmtNodeList\fP (\fBStmtNodeList\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretBlockNode\fP (\fBBlockNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "int \fBinterpretMainNode\fP (\fBMainNode\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretImpVarExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretCastExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretFuncCallExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretIdentifierExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretConstantExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretNotOpExprNode\fP (\fBOpExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretArithOpExprNode\fP (\fBOpExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretBoolOpExprNode\fP (\fBOpExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretEqualityOpExprNode\fP (\fBOpExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretConcatOpExprNode\fP (\fBOpExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBinterpretOpExprNode\fP (\fBExprNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretCastStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretPrintStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretInputStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretAssignmentStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretDeclarationStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretIfThenElseStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretSwitchStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretBreakStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretReturnStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretLoopStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretFuncDefStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBReturnObject\fP * \fBinterpretExprStmtNode\fP (\fBStmtNode\fP *, \fBScopeObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopAddIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopSubIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMultIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopDivIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMaxIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMinIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopModIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopAddIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopSubIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMultIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopDivIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMaxIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMinIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopModIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopAddFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopSubFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMultFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopDivFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMaxFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMinFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopModFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopAddFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopSubFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMultFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopDivFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMaxFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopMinFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopModFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqBooleanBoolean\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqBooleanBoolean\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqIntegerInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqIntegerFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqFloatInteger\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqFloatFloat\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqStringString\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqStringString\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopEqNilNil\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.ti -1c
+.RI "\fBValueObject\fP * \fBopNeqNilNil\fP (\fBValueObject\fP *, \fBValueObject\fP *)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structures and functions for interpreting a parse tree\&. The interpreter traverses a parse tree in a depth-first manner, interpreting each node it reaches along the way\&. This is the last stage of the processing of a source code file\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Justin J\&. Meza
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBinterpreter\&.h\fP\&.
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBgetFloat\fP(value)   (value->data\&.f)"
+Gets the floating point data associated with a \fBValueObject\fP structure\&. 
+.PP
+Definition at line 25 of file interpreter\&.h\&.
+.SS "#define \fBgetInteger\fP(value)   (value->data\&.i)"
+Gets the integer data associated with a \fBValueObject\fP structure\&. 
+.PP
+Definition at line 23 of file interpreter\&.h\&.
+.SS "#define \fBgetString\fP(value)   (value->data\&.s)"
+Gets the string data associated with a \fBValueObject\fP structure\&. 
+.PP
+Definition at line 27 of file interpreter\&.h\&.
+.SS "#define \fBP\fP(value)   (value->semaphore--)"
+Decrements the semaphore of a \fBValueObject\fP structure\&. 
+.PP
+Definition at line 49 of file interpreter\&.h\&.
+.SS "#define \fBV\fP(value)   (value->semaphore++)"
+Increments the semaphore of a \fBValueObject\fP structure\&. 
+.PP
+Definition at line 46 of file interpreter\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBscopeobject\fP  \fBScopeObject\fP"
+Stores the variables in a particular scope\&. Scopes are arranged heirarchically from global (the ancestor of all other scopes) to local (the temporary scope of a \fBBlockNode\fP)\&.
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateScopeObject(ScopeObject *)\fP 
+.PP
+\fBdeleteScopeObject(ScopeObject *)\fP 
+.RE
+.PP
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBReturnType\fP"
+Denotes the type of return encountered\&. 
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIRT_DEFAULT \fP\fP
+A block of code returned after evaluating all of its statements\&. 
+.TP
+\fB\fIRT_BREAK \fP\fP
+A block of code within a \fBLoopStmtNode\fP or \fBSwitchStmtNode\fP returned via a break statement\&. 
+.TP
+\fB\fIRT_RETURN \fP\fP
+A block of code within a \fBFuncDefStmtNode\fP called by a \fBFuncCallExprNode\fP returned (either with or without a value)\&. 
+.PP
+Definition at line 62 of file interpreter\&.h\&.
+.SS "enum \fBValueType\fP"
+Denotes the type of a value\&. 
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIVT_INTEGER \fP\fP
+An integer value\&. 
+.TP
+\fB\fIVT_FLOAT \fP\fP
+A floating point decimal value\&. 
+.TP
+\fB\fIVT_BOOLEAN \fP\fP
+A true/false value\&. 
+.TP
+\fB\fIVT_STRING \fP\fP
+A character string value\&. 
+.TP
+\fB\fIVT_NIL \fP\fP
+Represents no value\&. 
+.PP
+Definition at line 30 of file interpreter\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBValueObject\fP* \fBcastBooleanExplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to boolean type in an explicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to boolean type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastIntegerExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringExplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 600 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastBooleanImplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to boolean type in an implicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to boolean type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastIntegerImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringImplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 484 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastFloatExplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to floating point decimal type in an explicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to floating point decimal type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastIntegerExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringExplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 709 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastFloatImplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to floating point decimal type in an implicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to floating point decimal type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastIntegerImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringImplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 538 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastIntegerExplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to integer type in an explicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to integer type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringExplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 648 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastIntegerImplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to integer type in an implicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to integer type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastStringImplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 509 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastStringExplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to string type in an explicit context\&. Casting is not done to directly the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBNote:\fP
+.RS 4
+\fIscope\fP is used to resolve variable interpolation within the string before casting it\&. Therefore, a simple way to interpolate the variables within a string is to call this function with it\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to string type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastIntegerExplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatExplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The spec does not define how TROOFs may be cast to YARNs\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 774 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcastStringImplicit\fP (\fBValueObject\fP *node, \fBScopeObject\fP *scope)"
+Casts the contents of a \fBValueObject\fP structure to string type in an implicit context\&. Casting is not done directly to the \fBValueObject\fP structure pointed to by \fInode\fP, instead, it is performed on a copy of that structure, which is what is returned\&.
+.PP
+\fBNote:\fP
+.RS 4
+\fIscope\fP is used to resolve variable interpolation within the string before casting it\&. Therefore, a simple way to interpolate the variables within a string is to call this function with it\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with a copy of the contents of \fInode\fP, cast to string type\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred while casting\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcastBooleanImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastIntegerImplicit(ValueObject *, ScopeObject *)\fP 
+.PP
+\fBcastFloatImplicit(ValueObject *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP The \fBValueObject\fP structure to cast\&. 
+.br
+\fIscope\fP The ScopeObject structure to use for variable interpolation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 571 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcopyValueObject\fP (\fBValueObject\fP *value)"
+Copies a \fBValueObject\fP structure\&.
+.PP
+\fBNote:\fP
+.RS 4
+What this function actually does is increment a semaphore in \fIvalue\fP and return \fIvalue\fP\&. The semaphore gets decremented when \fIvalue\fP gets deleted by \fBdeleteValueObject(ValueObject *)\fP\&. This way, an immutable copy of a \fBValueObject\fP structure may be made without actaully copying its blocks of memory; this reduces the overhead associated with copying a \fBValueObject\fP strcuture while still preserving its functionality\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIvalue\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP with the same type and contents as \fIvalue\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP The type of \fIvalue\fP is unknown\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateNilValueObject(void)\fP 
+.PP
+\fBcreateBooleanValueObject(int)\fP 
+.PP
+\fBcreateIntegerValueObject(int)\fP 
+.PP
+\fBcreateFloatValueObject(float)\fP 
+.PP
+\fBcreateStringValueObject(char *)\fP 
+.PP
+\fBdeleteValueObject(ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP The \fBValueObject\fP structure to create a copy of\&. 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateBooleanValueObject\fP (intdata)"
+Creates a boolean type \fBValueObject\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a boolean type \fBValueObject\fP structure with value \fC0\fP if \fIdata\fP equals 0 and \fC1\fP otherwise\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP The boolean data to store\&. 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateFloatValueObject\fP (floatdata)"
+Creates a floating point data decimal type \fBValueObject\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a floating point decimal type \fBValueObject\fP structure with value \fIdata\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP The floating point data to store\&. 
+.RE
+.PP
+
+.PP
+Definition at line 80 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateIntegerValueObject\fP (intdata)"
+Creates an integer type \fBValueObject\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to an integer type \fBValueObject\fP structure with value \fIdata\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP The integer data to store\&. 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateNilValueObject\fP (void)"
+Creates a nil type \fBValueObject\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a nil type \fBValueObject\fP structure\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+
+.PP
+Definition at line 24 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBcreateReturnObject\fP (\fBReturnType\fPtype, \fBValueObject\fP *value)"
+Creates a \fBReturnObject\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIvalue\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the desired properties\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBdeleteReturnObject(ReturnObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype\fP The type of return encountered\&. 
+.br
+\fIvalue\fP A pointer to the \fBValueObject\fP structure specifying the return value (optional, \fCNULL\fP if unused)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file interpreter\&.c\&.
+.SS "\fBScopeObject\fP* \fBcreateScopeObject\fP (\fBScopeObject\fP *parent)"
+Creates a ScopeObject structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP or is \fCNULL\fP if creating the root parent\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a ScopeObject structure with the desired properties\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBdeleteScopeObject(ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP A pointer to the parent ScopeObject\&. 
+.RE
+.PP
+
+.PP
+Definition at line 226 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateScopeValue\fP (\fBScopeObject\fP *scope, \fBIdentifierNode\fP *target)"
+Creates a new, nil, named \fBValueObject\fP structure in a ScopeObject structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&. 
+.PP
+\fItarget\fP was created by createIdentifierNode(char *)\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to the newly created \fBValueObject\fP structure named by \fItarget\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP realloc was unable to allocate memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBgetLocalScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscope\fP The ScopeObject structure to add a value to\&. 
+.br
+\fItarget\fP The name of the value to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 343 of file interpreter\&.c\&.
+.SS "char* \fBcreateString\fP (char *data)"
+Creates a string by copying the contents of another string\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a string containing the copied contents of \fIdata\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP A pointer to the string data to store\&. 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBcreateStringValueObject\fP (char *data)"
+Creates a string type \fBValueObject\fP structure\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a string type \fBValueObject\fP structure with value \fIdata\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP malloc was unable to allocate memory\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP The string data to store\&. 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file interpreter\&.c\&.
+.SS "void \fBdeleteReturnObject\fP (\fBReturnObject\fP *object)"
+Deletes a \fBReturnObject\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIobject\fP was created by \fBcreateReturnObject(ReturnType, ValueObject *)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+The memory at \fIobject\fP and any of its associated members will be freed\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateReturnObject(ReturnType, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP The \fBReturnObject\fP structure to be deleted\&. 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file interpreter\&.c\&.
+.SS "void \fBdeleteScopeObject\fP (\fBScopeObject\fP *scope)"
+Deletes a ScopeObject structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+The memory at \fIscope\fP and any of its associated members will be freed\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateScopeObject(ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscope\fP The ScopeObject structure to delete\&. 
+.RE
+.PP
+
+.PP
+Definition at line 255 of file interpreter\&.c\&.
+.SS "void \fBdeleteValueObject\fP (\fBValueObject\fP *value)"
+Deletes a \fBValueObject\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIvalue\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&.
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+The memory at \fIvalue\fP and any of its associated members will be freed (see note)\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+What this function actually does is decrement a semaphore in \fIvalue\fP and delete \fIvalue\fP if the semaphore reaches 0 as a result of the decrement\&. The semaphore gets incremented when either the value is created or it gets copied by \fBcopyValueObject(ValueObject *)\fP\&. This way, an immutable copy of a \fBValueObject\fP structure may be made without actually copying its blocks of memory\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBcreateNilValueObject(void)\fP 
+.PP
+\fBcreateBooleanValueObject(int)\fP 
+.PP
+\fBcreateIntegerValueObject(int)\fP 
+.PP
+\fBcreateFloatValueObject(float)\fP 
+.PP
+\fBcreateStringValueObject(char *)\fP 
+.PP
+\fBcopyValueObject(ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP A pointer to the \fBValueObject\fP structure to be deleted\&. 
+.RE
+.PP
+
+.PP
+Definition at line 164 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBgetLocalScopeValue\fP (\fBScopeObject\fP *scope, \fBIdentifierNode\fP *target)"
+Retrieves a named \fBValueObject\fP structure from a ScopeObject structure without traversing through its parents\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&. 
+.PP
+\fItarget\fP was created by createIdentifierNode(char *)\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to the stored \fBValueObject\fP structure named by \fItarget\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP \fItarget\fP could not be found in \fIscope\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscope\fP The ScopeObject structure to check\&. 
+.br
+\fItarget\fP The name of the value to find\&. 
+.RE
+.PP
+
+.PP
+Definition at line 316 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBgetScopeValue\fP (\fBScopeObject\fP *scope, \fBIdentifierNode\fP *target)"
+Retrieves a named \fBValueObject\fP structure from a ScopeObject structure, traversing its parents if necessary\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&. 
+.PP
+\fItarget\fP was created by createIdentifierNode(char *)\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to the stored \fBValueObject\fP structure named by \fItarget\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP \fItarget\fP could not be found in \fIscope\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetLocalScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscope\fP The ScopeObject structure to check\&. 
+.br
+\fItarget\fP The name of the value to find\&. 
+.RE
+.PP
+
+.PP
+Definition at line 285 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretArithOpExprNode\fP (\fBOpExprNode\fP *expr, \fBScopeObject\fP *scope)"
+Interprets an arithmetic operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType type, ExprNodeList *args) where \fItype\fP is either OP_ADD, OP_SUB, OP_MULT, OP_DIV, or OP_MOD and \fIargs\fP was created by createExprNodeList(void) and populated with \fBExprNode\fP structures using addExprNode(ExprNodeList *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+Only the first two elements in \fIargs\fP are considered\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the interpreted operation expression value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretNotOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBoolOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretEqualityOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConcatOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpr\fP A pointer to the \fBOpExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIexpr\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1872 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretAssignmentStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an assignment statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_ASSIGNMENT and \fIstmt\fP was created by createAssignmentStmtNode(IdentifierNode *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing the \fBAssignmentStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2677 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretBlockNode\fP (\fBBlockNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets the contents of a \fBBlockNode\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by parseBlockNode(Token ***, FunctionTable *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return state of the interpreted \fInode\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNodeList(StmtNodeList *, ScopeObject *)\fP 
+.PP
+\fBinterpretMainNode(MainNode *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBBlockNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3263 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretBoolOpExprNode\fP (\fBOpExprNode\fP *expr, \fBScopeObject\fP *scope)"
+Interprets a boolean operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType type, ExprNodeList *args) where \fItype\fP is either OP_AND, OP_OR, or OP_XOR and \fIargs\fP was created by createExprNodeList(void) and populated with \fBExprNode\fP structures using addExprNode(ExprNodeList *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the interpreted operation expression value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretArithOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretNotOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretEqualityOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConcatOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The specification does not say whether boolean logic short circuits or not\&. Here, we assume it does\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpr\fP A pointer to the \fBOpExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIexpr\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1996 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretBreakStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a break statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_BREAK and \fIstmt\fP is NULL\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+\fInode\fP and \fIscope\fP are not used by this function but are still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure indicating a break occurred\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP Not used (see note)\&. 
+.br
+\fIscope\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2951 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretCastExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a cast expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createExprNode(ExprType type, void *expr) where \fItype\fP is ET_CAST and \fIexpr\fP is a \fBCastExprNode\fP structure created by createCastExprNode(ExprNode *, TypeNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the result of the cast\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretImpVarExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncCallExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIdentifierExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConstantExprNode(ExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure containing the \fBCastExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1017 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretCastStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a cast statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_CAST and \fIstmt\fP was created by createCastStmtNode(IdentifierNode *, TypeNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to the \fBStmtNode\fP structure containing the \fBCastStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2509 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretConcatOpExprNode\fP (\fBOpExprNode\fP *expr, \fBScopeObject\fP *scope)"
+Interprets a concatenation operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType type, ExprNodeList *args) where \fItype\fP is OP_CAT and \fIargs\fP was created by createExprNodeList(void) and populated with \fBExprNode\fP structures using addExprNode(ExprNodeList *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the concatenation of all the arguments in \fIargs\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretNotOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretArithOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBoolOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretEqualityOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpr\fP A pointer to the \fBOpExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIexpr\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2357 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretConstantExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a constant expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createExprNode(ExprType type, void *expr) where \fItype\fP is ET_CONSTANT and \fIexpr\fP is a \fBConstantNode\fP structure created by either createBooleanConstantNode(int), createIntegerConstantNode(int), createFloatConstantNode(float), or createStringConstantNode(char *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+\fIscope\fP is not used by this function but is still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the return value of function\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretImpVarExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretCastExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncCallExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIdentifierExprNode(ExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+For efficiency, string interpolation should be performed by caller because it only needs to be performed when necessary\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure containing the \fBConstantNode\fP structure to interpret\&. 
+.br
+\fIscope\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1182 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretDeclarationStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a declaration statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_DECLARATION and \fIstmt\fP was created by createDeclarationStmtNode(IdentifierNode *, IdentifierNode *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing the \fBDeclarationStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2713 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretEqualityOpExprNode\fP (\fBOpExprNode\fP *expr, \fBScopeObject\fP *scope)"
+Interprets an equality operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType type, ExprNodeList *args) where \fItype\fP is either OP_EQ or OP_NEQ and \fIargs\fP was created by createExprNodeList(void) and populated with \fBExprNode\fP structures using addExprNode(ExprNodeList *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+Only the first two elements in \fIargs\fP are considered\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the interpreted operation expression value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretArithOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretNotOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBoolOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConcatOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpr\fP A pointer to the \fBOpExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIexpr\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2302 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets the contents of an \fBExprNode\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by parseExprNode(Token ***, FunctionTable *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure with the evaluated contents of \fInode\fP in the scope \fIscope\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNodeList(StmtNodeList *, ScopeObject *)\fP 
+.PP
+\fBinterpretBlockNode(BlockNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretMainNode(MainNode *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2480 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretExprStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an expression statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_EXPR and \fIstmt\fP was created by createExprNode(ExprType, void *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing the \fBExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3161 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretFuncCallExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a function call expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createExprNode(ExprType type, void *expr) where \fItype\fP is ET_FUNCCALL and \fIexpr\fP is a FunctionCallExprNode structure created by createFuncCallExprNode(FuncDefStmtNode *, ExprNodeList *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the return value of function\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretImpVarExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretCastExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIdentifierExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConstantExprNode(ExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure containing the \fBFuncCallExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1069 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretFuncDefStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a function definition statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_SWITCH and \fIstmt\fP was created by createSwitchStmtNode(IdentifierNode *, IdentifierNode *, IdentifierNodeList *, BlockNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+\fInode\fP and \fIscope\fP are not used by this function but are still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP Not used (see note)\&. 
+.br
+\fIscope\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3129 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretIdentifierExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an identifier expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createExprNode(ExprType type, void *expr) where \fItype\fP is ET_IDENTIFIER and \fIexpr\fP is an \fBIdentifierNode\fP structure created by createIdentifierNode(char *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+\fIscope\fP is not used by this function but is still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the return value of function\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretImpVarExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretCastExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncCallExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConstantExprNode(ExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure containing the \fBIdentifierNode\fP structure to interpret\&. 
+.br
+\fIscope\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1147 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretIfThenElseStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an if/then/else statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_IFTHENELSE and \fIstmt\fP was created by createIfThenElseStmtNode(BlockNode *, BlockNode *, ExprNodeList *, BlockNodeList *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing the \fBIfThenElseStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2762 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretImpVarExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an implicit variable expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createExprNode(ExprType type, void *expr) where \fItype\fP is ET_IMPVAR and \fIexpr\fP is NULL\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+\fInode\fP is not used by this function but is still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the value of the current scope's implicit variable\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncCallExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIdentifierExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConstantExprNode(ExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure with type set to ET_IMPVAR\&. 
+.br
+\fIscope\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 992 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretInputStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an input statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_INPUT and \fIstmt\fP was created by createInputStmtNode(IdentifierNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The specification is unclear as to the exact semantics of input\&. Here, we read up until the first newline or EOF but do not store it\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing an \fBInputStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2612 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretLoopStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a loop statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_LOOP and \fIstmt\fP was created by createLoopStmtNode(IdentifierNode *, IdentifierNode *, ExprNode *, ExprNode *, BlockNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return value after interpreting \fInode\fP in the scope \fIscope\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to the \fBStmtNode\fP structure containing the \fBLoopStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3017 of file interpreter\&.c\&.
+.SS "int \fBinterpretMainNode\fP (\fBMainNode\fP *main)"
+Interprets the contents of a \fBMainNode\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by parseMainNode(Token **, FunctionTable *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The return status of the interpreted \fBMainNode\fP structure\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI0\fP \fImain\fP was interpreted without any errors\&. 
+.br
+\fI1\fP An error occurred while interpreting \fImain\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNodeList(StmtNodeList *, ScopeObject *)\fP 
+.PP
+\fBinterpretBlockNode(BlockNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImain\fP A pointer to the \fBMainNode\fP structure to interpret\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3290 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretNotOpExprNode\fP (\fBOpExprNode\fP *expr, \fBScopeObject\fP *scope)"
+Interprets a logical NOT operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType type, ExprNodeList *args) where \fItype\fP is OP_NOT and \fIargs\fP was created by createExprNodeList(void) and populated with \fBExprNode\fP structures using addExprNode(ExprNodeList *, ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+Only the first element in \fIargs\fP is considered\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the interpreted operation expression value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretArithOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBoolOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretEqualityOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConcatOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpr\fP A pointer to the \fBOpExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIexpr\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1230 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBinterpretOpExprNode\fP (\fBExprNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets an operation expression\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIexpr\fP was created by createOpExprNode(OpType, ExprNodeList *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the interpreted operation expression value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretNotOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretArithOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBoolOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretEqualityOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretConcatOpExprNode(OpExprNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to an \fBExprNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2447 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretPrintStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a print statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_PRINT and \fIstmt\fP was created by createPrintStmtNode(ExprNodeList *, int)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the default return value\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure containing the \fBPrintStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2567 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretReturnStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a return statement\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_RETURN and \fIstmt\fP was created by createReturnStmtNode(ExprNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return value after interpreting \fInode\fP in the scope \fIscope\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretSwitchStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to the \fBStmtNode\fP structure containing the \fBReturnStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2983 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets the contents of a \fBStmtNode\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by parseStmtNode(Token ***, FunctionTable *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return state of the interpreted \fInode\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNodeList(StmtNodeList *, ScopeObject *)\fP 
+.PP
+\fBinterpretBlockNode(BlockNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretMainNode(MainNode *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to a \fBStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to a ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3204 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretStmtNodeList\fP (\fBStmtNodeList\fP *list, \fBScopeObject\fP *scope)"
+Interprets the contents of a \fBStmtNodeList\fP structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIlist\fP was created by createStmtNodeList(void) and contains contents added by addStmtNode(StmtNodeList *, StmtNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return state of the interpreted \fIlist\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretExprNode(ExprNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBlockNode(BlockNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretMainNode(MainNode *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlist\fP A pointer to the \fBStmtNodeList\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fIlist\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 3227 of file interpreter\&.c\&.
+.SS "\fBReturnObject\fP* \fBinterpretSwitchStmtNode\fP (\fBStmtNode\fP *node, \fBScopeObject\fP *scope)"
+Interprets a switch statement\&.
+.PP
+\fBNote:\fP
+.RS 4
+The specification is unclear as to whether guards are implicitly cast to the type of the implicit variable\&. This only matters in the case that mixed guard types are present and in this code, the action that is performed is the same as the comparison operator, that is, in order for a guard to match, both its type and value must match the implicit variable\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fInode\fP was created by createStmtNode(StmtType type, void *stmt) where \fItype\fP is ST_SWITCH and \fIstmt\fP was created by createSwitchStmtNode(ExprNodeList *, BlockNodeList *, BlockNode *)\&. 
+.PP
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBReturnObject\fP structure with the return value after interpreting \fInode\fP in the scope \fIscope\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP An error occurred during interpretation\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBinterpretCastStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretPrintStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretInputStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretAssignmentStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretDeclarationStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretIfThenElseStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretBreakStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretReturnStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretLoopStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretFuncDefStmtNode(StmtNode *, ScopeObject *)\fP 
+.PP
+\fBinterpretExprStmtNode(StmtNode *, ScopeObject *)\fP 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+Strings with interpolation should have already been checked for\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP A pointer to the \fBStmtNode\fP structure containing the \fBSwitchStmtNode\fP structure to interpret\&. 
+.br
+\fIscope\fP A pointer to the ScopeObject structure to evaluate \fInode\fP under\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2853 of file interpreter\&.c\&.
+.SS "unsigned int \fBisHexString\fP (const char *stringdata)"
+Checks if a string of characters follows the format for a hexadecimal number\&.
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI0\fP The string of characters is not a hexadecimal number\&. 
+.br
+\fI1\fP The string of characters is a hexadecimal number\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstringdata\fP The array of characters to check the format of\&. 
+.RE
+.PP
+
+.PP
+Definition at line 440 of file interpreter\&.c\&.
+.SS "unsigned int \fBisNumString\fP (const char *stringdata)"
+Checks if a string of characters follows the format for a number\&.
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI0\fP The string of characters is not a number\&. 
+.br
+\fI1\fP The string of characters is a number\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstringdata\fP The array of characters to check the format of\&. 
+.RE
+.PP
+
+.PP
+Definition at line 419 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopAddFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Adds two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the sum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first term to add\&. 
+.br
+\fIb\fP The second term to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1707 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopAddFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Adds a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the sum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first term to add\&. 
+.br
+\fIb\fP The second term to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1559 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopAddIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Adds an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the sum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first term to add\&. 
+.br
+\fIb\fP The second term to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1409 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopAddIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Adds two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the sum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first term to add\&. 
+.br
+\fIb\fP The second term to add\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1265 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopDivFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Divides two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the quotient of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP Division by zero was attempted\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1766 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopDivFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Divides a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the quotient of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP Division by zero was attempted\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1620 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopDivIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Divides an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the quotient of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP Division by zero was attempted\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1471 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopDivIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Divides two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the quotient of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP Division by zero was attempted\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1324 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqBooleanBoolean\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two boolean values are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by createBooleanValueObject(float)\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqBooleanBoolean(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2169 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two floats are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2141 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if a float and an integer are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2112 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if an integer and a float are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2082 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two integers are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2053 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqNilNil\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two nil values are equal\&.
+.PP
+\fBNote:\fP
+.RS 4
+Two nil values are \fBalways\fP equal, therefore \fIa\fP and \fIb\fP are not used by this function but are still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateNilValueObject(void)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqNilNil(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Not used (see note)\&. 
+.br
+\fIb\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2229 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopEqStringString\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two strings are equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateStringValueObject(char *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqStringString(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2197 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMaxFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the maximum of two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the maximum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1789 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMaxFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the maximum of a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the maximum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1644 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMaxIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the maximum of an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the maximum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1495 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMaxIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the maximum of two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the maximum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1347 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMinFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the minimum of two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the minimum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1808 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMinFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the minimum of a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the minimum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1664 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMinIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the minimum of an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the minimum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1515 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMinIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Finds the minimum of two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the minimum of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first number to compare\&. 
+.br
+\fIb\fP The second number to compare\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1366 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopModFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Calculates the modulus of two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the modulus of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1827 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopModFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Calculates the modulus of a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the modulus of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1684 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopModIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Calculates the modulus of an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the modulus of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1535 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopModIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Calculates the modulus of two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the modulus of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The dividend\&. 
+.br
+\fIb\fP The divisor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1385 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMultFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Multiplies two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the product of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first factor to multiply\&. 
+.br
+\fIb\fP The second factor to multiply\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1745 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMultFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Multiplies a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the product of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first factor to multiply\&. 
+.br
+\fIb\fP The second factor to multiply\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1598 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMultIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Multiplies an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the product of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first factor to multiply\&. 
+.br
+\fIb\fP The second factor to multiply\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1449 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopMultIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Multiplies two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the product of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopSubIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first factor to multiply\&. 
+.br
+\fIb\fP The second factor to multiply\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1303 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqBooleanBoolean\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two boolean values are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by createBooleanValueObject(float)\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqBooleanBoolean(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2183 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two floats are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopNeqFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2155 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if a float and an integer are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2127 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if an integer and a float are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2097 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two integers are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2067 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqNilNil\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two nil values are not equal\&.
+.PP
+\fBNote:\fP
+.RS 4
+Two nil values are \fBalways\fP equal and thus \fBnever\fP not equal, therefore \fIa\fP and \fIb\fP are not used by this function but are still included in its prototype to allow this function to be stored in a jump table for fast execution\&.
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateNilValueObject(void)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqNilNil(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Not used (see note)\&. 
+.br
+\fIb\fP Not used (see note)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2250 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopNeqStringString\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Tests if two strings are not equal\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateStringValueObject(char *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing a boolean value indicating whether \fIa\fP is not equal to \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopEqStringString(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The first value to test\&. 
+.br
+\fIb\fP The second value to test\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2211 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopSubFloatFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Subtracts two floats\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the difference of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The minuend\&. 
+.br
+\fIb\fP The subtrahend\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1726 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopSubFloatInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Subtracts a float and an integer\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateFloatValueObject(float)\fP and \fIb\fP was created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the difference of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinFloatInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModFloatInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The minuend\&. 
+.br
+\fIb\fP The subtrahend\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1579 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopSubIntegerFloat\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Subtracts an integer and a float\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP was created by \fBcreateIntegerValueObject(int)\fP and \fIb\fP was created by \fBcreateFloatValueObject(float)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the difference of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerFloat(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerFloat(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The minuend\&. 
+.br
+\fIb\fP The subtrahend\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1429 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBopSubIntegerInteger\fP (\fBValueObject\fP *a, \fBValueObject\fP *b)"
+Subtracts two integers\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIa\fP and \fIb\fP were created by \fBcreateIntegerValueObject(int)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to a \fBValueObject\fP structure containing the difference of the values \fIa\fP and \fIb\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBopAddIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMultIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopDivIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMaxIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopMinIntegerInteger(ValueObject *, ValueObject *)\fP 
+.PP
+\fBopModIntegerInteger(ValueObject *, ValueObject *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP The minuend\&. 
+.br
+\fIb\fP The subtrahend\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1284 of file interpreter\&.c\&.
+.SS "\fBValueObject\fP* \fBupdateScopeValue\fP (\fBScopeObject\fP *scope, \fBIdentifierNode\fP *target, \fBValueObject\fP *value)"
+Updates a \fBValueObject\fP structure named by an \fBIdentifierNode\fP structure in a ScopeObject structure\&.
+.PP
+\fBPrecondition:\fP
+.RS 4
+\fIscope\fP was created by \fBcreateScopeObject(ScopeObject *)\fP and contains contents added by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP and contents updated by \fBupdateScopeValue(ScopeObject *, IdentifierNode *, ValueObject *)\fP\&. 
+.PP
+\fItarget\fP was created by createIdentifierNode(char *)\&. 
+.PP
+The value named by \fItarget\fP was created by \fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP\&. 
+.PP
+\fIvalue\fP was created by either \fBcreateNilValueObject(void)\fP, \fBcreateBooleanValueObject(int)\fP, \fBcreateIntegerValueObject(int)\fP, \fBcreateFloatValueObject(float)\fP, \fBcreateStringValueObject(char *)\fP, or copied with \fBcopyValueObject(ValueObject *)\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer to the updated \fBValueObject\fP structure named by \fItarget\fP (will be the same as \fIval\fP)\&.
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINULL\fP \fItarget\fP could not be found in \fIscope\fP\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBgetLocalScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.PP
+\fBcreateScopeValue(ScopeObject *, IdentifierNode *)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscope\fP A pointer to the ScopeObject structure to update\&. 
+.br
+\fItarget\fP A pointer to the \fBIdentifierNode\fP structure containing the name of the value to update\&. 
+.br
+\fIvalue\fP A pointer to the \fBValueObject\fP structure containing the value to copy for the update\&. 
+.RE
+.PP
+
+.PP
+Definition at line 389 of file interpreter\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

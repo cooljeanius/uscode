@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_mutable_array_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSMutableArray(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a8a66345ae48e51d3f38cacf4b88eef46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::addObjectsFromArray:matchingRegex:</definition>
+        <argsstring>(NSArray *otherArray,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromArray:matchingRegex:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>otherArray</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a91ba19572361753b3d429f660ef1f29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::removeObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>removeObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a147170316c3a9fe7c8978e98af1f26a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::removeObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>removeObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a8a66345ae48e51d3f38cacf4b88eef46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::addObjectsFromArray:matchingRegex:</definition>
+        <argsstring>(NSArray *otherArray,[matchingRegex] id aRegex)</argsstring>
+        <name>addObjectsFromArray:matchingRegex:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>otherArray</declname>
+        </param>
+        <param>
+          <attributes>[matchingRegex]</attributes>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a91ba19572361753b3d429f660ef1f29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::removeObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>removeObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_array_07_regex_kit_additions_08_1a147170316c3a9fe7c8978e98af1f26a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSMutableArray(RegexKitAdditions)::removeObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>removeObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="63" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" bodystart="63" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a8a66345ae48e51d3f38cacf4b88eef46" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>addObjectsFromArray:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a8a66345ae48e51d3f38cacf4b88eef46" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>addObjectsFromArray:matchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a91ba19572361753b3d429f660ef1f29e" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a91ba19572361753b3d429f660ef1f29e" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a147170316c3a9fe7c8978e98af1f26a1" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_mutable_array_07_regex_kit_additions_08_1a147170316c3a9fe7c8978e98af1f26a1" prot="public" virt="virtual"><scope>NSMutableArray(RegexKitAdditions)</scope><name>removeObjectsMatchingRegex:inRange:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -61,6 +61,8 @@
 		A5583020155928CF0061F95C /* ushousereps.png in Resources */ = {isa = PBXBuildFile; fileRef = A558301F155928CF0061F95C /* ushousereps.png */; };
 		A5583022155928DF0061F95C /* USHR.icns in Resources */ = {isa = PBXBuildFile; fileRef = A5583021155928DF0061F95C /* USHR.icns */; };
 		A5583024155928E60061F95C /* USHR.ico in Resources */ = {isa = PBXBuildFile; fileRef = A5583023155928E60061F95C /* USHR.ico */; };
+		A55831D71559BBAE0061F95C /* lciframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55831D61559BBAE0061F95C /* lciframework.framework */; };
+		A55831D91559BBC80061F95C /* lciframework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A55831D61559BBAE0061F95C /* lciframework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A55831D91559BBC80061F95C /* lciframework.framework in CopyFiles */,
 				A55830091559267B0061F95C /* libxml.framework in CopyFiles */,
 				A55830081559266E0061F95C /* RegexKit.framework in CopyFiles */,
 			);
@@ -183,6 +186,7 @@
 		A558301F155928CF0061F95C /* ushousereps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ushousereps.png; sourceTree = "<group>"; };
 		A5583021155928DF0061F95C /* USHR.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = USHR.icns; sourceTree = "<group>"; };
 		A5583023155928E60061F95C /* USHR.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = USHR.ico; sourceTree = "<group>"; };
+		A55831D61559BBAE0061F95C /* lciframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lciframework.framework; path = ../tools/lci/lciframework/build/Debug/lciframework.framework; sourceTree = SOURCE_ROOT; };
 		DA206CF9015C4FF003C91932 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +209,7 @@
 				A5582E9415591D1D0061F95C /* Python.framework in Frameworks */,
 				A5582FBD155926330061F95C /* RegexKit.framework in Frameworks */,
 				A5582FD01559265F0061F95C /* libxml.framework in Frameworks */,
+				A55831D71559BBAE0061F95C /* lciframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +242,7 @@
 		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A55831D61559BBAE0061F95C /* lciframework.framework */,
 				A5582FCF1559265F0061F95C /* libxml.framework */,
 				A5582FBC155926330061F95C /* RegexKit.framework */,
 				A5582E9315591D1D0061F95C /* Python.framework */,
@@ -576,6 +582,7 @@
 					"\"$(SRCROOT)/../../../localadmin/Library/Frameworks\"",
 					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../tools/lci/lciframework/build/Debug\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -601,6 +608,7 @@
 					"\"$(SRCROOT)/../../../localadmin/Library/Frameworks\"",
 					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../tools/lci/lciframework/build/Debug\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = s;

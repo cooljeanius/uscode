@@ -1,0 +1,1901 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h" kind="file">
+    <compoundname>pcre.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="611">
+        <label>Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h</label>
+        <link refid="RegexKit.framework/Versions/A/Headers/pcre.h"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structpcre__extra" prot="public">pcre_extra</innerclass>
+    <innerclass refid="structpcre__callout__block" prot="public">pcre_callout_block</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa4d3a4c4dc9db6b6547ce8b698551b17" prot="public" static="no">
+        <name>PCRE_MAJOR</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="44" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5efc425e40733d42f90b55bc55a4a431" prot="public" static="no">
+        <name>PCRE_MINOR</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="45" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aeebe4cc9732a9e39fea508e01b6d7418" prot="public" static="no">
+        <name>PCRE_PRERELEASE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="46" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa01db2e4dc1d33f2d8e5ea241116726c" prot="public" static="no">
+        <name>PCRE_DATE</name>
+        <initializer>2008-01-28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="47" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a7ce91e15b5a6a32257937d929bc31296" prot="public" static="no">
+        <name>PCRE_EXP_DECL</name>
+        <initializer>extern</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="74" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a3397d9f91a9b3523e0afa45d85b46950" prot="public" static="no">
+        <name>PCRE_CASELESS</name>
+        <initializer>0x00000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="100" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5e2fa0a3acfe44bf19e83ebc4b0b5ad4" prot="public" static="no">
+        <name>PCRE_MULTILINE</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="101" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa20620f0b3ffd7d5778d86e98d2d4536" prot="public" static="no">
+        <name>PCRE_DOTALL</name>
+        <initializer>0x00000004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="102" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a24c767567bde49a4ebdc33783ae2c914" prot="public" static="no">
+        <name>PCRE_EXTENDED</name>
+        <initializer>0x00000008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="103" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa2eabe6a64847b8bc2f49f6a8430f1f4" prot="public" static="no">
+        <name>PCRE_ANCHORED</name>
+        <initializer>0x00000010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="104" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ad65038ad88e46214044c98dc052cf77b" prot="public" static="no">
+        <name>PCRE_DOLLAR_ENDONLY</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="105" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ae356b5a19de6096863c0b9e39e74b92b" prot="public" static="no">
+        <name>PCRE_EXTRA</name>
+        <initializer>0x00000040</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="106" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a16056d7051a946b4045356e828bbb0b6" prot="public" static="no">
+        <name>PCRE_NOTBOL</name>
+        <initializer>0x00000080</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="107" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5a49583d34fb5cf425ab4ff7687ff290" prot="public" static="no">
+        <name>PCRE_NOTEOL</name>
+        <initializer>0x00000100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="108" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1afe50a7c890619904dd88d86af5621337" prot="public" static="no">
+        <name>PCRE_UNGREEDY</name>
+        <initializer>0x00000200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="109" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a99d5e98371fe4cc99a91496fec260a22" prot="public" static="no">
+        <name>PCRE_NOTEMPTY</name>
+        <initializer>0x00000400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="110" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a177ec66f9b06aab7b37965b77b2cf1b8" prot="public" static="no">
+        <name>PCRE_UTF8</name>
+        <initializer>0x00000800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="111" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a89eae5b0859fda718d6924e2548c0039" prot="public" static="no">
+        <name>PCRE_NO_AUTO_CAPTURE</name>
+        <initializer>0x00001000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="112" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a0dbe8d1e2f19e326ca08bf99aa54d46c" prot="public" static="no">
+        <name>PCRE_NO_UTF8_CHECK</name>
+        <initializer>0x00002000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="113" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a35ee92b3d85086e3b978e268be40a25a" prot="public" static="no">
+        <name>PCRE_AUTO_CALLOUT</name>
+        <initializer>0x00004000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="114" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a45d744fdfe22196e519bd7f732169c32" prot="public" static="no">
+        <name>PCRE_PARTIAL</name>
+        <initializer>0x00008000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="115" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4c96d4b8191b1853c88186ac5ee39e37" prot="public" static="no">
+        <name>PCRE_DFA_SHORTEST</name>
+        <initializer>0x00010000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="116" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aaca8969d1f3de87ccecceda165c16af7" prot="public" static="no">
+        <name>PCRE_DFA_RESTART</name>
+        <initializer>0x00020000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="117" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a13e0d654eca35f3e6ef806d5f51feab1" prot="public" static="no">
+        <name>PCRE_FIRSTLINE</name>
+        <initializer>0x00040000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="118" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac200fe10b745df0961d1f1801266ace1" prot="public" static="no">
+        <name>PCRE_DUPNAMES</name>
+        <initializer>0x00080000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="119" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ab55198e91574a143392a8dced9d5cf85" prot="public" static="no">
+        <name>PCRE_NEWLINE_CR</name>
+        <initializer>0x00100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="120" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a9d3e03ae881322fe05e72e7ad111bf4f" prot="public" static="no">
+        <name>PCRE_NEWLINE_LF</name>
+        <initializer>0x00200000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="121" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a6d5da3bae2692b4bc458f5638dcafd57" prot="public" static="no">
+        <name>PCRE_NEWLINE_CRLF</name>
+        <initializer>0x00300000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="122" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1c379cd4b51ea037dce7e8c79f9ee57d" prot="public" static="no">
+        <name>PCRE_NEWLINE_ANY</name>
+        <initializer>0x00400000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="123" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1af25f19586bec4187ca77e617ddc9b98b" prot="public" static="no">
+        <name>PCRE_NEWLINE_ANYCRLF</name>
+        <initializer>0x00500000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="124" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac4743871720886cdb063a9102f18bf0a" prot="public" static="no">
+        <name>PCRE_BSR_ANYCRLF</name>
+        <initializer>0x00800000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="125" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac26454ae13931ee0bb369dff27b7c1e2" prot="public" static="no">
+        <name>PCRE_BSR_UNICODE</name>
+        <initializer>0x01000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="126" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ad39129723af6a7f9584c1c1cba089509" prot="public" static="no">
+        <name>PCRE_ERROR_NOMATCH</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="130" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa47d1a178fb529fed1b1f999ea98b0b9" prot="public" static="no">
+        <name>PCRE_ERROR_NULL</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="131" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a2e1578015eb678450a1c8327c97509e7" prot="public" static="no">
+        <name>PCRE_ERROR_BADOPTION</name>
+        <initializer>(-3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="132" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5c86cbd13e6c2770246f6da8a310f160" prot="public" static="no">
+        <name>PCRE_ERROR_BADMAGIC</name>
+        <initializer>(-4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="133" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a090b39eea9e6cc9a82b4192b06034347" prot="public" static="no">
+        <name>PCRE_ERROR_UNKNOWN_OPCODE</name>
+        <initializer>(-5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="134" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a9e173f93ec46189e8da491b86ff60f6a" prot="public" static="no">
+        <name>PCRE_ERROR_UNKNOWN_NODE</name>
+        <initializer>(-5)  /* For backward compatibility */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="135" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac6c7a9107b8a1a8616f824fb30a3569a" prot="public" static="no">
+        <name>PCRE_ERROR_NOMEMORY</name>
+        <initializer>(-6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="136" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1afd6f01105ff6d4c9e450a55fc0393cfe" prot="public" static="no">
+        <name>PCRE_ERROR_NOSUBSTRING</name>
+        <initializer>(-7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="137" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1abe4a2c56f074df78c108ceda543ffae6" prot="public" static="no">
+        <name>PCRE_ERROR_MATCHLIMIT</name>
+        <initializer>(-8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="138" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4789b5ffefb291771f3b4417eabec8c4" prot="public" static="no">
+        <name>PCRE_ERROR_CALLOUT</name>
+        <initializer>(-9)  /* Never used by PCRE itself */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="139" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1af3d0d74db5955e377ad5a7d91d57f2ea" prot="public" static="no">
+        <name>PCRE_ERROR_BADUTF8</name>
+        <initializer>(-10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="140" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a09e2716e3bb1ecd82e7bc19fb0b72d51" prot="public" static="no">
+        <name>PCRE_ERROR_BADUTF8_OFFSET</name>
+        <initializer>(-11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="141" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a15e18e8cc2d40840786a650ee750d49a" prot="public" static="no">
+        <name>PCRE_ERROR_PARTIAL</name>
+        <initializer>(-12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="142" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1af26f30ebc125fbd27b82f49c2766740b" prot="public" static="no">
+        <name>PCRE_ERROR_BADPARTIAL</name>
+        <initializer>(-13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="143" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a847e5b5b078b3e6e0e23e78cad873f16" prot="public" static="no">
+        <name>PCRE_ERROR_INTERNAL</name>
+        <initializer>(-14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="144" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aa625751afbab8ce693ead86a528ad5bb" prot="public" static="no">
+        <name>PCRE_ERROR_BADCOUNT</name>
+        <initializer>(-15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="145" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a8b5b9f885bf5d6045a91f08afac15e47" prot="public" static="no">
+        <name>PCRE_ERROR_DFA_UITEM</name>
+        <initializer>(-16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="146" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac247fd02cbbfbfd15b8041f7fcd1b2e9" prot="public" static="no">
+        <name>PCRE_ERROR_DFA_UCOND</name>
+        <initializer>(-17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="147" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a19c9d89d7e3d64a20a80a338dd179d38" prot="public" static="no">
+        <name>PCRE_ERROR_DFA_UMLIMIT</name>
+        <initializer>(-18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="148" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a7d9be66da50467cf298b3d87c2c38166" prot="public" static="no">
+        <name>PCRE_ERROR_DFA_WSSIZE</name>
+        <initializer>(-19)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="149" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac9bca7bf2c63977dbaeaf7515a0b7f0b" prot="public" static="no">
+        <name>PCRE_ERROR_DFA_RECURSE</name>
+        <initializer>(-20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="150" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a8ac929eecc597f78ce9ba03fac738b78" prot="public" static="no">
+        <name>PCRE_ERROR_RECURSIONLIMIT</name>
+        <initializer>(-21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="151" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1af858c850ae36681798b91644bef59ea0" prot="public" static="no">
+        <name>PCRE_ERROR_NULLWSLIMIT</name>
+        <initializer>(-22)  /* No longer actually used */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="152" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1e5c85bff0f0ab4ec3b7da4eedc1c1dd" prot="public" static="no">
+        <name>PCRE_ERROR_BADNEWLINE</name>
+        <initializer>(-23)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="153" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a0e76bf1b51c1f8ab9dfd41981244e77e" prot="public" static="no">
+        <name>PCRE_INFO_OPTIONS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="157" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a157c504f78f237c14e1c46c762fc44c7" prot="public" static="no">
+        <name>PCRE_INFO_SIZE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="158" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1e67f3dc26bcad0195ef42f9d5126d78" prot="public" static="no">
+        <name>PCRE_INFO_CAPTURECOUNT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="159" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a41f8636ef1964c07030820d46dfd8d0a" prot="public" static="no">
+        <name>PCRE_INFO_BACKREFMAX</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="160" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a653b7b37d2ffc7112a420dafed1dc074" prot="public" static="no">
+        <name>PCRE_INFO_FIRSTBYTE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="161" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a57d55b2bbaca36f10e1fc3c5ae273899" prot="public" static="no">
+        <name>PCRE_INFO_FIRSTCHAR</name>
+        <initializer>4  /* For backwards compatibility */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="162" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a6967220a12ed19c6b461d28342825afb" prot="public" static="no">
+        <name>PCRE_INFO_FIRSTTABLE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="163" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a174b32a9d716539c63f79bdb824e5a19" prot="public" static="no">
+        <name>PCRE_INFO_LASTLITERAL</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="164" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a0592f8d9db4d1d559ce7619b26dfe5f7" prot="public" static="no">
+        <name>PCRE_INFO_NAMEENTRYSIZE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="165" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a65a1bccd2d8ae9390f58fbbd204604b4" prot="public" static="no">
+        <name>PCRE_INFO_NAMECOUNT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="166" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a0268bee19c3c4f925dd10c320ad84dd2" prot="public" static="no">
+        <name>PCRE_INFO_NAMETABLE</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="167" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aadf0ac007837039b0a52ea7d9495a40b" prot="public" static="no">
+        <name>PCRE_INFO_STUDYSIZE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="168" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ad69f733768ffcb1f36c66adc671ff95b" prot="public" static="no">
+        <name>PCRE_INFO_DEFAULT_TABLES</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="169" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac2d31bd0f762c33882914adbd2fb7bd5" prot="public" static="no">
+        <name>PCRE_INFO_OKPARTIAL</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="170" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1abcce93127f116fa34938a0dcbff153f1" prot="public" static="no">
+        <name>PCRE_INFO_JCHANGED</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="171" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4fe48f70c96771135e0f25eeadaabea6" prot="public" static="no">
+        <name>PCRE_INFO_HASCRORLF</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="172" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ad18c644c262f41db8f031cb56f385489" prot="public" static="no">
+        <name>PCRE_CONFIG_UTF8</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="177" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ac9cd3aaf1d94ff1e846082b3c69b68f0" prot="public" static="no">
+        <name>PCRE_CONFIG_NEWLINE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="178" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a021a346383e3c6adaf16f7e67224be73" prot="public" static="no">
+        <name>PCRE_CONFIG_LINK_SIZE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="179" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a92a8371791568a85cb1f4a60f1762fcd" prot="public" static="no">
+        <name>PCRE_CONFIG_POSIX_MALLOC_THRESHOLD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="180" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4b5a3d2cc8eca45f8117a90780ce2cea" prot="public" static="no">
+        <name>PCRE_CONFIG_MATCH_LIMIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="181" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1acd39a87d50b7915ea4ff25edcf2df538" prot="public" static="no">
+        <name>PCRE_CONFIG_STACKRECURSE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="182" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a0498601a046ad7249ffd094a4f576ef7" prot="public" static="no">
+        <name>PCRE_CONFIG_UNICODE_PROPERTIES</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="183" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a926aa8aa1743fca147e98fbeed4c5e58" prot="public" static="no">
+        <name>PCRE_CONFIG_MATCH_LIMIT_RECURSION</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="184" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aee81a372fe78664fd6a78e04c8fd3eb1" prot="public" static="no">
+        <name>PCRE_CONFIG_BSR</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="185" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a2349a3ef318b1472ea1e862dea0e5d5f" prot="public" static="no">
+        <name>PCRE_EXTRA_STUDY_DATA</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="190" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a445166c422ee5e35dc97b5b6e2255afc" prot="public" static="no">
+        <name>PCRE_EXTRA_MATCH_LIMIT</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="191" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a197fb3eb123c7d79aa25d9cb810bd4d3" prot="public" static="no">
+        <name>PCRE_EXTRA_CALLOUT_DATA</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="192" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a459b2b498380bc2faead3c9b161a6f4e" prot="public" static="no">
+        <name>PCRE_EXTRA_TABLES</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="193" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ace793f02af463ede612983bfff275674" prot="public" static="no">
+        <name>PCRE_EXTRA_MATCH_LIMIT_RECURSION</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="194" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ab8ae69b54edd300cdd38d136efde98a0" prot="public" static="no">
+        <name>PCRE_SPTR</name>
+        <initializer>const char *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="206" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a96cef57ec6796ba28e36092fd1e8d155" prot="public" static="no">
+        <type>struct real_pcre</type>
+        <definition>typedef struct real_pcre pcre</definition>
+        <argsstring></argsstring>
+        <name>pcre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="199" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a006a6073be4facfedbaf003c7ea5d3ac" prot="public" static="no">
+        <type>struct <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref></type>
+        <definition>typedef struct pcre_extra  pcre_extra</definition>
+        <argsstring></argsstring>
+        <name>pcre_extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="220"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a3ee4a0c7305ba8704f5b82ba789f876d" prot="public" static="no">
+        <type>struct <ref refid="structpcre__callout__block" kindref="compound">pcre_callout_block</ref></type>
+        <definition>typedef struct pcre_callout_block  pcre_callout_block</definition>
+        <argsstring></argsstring>
+        <name>pcre_callout_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="243"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a3ae9a3602e43f36472fccab40c0c0ed3" prot="public" static="no" mutable="no">
+        <type>PCRE_EXP_DECL void *(*</type>
+        <definition>PCRE_EXP_DECL void*(* pcre_malloc)(size_t)</definition>
+        <argsstring>)(size_t)</argsstring>
+        <name>pcre_malloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="252" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a33376da9c70fa4605f5db8908c657c7a" prot="public" static="no" mutable="no">
+        <type>PCRE_EXP_DECL void(*</type>
+        <definition>PCRE_EXP_DECL void(* pcre_free)(void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>pcre_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="253" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1acb92c357ce2a7921ae34f6ea09527e3e" prot="public" static="no" mutable="no">
+        <type>PCRE_EXP_DECL void *(*</type>
+        <definition>PCRE_EXP_DECL void*(* pcre_stack_malloc)(size_t)</definition>
+        <argsstring>)(size_t)</argsstring>
+        <name>pcre_stack_malloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="254" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a37079c70889c09596501a4543cdc3a24" prot="public" static="no" mutable="no">
+        <type>PCRE_EXP_DECL void(*</type>
+        <definition>PCRE_EXP_DECL void(* pcre_stack_free)(void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>pcre_stack_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="255" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4f1a73abed207ec99bfce34e053d634e" prot="public" static="no" mutable="no">
+        <type>PCRE_EXP_DECL int(*</type>
+        <definition>PCRE_EXP_DECL int(* pcre_callout)(pcre_callout_block *)</definition>
+        <argsstring>)(pcre_callout_block *)</argsstring>
+        <name>pcre_callout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="256" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1ad323bbe0837de57c30d125ed366d0739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL pcre *</type>
+        <definition>PCRE_EXP_DECL pcre* pcre_compile</definition>
+        <argsstring>(const char *, int, const char **, int *, const unsigned char *)</argsstring>
+        <name>pcre_compile</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char **</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="268"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a08dede0bafc41e9ec109739cc3214180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL pcre *</type>
+        <definition>PCRE_EXP_DECL pcre* pcre_compile2</definition>
+        <argsstring>(const char *, int, int *, const char **, int *, const unsigned char *)</argsstring>
+        <name>pcre_compile2</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>const char **</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="270"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a8a6f490ef495e286a3147503763ff5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_config</definition>
+        <argsstring>(int, void *)</argsstring>
+        <name>pcre_config</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="271"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aedf8f12c65b9c27993beccdadc5658b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_copy_named_substring</definition>
+        <argsstring>(const pcre *, const char *, int *, int, const char *, char *, int)</argsstring>
+        <name>pcre_copy_named_substring</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="273"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a4d36efcf2733a02185fabe028740bc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_copy_substring</definition>
+        <argsstring>(const char *, int *, int, int, char *, int)</argsstring>
+        <name>pcre_copy_substring</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="275"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1afc86bb46d4234f424b52ca063678e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_dfa_exec</definition>
+        <argsstring>(const pcre *, const pcre_extra *, const char *, int, int, int, int *, int, int *, int)</argsstring>
+        <name>pcre_dfa_exec</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref> *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="277"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1affc53fe39310a881a7e48b6781ff594e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_exec</definition>
+        <argsstring>(const pcre *, const pcre_extra *, PCRE_SPTR, int, int, int, int *, int)</argsstring>
+        <name>pcre_exec</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref> *</type>
+        </param>
+        <param>
+          <type>PCRE_SPTR</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="279"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a3bbdb598b6ff6eb91c9f8d701ae6c21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL void</type>
+        <definition>PCRE_EXP_DECL void pcre_free_substring</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>pcre_free_substring</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="280"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1b86d98b12b5234ac88d82f1395d65f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL void</type>
+        <definition>PCRE_EXP_DECL void pcre_free_substring_list</definition>
+        <argsstring>(const char **)</argsstring>
+        <name>pcre_free_substring_list</name>
+        <param>
+          <type>const char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="281"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a041cee48aea7fdeb04df2b8bcaf7822c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_fullinfo</definition>
+        <argsstring>(const pcre *, const pcre_extra *, int, void *)</argsstring>
+        <name>pcre_fullinfo</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="283"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a9b5a6669f3b62d22b5dfdb5705dbe4b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_get_named_substring</definition>
+        <argsstring>(const pcre *, const char *, int *, int, const char *, const char **)</argsstring>
+        <name>pcre_get_named_substring</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>const char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="285"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a215def96bf179352f8f3ea2a1146ddcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_get_stringnumber</definition>
+        <argsstring>(const pcre *, const char *)</argsstring>
+        <name>pcre_get_stringnumber</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="286"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1560b86484dec9daf37d02b0e3f1918d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_get_stringtable_entries</definition>
+        <argsstring>(const pcre *, const char *, char **, char **)</argsstring>
+        <name>pcre_get_stringtable_entries</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="288"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5e624cac8d8d3ff014ebe3022265026a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_get_substring</definition>
+        <argsstring>(const char *, int *, int, int, const char **)</argsstring>
+        <name>pcre_get_substring</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="290"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a941b0fb5b1d92c7d2fbeb8fc796eb200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_get_substring_list</definition>
+        <argsstring>(const char *, int *, int, const char ***)</argsstring>
+        <name>pcre_get_substring_list</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char ***</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="292"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a6b089cb77ca686c25cfe50fa72b44126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_info</definition>
+        <argsstring>(const pcre *, int *, int *)</argsstring>
+        <name>pcre_info</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="293"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a5d7d9a6ff9fde8c29529cff529281599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL const unsigned char *</type>
+        <definition>PCRE_EXP_DECL const unsigned char* pcre_maketables</definition>
+        <argsstring>(void)</argsstring>
+        <name>pcre_maketables</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="294"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1aea55f781423be31da88548ab67f141b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL int</type>
+        <definition>PCRE_EXP_DECL int pcre_refcount</definition>
+        <argsstring>(pcre *, int)</argsstring>
+        <name>pcre_refcount</name>
+        <param>
+          <type>pcre *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="295"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1a1db57a090014fd0774790c5dfe872b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL <ref refid="structpcre__extra" kindref="compound">pcre_extra</ref> *</type>
+        <definition>PCRE_EXP_DECL pcre_extra* pcre_study</definition>
+        <argsstring>(const pcre *, int, const char **)</argsstring>
+        <name>pcre_study</name>
+        <param>
+          <type>const pcre *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="296"/>
+      </memberdef>
+      <memberdef kind="function" id="_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h_1adb32d0a87f847c9d4859dc780f80cc42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PCRE_EXP_DECL const char *</type>
+        <definition>PCRE_EXP_DECL const char* pcre_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>pcre_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h" line="297"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Perl-Compatible<sp/>Regular<sp/>Expressions<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>public<sp/>header<sp/>file<sp/>for<sp/>the<sp/>PCRE<sp/>library,<sp/>to<sp/>be<sp/>#included<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">applications<sp/>that<sp/>call<sp/>the<sp/>PCRE<sp/>functions.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>1997-2008<sp/>University<sp/>of<sp/>Cambridge</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">-----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>University<sp/>of<sp/>Cambridge<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">-----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_PCRE_H</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_PCRE_H</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>current<sp/>PCRE<sp/>version<sp/>information.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_MAJOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_MINOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_PRERELEASE<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2008-01-28</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>When<sp/>an<sp/>application<sp/>links<sp/>to<sp/>a<sp/>PCRE<sp/>DLL<sp/>in<sp/>Windows,<sp/>the<sp/>symbols<sp/>that<sp/>are</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">imported<sp/>have<sp/>to<sp/>be<sp/>identified<sp/>as<sp/>such.<sp/>When<sp/>building<sp/>PCRE,<sp/>the<sp/>appropriate</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">export<sp/>setting<sp/>is<sp/>defined<sp/>in<sp/>pcre_internal.h,<sp/>which<sp/>includes<sp/>this<sp/>file.<sp/>So<sp/>we</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">don&apos;t<sp/>change<sp/>existing<sp/>definitions<sp/>of<sp/>PCRE_EXP_DECL<sp/>and<sp/>PCRECPP_EXP_DECL.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>!defined(PCRE_STATIC)</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>PCRE_EXP_DECL</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>PCRE_EXP_DECL<sp/><sp/>extern<sp/>__declspec(dllimport)</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>ifndef<sp/>PCRECPP_EXP_DECL</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PCRECPP_EXP_DECL<sp/><sp/>extern<sp/>__declspec(dllimport)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>endif</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>ifndef<sp/>PCRECPP_EXP_DEFN</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PCRECPP_EXP_DEFN<sp/><sp/>__declspec(dllimport)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>endif</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>By<sp/>default,<sp/>we<sp/>use<sp/>the<sp/>standard<sp/>&quot;extern&quot;<sp/>declarations.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PCRE_EXP_DECL</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>PCRE_EXP_DECL<sp/><sp/>extern<sp/>&quot;C&quot;</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>else</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>PCRE_EXP_DECL<sp/><sp/>extern</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>PCRECPP_EXP_DECL</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>PCRECPP_EXP_DECL<sp/><sp/>extern</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>PCRECPP_EXP_DEFN</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>PCRECPP_EXP_DEFN</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Have<sp/>to<sp/>include<sp/>stdlib.h<sp/>in<sp/>order<sp/>to<sp/>ensure<sp/>that<sp/>size_t<sp/>is<sp/>defined;</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">it<sp/>is<sp/>needed<sp/>here<sp/>for<sp/>malloc.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allow<sp/>for<sp/>C++<sp/>users<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Options<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CASELESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_MULTILINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DOTALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTENDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ANCHORED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DOLLAR_ENDONLY<sp/><sp/><sp/><sp/><sp/>0x00000020</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000040</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NOTBOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000080</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NOTEOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000100</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_UNGREEDY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000200</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NOTEMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000400</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_UTF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000800</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NO_AUTO_CAPTURE<sp/><sp/><sp/><sp/>0x00001000</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NO_UTF8_CHECK<sp/><sp/><sp/><sp/><sp/><sp/>0x00002000</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_AUTO_CALLOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00004000</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_PARTIAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00008000</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DFA_SHORTEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00010000</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DFA_RESTART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00020000</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_FIRSTLINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00040000</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_DUPNAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00080000</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NEWLINE_CR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00100000</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NEWLINE_LF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00200000</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NEWLINE_CRLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00300000</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NEWLINE_ANY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00400000</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_NEWLINE_ANYCRLF<sp/><sp/><sp/><sp/>0x00500000</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_BSR_ANYCRLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00800000</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_BSR_UNICODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01000000</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exec-time<sp/>and<sp/>get/set-time<sp/>error<sp/>codes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_NOMATCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_NULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2)</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADOPTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-3)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADMAGIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-4)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_UNKNOWN_OPCODE<sp/><sp/>(-5)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_UNKNOWN_NODE<sp/><sp/><sp/><sp/>(-5)<sp/><sp/></highlight><highlight class="comment">/*<sp/>For<sp/>backward<sp/>compatibility<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_NOMEMORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-6)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_NOSUBSTRING<sp/><sp/><sp/><sp/><sp/>(-7)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_MATCHLIMIT<sp/><sp/><sp/><sp/><sp/><sp/>(-8)</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_CALLOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-9)<sp/><sp/></highlight><highlight class="comment">/*<sp/>Never<sp/>used<sp/>by<sp/>PCRE<sp/>itself<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADUTF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-10)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADUTF8_OFFSET<sp/>(-11)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_PARTIAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-12)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADPARTIAL<sp/><sp/><sp/><sp/><sp/>(-13)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_INTERNAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-14)</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADCOUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-15)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_DFA_UITEM<sp/><sp/><sp/><sp/><sp/><sp/>(-16)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_DFA_UCOND<sp/><sp/><sp/><sp/><sp/><sp/>(-17)</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_DFA_UMLIMIT<sp/><sp/><sp/><sp/>(-18)</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_DFA_WSSIZE<sp/><sp/><sp/><sp/><sp/>(-19)</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_DFA_RECURSE<sp/><sp/><sp/><sp/>(-20)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_RECURSIONLIMIT<sp/>(-21)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_NULLWSLIMIT<sp/><sp/><sp/><sp/>(-22)<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>longer<sp/>actually<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_ERROR_BADNEWLINE<sp/><sp/><sp/><sp/><sp/>(-23)</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Request<sp/>types<sp/>for<sp/>pcre_fullinfo()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_OPTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_CAPTURECOUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_BACKREFMAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_FIRSTBYTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_FIRSTCHAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/></highlight><highlight class="comment">/*<sp/>For<sp/>backwards<sp/>compatibility<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_FIRSTTABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_LASTLITERAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_NAMEENTRYSIZE<sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_NAMECOUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_NAMETABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_STUDYSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_DEFAULT_TABLES<sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_OKPARTIAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_JCHANGED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_INFO_HASCRORLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Request<sp/>types<sp/>for<sp/>pcre_config().<sp/>Do<sp/>not<sp/>re-arrange,<sp/>in<sp/>order<sp/>to<sp/>remain</highlight></codeline>
+<codeline lineno="175"><highlight class="comment">compatible.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_UTF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_NEWLINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_LINK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_POSIX_MALLOC_THRESHOLD<sp/><sp/>3</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_MATCH_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_STACKRECURSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_UNICODE_PROPERTIES<sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_MATCH_LIMIT_RECURSION<sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_CONFIG_BSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Bit<sp/>flags<sp/>for<sp/>the<sp/>pcre_extra<sp/>structure.<sp/>Do<sp/>not<sp/>re-arrange<sp/>or<sp/>redefine</highlight></codeline>
+<codeline lineno="188"><highlight class="comment">these<sp/>bits,<sp/>just<sp/>add<sp/>new<sp/>ones<sp/>on<sp/>the<sp/>end,<sp/>in<sp/>order<sp/>to<sp/>remain<sp/>compatible.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA_STUDY_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA_MATCH_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA_CALLOUT_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA_TABLES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_EXTRA_MATCH_LIMIT_RECURSION<sp/><sp/>0x0010</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Types<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">real_pcre;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>declaration;<sp/>the<sp/>definition<sp/>is<sp/>private<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">real_pcre<sp/>pcre;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>When<sp/>PCRE<sp/>is<sp/>compiled<sp/>as<sp/>a<sp/>C++<sp/>library,<sp/>the<sp/>subject<sp/>pointer<sp/>type<sp/>can<sp/>be</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">replaced<sp/>with<sp/>a<sp/>custom<sp/>type.<sp/>For<sp/>conventional<sp/>use,<sp/>the<sp/>public<sp/>interface<sp/>is<sp/>a</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">const<sp/>char<sp/>*.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PCRE_SPTR</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCRE_SPTR<sp/>const<sp/>char<sp/>*</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>structure<sp/>for<sp/>passing<sp/>additional<sp/>data<sp/>to<sp/>pcre_exec().<sp/>This<sp/>is<sp/>defined<sp/>in</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">such<sp/>as<sp/>way<sp/>as<sp/>to<sp/>be<sp/>extensible.<sp/>Always<sp/>add<sp/>new<sp/>fields<sp/>at<sp/>the<sp/>end,<sp/>in<sp/>order<sp/>to</highlight></codeline>
+<codeline lineno="211"><highlight class="comment">remain<sp/>compatible.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Bits<sp/>for<sp/>which<sp/>fields<sp/>are<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*study_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Opaque<sp/>data<sp/>from<sp/>pcre_study()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>match_limit;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Maximum<sp/>number<sp/>of<sp/>calls<sp/>to<sp/>match()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*callout_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Data<sp/>passed<sp/>back<sp/>in<sp/>callouts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tables;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>character<sp/>tables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>match_limit_recursion;<sp/></highlight><highlight class="comment">/*<sp/>Max<sp/>recursive<sp/>calls<sp/>to<sp/>match()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}<sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>structure<sp/>for<sp/>passing<sp/>out<sp/>data<sp/>via<sp/>the<sp/>pcre_callout_function.<sp/>We<sp/>use<sp/>a</highlight></codeline>
+<codeline lineno="223"><highlight class="comment">structure<sp/>so<sp/>that<sp/>new<sp/>fields<sp/>can<sp/>be<sp/>added<sp/>on<sp/>the<sp/>end<sp/>in<sp/>future<sp/>versions,</highlight></codeline>
+<codeline lineno="224"><highlight class="comment">without<sp/>changing<sp/>the<sp/>API<sp/>of<sp/>the<sp/>function,<sp/>thereby<sp/>allowing<sp/>old<sp/>clients<sp/>to<sp/>work</highlight></codeline>
+<codeline lineno="225"><highlight class="comment">without<sp/>modification.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcre__callout__block" kindref="compound">pcre_callout_block</ref><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>version;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Identifies<sp/>version<sp/>of<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------------------------<sp/>Version<sp/>0<sp/>-------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callout_number;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>compiled<sp/>into<sp/>pattern<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*offset_vector;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>offset<sp/>vector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>PCRE_SPTR<sp/><sp/><sp/><sp/>subject;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>subject<sp/>being<sp/>matched<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject_length;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>length<sp/>of<sp/>the<sp/>subject<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_match;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Offset<sp/>to<sp/>start<sp/>of<sp/>this<sp/>match<sp/>attempt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_position;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Where<sp/>we<sp/>currently<sp/>are<sp/>in<sp/>the<sp/>subject<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capture_top;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Max<sp/>current<sp/>capture<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capture_last;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Most<sp/>recently<sp/>closed<sp/>capture<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*callout_data;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Data<sp/>passed<sp/>in<sp/>with<sp/>the<sp/>call<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>-------------------<sp/>Added<sp/>for<sp/>Version<sp/>1<sp/>--------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pattern_position;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Offset<sp/>to<sp/>next<sp/>item<sp/>in<sp/>the<sp/>pattern<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next_item_length;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Length<sp/>of<sp/>next<sp/>item<sp/>in<sp/>the<sp/>pattern<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}<sp/><ref refid="structpcre__callout__block" kindref="compound">pcre_callout_block</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Indirection<sp/>for<sp/>store<sp/>get<sp/>and<sp/>free<sp/>functions.<sp/>These<sp/>can<sp/>be<sp/>set<sp/>to</highlight></codeline>
+<codeline lineno="246"><highlight class="comment">alternative<sp/>malloc/free<sp/>functions<sp/>if<sp/>required.<sp/>Special<sp/>ones<sp/>are<sp/>used<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="247"><highlight class="comment">non-recursive<sp/>case<sp/>for<sp/>&quot;frames&quot;.<sp/>There<sp/>is<sp/>also<sp/>an<sp/>optional<sp/>callout<sp/>function</highlight></codeline>
+<codeline lineno="248"><highlight class="comment">that<sp/>is<sp/>triggered<sp/>by<sp/>the<sp/>(?)<sp/>regex<sp/>item.<sp/>For<sp/>Virtual<sp/>Pascal,<sp/>these<sp/>definitions</highlight></codeline>
+<codeline lineno="249"><highlight class="comment">have<sp/>to<sp/>take<sp/>another<sp/>form.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VPCOMPAT</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(*pcre_malloc)(size_t);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">PCRE_EXP_DECL<sp/>void<sp/><sp/>(*pcre_free)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(*pcre_stack_malloc)(size_t);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">PCRE_EXP_DECL<sp/>void<sp/><sp/>(*pcre_stack_free)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">PCRE_EXP_DECL<sp/>int<sp/><sp/><sp/>(*pcre_callout)(<ref refid="structpcre__callout__block" kindref="compound">pcre_callout_block</ref><sp/>*);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>VPCOMPAT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pcre_malloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>pcre_free(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pcre_stack_malloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>pcre_stack_free(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>pcre_callout(<ref refid="structpcre__callout__block" kindref="compound">pcre_callout_block</ref><sp/>*);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>VPCOMPAT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>PCRE<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">PCRE_EXP_DECL<sp/>pcre<sp/>*pcre_compile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">PCRE_EXP_DECL<sp/>pcre<sp/>*pcre_compile2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_config(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_copy_named_substring(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_copy_substring(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_dfa_exec(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/>*,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_exec(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/>*,<sp/>PCRE_SPTR,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pcre_free_substring(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pcre_free_substring_list(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_fullinfo(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_get_named_substring(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_get_stringnumber(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_get_stringtable_entries(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_get_substring(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_get_substring_list(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>***);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pcre_maketables(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>pcre_refcount(pcre<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">PCRE_EXP_DECL<sp/><ref refid="structpcre__extra" kindref="compound">pcre_extra</ref><sp/>*pcre_study(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pcre<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">PCRE_EXP_DECL<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pcre_version(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="300"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>End<sp/>of<sp/>pcre.h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/pcre.h"/>
+  </compounddef>
+</doxygen>

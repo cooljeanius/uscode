@@ -1,0 +1,60 @@
+\hypertarget{struct_main_node}{\section{Main\-Node Struct Reference}
+\label{struct_main_node}\index{Main\-Node@{Main\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Main\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{struct_main_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_block_node}{Block\-Node} $\ast$ \hyperlink{struct_main_node_aee302d107abb16c48702c2699a58d49f}{block}
+\item 
+\hyperlink{struct_function_table}{Function\-Table} $\ast$ \hyperlink{struct_main_node_a1b22e4833219bb71c9ca7f32d3e37241}{functab}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores the main block of code a program executes. This structure could be accomplished using only a \hyperlink{struct_block_node}{Block\-Node} instead, but its logical importance to program control flow (namely, it is the first portion of code executed) merits its own structure.
+
+\begin{DoxySeeAlso}{See also}
+create\-Main\-Node(\-Block\-Node $\ast$) 
+
+delete\-Main\-Node(\-Main\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 345 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_main_node_aee302d107abb16c48702c2699a58d49f}{\index{Main\-Node@{Main\-Node}!block@{block}}
+\index{block@{block}!MainNode@{Main\-Node}}
+\subsubsection[{block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\-Node}$\ast$ {\bf Main\-Node\-::block}}}\label{struct_main_node_aee302d107abb16c48702c2699a58d49f}
+A pointer to the block of code to execute first. 
+
+Definition at line 346 of file parser.\-h.
+
+\hypertarget{struct_main_node_a1b22e4833219bb71c9ca7f32d3e37241}{\index{Main\-Node@{Main\-Node}!functab@{functab}}
+\index{functab@{functab}!MainNode@{Main\-Node}}
+\subsubsection[{functab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\-Table}$\ast$ {\bf Main\-Node\-::functab}}}\label{struct_main_node_a1b22e4833219bb71c9ca7f32d3e37241}
+A pointer to the function table associated with this block of code. 
+
+Definition at line 347 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

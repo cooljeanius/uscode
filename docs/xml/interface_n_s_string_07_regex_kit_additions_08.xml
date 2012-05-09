@@ -1,0 +1,1087 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_string_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSString(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a67b1aab5c9832ed1582d21facce6cf9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::getCapturesWithRegexAndReferences:</definition>
+        <argsstring>(id aRegex,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithRegexAndReferences:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ab4e4143505576a6b0d9a1c54a779f0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::getCapturesWithRegex:inRange:references:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[references] NSString *const firstReference,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithRegex:inRange:references:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[references]</attributes>
+          <type>NSString *const</type>
+          <declname>firstReference</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aa4cfd7397de6d7632badbcf72f8bfda7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * NSString(RegexKitAdditions)::rangesOfRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>rangesOfRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ac71558c01a3a5cb98342898a2af732a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * NSString(RegexKitAdditions)::rangesOfRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>rangesOfRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1afd16022d3c9d872db294b92f3573c9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange NSString(RegexKitAdditions)::rangeOfRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>rangeOfRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a376695f2d95c075af18aa527eb787a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange NSString(RegexKitAdditions)::rangeOfRegex:inRange:capture:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[capture] const RKUInteger capture)</argsstring>
+        <name>rangeOfRegex:inRange:capture:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[capture]</attributes>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9952639a4adaf1eb356ff7e79bb5284a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::isMatchedByRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>isMatchedByRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1af63fbeef87f84d36f86a653997df75b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::isMatchedByRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>isMatchedByRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ac67a8e1a903ec7b57f3bf787df94f2ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_enumerator" kindref="compound">RKEnumerator</ref> *</type>
+        <definition>RKEnumerator * NSString(RegexKitAdditions)::matchEnumeratorWithRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>matchEnumeratorWithRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ace35946c116b64d5c3df42569cd2c05e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_enumerator" kindref="compound">RKEnumerator</ref> *</type>
+        <definition>RKEnumerator * NSString(RegexKitAdditions)::matchEnumeratorWithRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>matchEnumeratorWithRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9ac271d2875ed1472607d100c81761aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:withReferenceString:</definition>
+        <argsstring>(id aRegex,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a1c367a696d5073151797a6aa5e123d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:inRange:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a1f6e91c871bed898c611b44b3b9d29ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a741544365f57cacb163e3956e43b2a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:inRange:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9b8a72142b5c51c7692e56038a3fc91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceFormat] NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringByMatching:inRange:withReferenceFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a3f51f5ce2ed14f1763dbdfbd002db51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:replace:withReferenceString:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:replace:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aeabaa7f5d347f24311f8de8f990b82ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aafa2e718ee6cca45bb63816872fc005f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:replace:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:replace:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9e8bd0577e98bea491b10eac648a3e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1af72979ecf53901259ebe5922745442eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a67b1aab5c9832ed1582d21facce6cf9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::getCapturesWithRegexAndReferences:</definition>
+        <argsstring>(id aRegex,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithRegexAndReferences:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ab4e4143505576a6b0d9a1c54a779f0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::getCapturesWithRegex:inRange:references:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[references] NSString *const firstReference,[,]...RK_REQUIRES_NIL_TERMINATION)</argsstring>
+        <name>getCapturesWithRegex:inRange:references:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[references]</attributes>
+          <type>NSString *const</type>
+          <declname>firstReference</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+          <declname>RK_REQUIRES_NIL_TERMINATION</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aa4cfd7397de6d7632badbcf72f8bfda7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * NSString(RegexKitAdditions)::rangesOfRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>rangesOfRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ac71558c01a3a5cb98342898a2af732a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange *</type>
+        <definition>NSRange * NSString(RegexKitAdditions)::rangesOfRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>rangesOfRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1afd16022d3c9d872db294b92f3573c9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange NSString(RegexKitAdditions)::rangeOfRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>rangeOfRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a376695f2d95c075af18aa527eb787a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange NSString(RegexKitAdditions)::rangeOfRegex:inRange:capture:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[capture] const RKUInteger capture)</argsstring>
+        <name>rangeOfRegex:inRange:capture:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[capture]</attributes>
+          <type>const RKUInteger</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9952639a4adaf1eb356ff7e79bb5284a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::isMatchedByRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>isMatchedByRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1af63fbeef87f84d36f86a653997df75b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSString(RegexKitAdditions)::isMatchedByRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>isMatchedByRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ac67a8e1a903ec7b57f3bf787df94f2ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_enumerator" kindref="compound">RKEnumerator</ref> *</type>
+        <definition>RKEnumerator * NSString(RegexKitAdditions)::matchEnumeratorWithRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>matchEnumeratorWithRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1ace35946c116b64d5c3df42569cd2c05e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_enumerator" kindref="compound">RKEnumerator</ref> *</type>
+        <definition>RKEnumerator * NSString(RegexKitAdditions)::matchEnumeratorWithRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>matchEnumeratorWithRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9ac271d2875ed1472607d100c81761aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:withReferenceString:</definition>
+        <argsstring>(id aRegex,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a1c367a696d5073151797a6aa5e123d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:inRange:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a1f6e91c871bed898c611b44b3b9d29ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a741544365f57cacb163e3956e43b2a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:inRange:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9b8a72142b5c51c7692e56038a3fc91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:withReferenceFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[withReferenceFormat] NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringByMatching:inRange:withReferenceFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a3f51f5ce2ed14f1763dbdfbd002db51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:replace:withReferenceString:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:replace:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aeabaa7f5d347f24311f8de8f990b82ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceString] NSString *const referenceString)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceString]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1aafa2e718ee6cca45bb63816872fc005f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:replace:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:replace:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1a9e8bd0577e98bea491b10eac648a3e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[,]...)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_string_07_regex_kit_additions_08_1af72979ecf53901259ebe5922745442eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * NSString(RegexKitAdditions)::stringByMatching:inRange:replace:withReferenceFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withReferenceFormat] NSString *const referenceFormatString,[arguments] va_list argList)</argsstring>
+        <name>stringByMatching:inRange:replace:withReferenceFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withReferenceFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>referenceFormatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="52" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" bodystart="52" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ab4e4143505576a6b0d9a1c54a779f0f0" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>getCapturesWithRegex:inRange:references:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ab4e4143505576a6b0d9a1c54a779f0f0" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>getCapturesWithRegex:inRange:references:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a67b1aab5c9832ed1582d21facce6cf9e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>getCapturesWithRegexAndReferences:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a67b1aab5c9832ed1582d21facce6cf9e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>getCapturesWithRegexAndReferences:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9952639a4adaf1eb356ff7e79bb5284a" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>isMatchedByRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9952639a4adaf1eb356ff7e79bb5284a" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>isMatchedByRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1af63fbeef87f84d36f86a653997df75b1" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>isMatchedByRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1af63fbeef87f84d36f86a653997df75b1" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>isMatchedByRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ac67a8e1a903ec7b57f3bf787df94f2ae" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>matchEnumeratorWithRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ac67a8e1a903ec7b57f3bf787df94f2ae" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>matchEnumeratorWithRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ace35946c116b64d5c3df42569cd2c05e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>matchEnumeratorWithRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ace35946c116b64d5c3df42569cd2c05e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>matchEnumeratorWithRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1afd16022d3c9d872db294b92f3573c9db" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangeOfRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1afd16022d3c9d872db294b92f3573c9db" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangeOfRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a376695f2d95c075af18aa527eb787a29" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangeOfRegex:inRange:capture:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a376695f2d95c075af18aa527eb787a29" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangeOfRegex:inRange:capture:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aa4cfd7397de6d7632badbcf72f8bfda7" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangesOfRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aa4cfd7397de6d7632badbcf72f8bfda7" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangesOfRegex:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ac71558c01a3a5cb98342898a2af732a6" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangesOfRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1ac71558c01a3a5cb98342898a2af732a6" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>rangesOfRegex:inRange:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9e8bd0577e98bea491b10eac648a3e1f" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9e8bd0577e98bea491b10eac648a3e1f" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1af72979ecf53901259ebe5922745442eb" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceFormat:arguments:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1af72979ecf53901259ebe5922745442eb" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceFormat:arguments:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aeabaa7f5d347f24311f8de8f990b82ce" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aeabaa7f5d347f24311f8de8f990b82ce" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:replace:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a741544365f57cacb163e3956e43b2a20" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a741544365f57cacb163e3956e43b2a20" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9b8a72142b5c51c7692e56038a3fc91e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceFormat:arguments:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9b8a72142b5c51c7692e56038a3fc91e" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceFormat:arguments:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a1c367a696d5073151797a6aa5e123d01" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a1c367a696d5073151797a6aa5e123d01" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:inRange:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aafa2e718ee6cca45bb63816872fc005f" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:replace:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1aafa2e718ee6cca45bb63816872fc005f" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:replace:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a3f51f5ce2ed14f1763dbdfbd002db51c" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:replace:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a3f51f5ce2ed14f1763dbdfbd002db51c" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:replace:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a1f6e91c871bed898c611b44b3b9d29ed" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a1f6e91c871bed898c611b44b3b9d29ed" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:withReferenceFormat:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9ac271d2875ed1472607d100c81761aa" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:withReferenceString:</name></member>
+      <member refid="interface_n_s_string_07_regex_kit_additions_08_1a9ac271d2875ed1472607d100c81761aa" prot="public" virt="virtual"><scope>NSString(RegexKitAdditions)</scope><name>stringByMatching:withReferenceString:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

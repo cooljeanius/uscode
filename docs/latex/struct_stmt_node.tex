@@ -1,0 +1,50 @@
+\hypertarget{struct_stmt_node}{\section{Stmt\-Node Struct Reference}
+\label{struct_stmt_node}\index{Stmt\-Node@{Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Stmt\-Type \hyperlink{struct_stmt_node_a1a1a8ff13773a99c9344f5392cabfa13}{type}
+\item 
+void $\ast$ \hyperlink{struct_stmt_node_abe2bb8927d8a9a26b83d855fb14837e6}{stmt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a statement. A statement is a unit of code which can be executed by itself and may possibly cause side-\/effects to occur.
+
+\begin{DoxySeeAlso}{See also}
+create\-Stmt\-Node(\-Stmt\-Type, void $\ast$) 
+
+delete\-Stmt\-Node(\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 222 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_stmt_node_abe2bb8927d8a9a26b83d855fb14837e6}{\index{Stmt\-Node@{Stmt\-Node}!stmt@{stmt}}
+\index{stmt@{stmt}!StmtNode@{Stmt\-Node}}
+\subsubsection[{stmt}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf Stmt\-Node\-::stmt}}}\label{struct_stmt_node_abe2bb8927d8a9a26b83d855fb14837e6}
+A pointer to the particular statement structure. 
+
+Definition at line 224 of file parser.\-h.
+
+\hypertarget{struct_stmt_node_a1a1a8ff13773a99c9344f5392cabfa13}{\index{Stmt\-Node@{Stmt\-Node}!type@{type}}
+\index{type@{type}!StmtNode@{Stmt\-Node}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}Stmt\-Type {\bf Stmt\-Node\-::type}}}\label{struct_stmt_node_a1a1a8ff13773a99c9344f5392cabfa13}
+The type of statement stored in {\itshape node\/}. 
+
+Definition at line 223 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

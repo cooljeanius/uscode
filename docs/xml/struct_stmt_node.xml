@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_stmt_node" kind="struct" prot="public">
+    <compoundname>StmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_stmt_node_1a1a1a8ff13773a99c9344f5392cabfa13" prot="public" static="no" mutable="no">
+        <type>StmtType</type>
+        <definition>StmtType StmtNode::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of statement stored in <emphasis>node</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="223" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="223" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a8243b0f033288a08ae06a1fc17c46303" compoundref="interpreter_8c" startline="3204" endline="3208">interpretStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stmt_node_1abe2bb8927d8a9a26b83d855fb14837e6" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* StmtNode::stmt</definition>
+        <argsstring></argsstring>
+        <name>stmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the particular statement structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="224" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="224" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a5742a88c672e9e224aecef05663d41ea" compoundref="interpreter_8c" startline="2509" endline="2542">interpretCastStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a3099ebd9282870922a92b1b59f675458" compoundref="interpreter_8c" startline="2567" endline="2587">interpretPrintStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1ababafcbe6b8e86ed3284bb6643baafa4" compoundref="interpreter_8c" startline="2612" endline="2652">interpretInputStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a644bee21f70eaa27dd40ae1a9ea07145" compoundref="interpreter_8c" startline="2677" endline="2688">interpretAssignmentStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a8f688271f7f3ad36ce62428e55940c03" compoundref="interpreter_8c" startline="2713" endline="2737">interpretDeclarationStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a83339941f601e7cbbecb09c7501b49fd" compoundref="interpreter_8c" startline="2983" endline="2991">interpretReturnStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1ab8680118602f725af9bbb28f2a33ba93" compoundref="interpreter_8c" startline="3161" endline="3170">interpretExprStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a statement. A statement is a unit of code which can be executed by itself and may possibly cause side-effects to occur.</para><para><simplesect kind="see"><para>createStmtNode(StmtType, void *) </para><simplesectsep/><para>deleteStmtNode(StmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="222" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="222" bodyend="225"/>
+    <listofallmembers>
+      <member refid="struct_stmt_node_1abe2bb8927d8a9a26b83d855fb14837e6" prot="public" virt="non-virtual"><scope>StmtNode</scope><name>stmt</name></member>
+      <member refid="struct_stmt_node_1a1a1a8ff13773a99c9344f5392cabfa13" prot="public" virt="non-virtual"><scope>StmtNode</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_identifier_node_list" kind="struct" prot="public">
+    <compoundname>IdentifierNodeList</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_identifier_node_list_1a7ee19db1c4e05eafe5df277542e01dd1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IdentifierNodeList::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of <ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> structures stored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="197" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="197" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aeacd50079f0ce4daf99a11f922182c08" compoundref="interpreter_8c" startline="1069" endline="1123">interpretFuncCallExprNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_identifier_node_list_1a61b371619c07f89846ae0780d5403dc0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> **</type>
+        <definition>IdentifierNode** IdentifierNodeList::ids</definition>
+        <argsstring></argsstring>
+        <name>ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the array of <ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> structures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="198" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="198" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aeacd50079f0ce4daf99a11f922182c08" compoundref="interpreter_8c" startline="1069" endline="1123">interpretFuncCallExprNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a list of identifiers. This structure allows sets of identifiers to be grouped together.</para><para><simplesect kind="see"><para>createIdentifierNodeList(void) </para><simplesectsep/><para>addIdentifierNode(IdentifierNodeList *, IdentifierNode *) </para><simplesectsep/><para>deleteIdentifierNodeList(IdentifierNodeList *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="635">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="634">
+        <label>IdentifierNodeList</label>
+        <link refid="struct_identifier_node_list"/>
+        <childnode refid="635" relation="usage">
+          <edgelabel>ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="196" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="196" bodyend="199"/>
+    <listofallmembers>
+      <member refid="struct_identifier_node_list_1a61b371619c07f89846ae0780d5403dc0" prot="public" virt="non-virtual"><scope>IdentifierNodeList</scope><name>ids</name></member>
+      <member refid="struct_identifier_node_list_1a7ee19db1c4e05eafe5df277542e01dd1" prot="public" virt="non-virtual"><scope>IdentifierNodeList</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

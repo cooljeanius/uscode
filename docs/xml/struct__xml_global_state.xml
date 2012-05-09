@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_global_state" kind="struct" prot="public">
+    <compoundname>_xmlGlobalState</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_global_state_1a4674d4fe0ec272474d9af4918aa8e9a5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char * _xmlGlobalState::xmlParserVersion</definition>
+        <argsstring></argsstring>
+        <name>xmlParserVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="83" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1aed1adc9856d172d3de5d036f072cbb1a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_s_a_x_locator" kindref="compound">xmlSAXLocator</ref></type>
+        <definition>xmlSAXLocator _xmlGlobalState::xmlDefaultSAXLocator</definition>
+        <argsstring></argsstring>
+        <name>xmlDefaultSAXLocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="85" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a256cd5324f2a89b49e0139c5c8e39ea1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_s_a_x_handler_v1" kindref="compound">xmlSAXHandlerV1</ref></type>
+        <definition>xmlSAXHandlerV1 _xmlGlobalState::xmlDefaultSAXHandler</definition>
+        <argsstring></argsstring>
+        <name>xmlDefaultSAXHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="86" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a2450ebc67fb96e53f0df344907da8f48" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_s_a_x_handler_v1" kindref="compound">xmlSAXHandlerV1</ref></type>
+        <definition>xmlSAXHandlerV1 _xmlGlobalState::docbDefaultSAXHandler</definition>
+        <argsstring></argsstring>
+        <name>docbDefaultSAXHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="87" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a07e7a66e908fa0aef7bfa9a42e1b2cb7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_s_a_x_handler_v1" kindref="compound">xmlSAXHandlerV1</ref></type>
+        <definition>xmlSAXHandlerV1 _xmlGlobalState::htmlDefaultSAXHandler</definition>
+        <argsstring></argsstring>
+        <name>htmlDefaultSAXHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="88" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a842b3e02678910e93737a0c9c520d454" prot="public" static="no" mutable="no">
+        <type>xmlFreeFunc</type>
+        <definition>xmlFreeFunc _xmlGlobalState::xmlFree</definition>
+        <argsstring></argsstring>
+        <name>xmlFree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="90" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1aa4f9f1f20f477d6d6b108e6ecf7c4561" prot="public" static="no" mutable="no">
+        <type>xmlMallocFunc</type>
+        <definition>xmlMallocFunc _xmlGlobalState::xmlMalloc</definition>
+        <argsstring></argsstring>
+        <name>xmlMalloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="91" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a480efe13ea3f6855bae2e9a9f7f3a0c2" prot="public" static="no" mutable="no">
+        <type>xmlStrdupFunc</type>
+        <definition>xmlStrdupFunc _xmlGlobalState::xmlMemStrdup</definition>
+        <argsstring></argsstring>
+        <name>xmlMemStrdup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="92" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1afe3342331af0b0563377a7967ba2fa68" prot="public" static="no" mutable="no">
+        <type>xmlReallocFunc</type>
+        <definition>xmlReallocFunc _xmlGlobalState::xmlRealloc</definition>
+        <argsstring></argsstring>
+        <name>xmlRealloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="93" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a68fec3bbfc35f99f7bff04373dbf90c2" prot="public" static="no" mutable="no">
+        <type>xmlGenericErrorFunc</type>
+        <definition>xmlGenericErrorFunc _xmlGlobalState::xmlGenericError</definition>
+        <argsstring></argsstring>
+        <name>xmlGenericError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="95" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1aef0f8aae9672650f571ccfdb5fe893a1" prot="public" static="no" mutable="no">
+        <type>xmlStructuredErrorFunc</type>
+        <definition>xmlStructuredErrorFunc _xmlGlobalState::xmlStructuredError</definition>
+        <argsstring></argsstring>
+        <name>xmlStructuredError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="96" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1afa3b643858b3bd1cf3c4c968501888ab" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlGlobalState::xmlGenericErrorContext</definition>
+        <argsstring></argsstring>
+        <name>xmlGenericErrorContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="97" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a3a4587d5954d544f4ca2234374d3bcd9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::oldXMLWDcompatibility</definition>
+        <argsstring></argsstring>
+        <name>oldXMLWDcompatibility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="99" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a4da43ce871efefda1a35b93cf442c553" prot="public" static="no" mutable="no">
+        <type>xmlBufferAllocationScheme</type>
+        <definition>xmlBufferAllocationScheme _xmlGlobalState::xmlBufferAllocScheme</definition>
+        <argsstring></argsstring>
+        <name>xmlBufferAllocScheme</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="101" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1abb8a2b0c3484e57154ff709c7c8dc94b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlDefaultBufferSize</definition>
+        <argsstring></argsstring>
+        <name>xmlDefaultBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="102" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a1a0fd78aa36e227f429299a808ea8bee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlSubstituteEntitiesDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlSubstituteEntitiesDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="104" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1ab94304dcd880b0c6f68634fe7fcc60ef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlDoValidityCheckingDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlDoValidityCheckingDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="105" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1af4caac50e246cf1f1b6fc0fb9eb7ac83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlGetWarningsDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlGetWarningsDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="106" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1aafbd2893936cc7e0b906277bf4476f26" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlKeepBlanksDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlKeepBlanksDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="107" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a60edc1852ca27c7910919b2b0813f0f8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlLineNumbersDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlLineNumbersDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="108" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a5372304342b0799d753b848b4ff797f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlLoadExtDtdDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlLoadExtDtdDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="109" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1ab1de5b17ba7c598ab79b3f842f017c26" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlParserDebugEntities</definition>
+        <argsstring></argsstring>
+        <name>xmlParserDebugEntities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="110" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1aed754d7889fb431e0d9623660db32ea3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlPedanticParserDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlPedanticParserDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="111" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a2e91a726bfc9552958e60c867ebb4a7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlSaveNoEmptyTags</definition>
+        <argsstring></argsstring>
+        <name>xmlSaveNoEmptyTags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="113" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a321904b6d88296e892ebe7120aa62ace" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlGlobalState::xmlIndentTreeOutput</definition>
+        <argsstring></argsstring>
+        <name>xmlIndentTreeOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="114" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a02abcd3108a8256afc6342b364fce724" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char * _xmlGlobalState::xmlTreeIndentString</definition>
+        <argsstring></argsstring>
+        <name>xmlTreeIndentString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="115" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a30d6034926e4292ce0feec490008c568" prot="public" static="no" mutable="no">
+        <type>xmlRegisterNodeFunc</type>
+        <definition>xmlRegisterNodeFunc _xmlGlobalState::xmlRegisterNodeDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlRegisterNodeDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="117" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a7dd29e256c9eeb78789c6f483bd4098b" prot="public" static="no" mutable="no">
+        <type>xmlDeregisterNodeFunc</type>
+        <definition>xmlDeregisterNodeFunc _xmlGlobalState::xmlDeregisterNodeDefaultValue</definition>
+        <argsstring></argsstring>
+        <name>xmlDeregisterNodeDefaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="118" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1ab2b37c13cce8ccc8a7bb0e0a47474563" prot="public" static="no" mutable="no">
+        <type>xmlMallocFunc</type>
+        <definition>xmlMallocFunc _xmlGlobalState::xmlMallocAtomic</definition>
+        <argsstring></argsstring>
+        <name>xmlMallocAtomic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="120" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1afd5f9c9dc58ab8f75fb0074370e18bbb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__xml_error" kindref="compound">xmlError</ref></type>
+        <definition>xmlError _xmlGlobalState::xmlLastError</definition>
+        <argsstring></argsstring>
+        <name>xmlLastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="121" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1a4426a58b33b2f1db58f66c4a01d1044c" prot="public" static="no" mutable="no">
+        <type>xmlParserInputBufferCreateFilenameFunc</type>
+        <definition>xmlParserInputBufferCreateFilenameFunc _xmlGlobalState::xmlParserInputBufferCreateFilenameValue</definition>
+        <argsstring></argsstring>
+        <name>xmlParserInputBufferCreateFilenameValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="123" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_global_state_1ad9c2ba58bc1b222cd1189a265a137276" prot="public" static="no" mutable="no">
+        <type>xmlOutputBufferCreateFilenameFunc</type>
+        <definition>xmlOutputBufferCreateFilenameFunc _xmlGlobalState::xmlOutputBufferCreateFilenameValue</definition>
+        <argsstring></argsstring>
+        <name>xmlOutputBufferCreateFilenameValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="124" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="442">
+        <label>_xmlGlobalState</label>
+        <link refid="struct__xml_global_state"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>xmlRegisterNodeDefaultValue</edgelabel>
+          <edgelabel>xmlDeregisterNodeDefaultValue</edgelabel>
+        </childnode>
+        <childnode refid="448" relation="usage">
+          <edgelabel>xmlDefaultSAXLocator</edgelabel>
+        </childnode>
+        <childnode refid="449" relation="usage">
+          <edgelabel>xmlLastError</edgelabel>
+        </childnode>
+        <childnode refid="450" relation="usage">
+          <edgelabel>xmlOutputBufferCreateFilenameValue</edgelabel>
+        </childnode>
+        <childnode refid="451" relation="usage">
+          <edgelabel>xmlParserInputBufferCreateFilenameValue</edgelabel>
+        </childnode>
+        <childnode refid="453" relation="usage">
+          <edgelabel>xmlDefaultSAXHandler</edgelabel>
+          <edgelabel>htmlDefaultSAXHandler</edgelabel>
+          <edgelabel>docbDefaultSAXHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="450">
+        <label>_xmlCharEncodingHandler</label>
+        <link refid="struct__xml_char_encoding_handler"/>
+      </node>
+      <node id="455">
+        <label>_xmlEnumeration</label>
+        <link refid="struct__xml_enumeration"/>
+        <childnode refid="455" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="457">
+        <label>_xmlEntity</label>
+        <link refid="struct__xml_entity"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="457" relation="usage">
+          <edgelabel>nexte</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="447" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="444">
+        <label>_xmlAttr</label>
+        <link refid="struct__xml_attr"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="444" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="446" relation="usage">
+          <edgelabel>ns</edgelabel>
+        </childnode>
+      </node>
+      <node id="445">
+        <label>_xmlDoc</label>
+        <link refid="struct__xml_doc"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="446" relation="usage">
+          <edgelabel>oldNs</edgelabel>
+        </childnode>
+        <childnode refid="447" relation="usage">
+          <edgelabel>intSubset</edgelabel>
+          <edgelabel>extSubset</edgelabel>
+        </childnode>
+      </node>
+      <node id="456">
+        <label>_xmlParserInput</label>
+        <link refid="struct__xml_parser_input"/>
+        <childnode refid="451" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="449">
+        <label>_xmlError</label>
+        <link refid="struct__xml_error"/>
+      </node>
+      <node id="447">
+        <label>_xmlDtd</label>
+        <link refid="struct__xml_dtd"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>doc</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="446">
+        <label>_xmlNs</label>
+        <link refid="struct__xml_ns"/>
+        <childnode refid="445" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="446" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="451">
+        <label>_xmlParserInputBuffer</label>
+        <link refid="struct__xml_parser_input_buffer"/>
+        <childnode refid="452" relation="usage">
+          <edgelabel>raw</edgelabel>
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+        <childnode refid="450" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+      </node>
+      <node id="443">
+        <label>_xmlNode</label>
+        <link refid="struct__xml_node"/>
+        <childnode refid="443" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="444" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="446" relation="usage">
+          <edgelabel>ns</edgelabel>
+          <edgelabel>nsDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="454">
+        <label>_xmlElementContent</label>
+        <link refid="struct__xml_element_content"/>
+        <childnode refid="454" relation="usage">
+          <edgelabel>c1</edgelabel>
+          <edgelabel>c2</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="448">
+        <label>_xmlSAXLocator</label>
+        <link refid="struct__xml_s_a_x_locator"/>
+      </node>
+      <node id="452">
+        <label>_xmlBuffer</label>
+        <link refid="struct__xml_buffer"/>
+      </node>
+      <node id="453">
+        <label>_xmlSAXHandlerV1</label>
+        <link refid="struct__xml_s_a_x_handler_v1"/>
+        <childnode refid="454" relation="usage">
+          <edgelabel>elementDecl</edgelabel>
+        </childnode>
+        <childnode refid="455" relation="usage">
+          <edgelabel>attributeDecl</edgelabel>
+        </childnode>
+        <childnode refid="456" relation="usage">
+          <edgelabel>resolveEntity</edgelabel>
+        </childnode>
+        <childnode refid="457" relation="usage">
+          <edgelabel>getEntity</edgelabel>
+          <edgelabel>getParameterEntity</edgelabel>
+        </childnode>
+        <childnode refid="448" relation="usage">
+          <edgelabel>setDocumentLocator</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" line="82" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/globals.h" bodystart="81" bodyend="125"/>
+    <listofallmembers>
+      <member refid="struct__xml_global_state_1a2450ebc67fb96e53f0df344907da8f48" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>docbDefaultSAXHandler</name></member>
+      <member refid="struct__xml_global_state_1a07e7a66e908fa0aef7bfa9a42e1b2cb7" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>htmlDefaultSAXHandler</name></member>
+      <member refid="struct__xml_global_state_1a3a4587d5954d544f4ca2234374d3bcd9" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>oldXMLWDcompatibility</name></member>
+      <member refid="struct__xml_global_state_1a4da43ce871efefda1a35b93cf442c553" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlBufferAllocScheme</name></member>
+      <member refid="struct__xml_global_state_1abb8a2b0c3484e57154ff709c7c8dc94b" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlDefaultBufferSize</name></member>
+      <member refid="struct__xml_global_state_1a256cd5324f2a89b49e0139c5c8e39ea1" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlDefaultSAXHandler</name></member>
+      <member refid="struct__xml_global_state_1aed1adc9856d172d3de5d036f072cbb1a" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlDefaultSAXLocator</name></member>
+      <member refid="struct__xml_global_state_1a7dd29e256c9eeb78789c6f483bd4098b" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlDeregisterNodeDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1ab94304dcd880b0c6f68634fe7fcc60ef" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlDoValidityCheckingDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1a842b3e02678910e93737a0c9c520d454" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlFree</name></member>
+      <member refid="struct__xml_global_state_1a68fec3bbfc35f99f7bff04373dbf90c2" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlGenericError</name></member>
+      <member refid="struct__xml_global_state_1afa3b643858b3bd1cf3c4c968501888ab" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlGenericErrorContext</name></member>
+      <member refid="struct__xml_global_state_1af4caac50e246cf1f1b6fc0fb9eb7ac83" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlGetWarningsDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1a321904b6d88296e892ebe7120aa62ace" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlIndentTreeOutput</name></member>
+      <member refid="struct__xml_global_state_1aafbd2893936cc7e0b906277bf4476f26" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlKeepBlanksDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1afd5f9c9dc58ab8f75fb0074370e18bbb" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlLastError</name></member>
+      <member refid="struct__xml_global_state_1a60edc1852ca27c7910919b2b0813f0f8" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlLineNumbersDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1a5372304342b0799d753b848b4ff797f2" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlLoadExtDtdDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1aa4f9f1f20f477d6d6b108e6ecf7c4561" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlMalloc</name></member>
+      <member refid="struct__xml_global_state_1ab2b37c13cce8ccc8a7bb0e0a47474563" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlMallocAtomic</name></member>
+      <member refid="struct__xml_global_state_1a480efe13ea3f6855bae2e9a9f7f3a0c2" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlMemStrdup</name></member>
+      <member refid="struct__xml_global_state_1ad9c2ba58bc1b222cd1189a265a137276" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlOutputBufferCreateFilenameValue</name></member>
+      <member refid="struct__xml_global_state_1ab1de5b17ba7c598ab79b3f842f017c26" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlParserDebugEntities</name></member>
+      <member refid="struct__xml_global_state_1a4426a58b33b2f1db58f66c4a01d1044c" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlParserInputBufferCreateFilenameValue</name></member>
+      <member refid="struct__xml_global_state_1a4674d4fe0ec272474d9af4918aa8e9a5" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlParserVersion</name></member>
+      <member refid="struct__xml_global_state_1aed754d7889fb431e0d9623660db32ea3" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlPedanticParserDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1afe3342331af0b0563377a7967ba2fa68" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlRealloc</name></member>
+      <member refid="struct__xml_global_state_1a30d6034926e4292ce0feec490008c568" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlRegisterNodeDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1a2e91a726bfc9552958e60c867ebb4a7b" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlSaveNoEmptyTags</name></member>
+      <member refid="struct__xml_global_state_1aef0f8aae9672650f571ccfdb5fe893a1" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlStructuredError</name></member>
+      <member refid="struct__xml_global_state_1a1a0fd78aa36e227f429299a808ea8bee" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlSubstituteEntitiesDefaultValue</name></member>
+      <member refid="struct__xml_global_state_1a02abcd3108a8256afc6342b364fce724" prot="public" virt="non-virtual"><scope>_xmlGlobalState</scope><name>xmlTreeIndentString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+\hypertarget{struct_constant_node}{\section{Constant\-Node Struct Reference}
+\label{struct_constant_node}\index{Constant\-Node@{Constant\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Constant\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{struct_constant_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Constant\-Type \hyperlink{struct_constant_node_ae0c5b58398f2ff9a476628ea34858893}{type}
+\item 
+\hyperlink{union_constant_data}{Constant\-Data} \hyperlink{struct_constant_node_ae546bb49962906e06a965381014ea7ae}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a constant value. A constant value evaluates to its contents, depending on its {\itshape type\/}.
+
+\begin{DoxySeeAlso}{See also}
+create\-Boolean\-Constant\-Node(int) 
+
+create\-Integer\-Constant\-Node(int) 
+
+create\-Float\-Constant\-Node(float) 
+
+create\-String\-Constant\-Node(char $\ast$) 
+
+delete\-Constant\-Node(\-Constant\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 312 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_constant_node_ae546bb49962906e06a965381014ea7ae}{\index{Constant\-Node@{Constant\-Node}!data@{data}}
+\index{data@{data}!ConstantNode@{Constant\-Node}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constant\-Data} {\bf Constant\-Node\-::data}}}\label{struct_constant_node_ae546bb49962906e06a965381014ea7ae}
+The stored data of type {\itshape type\/}. 
+
+Definition at line 314 of file parser.\-h.
+
+\hypertarget{struct_constant_node_ae0c5b58398f2ff9a476628ea34858893}{\index{Constant\-Node@{Constant\-Node}!type@{type}}
+\index{type@{type}!ConstantNode@{Constant\-Node}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}Constant\-Type {\bf Constant\-Node\-::type}}}\label{struct_constant_node_ae0c5b58398f2ff9a476628ea34858893}
+The type of the constant. 
+
+Definition at line 313 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_array_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSArray(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a816b096a57e9888045d00ba972c4f48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * NSArray(RegexKitAdditions)::arrayByMatchingObjectsWithRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>arrayByMatchingObjectsWithRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a664170bf2d690f0e9525de89e20513c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * NSArray(RegexKitAdditions)::arrayByMatchingObjectsWithRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>arrayByMatchingObjectsWithRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a18067216d1be4394e2c16da7691e0c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSArray(RegexKitAdditions)::containsObjectMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>containsObjectMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a02eb10cb98cf3302bbd723a23aabfe86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSArray(RegexKitAdditions)::containsObjectMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>containsObjectMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a473a182766ae6a808c7622b6382ed383" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::countOfObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>countOfObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a1dea1feb7a22d63e8d637168c393ddaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::countOfObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>countOfObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1af7428d0790428b2423340c3fbf4516d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::indexOfObjectMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>indexOfObjectMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1ad0363b9007f044c5ced12fddf4c395c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::indexOfObjectMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>indexOfObjectMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a03cd2077388c7d4ce9dfa5d55b8732a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSArray(RegexKitAdditions)::indexSetOfObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>indexSetOfObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1ab98a4d902b334e25aca352d1374c7708" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSArray(RegexKitAdditions)::indexSetOfObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>indexSetOfObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a816b096a57e9888045d00ba972c4f48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * NSArray(RegexKitAdditions)::arrayByMatchingObjectsWithRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>arrayByMatchingObjectsWithRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a664170bf2d690f0e9525de89e20513c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * NSArray(RegexKitAdditions)::arrayByMatchingObjectsWithRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>arrayByMatchingObjectsWithRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a18067216d1be4394e2c16da7691e0c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSArray(RegexKitAdditions)::containsObjectMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>containsObjectMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a02eb10cb98cf3302bbd723a23aabfe86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSArray(RegexKitAdditions)::containsObjectMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>containsObjectMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a473a182766ae6a808c7622b6382ed383" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::countOfObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>countOfObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a1dea1feb7a22d63e8d637168c393ddaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::countOfObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>countOfObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1af7428d0790428b2423340c3fbf4516d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::indexOfObjectMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>indexOfObjectMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1ad0363b9007f044c5ced12fddf4c395c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSArray(RegexKitAdditions)::indexOfObjectMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>indexOfObjectMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1a03cd2077388c7d4ce9dfa5d55b8732a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSArray(RegexKitAdditions)::indexSetOfObjectsMatchingRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>indexSetOfObjectsMatchingRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_array_07_regex_kit_additions_08_1ab98a4d902b334e25aca352d1374c7708" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSArray(RegexKitAdditions)::indexSetOfObjectsMatchingRegex:inRange:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range)</argsstring>
+        <name>indexSetOfObjectsMatchingRegex:inRange:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSArray.h" line="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" line="49" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSArray.h" bodystart="49" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a816b096a57e9888045d00ba972c4f48d" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>arrayByMatchingObjectsWithRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a816b096a57e9888045d00ba972c4f48d" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>arrayByMatchingObjectsWithRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a664170bf2d690f0e9525de89e20513c9" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>arrayByMatchingObjectsWithRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a664170bf2d690f0e9525de89e20513c9" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>arrayByMatchingObjectsWithRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a18067216d1be4394e2c16da7691e0c77" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>containsObjectMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a18067216d1be4394e2c16da7691e0c77" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>containsObjectMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a02eb10cb98cf3302bbd723a23aabfe86" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>containsObjectMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a02eb10cb98cf3302bbd723a23aabfe86" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>containsObjectMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a473a182766ae6a808c7622b6382ed383" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>countOfObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a473a182766ae6a808c7622b6382ed383" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>countOfObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a1dea1feb7a22d63e8d637168c393ddaf" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>countOfObjectsMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a1dea1feb7a22d63e8d637168c393ddaf" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>countOfObjectsMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1af7428d0790428b2423340c3fbf4516d2" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexOfObjectMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1af7428d0790428b2423340c3fbf4516d2" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexOfObjectMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1ad0363b9007f044c5ced12fddf4c395c8" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexOfObjectMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1ad0363b9007f044c5ced12fddf4c395c8" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexOfObjectMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a03cd2077388c7d4ce9dfa5d55b8732a0" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexSetOfObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1a03cd2077388c7d4ce9dfa5d55b8732a0" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexSetOfObjectsMatchingRegex:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1ab98a4d902b334e25aca352d1374c7708" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexSetOfObjectsMatchingRegex:inRange:</name></member>
+      <member refid="interface_n_s_array_07_regex_kit_additions_08_1ab98a4d902b334e25aca352d1374c7708" prot="public" virt="virtual"><scope>NSArray(RegexKitAdditions)</scope><name>indexSetOfObjectsMatchingRegex:inRange:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

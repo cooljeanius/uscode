@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_block_node_list" kind="struct" prot="public">
+    <compoundname>BlockNodeList</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_block_node_list_1af36c77e76b73f0fa500ada63aaad2dd7" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int BlockNodeList::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of <ref refid="struct_block_node" kindref="compound">BlockNode</ref> structures stored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="284" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="284" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_block_node_list_1a97ab8b891f65c2f8152712d59f69be64" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> **</type>
+        <definition>BlockNode** BlockNodeList::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to an array of <ref refid="struct_block_node" kindref="compound">BlockNode</ref> structures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="285" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="285" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a list of blocks of code. This structure allows sets of blocks of code to be grouped together.</para><para><simplesect kind="see"><para>createBlockNodeList(void) </para><simplesectsep/><para>addBlockNode(BlockNodeList *, BlockNode *) </para><simplesectsep/><para>deleteBlockNodeList(BlockNodeList *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="583">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="581">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="582" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="582">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="583" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="580">
+        <label>BlockNodeList</label>
+        <link refid="struct_block_node_list"/>
+        <childnode refid="581" relation="usage">
+          <edgelabel>blocks</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="283" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="283" bodyend="286"/>
+    <listofallmembers>
+      <member refid="struct_block_node_list_1a97ab8b891f65c2f8152712d59f69be64" prot="public" virt="non-virtual"><scope>BlockNodeList</scope><name>blocks</name></member>
+      <member refid="struct_block_node_list_1af36c77e76b73f0fa500ada63aaad2dd7" prot="public" virt="non-virtual"><scope>BlockNodeList</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

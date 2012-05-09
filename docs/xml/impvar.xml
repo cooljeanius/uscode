@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="impvar" kind="page">
+    <compoundname>impvar</compoundname>
+    <title>The Implicit Variable</title>
+    <detaileddescription>
+<para>The implicit variable in LOLCODE is denoted by the keyword <computeroutput>IT</computeroutput> and stores a copy of the result of the most recently evaluated expression statement, that is, an expression all by itself on a line. (See <ulink url="http://lolcode.com/specs/1.2#conditionals">http://lolcode.com/specs/1.2#conditionals</ulink> for an example.) </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

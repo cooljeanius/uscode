@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_9fed633061c482d53499a02a4d17bc0a" kind="dir">
+    <compoundname>tools/lci/lciframework/</compoundname>
+    <innerdir refid="dir_908e93c198560529d3041d9e49801cac">tools/lci/lciframework/CMakeFiles/</innerdir>
+    <innerdir refid="dir_0f66d972137054ba5c30a777d993332b">tools/lci/lciframework/test/</innerdir>
+    <innerfile refid="install_8py">install.py</innerfile>
+    <innerfile refid="interpreter_8c">interpreter.c</innerfile>
+    <innerfile refid="interpreter_8h">interpreter.h</innerfile>
+    <innerfile refid="lexer_8c">lexer.c</innerfile>
+    <innerfile refid="lexer_8h">lexer.h</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <innerfile refid="parser_8c">parser.c</innerfile>
+    <innerfile refid="tools_2lci_2lciframework_2parser_8h">parser.h</innerfile>
+    <innerfile refid="tokenizer_8c">tokenizer.c</innerfile>
+    <innerfile refid="tokenizer_8h">tokenizer.h</innerfile>
+    <innerfile refid="unicode_8c">unicode.c</innerfile>
+    <innerfile refid="unicode_8h">unicode.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/"/>
+  </compounddef>
+</doxygen>

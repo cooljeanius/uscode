@@ -1,0 +1,62 @@
+.TH "FuncDefStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FuncDefStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIdentifierNode\fP * \fBscope\fP"
+.br
+.ti -1c
+.RI "\fBIdentifierNode\fP * \fBname\fP"
+.br
+.ti -1c
+.RI "\fBIdentifierNodeList\fP * \fBargs\fP"
+.br
+.ti -1c
+.RI "\fBBlockNode\fP * \fBbody\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a function definition statement\&. A function definition statement defines the prototype and contents of a function\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createFuncDefStmtNode(IdentifierNode *, IdentifierNode *, IdentifierNodeList *, BlockNode *) 
+.PP
+deleteFuncDefStmtNode(FuncDefStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 322 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBIdentifierNodeList\fP* \fBFuncDefStmtNode::args\fP"
+A pointer to a list of the names of the arguments of the function\&. 
+.PP
+Definition at line 325 of file parser\&.h\&.
+.SS "\fBBlockNode\fP* \fBFuncDefStmtNode::body\fP"
+A pointer to the block of code defined by the function\&. 
+.PP
+Definition at line 326 of file parser\&.h\&.
+.SS "\fBIdentifierNode\fP* \fBFuncDefStmtNode::name\fP"
+A pointer to the name of the function\&. 
+.PP
+Definition at line 324 of file parser\&.h\&.
+.SS "\fBIdentifierNode\fP* \fBFuncDefStmtNode::scope\fP"
+A pointer to the scope to define the function in\&. 
+.PP
+Definition at line 323 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

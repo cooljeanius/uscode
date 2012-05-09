@@ -1,0 +1,39 @@
+.TH "FunctionTable" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FunctionTable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnum\fP"
+.br
+.ti -1c
+.RI "\fBFuncDefStmtNode\fP ** \fBfuncs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores the contents of the function table\&. The function table contains the definitions of all declared functions\&. It is used for making sure function calls provide a valid arity, typechecking, however, is performed at runtime\&. 
+.PP
+Definition at line 333 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFuncDefStmtNode\fP** \fBFunctionTable::funcs\fP"
+A pointer to an array of declared functions\&. 
+.PP
+Definition at line 335 of file parser\&.h\&.
+.SS "unsigned int \fBFunctionTable::num\fP"
+The number of declared functions\&. 
+.PP
+Definition at line 334 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_r_k_cache_07_cache_debugging_08" kind="class" prot="public">
+    <compoundname>RKCache(CacheDebugging)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_k_cache_1a8146789e53cc4f737647bc4ddabd7040" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::isCacheAddingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isCacheAddingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a8485a0948458929c1696239458f9d0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::setCacheAddingEnabled:</definition>
+        <argsstring>(const BOOL enableCacheAdding)</argsstring>
+        <name>setCacheAddingEnabled:</name>
+        <param>
+          <type>const BOOL</type>
+          <declname>enableCacheAdding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a0ebca3cdacd1adb6cd1c850c029014a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::isCacheLookupEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isCacheLookupEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a8d0f480ed2e6ff71d8f759df45320e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::setCacheLookupEnabled:</definition>
+        <argsstring>(const BOOL enableCacheLookup)</argsstring>
+        <name>setCacheLookupEnabled:</name>
+        <param>
+          <type>const BOOL</type>
+          <declname>enableCacheLookup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a8146789e53cc4f737647bc4ddabd7040" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::isCacheAddingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isCacheAddingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKCache.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a8485a0948458929c1696239458f9d0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::setCacheAddingEnabled:</definition>
+        <argsstring>(const BOOL enableCacheAdding)</argsstring>
+        <name>setCacheAddingEnabled:</name>
+        <param>
+          <type>const BOOL</type>
+          <declname>enableCacheAdding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKCache.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a0ebca3cdacd1adb6cd1c850c029014a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::isCacheLookupEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isCacheLookupEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKCache.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_k_cache_1a8d0f480ed2e6ff71d8f759df45320e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RKCache(CacheDebugging)::setCacheLookupEnabled:</definition>
+        <argsstring>(const BOOL enableCacheLookup)</argsstring>
+        <name>setCacheLookupEnabled:</name>
+        <param>
+          <type>const BOOL</type>
+          <declname>enableCacheLookup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/RKCache.h" line="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" line="85" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/RKCache.h" bodystart="85" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_k_cache_1a8146789e53cc4f737647bc4ddabd7040" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>isCacheAddingEnabled</name></member>
+      <member refid="interface_r_k_cache_1a8146789e53cc4f737647bc4ddabd7040" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>isCacheAddingEnabled</name></member>
+      <member refid="interface_r_k_cache_1a0ebca3cdacd1adb6cd1c850c029014a0" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>isCacheLookupEnabled</name></member>
+      <member refid="interface_r_k_cache_1a0ebca3cdacd1adb6cd1c850c029014a0" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>isCacheLookupEnabled</name></member>
+      <member refid="interface_r_k_cache_1a8485a0948458929c1696239458f9d0e5" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>setCacheAddingEnabled:</name></member>
+      <member refid="interface_r_k_cache_1a8485a0948458929c1696239458f9d0e5" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>setCacheAddingEnabled:</name></member>
+      <member refid="interface_r_k_cache_1a8d0f480ed2e6ff71d8f759df45320e40" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>setCacheLookupEnabled:</name></member>
+      <member refid="interface_r_k_cache_1a8d0f480ed2e6ff71d8f759df45320e40" prot="public" virt="virtual"><scope>RKCache(CacheDebugging)</scope><name>setCacheLookupEnabled:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

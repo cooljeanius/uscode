@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_value_object.html" title="ValueObject" alt="" coords="5,96,104,123"/>
+<area shape="rect" id="node4" href="$union_value_data.html" title="ValueData" alt="" coords="12,5,97,32"/>
+<area shape="rect" id="node6" href="$struct_identifier_node.html" title="IdentifierNode" alt="" coords="129,96,239,123"/>
+</map>

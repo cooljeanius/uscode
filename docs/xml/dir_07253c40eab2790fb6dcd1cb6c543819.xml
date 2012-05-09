@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_07253c40eab2790fb6dcd1cb6c543819" kind="dir">
+    <compoundname>Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/</compoundname>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver62a5359ed4d073c6e232033ec8589dfd">NSArray.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver72fb02c529fb5d9609faa3927f827539">NSData.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver503ecc167de59c4a8f1b61880fc5a19a">NSDictionary.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver13ebf100643f6dec92f80c24771987e1">NSObject.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver8c80f03a50d075ddb0007967e75895fd">NSSet.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver87300d08ec4df08896206cbd62ff2a79">NSString.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_versions_2_a_2_headers_2pcre_8h">pcre.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver16c7865e970623199f1a9d65ce4e077d">RegexKit.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver6badb567721199c846b702eb2e103295">RegexKitDefines.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_vereafda7dc04d8f30ab5be2e66fa1d921e">RegexKitTypes.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver49966dec1014b0cf33f2bbca0cd9d9eb">RKCache.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_vercd97e96b1cec835278d325cfaa6ad9ec">RKEnumerator.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver925c98324bdaad065e3019f6ed1e09b4">RKRegex.h</innerfile>
+    <innerfile refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2_regex_kit_8framework_2_ver1cd635a06e11a32a04bff52d58c5020a">RKUtility.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/"/>
+  </compounddef>
+</doxygen>

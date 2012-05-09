@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct__xml_element_content.html" title="_xmlElementContent" alt="" coords="5,465,157,491"/>
+<area shape="rect" id="node5" href="$struct__xml_enumeration.html" title="_xmlEnumeration" alt="" coords="246,465,372,491"/>
+<area shape="rect" id="node8" href="$struct__xml_parser_input.html" title="_xmlParserInput" alt="" coords="454,465,575,491"/>
+<area shape="rect" id="node10" href="$struct__xml_parser_input_buffer.html" title="_xmlParserInputBuffer" alt="" coords="403,366,561,393"/>
+<area shape="rect" id="node12" href="$struct__xml_buffer.html" title="_xmlBuffer" alt="" coords="279,217,367,243"/>
+<area shape="rect" id="node14" href="$struct__xml_char_encoding_handler.html" title="_xmlCharEncodingHandler" alt="" coords="391,217,573,243"/>
+<area shape="rect" id="node16" href="$struct__xml_entity.html" title="_xmlEntity" alt="" coords="599,465,685,491"/>
+<area shape="rect" id="node18" href="$struct__xml_node.html" title="_xmlNode" alt="" coords="951,29,1036,55"/>
+<area shape="rect" id="node21" href="$struct__xml_attr.html" title="_xmlAttr" alt="" coords="1071,465,1145,491"/>
+<area shape="rect" id="node25" href="$struct__xml_doc.html" title="_xmlDoc" alt="" coords="877,217,952,243"/>
+<area shape="rect" id="node33" href="$struct__xml_dtd.html" title="_xmlDtd" alt="" coords="669,366,744,393"/>
+<area shape="rect" id="node29" href="$struct__xml_ns.html" title="_xmlNs" alt="" coords="1009,366,1076,393"/>
+<area shape="rect" id="node43" href="$struct__xml_s_a_x_locator.html" title="_xmlSAXLocator" alt="" coords="775,465,901,491"/>
+</map>

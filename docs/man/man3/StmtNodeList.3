@@ -1,0 +1,50 @@
+.TH "StmtNodeList" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StmtNodeList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnum\fP"
+.br
+.ti -1c
+.RI "\fBStmtNode\fP ** \fBstmts\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a list of statements\&. This structure allows sets of statements to be grouped together\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createStmtNodeList(void) 
+.PP
+addStmtNode(StmtNodeList *, StmtNode *) 
+.PP
+deleteStmtNodeList(StmtNodeList *) 
+.RE
+.PP
+
+.PP
+Definition at line 233 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned int \fBStmtNodeList::num\fP"
+The number of \fBStmtNode\fP structures stored\&. 
+.PP
+Definition at line 234 of file parser\&.h\&.
+.SS "\fBStmtNode\fP** \fBStmtNodeList::stmts\fP"
+A pointer to the array of \fBStmtNode\fP structures\&. 
+.PP
+Definition at line 235 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

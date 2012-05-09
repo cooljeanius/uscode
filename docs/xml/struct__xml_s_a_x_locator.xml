@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_s_a_x_locator" kind="struct" prot="public">
+    <compoundname>_xmlSAXLocator</compoundname>
+    <includes refid="_legiscode_8applescript_2build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2li5d3535a130d9ed85e60363c504206a6c" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_s_a_x_locator_1a9762ce58f6a327c5e5a026a9b176ee92" prot="public" static="no" mutable="no">
+        <type>const xmlChar *(*</type>
+        <definition>const xmlChar *(* _xmlSAXLocator::getPublicId)(void *ctx)</definition>
+        <argsstring>)(void *ctx)</argsstring>
+        <name>getPublicId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="308" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_s_a_x_locator_1a650d5f7a7fd323121bcbee006000fc2c" prot="public" static="no" mutable="no">
+        <type>const xmlChar *(*</type>
+        <definition>const xmlChar *(* _xmlSAXLocator::getSystemId)(void *ctx)</definition>
+        <argsstring>)(void *ctx)</argsstring>
+        <name>getSystemId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="309" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_s_a_x_locator_1a75bec780fed76f09befc2f282b26c467" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _xmlSAXLocator::getLineNumber)(void *ctx)</definition>
+        <argsstring>)(void *ctx)</argsstring>
+        <name>getLineNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="310" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_s_a_x_locator_1a723b12f338dc342ae4424a1af5cd9a17" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _xmlSAXLocator::getColumnNumber)(void *ctx)</definition>
+        <argsstring>)(void *ctx)</argsstring>
+        <name>getColumnNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="311" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>xmlSAXLocator:</para><para>A SAX Locator. </para>    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" line="307" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/parser.h" bodystart="307" bodyend="312"/>
+    <listofallmembers>
+      <member refid="struct__xml_s_a_x_locator_1a723b12f338dc342ae4424a1af5cd9a17" prot="public" virt="non-virtual"><scope>_xmlSAXLocator</scope><name>getColumnNumber</name></member>
+      <member refid="struct__xml_s_a_x_locator_1a75bec780fed76f09befc2f282b26c467" prot="public" virt="non-virtual"><scope>_xmlSAXLocator</scope><name>getLineNumber</name></member>
+      <member refid="struct__xml_s_a_x_locator_1a9762ce58f6a327c5e5a026a9b176ee92" prot="public" virt="non-virtual"><scope>_xmlSAXLocator</scope><name>getPublicId</name></member>
+      <member refid="struct__xml_s_a_x_locator_1a650d5f7a7fd323121bcbee006000fc2c" prot="public" virt="non-virtual"><scope>_xmlSAXLocator</scope><name>getSystemId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

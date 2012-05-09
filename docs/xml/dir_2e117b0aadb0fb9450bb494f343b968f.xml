@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_2e117b0aadb0fb9450bb494f343b968f" kind="dir">
+    <compoundname>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/</compoundname>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2c14n_8h">c14n.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2catalog_8h">catalog.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2chvalid_8h">chvalid.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2debug_x_m_l_8h">debugXML.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2dict_8h">dict.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2_d_o_c_bparser_8h">DOCBparser.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2encoding_8h">encoding.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2entities_8h">entities.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2globals_8h">globals.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2hash_8h">hash.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2_h_t_m_lparser_8h">HTMLparser.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2_h_t_m_ltree_8h">HTMLtree.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2list_8h">list.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2nanoftp_8h">nanoftp.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2nanohttp_8h">nanohttp.h</innerfile>
+    <innerfile refid="_legiscode_8applescript_2libxml_8framework_2_versions_22_86_830_2_headers_2parser_8h">parser.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2parser_internals_8h">parserInternals.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2pattern_8h">pattern.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2relaxng_8h">relaxng.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x_8h">SAX.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h">SAX2.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2schemas_internals_8h">schemasInternals.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2schematron_8h">schematron.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2threads_8h">threads.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2tree_8h">tree.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2trio_8h">trio.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h">triodef.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2trionan_8h">trionan.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h">triop.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h">triostr.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2uri_8h">uri.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2valid_8h">valid.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xinclude_8h">xinclude.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xlink_8h">xlink.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlautomata_8h">xmlautomata.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlerror_8h">xmlerror.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlexports_8h">xmlexports.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h">xmlIO.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmemory_8h">xmlmemory.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlmodule_8h">xmlmodule.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlreader_8h">xmlreader.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlregexp_8h">xmlregexp.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlsave_8h">xmlsave.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlschemas_8h">xmlschemas.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlschemastypes_8h">xmlschemastypes.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlstring_8h">xmlstring.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlunicode_8h">xmlunicode.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlversion_8h">xmlversion.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xmlwriter_8h">xmlwriter.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xpath_8h">xpath.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xpath_internals_8h">xpathInternals.h</innerfile>
+    <innerfile refid="libxml_8framework_2_versions_22_86_830_2_headers_2xpointer_8h">xpointer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/"/>
+  </compounddef>
+</doxygen>

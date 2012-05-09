@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_mutable_string_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSMutableString(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1afc9445a9458cb90420edea4e44c32669" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:replace:withString:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withString] NSString *const replacementString)</argsstring>
+        <name>match:replace:withString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withString]</attributes>
+          <type>NSString *const</type>
+          <declname>replacementString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a8efcb6d01932a250278cad5af37e76a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withString] NSString *const replacementString)</argsstring>
+        <name>match:inRange:replace:withString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withString]</attributes>
+          <type>NSString *const</type>
+          <declname>replacementString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1aab5f247bd3a01bbc663625df0752c3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:replace:withFormat:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[,]...)</argsstring>
+        <name>match:replace:withFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a5d069dd4e5caa58cd6f2e31b7821e8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[,]...)</argsstring>
+        <name>match:inRange:replace:withFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a9eee815b73d0cd248a0c8a0dee9a3a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[arguments] va_list argList)</argsstring>
+        <name>match:inRange:replace:withFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1afc9445a9458cb90420edea4e44c32669" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:replace:withString:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withString] NSString *const replacementString)</argsstring>
+        <name>match:replace:withString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withString]</attributes>
+          <type>NSString *const</type>
+          <declname>replacementString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a8efcb6d01932a250278cad5af37e76a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withString:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withString] NSString *const replacementString)</argsstring>
+        <name>match:inRange:replace:withString:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withString]</attributes>
+          <type>NSString *const</type>
+          <declname>replacementString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1aab5f247bd3a01bbc663625df0752c3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:replace:withFormat:</definition>
+        <argsstring>(id aRegex,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[,]...)</argsstring>
+        <name>match:replace:withFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a5d069dd4e5caa58cd6f2e31b7821e8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withFormat:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[,]...)</argsstring>
+        <name>match:inRange:replace:withFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_mutable_string_07_regex_kit_additions_08_1a9eee815b73d0cd248a0c8a0dee9a3a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>RKUInteger</type>
+        <definition>RKUInteger NSMutableString(RegexKitAdditions)::match:inRange:replace:withFormat:arguments:</definition>
+        <argsstring>(id aRegex,[inRange] const NSRange range,[replace] const RKUInteger count,[withFormat] NSString *const formatString,[arguments] va_list argList)</argsstring>
+        <name>match:inRange:replace:withFormat:arguments:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <param>
+          <attributes>[inRange]</attributes>
+          <type>const NSRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <attributes>[replace]</attributes>
+          <type>const RKUInteger</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <attributes>[withFormat]</attributes>
+          <type>NSString *const</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <attributes>[arguments]</attributes>
+          <type>va_list</type>
+          <declname>argList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSString.h" line="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" line="85" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSString.h" bodystart="85" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a5d069dd4e5caa58cd6f2e31b7821e8bf" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withFormat:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a5d069dd4e5caa58cd6f2e31b7821e8bf" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withFormat:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a9eee815b73d0cd248a0c8a0dee9a3a75" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withFormat:arguments:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a9eee815b73d0cd248a0c8a0dee9a3a75" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withFormat:arguments:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a8efcb6d01932a250278cad5af37e76a6" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withString:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1a8efcb6d01932a250278cad5af37e76a6" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:inRange:replace:withString:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1aab5f247bd3a01bbc663625df0752c3fb" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:replace:withFormat:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1aab5f247bd3a01bbc663625df0752c3fb" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:replace:withFormat:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1afc9445a9458cb90420edea4e44c32669" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:replace:withString:</name></member>
+      <member refid="interface_n_s_mutable_string_07_regex_kit_additions_08_1afc9445a9458cb90420edea4e44c32669" prot="public" virt="virtual"><scope>NSMutableString(RegexKitAdditions)</scope><name>match:replace:withString:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

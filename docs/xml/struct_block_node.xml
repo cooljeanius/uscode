@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_block_node" kind="struct" prot="public">
+    <compoundname>BlockNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_block_node_1a5d918092ee6d41f6be62dff435aede89" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_stmt_node_list" kindref="compound">StmtNodeList</ref> *</type>
+        <definition>StmtNodeList* BlockNode::stmts</definition>
+        <argsstring></argsstring>
+        <name>stmts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the list of statements which comprise the block of code. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="274" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="274" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aeacd50079f0ce4daf99a11f922182c08" compoundref="interpreter_8c" startline="1069" endline="1123">interpretFuncCallExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a35a65f719caa550f2d615abeb26a2200" compoundref="interpreter_8c" startline="3263" endline="3272">interpretBlockNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a a block of code. A block of code consists of a set of statements.</para><para><simplesect kind="see"><para>createBlockNode(StmtNodeList *) </para><simplesectsep/><para>deleteBlockNode(BlockNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="578">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="576">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="577" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="577">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="578" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="273" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="273" bodyend="275"/>
+    <listofallmembers>
+      <member refid="struct_block_node_1a5d918092ee6d41f6be62dff435aede89" prot="public" virt="non-virtual"><scope>BlockNode</scope><name>stmts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

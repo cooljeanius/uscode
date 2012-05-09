@@ -1,0 +1,180 @@
+.TH "RKEnumerator" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RKEnumerator \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:inRange:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:inRange:error:\fP"
+.br
+.ti -1c
+.RI "(\fBRKRegex\fP *) - \fBregex\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstring\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRange\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRangeForCapture:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRangeForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBcurrentRanges\fP"
+.br
+.ti -1c
+.RI "(id) - \fBnextObject\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRange\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRangeForCapture:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRangeForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBnextRanges\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBgetCapturesWithReferences:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceString:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceFormat:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceFormat:arguments:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:inRange:\fP"
+.br
+.ti -1c
+.RI "(id) - \fBinitWithRegex:string:inRange:error:\fP"
+.br
+.ti -1c
+.RI "(\fBRKRegex\fP *) - \fBregex\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstring\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRange\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRangeForCapture:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBcurrentRangeForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBcurrentRanges\fP"
+.br
+.ti -1c
+.RI "(id) - \fBnextObject\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRange\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRangeForCapture:\fP"
+.br
+.ti -1c
+.RI "(NSRange) - \fBnextRangeForCaptureName:\fP"
+.br
+.ti -1c
+.RI "(NSRange *) - \fBnextRanges\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBgetCapturesWithReferences:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceString:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceFormat:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBstringWithReferenceFormat:arguments:\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:inRange:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:inRange:error:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:inRange:\fP"
+.br
+.ti -1c
+.RI "(id) + \fBenumeratorWithRegex:string:inRange:error:\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBRKRegex\fP * \fBregex\fP"
+.br
+.ti -1c
+.RI "NSString * \fBstring\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBatBufferLocation\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBregexCaptureCount\fP"
+.br
+.ti -1c
+.RI "NSRange \fBsearchByteRange\fP"
+.br
+.ti -1c
+.RI "NSRange \fBsearchUTF16Range\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF NSRange * \fBresultUTF8Ranges\fP"
+.br
+.ti -1c
+.RI "RK_STRONG_REF NSRange * \fBresultUTF16Ranges\fP"
+.br
+.ti -1c
+.RI "RKUInteger \fBhasPerformedMatch\fP:1"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 52 of file RKEnumerator\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

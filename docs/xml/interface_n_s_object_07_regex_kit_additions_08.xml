@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_n_s_object_07_regex_kit_additions_08" kind="class" prot="public">
+    <compoundname>NSObject(RegexKitAdditions)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a5742930816e67880ce0d193cc74a1cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>isMatchedByRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ab4b78415a5d2da85b3f602f52ba98f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>isMatchedByAnyRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ae9305db5f4061b437c982c3c557c3619" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>anyMatchingRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ae699a6853f000d571d0ceec495f45f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::firstMatchingRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>firstMatchingRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a68be21512bf65e926127dcad8dea28e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>isMatchedByAnyRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a1551ea492fb037fe491afc2769552223" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>anyMatchingRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a0a3a752010fc4ace31b335238aa9a5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::firstMatchingRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>firstMatchingRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1af66544d1bee273f94d7a8ad709cad29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInSet:</definition>
+        <argsstring>(NSSet *regexSet)</argsstring>
+        <name>isMatchedByAnyRegexInSet:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a69a9635423db7d68d48bbbf043055b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInSet:</definition>
+        <argsstring>(NSSet *regexSet)</argsstring>
+        <name>anyMatchingRegexInSet:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a28b2ac22315f9e5efb8941e3b49f4c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInSet:library:options:error:</definition>
+        <argsstring>(NSSet *regexSet,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>isMatchedByAnyRegexInSet:library:options:error:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a51c9e76d907923cc352a4170f8eb2487" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInSet:library:options:error:</definition>
+        <argsstring>(NSSet *regexSet,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>anyMatchingRegexInSet:library:options:error:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a5742930816e67880ce0d193cc74a1cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByRegex:</definition>
+        <argsstring>(id aRegex)</argsstring>
+        <name>isMatchedByRegex:</name>
+        <param>
+          <type>id</type>
+          <declname>aRegex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ab4b78415a5d2da85b3f602f52ba98f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>isMatchedByAnyRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ae9305db5f4061b437c982c3c557c3619" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>anyMatchingRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1ae699a6853f000d571d0ceec495f45f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::firstMatchingRegexInArray:</definition>
+        <argsstring>(NSArray *regexArray)</argsstring>
+        <name>firstMatchingRegexInArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a68be21512bf65e926127dcad8dea28e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>isMatchedByAnyRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a1551ea492fb037fe491afc2769552223" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>anyMatchingRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a0a3a752010fc4ace31b335238aa9a5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::firstMatchingRegexInArray:library:options:error:</definition>
+        <argsstring>(NSArray *regexArray,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>firstMatchingRegexInArray:library:options:error:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>regexArray</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1af66544d1bee273f94d7a8ad709cad29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInSet:</definition>
+        <argsstring>(NSSet *regexSet)</argsstring>
+        <name>isMatchedByAnyRegexInSet:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a69a9635423db7d68d48bbbf043055b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInSet:</definition>
+        <argsstring>(NSSet *regexSet)</argsstring>
+        <name>anyMatchingRegexInSet:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a28b2ac22315f9e5efb8941e3b49f4c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL NSObject(RegexKitAdditions)::isMatchedByAnyRegexInSet:library:options:error:</definition>
+        <argsstring>(NSSet *regexSet,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>isMatchedByAnyRegexInSet:library:options:error:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_object_07_regex_kit_additions_08_1a51c9e76d907923cc352a4170f8eb2487" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_k_regex" kindref="compound">RKRegex</ref> *</type>
+        <definition>RKRegex * NSObject(RegexKitAdditions)::anyMatchingRegexInSet:library:options:error:</definition>
+        <argsstring>(NSSet *regexSet,[library] NSString *library,[options] RKCompileOption libraryOptions,[error] NSError **error)</argsstring>
+        <name>anyMatchingRegexInSet:library:options:error:</name>
+        <param>
+          <type>NSSet *</type>
+          <declname>regexSet</declname>
+        </param>
+        <param>
+          <attributes>[library]</attributes>
+          <type>NSString *</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>RKCompileOption</type>
+          <declname>libraryOptions</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/RegexKit.framework/Versions/A/Headers/NSObject.h" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" line="49" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/RegexKit.framework/Versions/A/Headers/NSObject.h" bodystart="49" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ae9305db5f4061b437c982c3c557c3619" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ae9305db5f4061b437c982c3c557c3619" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a1551ea492fb037fe491afc2769552223" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a1551ea492fb037fe491afc2769552223" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a69a9635423db7d68d48bbbf043055b40" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInSet:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a69a9635423db7d68d48bbbf043055b40" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInSet:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a51c9e76d907923cc352a4170f8eb2487" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInSet:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a51c9e76d907923cc352a4170f8eb2487" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>anyMatchingRegexInSet:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ae699a6853f000d571d0ceec495f45f91" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>firstMatchingRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ae699a6853f000d571d0ceec495f45f91" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>firstMatchingRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a0a3a752010fc4ace31b335238aa9a5ce" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>firstMatchingRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a0a3a752010fc4ace31b335238aa9a5ce" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>firstMatchingRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ab4b78415a5d2da85b3f602f52ba98f65" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1ab4b78415a5d2da85b3f602f52ba98f65" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInArray:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a68be21512bf65e926127dcad8dea28e8" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a68be21512bf65e926127dcad8dea28e8" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInArray:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1af66544d1bee273f94d7a8ad709cad29e" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInSet:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1af66544d1bee273f94d7a8ad709cad29e" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInSet:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a28b2ac22315f9e5efb8941e3b49f4c45" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInSet:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a28b2ac22315f9e5efb8941e3b49f4c45" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByAnyRegexInSet:library:options:error:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a5742930816e67880ce0d193cc74a1cc8" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByRegex:</name></member>
+      <member refid="interface_n_s_object_07_regex_kit_additions_08_1a5742930816e67880ce0d193cc74a1cc8" prot="public" virt="virtual"><scope>NSObject(RegexKitAdditions)</scope><name>isMatchedByRegex:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

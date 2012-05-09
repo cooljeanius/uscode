@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_assignment_stmt_node" kind="struct" prot="public">
+    <compoundname>AssignmentStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assignment_stmt_node_1a6bdcf7c297f54d4269849cb96c8161a6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* AssignmentStmtNode::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the variable to store the evaluated contents of <emphasis>expr</emphasis> into. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="394" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="394" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a644bee21f70eaa27dd40ae1a9ea07145" compoundref="interpreter_8c" startline="2677" endline="2688">interpretAssignmentStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assignment_stmt_node_1af25b11d4ed4159da853c540641f0db24" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node" kindref="compound">ExprNode</ref> *</type>
+        <definition>ExprNode* AssignmentStmtNode::expr</definition>
+        <argsstring></argsstring>
+        <name>expr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expression to evaluate and store in <emphasis>target</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="395" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="395" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a644bee21f70eaa27dd40ae1a9ea07145" compoundref="interpreter_8c" startline="2677" endline="2688">interpretAssignmentStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores an assignment statement. An assignment statement updates the value of a variable, <emphasis>target</emphasis>, to the result of an expression, <emphasis>expr</emphasis>.</para><para><simplesect kind="see"><para>createAssignmentStmtNode(IdentifierNode *, ExprNode *) </para><simplesectsep/><para>deleteAssignmentStmtNode(AssignmentStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="572">
+        <label>AssignmentStmtNode</label>
+        <link refid="struct_assignment_stmt_node"/>
+        <childnode refid="573" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="574" relation="usage">
+          <edgelabel>expr</edgelabel>
+        </childnode>
+      </node>
+      <node id="573">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="574">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="393" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="393" bodyend="396"/>
+    <listofallmembers>
+      <member refid="struct_assignment_stmt_node_1af25b11d4ed4159da853c540641f0db24" prot="public" virt="non-virtual"><scope>AssignmentStmtNode</scope><name>expr</name></member>
+      <member refid="struct_assignment_stmt_node_1a6bdcf7c297f54d4269849cb96c8161a6" prot="public" virt="non-virtual"><scope>AssignmentStmtNode</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

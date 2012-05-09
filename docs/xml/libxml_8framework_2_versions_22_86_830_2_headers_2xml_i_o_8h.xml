@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h" kind="file">
+    <compoundname>xmlIO.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">libxml/xmlversion.h</includes>
+    <includes local="no">libxml/globals.h</includes>
+    <includes local="no">libxml/tree.h</includes>
+    <includes local="no">libxml/parser.h</includes>
+    <includes local="no">libxml/encoding.h</includes>
+    <incdepgraph>
+      <node id="443">
+        <label>libxml/parser.h</label>
+      </node>
+      <node id="440">
+        <label>libxml/xmlversion.h</label>
+      </node>
+      <node id="444">
+        <label>libxml/encoding.h</label>
+      </node>
+      <node id="441">
+        <label>libxml/globals.h</label>
+      </node>
+      <node id="438">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/xmlIO.h"/>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>libxml/tree.h</label>
+      </node>
+      <node id="439">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__xml_parser_input_buffer" prot="public">_xmlParserInputBuffer</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a5ba6e2b8ec3256503fd1e6abefa050cb" prot="public" static="no">
+        <type>void *XMLCALL *</type>
+        <definition>typedef void* XMLCALL* xmlInputOpenCallback(char const *filename)</definition>
+        <argsstring>(char const *filename)</argsstring>
+        <name>xmlInputOpenCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xmlInputOpenCallback: : the filename or URI</para><para>Callback used in the I/O Input API to open the resource</para><para>Returns an Input context or NULL in case or error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="43" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a969b6fbc135340e19b3d287db0b8d99b" prot="public" static="no">
+        <type>char *</type>
+        <definition>typedef char* buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="54" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a2ba89f9e8d669bfad57028ce780865cd" prot="public" static="no">
+        <type>char int</type>
+        <definition>typedef char int len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="54" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1ad5c0042f2d414feb9113a7e76edbec8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef int</definition>
+        <argsstring>(XMLCALL *xmlInputMatchCallback)(char const *filename)</argsstring>
+        <name>int</name>
+        <param>
+          <type>XMLCALL *</type>
+          <declname>xmlInputMatchCallback</declname>
+          <defname>xmlInputCloseCallback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xmlInputMatchCallback: : the filename or URI</para><para>Callback used in the I/O Input API to detect if the current handler can provide input fonctionnalities for this resource.</para><para>Returns 1 if yes and 0 if another Input module should be used</para><para>xmlInputReadCallback: : an Input context : the buffer to store data read : the length of the buffer in bytes</para><para>Callback used in the I/O Input API to read the resource</para><para>Returns the number of bytes read or -1 in case of error</para><para>xmlInputCloseCallback: : an Input context</para><para>Callback used in the I/O Input API to close the resource</para><para>Returns 0 or -1 in case of error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a5edf097cf1a1b6e1e89a015815afd506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlCleanupInputCallbacks</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlCleanupInputCallbacks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a71afdfcf17fe1c2032bfafe53d457a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlPopInputCallbacks</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlPopInputCallbacks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a7692e738bf5b841390ddb06b923d6dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlRegisterDefaultInputCallbacks</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlRegisterDefaultInputCallbacks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a2d688d6b3f4df191b7ad27d8516d2ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlAllocParserInputBuffer</definition>
+        <argsstring>(xmlCharEncoding enc)</argsstring>
+        <name>xmlAllocParserInputBuffer</name>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="167"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1af87c4675983471d7fdc16e3efc3283af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateFilename</definition>
+        <argsstring>(const char *URI, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateFilename</name>
+        <param>
+          <type>const char *</type>
+          <declname>URI</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1aecb300cf17cad0ff358d46ad807507ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateFile</definition>
+        <argsstring>(FILE *file, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateFile</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a3fa652a50fa2b517bab2de950463add3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateFd</definition>
+        <argsstring>(int fd, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateFd</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1ae027560aa81056918e3023f3704cdece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateMem</definition>
+        <argsstring>(const char *mem, int size, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateMem</name>
+        <param>
+          <type>const char *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a8915db32bce8a79232d750e800d4ff13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateStatic</definition>
+        <argsstring>(const char *mem, int size, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateStatic</name>
+        <param>
+          <type>const char *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a9353ffadb38ed8fd90858dd7a45064fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputBufferPtr XMLCALL xmlParserInputBufferCreateIO</definition>
+        <argsstring>(xmlInputReadCallback ioread, xmlInputCloseCallback ioclose, void *ioctx, xmlCharEncoding enc)</argsstring>
+        <name>xmlParserInputBufferCreateIO</name>
+        <param>
+          <type>xmlInputReadCallback</type>
+          <declname>ioread</declname>
+        </param>
+        <param>
+          <type>xmlInputCloseCallback</type>
+          <declname>ioclose</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ioctx</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1aaa5ecf9ee2df221faf62f056a93a49c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlParserInputBufferRead</definition>
+        <argsstring>(xmlParserInputBufferPtr in, int len)</argsstring>
+        <name>xmlParserInputBufferRead</name>
+        <param>
+          <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a0eb054fc7f037d73f8eba69784877032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlParserInputBufferGrow</definition>
+        <argsstring>(xmlParserInputBufferPtr in, int len)</argsstring>
+        <name>xmlParserInputBufferGrow</name>
+        <param>
+          <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1ad8f9822a052a39e46df29a04281138bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlParserInputBufferPush</definition>
+        <argsstring>(xmlParserInputBufferPtr in, int len, const char *buf)</argsstring>
+        <name>xmlParserInputBufferPush</name>
+        <param>
+          <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="198"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a1dc7bda791f7ec981960eb2e5781a984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlFreeParserInputBuffer</definition>
+        <argsstring>(xmlParserInputBufferPtr in)</argsstring>
+        <name>xmlFreeParserInputBuffer</name>
+        <param>
+          <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a1cd28a981d62a3957e9540259c778053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN char *XMLCALL</type>
+        <definition>XMLPUBFUN char* XMLCALL xmlParserGetDirectory</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>xmlParserGetDirectory</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a0717b99a618e1e4cc8dbd47784bbe6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlRegisterInputCallbacks</definition>
+        <argsstring>(xmlInputMatchCallback matchFunc, xmlInputOpenCallback openFunc, xmlInputReadCallback readFunc, xmlInputCloseCallback closeFunc)</argsstring>
+        <name>xmlRegisterInputCallbacks</name>
+        <param>
+          <type>xmlInputMatchCallback</type>
+          <declname>matchFunc</declname>
+        </param>
+        <param>
+          <type>xmlInputOpenCallback</type>
+          <declname>openFunc</declname>
+        </param>
+        <param>
+          <type>xmlInputReadCallback</type>
+          <declname>readFunc</declname>
+        </param>
+        <param>
+          <type>xmlInputCloseCallback</type>
+          <declname>closeFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a64cb85092a6bb321ee684c02579e88b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></type>
+        <definition>xmlParserInputBufferPtr __xmlParserInputBufferCreateFilename</definition>
+        <argsstring>(const char *URI, xmlCharEncoding enc)</argsstring>
+        <name>__xmlParserInputBufferCreateFilename</name>
+        <param>
+          <type>const char *</type>
+          <declname>URI</declname>
+        </param>
+        <param>
+          <type>xmlCharEncoding</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a9bb366419d828402c0b73191354567a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputPtr XMLCALL xmlCheckHTTPInput</definition>
+        <argsstring>(xmlParserCtxtPtr ctxt, xmlParserInputPtr ret)</argsstring>
+        <name>xmlCheckHTTPInput</name>
+        <param>
+          <type><ref refid="struct__xml_parser_ctxt" kindref="compound">xmlParserCtxtPtr</ref></type>
+          <declname>ctxt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref></type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="286"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1ad0e0a80ef21e1930c6a94425502cf67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputPtr XMLCALL xmlNoNetExternalEntityLoader</definition>
+        <argsstring>(const char *URL, const char *ID, xmlParserCtxtPtr ctxt)</argsstring>
+        <name>xmlNoNetExternalEntityLoader</name>
+        <param>
+          <type>const char *</type>
+          <declname>URL</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__xml_parser_ctxt" kindref="compound">xmlParserCtxtPtr</ref></type>
+          <declname>ctxt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="294"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a8dc620f420696b39acfd3d99d951aef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN xmlChar *XMLCALL</type>
+        <definition>XMLPUBFUN xmlChar* XMLCALL xmlNormalizeWindowsPath</definition>
+        <argsstring>(const xmlChar *path)</argsstring>
+        <name>xmlNormalizeWindowsPath</name>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="301"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a950236a0429bcb1347d2a024e3906eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlCheckFilename</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>xmlCheckFilename</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="304"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a49149d135abdf24488825844f50d0fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlFileMatch</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>xmlFileMatch</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default &apos;<ulink url="file://&apos;">file://&apos;</ulink> protocol callbacks </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="309"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1a18f6bb177ecb8c88f2e7161e426d9ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void *XMLCALL</type>
+        <definition>XMLPUBFUN void* XMLCALL xmlFileOpen</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>xmlFileOpen</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="311"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1af5f737e727fdec24235f678577b3bed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlFileRead</definition>
+        <argsstring>(void *context, char *buffer, int len)</argsstring>
+        <name>xmlFileRead</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="315"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2xml_i_o_8h_1af59f018a2005699ed91497b21b9564b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlFileClose</definition>
+        <argsstring>(void *context)</argsstring>
+        <name>xmlFileClose</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h" line="317"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Summary:<sp/>interface<sp/>for<sp/>the<sp/>I/O<sp/>interfaces<sp/>used<sp/>by<sp/>the<sp/>parser</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>interface<sp/>for<sp/>the<sp/>I/O<sp/>interfaces<sp/>used<sp/>by<sp/>the<sp/>parser</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copy:<sp/>See<sp/>Copyright<sp/>for<sp/>the<sp/>status<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Daniel<sp/>Veillard</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_IO_H__</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__XML_IO_H__</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xmlversion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Those<sp/>are<sp/>the<sp/>functions<sp/>and<sp/>datatypes<sp/>for<sp/>the<sp/>parser<sp/>input</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>I/O<sp/>structures.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlInputMatchCallback)<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>(XMLCALL<sp/>*xmlInputOpenCallback)<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlInputReadCallback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlInputCloseCallback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_OUTPUT_ENABLED</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>Those<sp/>are<sp/>the<sp/>functions<sp/>and<sp/>datatypes<sp/>for<sp/>the<sp/>library<sp/>output</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>I/O<sp/>structures.</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlOutputMatchCallback)<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>(XMLCALL<sp/>*xmlOutputOpenCallback)<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="100"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlOutputWriteCallback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(XMLCALL<sp/>*xmlOutputCloseCallback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_OUTPUT_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/globals.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/tree.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/parser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/encoding.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__xml_parser_input_buffer" kindref="compound">_xmlParserInputBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlInputReadCallback<sp/><sp/><sp/>readcallback;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlInputCloseCallback<sp/><sp/>closecallback;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder;<sp/></highlight><highlight class="comment">/*<sp/>I18N<sp/>conversions<sp/>to<sp/>UTF-8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>buffer;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Local<sp/>buffer<sp/>encoded<sp/>in<sp/>UTF-8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>raw;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>encoder<sp/>!=<sp/>NULL<sp/>buffer<sp/>for<sp/>raw<sp/>input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compressed;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>-1=unknown,<sp/>0=not<sp/>compressed,<sp/>1=compressed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>rawconsumed;</highlight><highlight class="comment">/*<sp/>amount<sp/>consumed<sp/>from<sp/>raw<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_OUTPUT_ENABLED</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_xmlOutputBuffer<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlOutputWriteCallback<sp/><sp/>writecallback;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlOutputCloseCallback<sp/><sp/>closecallback;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder;<sp/></highlight><highlight class="comment">/*<sp/>I18N<sp/>conversions<sp/>to<sp/>UTF-8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>buffer;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Local<sp/>buffer<sp/>encoded<sp/>in<sp/>UTF-8<sp/>or<sp/>ISOLatin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>conv;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>encoder<sp/>!=<sp/>NULL<sp/>buffer<sp/>for<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>written;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>total<sp/>number<sp/>of<sp/>byte<sp/>written<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_OUTPUT_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>Interfaces<sp/>for<sp/>input</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCleanupInputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlPopInputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlRegisterDefaultInputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlAllocParserInputBuffer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateFilename<sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*URI,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateFile<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FILE<sp/>*file,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateFd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateMem<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateStatic<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferCreateIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlInputReadCallback<sp/><sp/><sp/>ioread,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInputCloseCallback<sp/><sp/>ioclose,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ioctx,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferRead<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>in,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferGrow<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>in,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserInputBufferPush<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>in,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFreeParserInputBuffer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref><sp/>in);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlParserGetDirectory<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlRegisterInputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlInputMatchCallback<sp/>matchFunc,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInputOpenCallback<sp/>openFunc,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInputReadCallback<sp/>readFunc,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlInputCloseCallback<sp/>closeFunc);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><ref refid="struct__xml_parser_input_buffer" kindref="compound">xmlParserInputBufferPtr</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__xmlParserInputBufferCreateFilename(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*URI,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncoding<sp/>enc);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_OUTPUT_ENABLED</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/>Interfaces<sp/>for<sp/>output</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCleanupOutputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlRegisterDefaultOutputCallbacks(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlAllocOutputBuffer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferCreateFilename<sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*URI,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compression);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferCreateFile<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FILE<sp/>*file,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferCreateBuffer<sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_buffer" kindref="compound">xmlBufferPtr</ref><sp/>buffer,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferCreateFd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">XMLPUBFUN<sp/>xmlOutputBufferPtr<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferCreateIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputWriteCallback<sp/><sp/><sp/>iowrite,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputCloseCallback<sp/><sp/>ioclose,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ioctx,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferWrite<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputBufferPtr<sp/>out,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferWriteString<sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputBufferPtr<sp/>out,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferWriteEscape<sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputBufferPtr<sp/>out,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*str,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCharEncodingOutputFunc<sp/>escaping);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferFlush<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputBufferPtr<sp/>out);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputBufferClose<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputBufferPtr<sp/>out);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlRegisterOutputCallbacks<sp/><sp/><sp/><sp/><sp/><sp/>(xmlOutputMatchCallback<sp/>matchFunc,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputOpenCallback<sp/>openFunc,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputWriteCallback<sp/>writeFunc,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlOutputCloseCallback<sp/>closeFunc);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">xmlOutputBufferPtr</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__xmlOutputBufferCreateFilename(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*URI,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_char_encoding_handler" kindref="compound">xmlCharEncodingHandlerPtr</ref><sp/>encoder,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compression);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_HTTP_ENABLED</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/><sp/>This<sp/>function<sp/>only<sp/>exists<sp/>if<sp/>HTTP<sp/>support<sp/>built<sp/>into<sp/>the<sp/>library<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlRegisterHTTPPostCallbacks<sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_HTTP_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_OUTPUT_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCheckHTTPInput<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_parser_ctxt" kindref="compound">xmlParserCtxtPtr</ref><sp/>ctxt,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref><sp/>ret);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*<sp/>A<sp/>predefined<sp/>entity<sp/>loader<sp/>disabling<sp/>network<sp/>accesses</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref><sp/>XMLCALL<sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlNoNetExternalEntityLoader<sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*URL,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ID,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_parser_ctxt" kindref="compound">xmlParserCtxtPtr</ref><sp/>ctxt);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="297"><highlight class="comment"><sp/>*<sp/>xmlNormalizeWindowsPath<sp/>is<sp/>obsolete,<sp/>don&apos;t<sp/>use<sp/>it.<sp/></highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/>Check<sp/>xmlCanonicPath<sp/>in<sp/>uri.h<sp/>for<sp/>a<sp/>better<sp/>alternative.</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal">XMLPUBFUN<sp/>xmlChar<sp/>*<sp/>XMLCALL<sp/></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlNormalizeWindowsPath<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*path);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlCheckFilename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFileMatch<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFileOpen<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFileRead<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context,<sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer,<sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlFileClose<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="preprocessor">#ifdef<sp/>LIBXML_HTTP_ENABLED</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOHTTPMatch<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOHTTPOpen<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_OUTPUT_ENABLED</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOHTTPOpenW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>post_uri,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>compression<sp/>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_OUTPUT_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOHTTPRead<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context,<sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer,<sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOHTTPClose<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_HTTP_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="preprocessor">#ifdef<sp/>LIBXML_FTP_ENABLED<sp/></highlight></codeline>
+<codeline lineno="344"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOFTPMatch<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOFTPOpen<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOFTPRead<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context,<sp/></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer,<sp/></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlIOFTPClose<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_FTP_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="357"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__XML_IO_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/xmlIO.h"/>
+  </compounddef>
+</doxygen>

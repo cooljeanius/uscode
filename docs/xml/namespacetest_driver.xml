@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="namespacetest_driver" kind="namespace">
+    <compoundname>testDriver</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetest_driver_1a06dba30d8ea9ba2cfc4f39cc420c8802" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testDriver.MEMERR</definition>
+        <argsstring></argsstring>
+        <name>MEMERR</name>
+        <initializer>127</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="7" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1a8b62f7822a6486a50dc42c9ccff74729" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple testDriver.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>argparse.ArgumentParser(description=&quot;Driver for lci tests&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="9" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1a9b42b82c879c997d591be37e526bf84f" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple testDriver.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <initializer>parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="17" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1a4dbe8093ca07aa05c6f3a6c1255e3efd" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>tuple testDriver::expectedOutput</definition>
+        <argsstring></argsstring>
+        <name>expectedOutput</name>
+        <initializer>&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="40" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1a12e12737b2f7ca2036a012155a315985" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list testDriver.command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <initializer>[]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="45" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1a7c694ea492d6217bfcb80dcdf262c64a" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple testDriver.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <initializer>subprocess.Popen(command, stdin=args.inputFile, stdout=subprocess.PIPE, stderr=subprocess.PIPE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="56" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_driver_1ab60399eedd715ad079fba048847468df" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple testDriver.results</definition>
+        <argsstring></argsstring>
+        <name>results</name>
+        <initializer>p.communicate()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="57" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/test/testDriver.py" line="1"/>
+  </compounddef>
+</doxygen>

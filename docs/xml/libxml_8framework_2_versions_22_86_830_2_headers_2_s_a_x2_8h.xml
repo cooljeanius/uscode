@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h" kind="file">
+    <compoundname>SAX2.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">libxml/xmlversion.h</includes>
+    <includes local="no">libxml/parser.h</includes>
+    <includes local="no">libxml/xlink.h</includes>
+    <incdepgraph>
+      <node id="271">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/SAX2.h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>stdlib.h</label>
+      </node>
+      <node id="275">
+        <label>libxml/parser.h</label>
+      </node>
+      <node id="274">
+        <label>libxml/xmlversion.h</label>
+      </node>
+      <node id="272">
+        <label>stdio.h</label>
+      </node>
+      <node id="276">
+        <label>libxml/xlink.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a946596404eee752d5dec7da4cf983d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN const xmlChar *XMLCALL</type>
+        <definition>XMLPUBFUN const xmlChar* XMLCALL xmlSAX2GetPublicId</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2GetPublicId</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="25"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a542f3665c564f432eae17dc0c7fedfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN const xmlChar *XMLCALL</type>
+        <definition>XMLPUBFUN const xmlChar* XMLCALL xmlSAX2GetSystemId</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2GetSystemId</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a432e5a01e6a905ca6f39e944d0cf178d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2SetDocumentLocator</definition>
+        <argsstring>(void *ctx, xmlSAXLocatorPtr loc)</argsstring>
+        <name>xmlSAX2SetDocumentLocator</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__xml_s_a_x_locator" kindref="compound">xmlSAXLocatorPtr</ref></type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1aedc4c3c9c726cb273482bb00575c1f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAX2GetLineNumber</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2GetLineNumber</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a1ebe948f7509a9cfa63ef89d7efaf929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAX2GetColumnNumber</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2GetColumnNumber</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1ab747e3b5929ec077d1a2748a70ebcdc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAX2IsStandalone</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2IsStandalone</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1adcde3bdb876897617e43830b20ec3113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAX2HasInternalSubset</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2HasInternalSubset</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a1b045f4bfeb9eb62ee29752385333f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAX2HasExternalSubset</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2HasExternalSubset</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a7a92d90c9fa96f18ad70a789068f2102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2InternalSubset</definition>
+        <argsstring>(void *ctx, const xmlChar *name, const xmlChar *ExternalID, const xmlChar *SystemID)</argsstring>
+        <name>xmlSAX2InternalSubset</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ExternalID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>SystemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1ab2011370c01931ef6d12addc1fc8468d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2ExternalSubset</definition>
+        <argsstring>(void *ctx, const xmlChar *name, const xmlChar *ExternalID, const xmlChar *SystemID)</argsstring>
+        <name>xmlSAX2ExternalSubset</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ExternalID</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>SystemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1aad312b36e31f7d5fca4eaa8aaa970254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlSAX2GetEntity</definition>
+        <argsstring>(void *ctx, const xmlChar *name)</argsstring>
+        <name>xmlSAX2GetEntity</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1aa2da24a46c0ffa35543a4c0e537b82d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlEntityPtr XMLCALL xmlSAX2GetParameterEntity</definition>
+        <argsstring>(void *ctx, const xmlChar *name)</argsstring>
+        <name>xmlSAX2GetParameterEntity</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a6b5ab3eb3a21922347bff711b7e94735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN <ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref> XMLCALL</type>
+        <definition>XMLPUBFUN xmlParserInputPtr XMLCALL xmlSAX2ResolveEntity</definition>
+        <argsstring>(void *ctx, const xmlChar *publicId, const xmlChar *systemId)</argsstring>
+        <name>xmlSAX2ResolveEntity</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>publicId</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>systemId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a5167f2eee7576a1b82bda9e511313422" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2EntityDecl</definition>
+        <argsstring>(void *ctx, const xmlChar *name, int type, const xmlChar *publicId, const xmlChar *systemId, xmlChar *content)</argsstring>
+        <name>xmlSAX2EntityDecl</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>publicId</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>systemId</declname>
+        </param>
+        <param>
+          <type>xmlChar *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a7924a799cb043ad6e6452913bc3f4d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2AttributeDecl</definition>
+        <argsstring>(void *ctx, const xmlChar *elem, const xmlChar *fullname, int type, int def, const xmlChar *defaultValue, xmlEnumerationPtr tree)</argsstring>
+        <name>xmlSAX2AttributeDecl</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>elem</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>fullname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__xml_enumeration" kindref="compound">xmlEnumerationPtr</ref></type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1abafb00a219d9f83a8fd8067063cadc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2ElementDecl</definition>
+        <argsstring>(void *ctx, const xmlChar *name, int type, xmlElementContentPtr content)</argsstring>
+        <name>xmlSAX2ElementDecl</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__xml_element_content" kindref="compound">xmlElementContentPtr</ref></type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a6bff34f041e8f1a4148517792ff53b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2NotationDecl</definition>
+        <argsstring>(void *ctx, const xmlChar *name, const xmlChar *publicId, const xmlChar *systemId)</argsstring>
+        <name>xmlSAX2NotationDecl</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>publicId</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>systemId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a5d846d67b2626c7692043edc89417339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2UnparsedEntityDecl</definition>
+        <argsstring>(void *ctx, const xmlChar *name, const xmlChar *publicId, const xmlChar *systemId, const xmlChar *notationName)</argsstring>
+        <name>xmlSAX2UnparsedEntityDecl</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>publicId</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>systemId</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>notationName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1ab0bd9fac589bc5a26077c767eb02de59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2StartDocument</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2StartDocument</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a1afc372f7b6c3f6a49a038d61676180d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2EndDocument</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>xmlSAX2EndDocument</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1ac3900c94cbcdcc7b064a357bc0fe1a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2StartElementNs</definition>
+        <argsstring>(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes)</argsstring>
+        <name>xmlSAX2StartElementNs</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>localname</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>URI</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_namespaces</declname>
+        </param>
+        <param>
+          <type>const xmlChar **</type>
+          <declname>namespaces</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_attributes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_defaulted</declname>
+        </param>
+        <param>
+          <type>const xmlChar **</type>
+          <declname>attributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a4c0582f0199359e63b04f79fbf0f5370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2EndElementNs</definition>
+        <argsstring>(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI)</argsstring>
+        <name>xmlSAX2EndElementNs</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>localname</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>URI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1abe4da0b7d6bf0cca3fec4546b3ec83ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2Reference</definition>
+        <argsstring>(void *ctx, const xmlChar *name)</argsstring>
+        <name>xmlSAX2Reference</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a00aa77d2be00dd6c38ae80fe028aae16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2Characters</definition>
+        <argsstring>(void *ctx, const xmlChar *ch, int len)</argsstring>
+        <name>xmlSAX2Characters</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a2e84b7cb04c7f4f00703ec7a23263464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2IgnorableWhitespace</definition>
+        <argsstring>(void *ctx, const xmlChar *ch, int len)</argsstring>
+        <name>xmlSAX2IgnorableWhitespace</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a6fec89ecd1f4789a57409c190b51b4b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2ProcessingInstruction</definition>
+        <argsstring>(void *ctx, const xmlChar *target, const xmlChar *data)</argsstring>
+        <name>xmlSAX2ProcessingInstruction</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a3ce8132e90313caccdf449d741255444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2Comment</definition>
+        <argsstring>(void *ctx, const xmlChar *value)</argsstring>
+        <name>xmlSAX2Comment</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1aed0e8fd54e04b9797da1e90f8cf28abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2CDataBlock</definition>
+        <argsstring>(void *ctx, const xmlChar *value, int len)</argsstring>
+        <name>xmlSAX2CDataBlock</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a42a7f5adf5aae4de9f6541bdfb9368cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN int XMLCALL</type>
+        <definition>XMLPUBFUN int XMLCALL xmlSAXVersion</definition>
+        <argsstring>(xmlSAXHandler *hdlr, int version)</argsstring>
+        <name>xmlSAXVersion</name>
+        <param>
+          <type><ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref> *</type>
+          <declname>hdlr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1aa3b89e14ff3db69e7ca7d9007b7b57f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlSAX2InitDefaultSAXHandler</definition>
+        <argsstring>(xmlSAXHandler *hdlr, int warning)</argsstring>
+        <name>xmlSAX2InitDefaultSAXHandler</name>
+        <param>
+          <type><ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref> *</type>
+          <declname>hdlr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>warning</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2_s_a_x2_8h_1a1950a1c776019e1c9b15601cfe8ea7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>XMLPUBFUN void XMLCALL</type>
+        <definition>XMLPUBFUN void XMLCALL xmlDefaultSAXHandlerInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>xmlDefaultSAXHandlerInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h" line="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Summary:<sp/>SAX2<sp/>parser<sp/>interface<sp/>used<sp/>to<sp/>build<sp/>the<sp/>DOM<sp/>tree</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>those<sp/>are<sp/>the<sp/>default<sp/>SAX2<sp/>interfaces<sp/>used<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>library<sp/>when<sp/>building<sp/>DOM<sp/>tree.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Copy:<sp/>See<sp/>Copyright<sp/>for<sp/>the<sp/>status<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Daniel<sp/>Veillard</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__XML_SAX2_H__</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__XML_SAX2_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xmlversion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/parser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xlink.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*<sp/>XMLCALL</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetPublicId<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*<sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetSystemId<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2SetDocumentLocator<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_s_a_x_locator" kindref="compound">xmlSAXLocatorPtr</ref><sp/>loc);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetLineNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetColumnNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2IsStandalone<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2HasInternalSubset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2HasExternalSubset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2InternalSubset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ExternalID,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*SystemID);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2ExternalSubset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ExternalID,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*SystemID);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_entity" kindref="compound">xmlEntityPtr</ref><sp/>XMLCALL<sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2GetParameterEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">XMLPUBFUN<sp/><ref refid="struct__xml_parser_input" kindref="compound">xmlParserInputPtr</ref><sp/>XMLCALL<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2ResolveEntity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*publicId,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*systemId);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2EntityDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*publicId,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*systemId,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlChar<sp/>*content);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2AttributeDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*elem,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*fullname,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>def,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*defaultValue,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_enumeration" kindref="compound">xmlEnumerationPtr</ref><sp/>tree);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2ElementDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__xml_element_content" kindref="compound">xmlElementContentPtr</ref><sp/>content);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2NotationDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*publicId,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*systemId);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2UnparsedEntityDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*publicId,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*systemId,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*notationName);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2StartDocument<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2EndDocument<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LIBXML_SAX1_ENABLED)<sp/>||<sp/>defined(LIBXML_HTML_ENABLED)<sp/>||<sp/>defined(LIBXML_WRITER_ENABLED)<sp/>||<sp/>defined(LIBXML_DOCB_ENABLED)</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2StartElement<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*fullname,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>**atts);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2EndElement<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_SAX1_ENABLED<sp/>or<sp/>LIBXML_HTML_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2StartElementNs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*localname,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*prefix,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*URI,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_namespaces,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>**namespaces,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_attributes,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_defaulted,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>**attributes);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2EndElementNs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*localname,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*prefix,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*URI);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2Reference<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*name);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2Characters<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ch,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2IgnorableWhitespace<sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*ch,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2ProcessingInstruction<sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*target,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*data);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2Comment<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*value);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2CDataBlock<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xmlChar<sp/>*value,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_SAX1_ENABLED</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAXDefaultVersion<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIBXML_SAX1_ENABLED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XMLCALL</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAXVersion<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref><sp/>*hdlr,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2InitDefaultSAXHandler<sp/><sp/><sp/><sp/>(<ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref><sp/>*hdlr,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>warning);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_HTML_ENABLED</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2InitHtmlDefaultSAXHandler(<ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref><sp/>*hdlr);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>htmlDefaultSAXHandlerInit<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>LIBXML_DOCB_ENABLED</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlSAX2InitDocbDefaultSAXHandler(<ref refid="struct__xml_s_a_x_handler" kindref="compound">xmlSAXHandler</ref><sp/>*hdlr);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>docbDefaultSAXHandlerInit<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="normal">XMLPUBFUN<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>XMLCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmlDefaultSAXHandlerInit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__XML_SAX2_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/SAX2.h"/>
+  </compounddef>
+</doxygen>

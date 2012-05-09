@@ -1,0 +1,62 @@
+\hypertarget{struct_lexeme_list}{\section{Lexeme\-List Struct Reference}
+\label{struct_lexeme_list}\index{Lexeme\-List@{Lexeme\-List}}
+}
+
+
+{\ttfamily \#include $<$lexer.\-h$>$}
+
+
+
+Collaboration diagram for Lexeme\-List\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{struct_lexeme_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{struct_lexeme_list_ab9e4971353dc5b435d604d3dbaef1857}{num}
+\item 
+\hyperlink{struct_lexeme}{Lexeme} $\ast$$\ast$ \hyperlink{struct_lexeme_list_a26e2c4bffe56f01e4d9b7c14ced653fd}{lexemes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a list of lexemes. This structure allows sets of lexemes to be grouped together.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lexer_8h_a03a7275accd6e39d369c689760bd15df}{create\-Lexeme\-List(void)} 
+
+\hyperlink{lexer_8h_af9ec30b004772b01fb38f6dc4f54d102}{add\-Lexeme(\-Lexeme\-List $\ast$, Lexeme $\ast$)} 
+
+\hyperlink{lexer_8h_a3a834cd76633550e9b8be7368cdeae3d}{delete\-Lexeme\-List(\-Lexeme\-List $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 43 of file lexer.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_lexeme_list_a26e2c4bffe56f01e4d9b7c14ced653fd}{\index{Lexeme\-List@{Lexeme\-List}!lexemes@{lexemes}}
+\index{lexemes@{lexemes}!LexemeList@{Lexeme\-List}}
+\subsubsection[{lexemes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexeme}$\ast$$\ast$ {\bf Lexeme\-List\-::lexemes}}}\label{struct_lexeme_list_a26e2c4bffe56f01e4d9b7c14ced653fd}
+A pointer to the array of \hyperlink{struct_lexeme}{Lexeme} structures. 
+
+Definition at line 45 of file lexer.\-h.
+
+\hypertarget{struct_lexeme_list_ab9e4971353dc5b435d604d3dbaef1857}{\index{Lexeme\-List@{Lexeme\-List}!num@{num}}
+\index{num@{num}!LexemeList@{Lexeme\-List}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Lexeme\-List\-::num}}}\label{struct_lexeme_list_ab9e4971353dc5b435d604d3dbaef1857}
+The number of \hyperlink{struct_lexeme}{Lexeme} structures stored. 
+
+Definition at line 44 of file lexer.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/\hyperlink{lexer_8h}{lexer.\-h}\end{DoxyCompactItemize}

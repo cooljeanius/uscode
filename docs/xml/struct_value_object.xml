@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_value_object" kind="struct" prot="public">
+    <compoundname>ValueObject</compoundname>
+    <includes refid="interpreter_8h" local="no">interpreter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_value_object_1ad2d5ae1b91e2d7bbe9f262f0e8889b8d" prot="public" static="no" mutable="no">
+        <type><ref refid="interpreter_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1" kindref="member">ValueType</ref></type>
+        <definition>ValueType ValueObject::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of value stored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="56" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a494ae7c921c6e7994e07d927f1dd619b" compoundref="interpreter_8c" startline="24" endline="34">createNilValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a83170df5413454d013a2624ffde40134" compoundref="interpreter_8c" startline="42" endline="53">createBooleanValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3dcf1ed83c5fe0efe4d7f1c72c023945" compoundref="interpreter_8c" startline="61" endline="72">createIntegerValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1aea96b6d2469b6f3d4531987c644c2d63" compoundref="interpreter_8c" startline="80" endline="91">createFloatValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a9c7124b50cb92fb20edc6c2963a5f2b8" compoundref="interpreter_8c" startline="98" endline="109">createStringValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a47864225786b36609969a3fea1658a98" compoundref="interpreter_8c" startline="164" endline="172">deleteValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1abbf91182fe9db4f0e2e3c4472f0ad431" compoundref="interpreter_8c" startline="509" endline="518">castIntegerImplicit</referencedby>
+        <referencedby refid="interpreter_8h_1a4132ca66d51545ce6ae5b3287070a50a" compoundref="interpreter_8c" startline="538" endline="547">castFloatImplicit</referencedby>
+        <referencedby refid="interpreter_8h_1a58e25c56eb8e00ea5b5a2eaca71733b0" compoundref="interpreter_8c" startline="571" endline="580">castStringImplicit</referencedby>
+        <referencedby refid="interpreter_8h_1a9da4535836163318aac4d7d2eb03a2d2" compoundref="interpreter_8c" startline="600" endline="628">castBooleanExplicit</referencedby>
+        <referencedby refid="interpreter_8h_1aa211d313e27c2f081edc2309a4acb020" compoundref="interpreter_8c" startline="648" endline="689">castIntegerExplicit</referencedby>
+        <referencedby refid="interpreter_8h_1ab8aff5e3c1456ad85bf55cc816a84a87" compoundref="interpreter_8c" startline="709" endline="750">castFloatExplicit</referencedby>
+        <referencedby refid="interpreter_8h_1a392cb43c47522cc46d70df0f673b73f6" compoundref="interpreter_8c" startline="774" endline="971">castStringExplicit</referencedby>
+        <referencedby refid="interpreter_8h_1a7795828f9fd573ff3670ade6f6955b07" compoundref="interpreter_8c" startline="1230" endline="1250">interpretNotOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ac43fd9e88414ff9960db8a442ae9a0e8" compoundref="interpreter_8c" startline="1872" endline="1975">interpretArithOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ad0dc393a1a5f2ef0eb59742fe70f07d1" compoundref="interpreter_8c" startline="1996" endline="2043">interpretBoolOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1ab84fa97762a03da8689f763fc3165b41" compoundref="interpreter_8c" startline="2302" endline="2337">interpretEqualityOpExprNode</referencedby>
+        <referencedby refid="interpreter_8h_1a0214f5c76bcb63a1fbb9a242f9341763" compoundref="interpreter_8c" startline="2762" endline="2820">interpretIfThenElseStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1acbbc71ff8da84a69bea6a533c73c02ff" compoundref="interpreter_8c" startline="2853" endline="2922">interpretSwitchStmtNode</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_value_object_1a66e5eb0433f8150bf24cfc86856efe4e" prot="public" static="no" mutable="no">
+        <type><ref refid="union_value_data" kindref="compound">ValueData</ref></type>
+        <definition>ValueData ValueObject::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The stored data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="57" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a83170df5413454d013a2624ffde40134" compoundref="interpreter_8c" startline="42" endline="53">createBooleanValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3dcf1ed83c5fe0efe4d7f1c72c023945" compoundref="interpreter_8c" startline="61" endline="72">createIntegerValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1aea96b6d2469b6f3d4531987c644c2d63" compoundref="interpreter_8c" startline="80" endline="91">createFloatValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a9c7124b50cb92fb20edc6c2963a5f2b8" compoundref="interpreter_8c" startline="98" endline="109">createStringValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a47864225786b36609969a3fea1658a98" compoundref="interpreter_8c" startline="164" endline="172">deleteValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_value_object_1a08cfa02ff5b2f4ee7307c62c95089373" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ValueObject::semaphore</definition>
+        <argsstring></argsstring>
+        <name>semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A semaphore for value usage. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="58" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a494ae7c921c6e7994e07d927f1dd619b" compoundref="interpreter_8c" startline="24" endline="34">createNilValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a83170df5413454d013a2624ffde40134" compoundref="interpreter_8c" startline="42" endline="53">createBooleanValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3dcf1ed83c5fe0efe4d7f1c72c023945" compoundref="interpreter_8c" startline="61" endline="72">createIntegerValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1aea96b6d2469b6f3d4531987c644c2d63" compoundref="interpreter_8c" startline="80" endline="91">createFloatValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a9c7124b50cb92fb20edc6c2963a5f2b8" compoundref="interpreter_8c" startline="98" endline="109">createStringValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a47864225786b36609969a3fea1658a98" compoundref="interpreter_8c" startline="164" endline="172">deleteValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a value.</para><para><simplesect kind="see"><para><ref refid="interpreter_8h_1a030b889cd6487c903b7e12e69268cdc4" kindref="member">copyValueObject(ValueObject *)</ref> </para><simplesectsep/><para><ref refid="interpreter_8h_1a47864225786b36609969a3fea1658a98" kindref="member">deleteValueObject(ValueObject *)</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="749">
+        <label>ValueData</label>
+        <link refid="union_value_data"/>
+      </node>
+      <node id="748">
+        <label>ValueObject</label>
+        <link refid="struct_value_object"/>
+        <childnode refid="749" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="55" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="55" bodyend="59"/>
+    <listofallmembers>
+      <member refid="struct_value_object_1a66e5eb0433f8150bf24cfc86856efe4e" prot="public" virt="non-virtual"><scope>ValueObject</scope><name>data</name></member>
+      <member refid="struct_value_object_1a08cfa02ff5b2f4ee7307c62c95089373" prot="public" virt="non-virtual"><scope>ValueObject</scope><name>semaphore</name></member>
+      <member refid="struct_value_object_1ad2d5ae1b91e2d7bbe9f262f0e8889b8d" prot="public" virt="non-virtual"><scope>ValueObject</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

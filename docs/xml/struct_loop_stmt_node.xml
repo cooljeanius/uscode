@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_loop_stmt_node" kind="struct" prot="public">
+    <compoundname>LoopStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_loop_stmt_node_1a36b401d6c4fd2c16a68de026b99187f3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* LoopStmtNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="458" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_loop_stmt_node_1afb3820072966231fd1d43eea8ebd9234" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_identifier_node" kindref="compound">IdentifierNode</ref> *</type>
+        <definition>IdentifierNode* LoopStmtNode::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the variable to be updated by <emphasis>update</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="459" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="459" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_loop_stmt_node_1a53a86fb7f989cf43f54192b8f3ad6c1a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node" kindref="compound">ExprNode</ref> *</type>
+        <definition>ExprNode* LoopStmtNode::guard</definition>
+        <argsstring></argsstring>
+        <name>guard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expression to determine if the loop will continue. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="460" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="460" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_loop_stmt_node_1a0400ab555fff51b09f79c495af20f37f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node" kindref="compound">ExprNode</ref> *</type>
+        <definition>ExprNode* LoopStmtNode::update</definition>
+        <argsstring></argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the expression to evaluate to update <emphasis>var</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="461" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="461" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_loop_stmt_node_1a6844fd9206ed5d6b4fd48fc1365969aa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_block_node" kindref="compound">BlockNode</ref> *</type>
+        <definition>BlockNode* LoopStmtNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the block of code to be executed with each iteration of the loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="462" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="462" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a loop statement. A loop statement repeatedly executes its <emphasis>body</emphasis> while <emphasis>guard</emphasis> evaluates to true, executing <emphasis>update</emphasis> at the end of each cycle.</para><para><simplesect kind="see"><para>createLoopStmtNode(IdentifierNode *, IdentifierNode *, ExprNode *, ExprNode *, BlockNode *) </para><simplesectsep/><para>deleteLoopStmtNode(LoopStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="656">
+        <label>StmtNode</label>
+        <link refid="struct_stmt_node"/>
+      </node>
+      <node id="653">
+        <label>LoopStmtNode</label>
+        <link refid="struct_loop_stmt_node"/>
+        <childnode refid="654" relation="usage">
+          <edgelabel>body</edgelabel>
+        </childnode>
+        <childnode refid="657" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>var</edgelabel>
+        </childnode>
+        <childnode refid="658" relation="usage">
+          <edgelabel>guard</edgelabel>
+          <edgelabel>update</edgelabel>
+        </childnode>
+      </node>
+      <node id="657">
+        <label>IdentifierNode</label>
+        <link refid="struct_identifier_node"/>
+      </node>
+      <node id="654">
+        <label>BlockNode</label>
+        <link refid="struct_block_node"/>
+        <childnode refid="655" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+      <node id="658">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="655">
+        <label>StmtNodeList</label>
+        <link refid="struct_stmt_node_list"/>
+        <childnode refid="656" relation="usage">
+          <edgelabel>stmts</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="457" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="457" bodyend="463"/>
+    <listofallmembers>
+      <member refid="struct_loop_stmt_node_1a6844fd9206ed5d6b4fd48fc1365969aa" prot="public" virt="non-virtual"><scope>LoopStmtNode</scope><name>body</name></member>
+      <member refid="struct_loop_stmt_node_1a53a86fb7f989cf43f54192b8f3ad6c1a" prot="public" virt="non-virtual"><scope>LoopStmtNode</scope><name>guard</name></member>
+      <member refid="struct_loop_stmt_node_1a36b401d6c4fd2c16a68de026b99187f3" prot="public" virt="non-virtual"><scope>LoopStmtNode</scope><name>name</name></member>
+      <member refid="struct_loop_stmt_node_1a0400ab555fff51b09f79c495af20f37f" prot="public" virt="non-virtual"><scope>LoopStmtNode</scope><name>update</name></member>
+      <member refid="struct_loop_stmt_node_1afb3820072966231fd1d43eea8ebd9234" prot="public" virt="non-virtual"><scope>LoopStmtNode</scope><name>var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

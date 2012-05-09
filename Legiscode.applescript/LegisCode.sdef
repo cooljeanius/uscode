@@ -347,7 +347,26 @@
 			<!-- <property name>
 			</property> -->
 		</class>	
-
+		<class name="An Act To Say" code="aats" inherits="text" description="Used at the beginning of legislation to declare the title and purpose of the law.">
+			<property name="preprocessor directive" code="pdir" type="text" description="Used before processing">
+			</property>
+		</class>
+		<class name="Be It Enacted" code="bien" inherits="text" description="Used to initialize the main function, like `int main` in C">
+			<property name="preprocessor directive" code="pdir" type="text" description="Used before processing">
+			</property>
+		</class>
+		<class name="By Whom" code="bywm" inherits="text" description="Gives context for the law. Like the `include` and `define` macros in C. In US law this part would normally read: `by the Senate and House of Representatives of the United States of America in Congress assembled`">
+			<property name="preprocessor directive" code="pdir" type="text" description="Used before processing">
+			</property>
+		</class>
+		<class name="Legislative Content" code="meat" inherits="text" description="The content, or `meat` of a piece of legislation. The part that actually does stuff.">
+			<property name="Code" code="code" type="text" description="Code">
+			</property>
+		</class>
+		<class name="Approval Date" code="aprv" inherits="text" description="Used at the end of bills to signify that the end has been reached. Similar to `return 0;` at the end of C programs.">
+			<property name="Exit Code" code="exco" type="text" description="Used as an exit code">
+			</property>
+		</class>			
 	</suite>
 
 </dictionary>

@@ -1,0 +1,62 @@
+.TH "IfThenElseStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IfThenElseStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBBlockNode\fP * \fByes\fP"
+.br
+.ti -1c
+.RI "\fBBlockNode\fP * \fBno\fP"
+.br
+.ti -1c
+.RI "\fBExprNodeList\fP * \fBguards\fP"
+.br
+.ti -1c
+.RI "\fBBlockNodeList\fP * \fBblocks\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores an if/then/else statement\&. A conditional statement checks the value of the \fBimplicit variable\fP and executes \fIyes\fP if it casts to \fCtrue\fP\&. If the value of the \fBimplicit variable\fP casts to \fCfalse\fP, each of the optional expressions in \fIguards\fP is evaluated and if it casts to true, the corresponding block in \fIblocks\fP is executes\&. If the value of the \fBimplicit variable\fP casts to false \fBand\fP all of the guards cast to false, the contents of \fIno\fP is executed\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createIfThenElseStmtNode(BlockNode *, BlockNode *, ExprNodeList *, BlockNodeList *) 
+.PP
+deleteIfThenElseStmtNode(IfThenElseStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 421 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBlockNodeList\fP* \fBIfThenElseStmtNode::blocks\fP"
+A pointer to the respective blocks of code to execute if one of the evaluated \fIguards\fP casts to true\&. 
+.PP
+Definition at line 425 of file parser\&.h\&.
+.SS "\fBExprNodeList\fP* \fBIfThenElseStmtNode::guards\fP"
+A pointer to the expressions to test if the \fBimplicit variable\fP casts to false\&. 
+.PP
+Definition at line 424 of file parser\&.h\&.
+.SS "\fBBlockNode\fP* \fBIfThenElseStmtNode::no\fP"
+A pointer to the block of code to execute if the \fBimplicit variable\fP casts to false \fBand\fP the evaluations of all of the \fIguards\fP cast to false\&. 
+.PP
+Definition at line 423 of file parser\&.h\&.
+.SS "\fBBlockNode\fP* \fBIfThenElseStmtNode::yes\fP"
+A pointer to the block of code to execute if the \fBimplicit variable\fP casts to false\&. 
+.PP
+Definition at line 422 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

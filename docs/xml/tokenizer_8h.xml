@@ -1,0 +1,1189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="tokenizer_8h" kind="file">
+    <compoundname>tokenizer.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="lexer_8h" local="yes">lexer.h</includes>
+    <includedby refid="tools_2lci_2lciframework_2parser_8h" local="yes">tools/lci/lciframework/parser.h</includedby>
+    <includedby refid="main_8c" local="yes">tools/lci/lciframework/main.c</includedby>
+    <includedby refid="tokenizer_8c" local="yes">tools/lci/lciframework/tokenizer.c</includedby>
+    <incdepgraph>
+      <node id="802">
+        <label>stdlib.h</label>
+      </node>
+      <node id="805">
+        <label>lexer.h</label>
+        <link refid="lexer_8h"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>tools/lci/lciframework/tokenizer.h</label>
+        <link refid="tokenizer.h"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>string.h</label>
+      </node>
+      <node id="806">
+        <label>ctype.h</label>
+      </node>
+      <node id="803">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="810">
+        <label>tools/lci/lciframework/interpreter.c</label>
+        <link refid="interpreter_8c_source"/>
+      </node>
+      <node id="809">
+        <label>tools/lci/lciframework/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="811">
+        <label>tools/lci/lciframework/main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="813">
+        <label>tools/lci/lciframework/tokenizer.c</label>
+        <link refid="tokenizer_8c_source"/>
+      </node>
+      <node id="807">
+        <label>tools/lci/lciframework/tokenizer.h</label>
+        <link refid="tokenizer.h"/>
+        <childnode refid="808" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>tools/lci/lciframework/parser.c</label>
+        <link refid="parser_8c_source"/>
+      </node>
+      <node id="808">
+        <label>tools/lci/lciframework/parser.h</label>
+        <link refid="tools_2lci_2lciframework_2parser_8h_source"/>
+        <childnode refid="809" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="812" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="union_token_data" prot="public">TokenData</innerclass>
+    <innerclass refid="struct_token" prot="public">Token</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" prot="public" static="no">
+        <name>TokenType</name>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a1f5af7d472428d6e70215b337f1199ac" prot="public">
+          <name>TT_INTEGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a4987d82c06fd958ce0f15fe5574bd39c" prot="public">
+          <name>TT_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a3355cc282f3b7c2eea509d182247b0fa" prot="public">
+          <name>TT_STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a464a5aac554c7208ae3a26a9a1fe1b6b" prot="public">
+          <name>TT_IDENTIFIER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921acbc3b94f7c49c59403057c6d761ff0fb" prot="public">
+          <name>TT_BOOLEAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a9b3709ca27d48c27d3685a65761a10f6" prot="public">
+          <name>TT_IT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ab2358e4e697ce7accf62937aa593d745" prot="public">
+          <name>TT_NOOB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a0e5ed6fe8a0629115724700020183f57" prot="public">
+          <name>TT_NUMBR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ac80111b0a9b56ee20262571060bf09ef" prot="public">
+          <name>TT_NUMBAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921af4161f84122ac43ee477976ef636ecf9" prot="public">
+          <name>TT_TROOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a396fbba002b3159d23d9ba7fcbf1a740" prot="public">
+          <name>TT_YARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921aaffedff66c98c1bc186e2c35cdc7ab66" prot="public">
+          <name>TT_EOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921af4301819344df26e6eb32a41085c321d" prot="public">
+          <name>TT_NEWLINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ae340274d5d3f3541a1836650477fbc25" prot="public">
+          <name>TT_HAI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a192c0562d324a2106d0b144e0bb95d7d" prot="public">
+          <name>TT_KTHXBYE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a78092eb342fa2e2b979cfc3c64c2e437" prot="public">
+          <name>TT_HASA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a2b2047123f8c311ae4485f68df15761c" prot="public">
+          <name>TT_ITZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921acb238b4009cd7c4245117dd07c5507a5" prot="public">
+          <name>TT_R</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a59a7df0830de33a90a54c350b1a64467" prot="public">
+          <name>TT_ANYR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a3d0c071ff42b1e994322c9b63d8856d2" prot="public">
+          <name>TT_AN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a8a67b61c21735eca9be22425b2a34eb2" prot="public">
+          <name>TT_SUMOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a5573d4491646ce084e4433c2c978401c" prot="public">
+          <name>TT_DIFFOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a9bd3664927460f3337db91d58a74fdcb" prot="public">
+          <name>TT_PRODUKTOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a5405ff9a17a8698aaaa312dae537f105" prot="public">
+          <name>TT_QUOSHUNTOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a76540ca249fa6a87003c543cae899d9f" prot="public">
+          <name>TT_MODOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921aaeb170df92ca5757b5cf1e725fba6545" prot="public">
+          <name>TT_BIGGROF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ace42b538932e001a1a3076fb26530c4d" prot="public">
+          <name>TT_SMALLROF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a902cff771ba2dd799d4ae3653ddf62b4" prot="public">
+          <name>TT_BOTHOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a10561853d332579cbb6a5a69dcbcf4b4" prot="public">
+          <name>TT_EITHEROF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ae644ce96c9de2845762e617c1c194ae8" prot="public">
+          <name>TT_WONOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a7ffbed267df3e8b22ba26a2d4014754f" prot="public">
+          <name>TT_NOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a4928a70acfb32be59de3d97614ad6178" prot="public">
+          <name>TT_MKAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a5dd4a14eff05d344d8d366cf1b87f774" prot="public">
+          <name>TT_ALLOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a83ed81bfe82c33d521da11ba4e8fce91" prot="public">
+          <name>TT_ANYOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a1bc2c81d845af2ead3379d1ebd8dd135" prot="public">
+          <name>TT_BOTHSAEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ae895c8f63bb5def6d74565a84ef3b53b" prot="public">
+          <name>TT_DIFFRINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a8ef8fa20ebbd74b7ec50bef9942f1328" prot="public">
+          <name>TT_MAEK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a584f470461c5873d82e61f2baf023589" prot="public">
+          <name>TT_A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ae121ce8e3538b852d4e91bd57b30a0d3" prot="public">
+          <name>TT_ISNOWA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a1aab818de48c25f0c3e2ba295554ec18" prot="public">
+          <name>TT_VISIBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921aedc63b11f496352060d6bc24d6d2714a" prot="public">
+          <name>TT_SMOOSH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a9d717b539bca7efe20301832aa8b251d" prot="public">
+          <name>TT_BANG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ab99bedef252261b162d0fbafc851bcd5" prot="public">
+          <name>TT_GIMMEH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a81cd074bdaa854527744a7d905bb8104" prot="public">
+          <name>TT_ORLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ac9f38d6a1f03b44415b596a2139c86dd" prot="public">
+          <name>TT_YARLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a00d4f73dc2f6a48ce406ee0726414fbe" prot="public">
+          <name>TT_MEBBE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a6436971f52bb146138485e5c7117fb8a" prot="public">
+          <name>TT_NOWAI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ad12595ab92ea76fe5dc3d9f91d02aa34" prot="public">
+          <name>TT_OIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a10ab4996927fcb6224fffbd8bde7807d" prot="public">
+          <name>TT_WTF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921aa5c5e44a184c3a9fe1146a449b0116b1" prot="public">
+          <name>TT_OMG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a76baf694941e0894ccf6599c3e107350" prot="public">
+          <name>TT_OMGWTF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a409f8d6216ac45908225a0037ea7c47b" prot="public">
+          <name>TT_GTFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a40503d85a4d2bcd3add539034672ba3e" prot="public">
+          <name>TT_IMINYR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a50d64b5b7d5dfa487b7a4bf7e1ad6eb0" prot="public">
+          <name>TT_UPPIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a9542c38fde90ae313ac02bf3354e0437" prot="public">
+          <name>TT_NERFIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a8c80c670fd578fb94f331f10e5a143ee" prot="public">
+          <name>TT_YR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a7e8a2e462cd28ee206ff1b1eedb7a3a4" prot="public">
+          <name>TT_TIL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ad3afa841624d4d6c65df2cde84bb2a81" prot="public">
+          <name>TT_WILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a5d5ed5c6f1f868620d8783fae3cb69ea" prot="public">
+          <name>TT_IMOUTTAYR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921ac75cd8d0b95d1bcdeb9b42133fcb34fa" prot="public">
+          <name>TT_HOWDUZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921af8e608a626b9e92c0cf6e3a7b72b6ffa" prot="public">
+          <name>TT_IFUSAYSO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a7d00b798f99bcb8655594002425a7b3d" prot="public">
+          <name>TT_FOUNDYR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921a205e364d38e5d84a4442850855a02a1e" prot="public">
+          <name>TT_ENDOFTOKENS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Denotes the type of token present. All of the token type names are self-explainatory and correspond to either the semantic type of token data (in the case of TT_INTEGER, TT_FLOAT, TT_STRING, or TT_IDENTIFIER) or the lexemes which make up the particular token. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="28" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" bodystart="28" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tokenizer_8h_1a414565604fa67d57608632afa7b65a87" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* keywords[]</definition>
+        <argsstring>[]</argsstring>
+        <name>keywords</name>
+        <initializer> {
+	&quot;&quot;,            
+	&quot;&quot;,            
+	&quot;&quot;,            
+	&quot;&quot;,            
+	&quot;&quot;,            
+	&quot;IT&quot;,          
+	&quot;NOOB&quot;,        
+	&quot;NUMBR&quot;,       
+	&quot;NUMBAR&quot;,      
+	&quot;TROOF&quot;,       
+	&quot;YARN&quot;,        
+	&quot;&quot;,            
+	&quot;&quot;,            
+	&quot;HAI&quot;,         
+	&quot;KTHXBYE&quot;,     
+	&quot;HAS A&quot;,       
+	&quot;ITZ&quot;,         
+	&quot;R&quot;,           
+	&quot;AN YR&quot;,       
+	&quot;AN&quot;,          
+	&quot;SUM OF&quot;,      
+	&quot;DIFF OF&quot;,     
+	&quot;PRODUKT OF&quot;,  
+	&quot;QUOSHUNT OF&quot;, 
+	&quot;MOD OF&quot;,      
+	&quot;BIGGR OF&quot;,    
+	&quot;SMALLR OF&quot;,   
+	&quot;BOTH OF&quot;,     
+	&quot;EITHER OF&quot;,   
+	&quot;WON OF&quot;,      
+	&quot;NOT&quot;,         
+	&quot;MKAY&quot;,        
+	&quot;ALL OF&quot;,      
+	&quot;ANY OF&quot;,      
+	&quot;BOTH SAEM&quot;,   
+	&quot;DIFFRINT&quot;,    
+	&quot;MAEK&quot;,        
+	&quot;A&quot;,           
+	&quot;IS NOW A&quot;,    
+	&quot;VISIBLE&quot;,     
+	&quot;SMOOSH&quot;,      
+	&quot;!&quot;,           
+	&quot;GIMMEH&quot;,      
+	&quot;O RLY?&quot;,      
+	&quot;YA RLY&quot;,      
+	&quot;MEBBE&quot;,       
+	&quot;NO WAI&quot;,      
+	&quot;OIC&quot;,         
+	&quot;WTF?&quot;,        
+	&quot;OMG&quot;,         
+	&quot;OMGWTF&quot;,      
+	&quot;GTFO&quot;,        
+	&quot;IM IN YR&quot;,    
+	&quot;UPPIN&quot;,       
+	&quot;NERFIN&quot;,      
+	&quot;YR&quot;,          
+	&quot;TIL&quot;,         
+	&quot;WILE&quot;,        
+	&quot;IM OUTTA YR&quot;, 
+	&quot;HOW DUZ&quot;,     
+	&quot;IF U SAY SO&quot;, 
+	&quot;FOUND YR&quot;,    
+	&quot;&quot;,            
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="158" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tokenizer_8h_1a0ebaf37662850ea110812dab4905e4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isInteger</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>isInteger</name>
+        <param>
+          <type>const char *</type>
+          <defname>image</defname>
+          <briefdescription><para>The string of characters to compare. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a string of characters follows the format for an integer. Specifically, it checks if the string of characters matches the regular expression: [-]?[1-9][0-9]* | 0</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is not an integer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is an integer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a34232bc30ac2fd47ad26bd82b077201b" kindref="member">isFloat(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a7e8009af59ecb471ff4f52b1d46702fe" kindref="member">isString(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a73357dd06797311f27e41a0d8393fde1" kindref="member">isIdentifier(const char *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="175" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a34232bc30ac2fd47ad26bd82b077201b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isFloat</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>isFloat</name>
+        <param>
+          <type>const char *</type>
+          <defname>image</defname>
+          <briefdescription><para>The string of characters to compare. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a string of characters follows the format for a floating point decimal. Specifically, it checks if the string of characters matches the regular expression: [-]?[0-9].[0-9]*</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is not a floating point decimal. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is a floating point decimal.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a0ebaf37662850ea110812dab4905e4a5" kindref="member">isInteger(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a7e8009af59ecb471ff4f52b1d46702fe" kindref="member">isString(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a73357dd06797311f27e41a0d8393fde1" kindref="member">isIdentifier(const char *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="176" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a7e8009af59ecb471ff4f52b1d46702fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isString</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>isString</name>
+        <param>
+          <type>const char *</type>
+          <defname>image</defname>
+          <briefdescription><para>The string of characters to compare. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a string of characters follows the format for a string. Specifically, it checks if the string of characters begins and ends with a quote character.</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is not a string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is a string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a0ebaf37662850ea110812dab4905e4a5" kindref="member">isInteger(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a34232bc30ac2fd47ad26bd82b077201b" kindref="member">isFloat(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a73357dd06797311f27e41a0d8393fde1" kindref="member">isIdentifier(const char *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="177" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="59" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a73357dd06797311f27e41a0d8393fde1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isIdentifier</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>isIdentifier</name>
+        <param>
+          <type>const char *</type>
+          <defname>image</defname>
+          <briefdescription><para>The string of characters to compare. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a string of characters follows the format for an identifier. Specifically, it checks if the string of characters matches the regular expression: [a-zA-Z][a-zA-Z0-9_]*</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is not an identifier. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters is an identifier.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a0ebaf37662850ea110812dab4905e4a5" kindref="member">isInteger(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a34232bc30ac2fd47ad26bd82b077201b" kindref="member">isFloat(const char *)</ref> </para><simplesectsep/><para><ref refid="tokenizer_8h_1a7e8009af59ecb471ff4f52b1d46702fe" kindref="member">isString(const char *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="178" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="75" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a098ead0ad166642da98cb0532b9606b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_token" kindref="compound">Token</ref> *</type>
+        <definition>Token* createToken</definition>
+        <argsstring>(TokenType, const char *, const char *, unsigned int)</argsstring>
+        <name>createToken</name>
+        <param>
+          <type><ref refid="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" kindref="member">TokenType</ref></type>
+          <defname>type</defname>
+          <briefdescription><para>The type of token to create. </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>image</defname>
+          <briefdescription><para>The characters from the source file that represent the token. </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>fname</defname>
+          <briefdescription><para>A pointer to the name of the file containing the token. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>int</declname>
+          <defname>line</defname>
+          <briefdescription><para>The line number from the source file that the token occurred on. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="struct_token" kindref="compound">Token</ref> structure.</para><para><simplesect kind="return"><para>A pointer to a <ref refid="struct_token" kindref="compound">Token</ref> structure with the desired properties.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>malloc was unable to allocate memory.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a80e2b898800b99dc42afa663df0f9a44" kindref="member">deleteToken(Token *)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><simplesect kind="note"><para>fname is not copied because it would only one copy is stored for all <ref refid="struct_token" kindref="compound">Token</ref> structures that share it. </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="179" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="100" bodyend="123"/>
+        <references refid="struct_token_1a67919af9f3a80dc0b28a0ab1e6d5bf8a" compoundref="tokenizer_8h" startline="168">Token::type</references>
+        <references refid="struct_token_1aa33ebe86afc6f09ce9e335e062426b4a" compoundref="tokenizer_8h" startline="170">Token::image</references>
+        <references refid="struct_token_1a5f8c8d8ce49bdcca122fcd6aefc342fd" compoundref="tokenizer_8h" startline="171">Token::fname</references>
+        <references refid="struct_token_1addf8630713f51d489c62396c97312f21" compoundref="tokenizer_8h" startline="172">Token::line</references>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a80e2b898800b99dc42afa663df0f9a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deleteToken</definition>
+        <argsstring>(Token *)</argsstring>
+        <name>deleteToken</name>
+        <param>
+          <type><ref refid="struct_token" kindref="compound">Token</ref> *</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deletes a <ref refid="struct_token" kindref="compound">Token</ref> structure.</para><para><simplesect kind="pre"><para><emphasis>token</emphasis> points to a <ref refid="struct_token" kindref="compound">Token</ref> structure created by <ref refid="tokenizer_8h_1a098ead0ad166642da98cb0532b9606b8" kindref="member">createToken(TokenType, const char *, const char *, unsigned int)</ref>.</para></simplesect>
+<simplesect kind="post"><para>The memory at <emphasis>token</emphasis> and all of its elements will be freed.</para></simplesect>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a098ead0ad166642da98cb0532b9606b8" kindref="member">createToken(TokenType, const char *, const char *, unsigned int)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="180" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="132" bodyend="137"/>
+        <references refid="struct_token_1aa33ebe86afc6f09ce9e335e062426b4a" compoundref="tokenizer_8h" startline="170">Token::image</references>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a4d27a1d756551c9af1511762bae03878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_token" kindref="compound">Token</ref> *</type>
+        <definition>Token* addToken</definition>
+        <argsstring>(Token ***, unsigned int *, Token *)</argsstring>
+        <name>addToken</name>
+        <param>
+          <type><ref refid="struct_token" kindref="compound">Token</ref> ***</type>
+          <defname>list</defname>
+          <briefdescription><para>A pointer to a pointer to an array of <ref refid="struct_token" kindref="compound">Token</ref> structures to add the new <ref refid="struct_token" kindref="compound">Token</ref> onto. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <defname>num</defname>
+          <briefdescription><para>A pointer to the number of elements in <emphasis>list</emphasis>. </para></briefdescription>
+        </param>
+        <param>
+          <type><ref refid="struct_token" kindref="compound">Token</ref> *</type>
+          <defname>token</defname>
+          <briefdescription><para>A pointer to the <ref refid="struct_token" kindref="compound">Token</ref> structure to add to <emphasis>list</emphasis>. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a <ref refid="struct_token" kindref="compound">Token</ref> to an array of <ref refid="struct_token" kindref="compound">Token</ref> structures.</para><para><simplesect kind="note"><para><emphasis>list</emphasis> may be NULL in which case a new list is created.</para></simplesect>
+<simplesect kind="pre"><para><emphasis>num</emphasis> is the number of elements in <emphasis>list</emphasis>.</para></simplesect>
+<simplesect kind="post"><para><emphasis>token</emphasis> will be added on to the end of <emphasis>list</emphasis> and the value at <emphasis>num</emphasis> will be updated accordingly.</para></simplesect>
+<simplesect kind="return"><para>A pointer to the added <ref refid="struct_token" kindref="compound">Token</ref> structure (will be the same as <emphasis>token</emphasis>).</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc was unable to allocate memory.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="tokenizer_8h_1a973a45c24c49c724c1adf73953a1820d" kindref="member">deleteTokens(Token **)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="181" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="153" bodyend="170"/>
+        <references refid="struct_token_1a67919af9f3a80dc0b28a0ab1e6d5bf8a" compoundref="tokenizer_8h" startline="168">Token::type</references>
+        <references refid="struct_token_1aa33ebe86afc6f09ce9e335e062426b4a" compoundref="tokenizer_8h" startline="170">Token::image</references>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1a973a45c24c49c724c1adf73953a1820d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deleteTokens</definition>
+        <argsstring>(Token **)</argsstring>
+        <name>deleteTokens</name>
+        <param>
+          <type><ref refid="struct_token" kindref="compound">Token</ref> **</type>
+          <defname>list</defname>
+          <briefdescription><para>A pointer to an array of <ref refid="struct_token" kindref="compound">Token</ref> structures to be deleted. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deletes an array of <ref refid="struct_token" kindref="compound">Token</ref> structures.</para><para><simplesect kind="pre"><para><emphasis>list</emphasis> was created by and contains items added by addToken(Token ***, unsigned int *, TokenType, const char *, unsigned int).</para></simplesect>
+<simplesect kind="post"><para>The memory at <emphasis>list</emphasis> and all of its elements will be freed.</para></simplesect>
+<simplesect kind="see"><para>addToken(Token ***, unsigned int *, TokenType, const char *, unsigned int) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="182" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="179" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1ade1b429790c63fac86fd57b4dccd540c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int acceptLexemes</definition>
+        <argsstring>(LexemeList *, unsigned int, const char *)</argsstring>
+        <name>acceptLexemes</name>
+        <param>
+          <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+          <defname>lexemes</defname>
+          <briefdescription><para>A pointer to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure to match lexemes from. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>int</declname>
+          <defname>start</defname>
+          <briefdescription><para>The position within <emphasis>lexemes</emphasis> to start matching at. </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>match</defname>
+          <briefdescription><para>A pointer to a character array describing the sequence of lexemes to match. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to match a sequence of lexemes. Scans through <emphasis>lexemes</emphasis> starting at <emphasis>start</emphasis> and tries to match space-delimited lexemes from <emphasis>match</emphasis>.</para><para><simplesect kind="pre"><para><emphasis>lexemes</emphasis> was created by <ref refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" kindref="member">scanBuffer(const char *, unsigned int, const char *)</ref>.</para></simplesect>
+<simplesect kind="return"><para>The number of lexemes matched. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="183" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="195" bodyend="212"/>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+        <references refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" compoundref="lexer_8h" startline="32">Lexeme::image</references>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1ad6b372e0e6ec9d44601e89db77ae903c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_token" kindref="compound">Token</ref> *</type>
+        <definition>Token* isKeyword</definition>
+        <argsstring>(LexemeList *, unsigned int *)</argsstring>
+        <name>isKeyword</name>
+        <param>
+          <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+          <defname>lexemes</defname>
+          <briefdescription><para>A pointer to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure to search for keywords in. </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <defname>start</defname>
+          <briefdescription><para>A pointer to the position within <emphasis>lexemes</emphasis> to start checking at. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a sequence of lexemes is a keyword. <emphasis>lexemes</emphasis> is searched starting at <emphasis>start</emphasis> for keywords. If one is found, the appropriate <ref refid="struct_token" kindref="compound">Token</ref> structure is created and returned and the value of <emphasis>start</emphasis> is incremented by the number of lexemes matched minus one.</para><para><simplesect kind="pre"><para><emphasis>lexemes</emphasis> was created by <ref refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" kindref="member">scanBuffer(const char *, unsigned int, const char *)</ref>.</para></simplesect>
+<simplesect kind="post"><para>If a keyword is not found, <emphasis>start</emphasis> will be unmodified. Otherwise, <emphasis>start</emphasis> will be incremented by the number of lexemes matched minus one.</para></simplesect>
+<simplesect kind="return"><para>A pointer to a newly created keyword <ref refid="struct_token" kindref="compound">Token</ref> structure.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No keywords were matched or there was an error allocating memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="184" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="229" bodyend="244"/>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+        <references refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" compoundref="lexer_8h" startline="33">Lexeme::fname</references>
+        <references refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" compoundref="lexer_8h" startline="34">Lexeme::line</references>
+      </memberdef>
+      <memberdef kind="function" id="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_token" kindref="compound">Token</ref> **</type>
+        <definition>Token** tokenizeLexemes</definition>
+        <argsstring>(LexemeList *)</argsstring>
+        <name>tokenizeLexemes</name>
+        <param>
+          <type><ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> *</type>
+          <defname>list</defname>
+          <briefdescription><para>A pointer to a <ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref> structure to tokenize. </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts a list of lexemes into tokens. Additionally parses the literal values of integers, floating point decimals, and strings.</para><para><simplesect kind="pre"><para><emphasis>list</emphasis> was created by <ref refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" kindref="member">scanBuffer(const char *, unsigned int, const char *)</ref>.</para></simplesect>
+<simplesect kind="return"><para>A pointer to an array of <ref refid="struct_token" kindref="compound">Token</ref> structures representing the tokenized form of the input lexeme stream.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An unrecognized token was encountered or memory allocation failed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h" line="185" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.c" bodystart="256" bodyend="355"/>
+        <references refid="struct_lexeme_list_1ab9e4971353dc5b435d604d3dbaef1857" compoundref="lexer_8h" startline="44">LexemeList::num</references>
+        <references refid="struct_lexeme_list_1a26e2c4bffe56f01e4d9b7c14ced653fd" compoundref="lexer_8h" startline="45">LexemeList::lexemes</references>
+        <references refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" compoundref="lexer_8h" startline="32">Lexeme::image</references>
+        <references refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" compoundref="lexer_8h" startline="33">Lexeme::fname</references>
+        <references refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" compoundref="lexer_8h" startline="34">Lexeme::line</references>
+        <references refid="struct_token_1a064a6753289db58ee17f722a10d15287" compoundref="tokenizer_8h" startline="169">Token::data</references>
+        <references refid="union_token_data_1affb76b1c0ea30bca741d3148601fee73" compoundref="tokenizer_8h" startline="163">TokenData::f</references>
+        <references refid="union_token_data_1aa8084a7b7f73bcce7ccfa2e17b4d3c0f" compoundref="tokenizer_8h" startline="162">TokenData::i</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structures and functions for grouping lexemes into tokens. The tokenizer reads through an array of lexemes (generated by the lexer) and groups them into tokens based on their structure. In addition, some lexemes with semantic meaning (such as integers, floats, strings, and booleans) will have their values extracted and stored.</para><para><simplesect kind="author"><para>Justin J. Meza</para></simplesect>
+<simplesect kind="date"><para>2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>__TOKENIZER_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__TOKENIZER_H__</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lexer_8h" kindref="compound">lexer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28" refid="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_INTEGER,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_FLOAT,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_STRING,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_IDENTIFIER,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_BOOLEAN,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_IT,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NOOB,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NUMBR,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NUMBAR,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_TROOF,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_YARN,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_EOF,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NEWLINE,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_HAI,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_KTHXBYE,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_HASA,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ITZ,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_R,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ANYR,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_AN,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_SUMOF,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_DIFFOF,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_PRODUKTOF,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_QUOSHUNTOF,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_MODOF,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_BIGGROF,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_SMALLROF,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_BOTHOF,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_EITHEROF,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_WONOF,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NOT,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_MKAY,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ALLOF,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ANYOF,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_BOTHSAEM,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_DIFFRINT,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_MAEK,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_A,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ISNOWA,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_VISIBLE,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_SMOOSH,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_BANG,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_GIMMEH,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ORLY,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_YARLY,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_MEBBE,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NOWAI,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_OIC,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_WTF,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_OMG,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_OMGWTF,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_GTFO,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_IMINYR,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_UPPIN,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_NERFIN,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_YR,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_TIL,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_WILE,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_IMOUTTAYR,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_HOWDUZ,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_IFUSAYSO,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_FOUNDYR,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TT_ENDOFTOKENS</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" kindref="member">TokenType</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keywords[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_INTEGER<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_FLOAT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_STRING<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_IDENTIFIER<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_BOOLEAN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IT&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_IT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NOOB&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NOOB<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NUMBR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NUMBR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NUMBAR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NUMBAR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TROOF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_TROOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;YARN&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_YARN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_EOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NEWLINE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HAI&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_HAI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;KTHXBYE&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_KTHXBYE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HAS<sp/>A&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_HASA<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ITZ&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ITZ<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;R&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_R<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;AN<sp/>YR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ANYR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;AN&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_AN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SUM<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_SUMOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DIFF<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_DIFFOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;PRODUKT<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_PRODUKTOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;QUOSHUNT<sp/>OF&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="comment">/*<sp/>TT_QUOSHUNTOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MOD<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_MODOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BIGGR<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_BIGGROF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SMALLR<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_SMALLROF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BOTH<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_BOTHOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;EITHER<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_EITHEROF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;WON<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_WONOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NOT&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NOT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MKAY&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_MKAY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ALL<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ALLOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ANY<sp/>OF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ANYOF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BOTH<sp/>SAEM&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_BOTHSAEM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DIFFRINT&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_DIFFRINT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAEK&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_MAEK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;A&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_A<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IS<sp/>NOW<sp/>A&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ISNOWA<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VISIBLE&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_VISIBLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SMOOSH&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_SMOOSH<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;!&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_BANG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GIMMEH&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_GIMMEH<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;O<sp/>RLY?&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ORLY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;YA<sp/>RLY&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_YARLY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MEBBE&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_MEBBE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NO<sp/>WAI&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NOWAI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OIC&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_OIC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;WTF?&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_WTF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OMG&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_OMG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OMGWTF&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_OMGWTF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GTFO&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_GTFO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IM<sp/>IN<sp/>YR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_IMINYR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;UPPIN&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_UPPIN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NERFIN&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_NERFIN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;YR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_YR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TIL&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_TIL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;WILE&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_WILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IM<sp/>OUTTA<sp/>YR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="comment">/*<sp/>TT_IMOUTTAYR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HOW<sp/>DUZ&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_HOWDUZ<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IF<sp/>U<sp/>SAY<sp/>SO&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="comment">/*<sp/>TT_IFUSAYSO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FOUND<sp/>YR&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_FOUNDYR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TT_ENDOFTOKENS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="union_token_data" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162" refid="union_token_data_1aa8084a7b7f73bcce7ccfa2e17b4d3c0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="union_token_data_1aa8084a7b7f73bcce7ccfa2e17b4d3c0f" kindref="member">i</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="union_token_data_1affb76b1c0ea30bca741d3148601fee73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="union_token_data_1affb76b1c0ea30bca741d3148601fee73" kindref="member">f</ref>;<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/><ref refid="union_token_data" kindref="compound">TokenData</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="struct_token" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168" refid="struct_token_1a67919af9f3a80dc0b28a0ab1e6d5bf8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" kindref="member">TokenType</ref><sp/><ref refid="struct_token_1a67919af9f3a80dc0b28a0ab1e6d5bf8a" kindref="member">type</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="struct_token_1a064a6753289db58ee17f722a10d15287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="union_token_data" kindref="compound">TokenData</ref><sp/><ref refid="struct_token_1a064a6753289db58ee17f722a10d15287" kindref="member">data</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="struct_token_1aa33ebe86afc6f09ce9e335e062426b4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_token_1aa33ebe86afc6f09ce9e335e062426b4a" kindref="member">image</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="struct_token_1a5f8c8d8ce49bdcca122fcd6aefc342fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_token_1a5f8c8d8ce49bdcca122fcd6aefc342fd" kindref="member">fname</ref>;<sp/></highlight></codeline>
+<codeline lineno="172" refid="struct_token_1addf8630713f51d489c62396c97312f21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_token_1addf8630713f51d489c62396c97312f21" kindref="member">line</ref>;<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}<sp/><ref refid="struct_token" kindref="compound">Token</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isInteger(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isFloat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isIdentifier(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="struct_token" kindref="compound">Token</ref><sp/>*createToken(<ref refid="tokenizer_8h_1aa520fbf142ba1e7e659590c07da31921" kindref="member">TokenType</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteToken(<ref refid="struct_token" kindref="compound">Token</ref><sp/>*);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><ref refid="struct_token" kindref="compound">Token</ref><sp/>*addToken(<ref refid="struct_token" kindref="compound">Token</ref><sp/>***,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="struct_token" kindref="compound">Token</ref>*);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteTokens(<ref refid="struct_token" kindref="compound">Token</ref><sp/>**);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acceptLexemes(<ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><ref refid="struct_token" kindref="compound">Token</ref><sp/>*isKeyword(<ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="struct_token" kindref="compound">Token</ref><sp/>**tokenizeLexemes(<ref refid="struct_lexeme_list" kindref="compound">LexemeList</ref><sp/>*);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__TOKENIZER_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/tokenizer.h"/>
+  </compounddef>
+</doxygen>

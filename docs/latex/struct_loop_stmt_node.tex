@@ -1,0 +1,87 @@
+\hypertarget{struct_loop_stmt_node}{\section{Loop\-Stmt\-Node Struct Reference}
+\label{struct_loop_stmt_node}\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Loop\-Stmt\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{struct_loop_stmt_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_loop_stmt_node_a36b401d6c4fd2c16a68de026b99187f3}{name}
+\item 
+\hyperlink{struct_identifier_node}{Identifier\-Node} $\ast$ \hyperlink{struct_loop_stmt_node_afb3820072966231fd1d43eea8ebd9234}{var}
+\item 
+\hyperlink{struct_expr_node}{Expr\-Node} $\ast$ \hyperlink{struct_loop_stmt_node_a53a86fb7f989cf43f54192b8f3ad6c1a}{guard}
+\item 
+\hyperlink{struct_expr_node}{Expr\-Node} $\ast$ \hyperlink{struct_loop_stmt_node_a0400ab555fff51b09f79c495af20f37f}{update}
+\item 
+\hyperlink{struct_block_node}{Block\-Node} $\ast$ \hyperlink{struct_loop_stmt_node_a6844fd9206ed5d6b4fd48fc1365969aa}{body}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a loop statement. A loop statement repeatedly executes its {\itshape body\/} while {\itshape guard\/} evaluates to true, executing {\itshape update\/} at the end of each cycle.
+
+\begin{DoxySeeAlso}{See also}
+create\-Loop\-Stmt\-Node(\-Identifier\-Node $\ast$, Identifier\-Node $\ast$, Expr\-Node $\ast$, Expr\-Node $\ast$, Block\-Node $\ast$) 
+
+delete\-Loop\-Stmt\-Node(\-Loop\-Stmt\-Node $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 457 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_loop_stmt_node_a6844fd9206ed5d6b4fd48fc1365969aa}{\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}!body@{body}}
+\index{body@{body}!LoopStmtNode@{Loop\-Stmt\-Node}}
+\subsubsection[{body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\-Node}$\ast$ {\bf Loop\-Stmt\-Node\-::body}}}\label{struct_loop_stmt_node_a6844fd9206ed5d6b4fd48fc1365969aa}
+A pointer to the block of code to be executed with each iteration of the loop. 
+
+Definition at line 462 of file parser.\-h.
+
+\hypertarget{struct_loop_stmt_node_a53a86fb7f989cf43f54192b8f3ad6c1a}{\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}!guard@{guard}}
+\index{guard@{guard}!LoopStmtNode@{Loop\-Stmt\-Node}}
+\subsubsection[{guard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node}$\ast$ {\bf Loop\-Stmt\-Node\-::guard}}}\label{struct_loop_stmt_node_a53a86fb7f989cf43f54192b8f3ad6c1a}
+A pointer to the expression to determine if the loop will continue. 
+
+Definition at line 460 of file parser.\-h.
+
+\hypertarget{struct_loop_stmt_node_a36b401d6c4fd2c16a68de026b99187f3}{\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}!name@{name}}
+\index{name@{name}!LoopStmtNode@{Loop\-Stmt\-Node}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Loop\-Stmt\-Node\-::name}}}\label{struct_loop_stmt_node_a36b401d6c4fd2c16a68de026b99187f3}
+A pointer to the name of the loop. 
+
+Definition at line 458 of file parser.\-h.
+
+\hypertarget{struct_loop_stmt_node_a0400ab555fff51b09f79c495af20f37f}{\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}!update@{update}}
+\index{update@{update}!LoopStmtNode@{Loop\-Stmt\-Node}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node}$\ast$ {\bf Loop\-Stmt\-Node\-::update}}}\label{struct_loop_stmt_node_a0400ab555fff51b09f79c495af20f37f}
+A pointer to the expression to evaluate to update {\itshape var\/}. 
+
+Definition at line 461 of file parser.\-h.
+
+\hypertarget{struct_loop_stmt_node_afb3820072966231fd1d43eea8ebd9234}{\index{Loop\-Stmt\-Node@{Loop\-Stmt\-Node}!var@{var}}
+\index{var@{var}!LoopStmtNode@{Loop\-Stmt\-Node}}
+\subsubsection[{var}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Identifier\-Node}$\ast$ {\bf Loop\-Stmt\-Node\-::var}}}\label{struct_loop_stmt_node_afb3820072966231fd1d43eea8ebd9234}
+A pointer to the name of the variable to be updated by {\itshape update\/}. 
+
+Definition at line 459 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

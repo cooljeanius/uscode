@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct__xml_parser_node_info.html" title="_xmlParserNodeInfo" alt="" coords="25,217,172,243"/>
+<area shape="rect" id="node4" href="$struct__xml_node.html" title="_xmlNode" alt="" coords="340,29,425,55"/>
+<area shape="rect" id="node7" href="$struct__xml_attr.html" title="_xmlAttr" alt="" coords="296,445,371,471"/>
+<area shape="rect" id="node11" href="$struct__xml_doc.html" title="_xmlDoc" alt="" coords="473,217,548,243"/>
+<area shape="rect" id="node19" href="$struct__xml_dtd.html" title="_xmlDtd" alt="" coords="649,353,724,379"/>
+<area shape="rect" id="node15" href="$struct__xml_ns.html" title="_xmlNs" alt="" coords="371,353,439,379"/>
+</map>

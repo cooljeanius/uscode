@@ -1,0 +1,41 @@
+.TH "ReturnStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ReturnStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBExprNode\fP * \fBvalue\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores a return statement\&. A return statement signals that the current function is to be returned from with value \fIvalue\fP\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createReturnStmtNode(ExprNode *) 
+.PP
+deleteReturnStmtNode(ReturnStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 447 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNode\fP* \fBReturnStmtNode::value\fP"
+A pointer to the value to return\&. 
+.PP
+Definition at line 448 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

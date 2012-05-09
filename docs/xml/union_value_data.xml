@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="union_value_data" kind="union" prot="public">
+    <compoundname>ValueData</compoundname>
+    <includes refid="interpreter_8h" local="no">interpreter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_value_data_1abc2f11fb39990140dbc322610ba52f70" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ValueData::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Integer data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="40" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a83170df5413454d013a2624ffde40134" compoundref="interpreter_8c" startline="42" endline="53">createBooleanValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3dcf1ed83c5fe0efe4d7f1c72c023945" compoundref="interpreter_8c" startline="61" endline="72">createIntegerValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a3907f4b04d219b06c4967b92af485ff8" compoundref="interpreter_8c" startline="3017" endline="3100">interpretLoopStmtNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_value_data_1a85311c11b54183bb571f35ed70af37a9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ValueData::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Floating point data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="41" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1aea96b6d2469b6f3d4531987c644c2d63" compoundref="interpreter_8c" startline="80" endline="91">createFloatValueObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_value_data_1a2639b48549e0788d5f9a3da6ea9cb0e4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ValueData::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Character string data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="42" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a9c7124b50cb92fb20edc6c2963a5f2b8" compoundref="interpreter_8c" startline="98" endline="109">createStringValueObject</referencedby>
+        <referencedby refid="interpreter_8h_1a47864225786b36609969a3fea1658a98" compoundref="interpreter_8c" startline="164" endline="172">deleteValueObject</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores the data associated with a <ref refid="struct_value_object" kindref="compound">ValueObject</ref> structure. </para>    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" line="39" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/interpreter.h" bodystart="39" bodyend="43"/>
+    <listofallmembers>
+      <member refid="union_value_data_1a85311c11b54183bb571f35ed70af37a9" prot="public" virt="non-virtual"><scope>ValueData</scope><name>f</name></member>
+      <member refid="union_value_data_1abc2f11fb39990140dbc322610ba52f70" prot="public" virt="non-virtual"><scope>ValueData</scope><name>i</name></member>
+      <member refid="union_value_data_1a2639b48549e0788d5f9a3da6ea9cb0e4" prot="public" virt="non-virtual"><scope>ValueData</scope><name>s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

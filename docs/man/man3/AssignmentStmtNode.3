@@ -1,0 +1,48 @@
+.TH "AssignmentStmtNode" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AssignmentStmtNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <parser\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIdentifierNode\fP * \fBtarget\fP"
+.br
+.ti -1c
+.RI "\fBExprNode\fP * \fBexpr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Stores an assignment statement\&. An assignment statement updates the value of a variable, \fItarget\fP, to the result of an expression, \fIexpr\fP\&.
+.PP
+\fBSee also:\fP
+.RS 4
+createAssignmentStmtNode(IdentifierNode *, ExprNode *) 
+.PP
+deleteAssignmentStmtNode(AssignmentStmtNode *) 
+.RE
+.PP
+
+.PP
+Definition at line 393 of file parser\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBExprNode\fP* \fBAssignmentStmtNode::expr\fP"
+A pointer to the expression to evaluate and store in \fItarget\fP\&. 
+.PP
+Definition at line 395 of file parser\&.h\&.
+.SS "\fBIdentifierNode\fP* \fBAssignmentStmtNode::target\fP"
+A pointer to the name of the variable to store the evaluated contents of \fIexpr\fP into\&. 
+.PP
+Definition at line 394 of file parser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ResKnife from the source code\&.

@@ -1,0 +1,53 @@
+\hypertarget{struct_function_table}{\section{Function\-Table Struct Reference}
+\label{struct_function_table}\index{Function\-Table@{Function\-Table}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Function\-Table\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{struct_function_table__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{struct_function_table_a568ae3641aaf56327da625e668c4aa51}{num}
+\item 
+\hyperlink{struct_func_def_stmt_node}{Func\-Def\-Stmt\-Node} $\ast$$\ast$ \hyperlink{struct_function_table_a1c1544bb6db2f638619e21fc60ca2ba8}{funcs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores the contents of the function table. The function table contains the definitions of all declared functions. It is used for making sure function calls provide a valid arity, typechecking, however, is performed at runtime. 
+
+Definition at line 333 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_function_table_a1c1544bb6db2f638619e21fc60ca2ba8}{\index{Function\-Table@{Function\-Table}!funcs@{funcs}}
+\index{funcs@{funcs}!FunctionTable@{Function\-Table}}
+\subsubsection[{funcs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Func\-Def\-Stmt\-Node}$\ast$$\ast$ {\bf Function\-Table\-::funcs}}}\label{struct_function_table_a1c1544bb6db2f638619e21fc60ca2ba8}
+A pointer to an array of declared functions. 
+
+Definition at line 335 of file parser.\-h.
+
+\hypertarget{struct_function_table_a568ae3641aaf56327da625e668c4aa51}{\index{Function\-Table@{Function\-Table}!num@{num}}
+\index{num@{num}!FunctionTable@{Function\-Table}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Function\-Table\-::num}}}\label{struct_function_table_a568ae3641aaf56327da625e668c4aa51}
+The number of declared functions. 
+
+Definition at line 334 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

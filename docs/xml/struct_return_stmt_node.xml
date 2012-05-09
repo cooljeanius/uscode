@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_return_stmt_node" kind="struct" prot="public">
+    <compoundname>ReturnStmtNode</compoundname>
+    <includes refid="tools_2lci_2lciframework_2parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_return_stmt_node_1ac610b54406ae3bc54e3d5c4e9fcb1d2e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_expr_node" kindref="compound">ExprNode</ref> *</type>
+        <definition>ExprNode* ReturnStmtNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the value to return. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="448" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="448" bodyend="-1"/>
+        <referencedby refid="interpreter_8h_1a83339941f601e7cbbecb09c7501b49fd" compoundref="interpreter_8c" startline="2983" endline="2991">interpretReturnStmtNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a return statement. A return statement signals that the current function is to be returned from with value <emphasis>value</emphasis>.</para><para><simplesect kind="see"><para>createReturnStmtNode(ExprNode *) </para><simplesectsep/><para>deleteReturnStmtNode(ReturnStmtNode *) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="706">
+        <label>ExprNode</label>
+        <link refid="struct_expr_node"/>
+      </node>
+      <node id="705">
+        <label>ReturnStmtNode</label>
+        <link refid="struct_return_stmt_node"/>
+        <childnode refid="706" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" line="447" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/parser.h" bodystart="447" bodyend="449"/>
+    <listofallmembers>
+      <member refid="struct_return_stmt_node_1ac610b54406ae3bc54e3d5c4e9fcb1d2e" prot="public" virt="non-virtual"><scope>ReturnStmtNode</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

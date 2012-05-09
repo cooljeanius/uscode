@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct_lexeme" kind="struct" prot="public">
+    <compoundname>Lexeme</compoundname>
+    <includes refid="lexer_8h" local="no">lexer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Lexeme::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array of characters that describe the lexeme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="32" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" compoundref="lexer_8c" startline="10" endline="34">createLexeme</referencedby>
+        <referencedby refid="lexer_8h_1a4391032df55eda3e7768792818a7737a" compoundref="lexer_8c" startline="43" endline="50">deleteLexeme</referencedby>
+        <referencedby refid="lexer_8h_1af36072386b3b9de0e932afcd33db5169" compoundref="lexer_8c" startline="135" endline="322">scanBuffer</referencedby>
+        <referencedby refid="tokenizer_8h_1ade1b429790c63fac86fd57b4dccd540c" compoundref="tokenizer_8c" startline="195" endline="212">acceptLexemes</referencedby>
+        <referencedby refid="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" compoundref="tokenizer_8c" startline="256" endline="355">tokenizeLexemes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Lexeme::fname</definition>
+        <argsstring></argsstring>
+        <name>fname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the name of the file containing the lexeme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="33" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" compoundref="lexer_8c" startline="10" endline="34">createLexeme</referencedby>
+        <referencedby refid="tokenizer_8h_1ad6b372e0e6ec9d44601e89db77ae903c" compoundref="tokenizer_8c" startline="229" endline="244">isKeyword</referencedby>
+        <referencedby refid="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" compoundref="tokenizer_8c" startline="256" endline="355">tokenizeLexemes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lexeme::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The line number from the source file that the lexeme occurred on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="34" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="lexer_8h_1a3133eb4c254d75c6d0a5fd1e9c316784" compoundref="lexer_8c" startline="10" endline="34">createLexeme</referencedby>
+        <referencedby refid="tokenizer_8h_1ad6b372e0e6ec9d44601e89db77ae903c" compoundref="tokenizer_8c" startline="229" endline="244">isKeyword</referencedby>
+        <referencedby refid="tokenizer_8h_1ad476678f03982ffd7019fee27e9585d0" compoundref="tokenizer_8c" startline="256" endline="355">tokenizeLexemes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a lexeme. A lexeme is the smallest unit of contiguous characters, namely, it has been stripped of surrounding whitespace.</para><para><simplesect kind="note"><para>This structure does not have any list structure to hold groups of it. Instead, pointers to arrays of these structures are employed to allow for easier tokenizing.</para></simplesect>
+<simplesect kind="see"><para>createLexeme(char *, unsigned int) </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" line="31" bodyfile="/Users/ericgallager/uscode/tools/lci/lciframework/lexer.h" bodystart="31" bodyend="35"/>
+    <listofallmembers>
+      <member refid="struct_lexeme_1a152d5eb7970e35ee25fb59ec0c22ff73" prot="public" virt="non-virtual"><scope>Lexeme</scope><name>fname</name></member>
+      <member refid="struct_lexeme_1adcdcca00b21c0b8bf3fc7806ea649c55" prot="public" virt="non-virtual"><scope>Lexeme</scope><name>image</name></member>
+      <member refid="struct_lexeme_1af75c22856308b5e1cafcbac2d9308bf0" prot="public" virt="non-virtual"><scope>Lexeme</scope><name>line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

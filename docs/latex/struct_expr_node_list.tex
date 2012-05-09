@@ -1,0 +1,62 @@
+\hypertarget{struct_expr_node_list}{\section{Expr\-Node\-List Struct Reference}
+\label{struct_expr_node_list}\index{Expr\-Node\-List@{Expr\-Node\-List}}
+}
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Expr\-Node\-List\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{struct_expr_node_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{struct_expr_node_list_a60f9bbe230725287369033df733a2b04}{num}
+\item 
+\hyperlink{struct_expr_node}{Expr\-Node} $\ast$$\ast$ \hyperlink{struct_expr_node_list_a10ae95f2facec652ba79e0bb5c9298c1}{exprs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a list of expressions. This structure allows sets of expressions to be grouped together.
+
+\begin{DoxySeeAlso}{See also}
+create\-Expr\-Node\-List(void) 
+
+add\-Expr\-Node(\-Expr\-Node\-List $\ast$, Expr\-Node $\ast$) 
+
+delete\-Expr\-Node\-List(\-Expr\-Node\-List $\ast$) 
+\end{DoxySeeAlso}
+
+
+Definition at line 264 of file parser.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_expr_node_list_a10ae95f2facec652ba79e0bb5c9298c1}{\index{Expr\-Node\-List@{Expr\-Node\-List}!exprs@{exprs}}
+\index{exprs@{exprs}!ExprNodeList@{Expr\-Node\-List}}
+\subsubsection[{exprs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\-Node}$\ast$$\ast$ {\bf Expr\-Node\-List\-::exprs}}}\label{struct_expr_node_list_a10ae95f2facec652ba79e0bb5c9298c1}
+A pointer to an array of \hyperlink{struct_expr_node}{Expr\-Node} structures. 
+
+Definition at line 266 of file parser.\-h.
+
+\hypertarget{struct_expr_node_list_a60f9bbe230725287369033df733a2b04}{\index{Expr\-Node\-List@{Expr\-Node\-List}!num@{num}}
+\index{num@{num}!ExprNodeList@{Expr\-Node\-List}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Expr\-Node\-List\-::num}}}\label{struct_expr_node_list_a60f9bbe230725287369033df733a2b04}
+The number of \hyperlink{struct_expr_node}{Expr\-Node} structures stored. 
+
+Definition at line 265 of file parser.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/lci/lciframework/parser.\-h\end{DoxyCompactItemize}

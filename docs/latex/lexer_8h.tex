@@ -1,0 +1,244 @@
+\hypertarget{lexer_8h}{\section{tools/lci/lciframework/lexer.h File Reference}
+\label{lexer_8h}\index{tools/lci/lciframework/lexer.\-h@{tools/lci/lciframework/lexer.\-h}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+Include dependency graph for lexer.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{lexer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lexer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_lexeme}{Lexeme}
+\item 
+struct \hyperlink{struct_lexeme_list}{Lexeme\-List}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_lexeme}{Lexeme} $\ast$ \hyperlink{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}{create\-Lexeme} (char $\ast$, const char $\ast$, unsigned int)
+\item 
+void \hyperlink{lexer_8h_a4391032df55eda3e7768792818a7737a}{delete\-Lexeme} (\hyperlink{struct_lexeme}{Lexeme} $\ast$)
+\item 
+\hyperlink{struct_lexeme_list}{Lexeme\-List} $\ast$ \hyperlink{lexer_8h_a03a7275accd6e39d369c689760bd15df}{create\-Lexeme\-List} (void)
+\item 
+\hyperlink{struct_lexeme}{Lexeme} $\ast$ \hyperlink{lexer_8h_af9ec30b004772b01fb38f6dc4f54d102}{add\-Lexeme} (\hyperlink{struct_lexeme_list}{Lexeme\-List} $\ast$, \hyperlink{struct_lexeme}{Lexeme} $\ast$)
+\item 
+void \hyperlink{lexer_8h_a3a834cd76633550e9b8be7368cdeae3d}{delete\-Lexeme\-List} (\hyperlink{struct_lexeme_list}{Lexeme\-List} $\ast$)
+\item 
+\hyperlink{struct_lexeme_list}{Lexeme\-List} $\ast$ \hyperlink{lexer_8h_af36072386b3b9de0e932afcd33db5169}{scan\-Buffer} (const char $\ast$, unsigned int, const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structures and functions for separating a character buffer into lexemes. The lexer reads through a buffer of characters (themselves typically read from standard input), strips whitespace, and breaks them up into logical atoms of character strings which, in turn, may be passed on to later processes (such as a tokenizer).
+
+\begin{DoxyAuthor}{Author}
+Justin J. Meza
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2010 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{lexer_8h_source}{lexer.\-h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{lexer_8h_af9ec30b004772b01fb38f6dc4f54d102}{\index{lexer.\-h@{lexer.\-h}!add\-Lexeme@{add\-Lexeme}}
+\index{add\-Lexeme@{add\-Lexeme}!lexer.h@{lexer.\-h}}
+\subsubsection[{add\-Lexeme}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexeme}$\ast$ {\bf add\-Lexeme} (
+\begin{DoxyParamCaption}
+\item[{{\bf Lexeme\-List} $\ast$}]{list, }
+\item[{{\bf Lexeme} $\ast$}]{lexeme}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_af9ec30b004772b01fb38f6dc4f54d102}
+Adds a \hyperlink{struct_lexeme}{Lexeme} structure to a \hyperlink{struct_lexeme_list}{Lexeme\-List} structure.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape list\/} was created by \hyperlink{lexer_8h_a03a7275accd6e39d369c689760bd15df}{create\-Lexeme\-List(void)}. 
+
+{\itshape lexeme\/} was created by \hyperlink{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}{create\-Lexeme(char $\ast$, const char $\ast$, unsigned int)}.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+{\itshape lexeme\/} will be added on to the end of {\itshape list\/} and the size of {\itshape list\/} will be updated accordingly.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+A pointer to the added \hyperlink{struct_lexeme}{Lexeme} structure (will be the same as {\itshape lexeme\/}).
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-U\-L\-L} & realloc was unable to allocate memory. \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em list} & A pointer to the \hyperlink{struct_lexeme_list}{Lexeme\-List} structure to add {\itshape lex\/} to. \\
+\hline
+\mbox{\tt in}  & {\em lexeme} & A pointer to the \hyperlink{struct_lexeme}{Lexeme} structure to add to {\itshape list\/}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file lexer.\-c.
+
+\hypertarget{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}{\index{lexer.\-h@{lexer.\-h}!create\-Lexeme@{create\-Lexeme}}
+\index{create\-Lexeme@{create\-Lexeme}!lexer.h@{lexer.\-h}}
+\subsubsection[{create\-Lexeme}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexeme}$\ast$ {\bf create\-Lexeme} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{image, }
+\item[{const char $\ast$}]{fname, }
+\item[{unsigned int}]{line}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}
+Creates a \hyperlink{struct_lexeme}{Lexeme} structure.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a \hyperlink{struct_lexeme}{Lexeme} structure with the desired properties.
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-U\-L\-L} & malloc was unable to allocate memory.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lexer_8h_a4391032df55eda3e7768792818a7737a}{delete\-Lexeme(\-Lexeme $\ast$)} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+fname is not copied because it would only one copy is stored for all \hyperlink{struct_lexeme}{Lexeme} structures that share it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & An array of characters that describe the lexeme. \\
+\hline
+\mbox{\tt in}  & {\em fname} & A pointer to the name of the file containing the lexeme. \\
+\hline
+\mbox{\tt in}  & {\em line} & The line number from the source file that the lexeme occurred on. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file lexer.\-c.
+
+\hypertarget{lexer_8h_a03a7275accd6e39d369c689760bd15df}{\index{lexer.\-h@{lexer.\-h}!create\-Lexeme\-List@{create\-Lexeme\-List}}
+\index{create\-Lexeme\-List@{create\-Lexeme\-List}!lexer.h@{lexer.\-h}}
+\subsubsection[{create\-Lexeme\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexeme\-List}$\ast$ {\bf create\-Lexeme\-List} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_a03a7275accd6e39d369c689760bd15df}
+Creates a \hyperlink{struct_lexeme_list}{Lexeme\-List} structure.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a \hyperlink{struct_lexeme_list}{Lexeme\-List} structure with the desired properties.
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-U\-L\-L} & malloc was unable to allocate memory.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lexer_8h_a3a834cd76633550e9b8be7368cdeae3d}{delete\-Lexeme\-List(\-Lexeme\-List $\ast$)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 59 of file lexer.\-c.
+
+\hypertarget{lexer_8h_a4391032df55eda3e7768792818a7737a}{\index{lexer.\-h@{lexer.\-h}!delete\-Lexeme@{delete\-Lexeme}}
+\index{delete\-Lexeme@{delete\-Lexeme}!lexer.h@{lexer.\-h}}
+\subsubsection[{delete\-Lexeme}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf delete\-Lexeme} (
+\begin{DoxyParamCaption}
+\item[{{\bf Lexeme} $\ast$}]{lexeme}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_a4391032df55eda3e7768792818a7737a}
+Deletes a \hyperlink{struct_lexeme}{Lexeme} structure.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape lexeme\/} points to a \hyperlink{struct_lexeme}{Lexeme} structure created by \hyperlink{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}{create\-Lexeme(char $\ast$, const char $\ast$, unsigned int)}.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The memory at {\itshape lexeme\/} and all of its elements will be freed.
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lexer_8h_a3133eb4c254d75c6d0a5fd1e9c316784}{create\-Lexeme(char $\ast$, const char $\ast$, unsigned int)} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+We do not free ($\ast$lex)-\/$>$fname because it is shared between many \hyperlink{struct_lexeme}{Lexeme} structures and is free'd by whoever created them. 
+\end{DoxyNote}
+
+
+Definition at line 43 of file lexer.\-c.
+
+\hypertarget{lexer_8h_a3a834cd76633550e9b8be7368cdeae3d}{\index{lexer.\-h@{lexer.\-h}!delete\-Lexeme\-List@{delete\-Lexeme\-List}}
+\index{delete\-Lexeme\-List@{delete\-Lexeme\-List}!lexer.h@{lexer.\-h}}
+\subsubsection[{delete\-Lexeme\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf delete\-Lexeme\-List} (
+\begin{DoxyParamCaption}
+\item[{{\bf Lexeme\-List} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_a3a834cd76633550e9b8be7368cdeae3d}
+Deletes a \hyperlink{struct_lexeme_list}{Lexeme\-List} structure.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape list\/} was created by \hyperlink{lexer_8h_a03a7275accd6e39d369c689760bd15df}{create\-Lexeme\-List(void)} and contains items added by \hyperlink{lexer_8h_af9ec30b004772b01fb38f6dc4f54d102}{add\-Lexeme(\-Lexeme\-List $\ast$, Lexeme $\ast$)}.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The memory at {\itshape list\/} and any of its associated members will be freed.
+\end{DoxyPostcond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lexer_8h_a03a7275accd6e39d369c689760bd15df}{create\-Lexeme\-List(void)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em list} & A pointer to the \hyperlink{struct_lexeme_list}{Lexeme\-List} structure to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file lexer.\-c.
+
+\hypertarget{lexer_8h_af36072386b3b9de0e932afcd33db5169}{\index{lexer.\-h@{lexer.\-h}!scan\-Buffer@{scan\-Buffer}}
+\index{scan\-Buffer@{scan\-Buffer}!lexer.h@{lexer.\-h}}
+\subsubsection[{scan\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexeme\-List}$\ast$ {\bf scan\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buffer, }
+\item[{unsigned int}]{size, }
+\item[{const char $\ast$}]{fname}
+\end{DoxyParamCaption}
+)}}\label{lexer_8h_af36072386b3b9de0e932afcd33db5169}
+Scans through a character buffer, removing unecessary characters and generating lexemes. Lexemes are separated by whitespace (but newline characters are kept as their own lexeme). String literals are handled a bit differently\-: starting at the first quotation character, characters are collected until either an unescaped quotation character is read (that is, a quotation character not preceeded by a colon which itself is not proceeded by a colon) or a newline or carriage return character is read, whichever comes first. This handles the odd case of strings such as \char`\"{}\-::\char`\"{} which print out a single colon. Also handled are the effects of commas, ellipses, and bangs (!).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape size\/} is the number of characters starting at the memory location pointed to by {\itshape buffer\/}.
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to a \hyperlink{struct_lexeme_list}{Lexeme\-List} structure. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & An array of characters to tokenize. \\
+\hline
+\mbox{\tt in}  & {\em size} & The number of characters in {\itshape buffer\/}. \\
+\hline
+\mbox{\tt in}  & {\em fname} & An array of characters representing the name of the file used to read {\itshape buffer\/}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file lexer.\-c.
+

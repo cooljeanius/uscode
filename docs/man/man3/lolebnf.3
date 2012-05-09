@@ -1,0 +1,240 @@
+.TH "lolebnf" 3 "Tue May 8 2012" "ResKnife" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lolebnf \- The LOLCODE EBNF 
+Presented below is the EBNF (see http://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form) for LOLCODE that \fClci\fP parses\&. Note that by this stage, the scanner has:
+.IP "\(bu" 2
+already removed any whitespace between tokens,
+.IP "\(bu" 2
+added in and truncated newline tokens at logical line breaks, and
+.IP "\(bu" 2
+added an end-of-file (\fC$\fP) token\&.
+.PP
+.SH "Program Structure"
+.PP
+These production rules dictate the overall form of the program\&.
+.PP
+\fB\fP
+.RS 4
+\fBMainNode\fP ::= \fCTT_HAI\fP \fIversion\fP \fCTT_NEWLINE\fP \fBBlockNode\fP \fC$\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBBlockNode\fP ::= \fBStmtNode\fP *
+.RE
+.PP
+.SH "Statements"
+.PP
+These production rules specify some general types of parse structures\&.
+.PP
+\fB\fP
+.RS 4
+\fBConstantNode\fP ::= Boolean | Integer | Float | String
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBIdentifierNode\fP ::= Identifier
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBTypeNode\fP ::= \fCTT_NOOB\fP | \fCTT_TROOF\fP | \fCTT_NUMBR\fP | \fCTT_NUMBAR\fP | \fCTT_YARN\fP 
+.RE
+.PP
+.SH "Statements"
+.PP
+These production rules specify the types of statements formed\&.
+.PP
+\fB\fP
+.RS 4
+\fBStmtNode\fP ::= \fBCastStmtNode\fP | \fBPrintStmtNode\fP | \fBInputStmtNode\fP | \fBAssignmentStmtNode\fP | \fBDeclarationStmtNode\fP | \fBIfThenElseStmtNode\fP | \fBSwitchStmtNode\fP | BreakStmt | \fBReturnStmtNode\fP | \fBLoopStmtNode\fP | \fBFuncDefStmtNode\fP | ExprStmt
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBCastStmtNode\fP ::= \fBIdentifierNode\fP \fCTT_ISNOWA\fP \fBTypeNode\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBPrintStmtNode\fP ::= \fCTT_VISIBLE\fP \fBExprNodeList\fP \fC\fP[ \fCTT_BANG\fP ] TT_NEWLINE
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBInputStmtNode\fP ::= \fCTT_GIMMEH\fP \fBIdentifierNode\fP TT_NEWLINE
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBAssignmentStmtNode\fP ::= \fBIdentifierNode\fP \fCTT_R\fP \fBExprNode\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBDeclarationStmtNode\fP ::= \fBIdentifierNode\fP \fCTT_HASA\fP \fBIdentifierNode\fP [ Initialization ] \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+Initialization ::= \fCTT_ITZ\fP \fBExprNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBIfThenElseStmtNode\fP ::= \fCTT_ORLY\fP \fCTT_NEWLINE\fP \fCTT_YARLY\fP \fCTT_NEWLINE\fP \fBBlockNode\fP ElseIf * [ Else ] \fCTT_OIC\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+ElseIf ::= \fCTT_MEBBE\fP \fBExprNode\fP \fCTT_NEWLINE\fP \fBBlockNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+Else ::= \fCTT_NOWAI\fP \fCTT_NEWLINE\fP \fBBlockNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBSwitchStmtNode\fP ::= \fCTT_WTF\fP \fCTT_NEWLINE\fP Case + [ DefaultCase ] \fCTT_OIC\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+Case ::= \fCTT_OMG\fP \fBExprNode\fP \fCTT_NEWLINE\fP \fBBlockNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+DefaultCase ::= \fCTT_OMGWTF\fP \fCTT_NEWLINE\fP \fBBlockNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+BreakStmt ::= \fCTT_GTFO\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBReturnStmtNode\fP ::= \fCTT_FOUNDYR\fP \fBExprNode\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBLoopStmtNode\fP ::= \fCTT_IMINYR\fP \fBIdentifierNode\fP [ LoopUpdate ] [ LoopGuard ] \fCTT_NEWLINE\fP \fCTT_IMOUTTAYR\fP \fBIdentifierNode\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+LoopUpdate ::= LoopUpdateOp \fCTT_YR\fP \fBIdentifierNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+LoopUpdateOp ::= \fCTT_UPPIN\fP | \fCTT_NERFIN\fP | UnaryFunction
+.RE
+.PP
+\fB\fP
+.RS 4
+UnaryFunction ::= The name of a previously defined unary function\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+LoopGuard ::= \fCTT_TIL\fP \fBExprNode\fP | \fCTT_WILE\fP \fBExprNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBFuncDefStmtNode\fP ::= \fCTT_HOWDUZ\fP \fBIdentifierNode\fP \fBIdentifierNode\fP [ FunctionDefArgs ] \fCTT_NEWLINE\fP \fBBlockNode\fP \fCTT_IFUSAYSO\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+FunctionDefArgs ::= \fCTT_YR\fP \fBIdentifierNode\fP FunctionDefArg *
+.RE
+.PP
+\fB\fP
+.RS 4
+FunctionDefArg ::= \fCTT_ANYR\fP \fBIdentifierNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+ExprStmt ::= \fBExprNode\fP \fCTT_NEWLINE\fP 
+.RE
+.PP
+.SH "Expressions"
+.PP
+These production rules specify the types of expressions formed\&.
+.PP
+\fB\fP
+.RS 4
+\fBExprNode\fP ::= \fBCastExprNode\fP | \fBConstantNode\fP | \fBIdentifierNode\fP | \fBFuncCallExprNode\fP | \fBOpExprNode\fP | ImplicitVariable
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBCastExprNode\fP ::= \fCTT_MAEK\fP \fBExprNode\fP \fCTT_A\fP \fBTypeNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBFuncCallExprNode\fP ::= \fBIdentifierNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBOpExprNode\fP ::= UnaryOp | BinaryOp | NaryOp
+.RE
+.PP
+\fB\fP
+.RS 4
+UnaryOp ::= UnaryOpType \fBExprNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+UnaryOpType ::= \fCTT_NOT\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+BinaryOp ::= BinaryOpType \fBExprNode\fP [ \fCTT_AN\fP ] \fBExprNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+BinaryOpType ::= \fCTT_SUMOF\fP | \fCTT_DIFFOF\fP | \fCTT_PRODUKTOF\fP | \fCTT_QUOSHUNTOF\fP | \fCTT_MODOF\fP | \fCBIGGROF\fP | \fCSMALLROF\fP | \fCTT_BOTHOF\fP | \fCTT_EITHEROF\fP | \fCTT_WONOF\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+NaryOp ::= NaryOpType NaryOpArgs \fCTT_MKAY\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+NaryOpType ::= \fCTT_ALLOF\fP | \fCTT_ANYOF\fP 
+.RE
+.PP
+\fB\fP
+.RS 4
+NaryOpArgs ::= \fBExprNode\fP NaryOpArg +
+.RE
+.PP
+\fB\fP
+.RS 4
+NaryOpArg ::= [ \fCTT_AN\fP ] \fBExprNode\fP
+.RE
+.PP
+\fB\fP
+.RS 4
+ImplicitVariable ::= \fCTT_IT\fP 
+.RE
+.PP
+

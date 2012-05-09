@@ -1,0 +1,850 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h" kind="file">
+    <compoundname>triostr.h</compoundname>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h" local="yes">triodef.h</includes>
+    <includes refid="libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h" local="yes">triop.h</includes>
+    <incdepgraph>
+      <node id="364">
+        <label>assert.h</label>
+      </node>
+      <node id="365">
+        <label>stdlib.h</label>
+      </node>
+      <node id="368">
+        <label>triodef.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2triodef_8h_source"/>
+      </node>
+      <node id="370">
+        <label>varargs.h</label>
+      </node>
+      <node id="366">
+        <label>string.h</label>
+      </node>
+      <node id="369">
+        <label>triop.h</label>
+        <link refid="libxml_8framework_2_versions_22_86_830_2_headers_2triop_8h_source"/>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>time.h</label>
+      </node>
+      <node id="363">
+        <label>Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h</label>
+        <link refid="libxml.framework/Versions/2.6.30/Headers/triostr.h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1ac132808547a0ba54fcf07a0544068f5e" prot="public" static="no">
+        <name>TRIO_STRING_PUBLIC</name>
+        <initializer>TRIO_PUBLIC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="38" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no">
+        <name>@5</name>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a61dadd085c1777f559549e05962b2c9ea52dcc4bfdf8c52cb79e0240283b326f9" prot="public">
+          <name>TRIO_HASH_NONE</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a61dadd085c1777f559549e05962b2c9ea6e8baf0b59bca7d0016bb8e31631f745" prot="public">
+          <name>TRIO_HASH_PLAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a61dadd085c1777f559549e05962b2c9ea83b51e16286abc531db9b459c30c10a6" prot="public">
+          <name>TRIO_HASH_TWOSIGNED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="28" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a87f7218c8ca476a3e02b8f83c2cd4c17" prot="public" static="no">
+        <type>struct _trio_string_t</type>
+        <definition>typedef struct _trio_string_t trio_string_t</definition>
+        <argsstring></argsstring>
+        <name>trio_string_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="96" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a11e23a0ef73f31d54f98c98e5e61dcc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_copy_max</type>
+        <definition>TRIO_STRING_PUBLIC int trio_copy_max TRIO_PROTO</definition>
+        <argsstring>((char *target, size_t max, const char *source))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *target, size_t max, const char *source)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a1e1674e290dbd14c5c2bbb7fb031051e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_create</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_create TRIO_PROTO</definition>
+        <argsstring>((size_t size))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(size_t size)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a2cf0490ef6515d06c881dd49462b8fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC void trio_destroy</type>
+        <definition>TRIO_STRING_PUBLIC void trio_destroy TRIO_PROTO</definition>
+        <argsstring>((char *string))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *string)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a4e3f2da617c40dce9d7f7911ce4e1673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_duplicate</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_duplicate TRIO_PROTO</definition>
+        <argsstring>((const char *source))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *source)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a8a13e5cbdf2d443edaaa629ddda0e187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_equal</type>
+        <definition>TRIO_STRING_PUBLIC int trio_equal TRIO_PROTO</definition>
+        <argsstring>((const char *first, const char *second))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *first, const char *second)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1aa292c04009d3491ffadc8b33aeeb139f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_equal_max</type>
+        <definition>TRIO_STRING_PUBLIC int trio_equal_max TRIO_PROTO</definition>
+        <argsstring>((const char *first, size_t max, const char *second))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *first, size_t max, const char *second)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a3a12687e25a7d2e87d88d4627b845563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC TRIO_CONST char *trio_error</type>
+        <definition>TRIO_STRING_PUBLIC TRIO_CONST char* trio_error TRIO_PROTO</definition>
+        <argsstring>((int))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1ac71da3da007b1b779bccb9bda459f703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC size_t trio_length</type>
+        <definition>TRIO_STRING_PUBLIC size_t trio_length TRIO_PROTO</definition>
+        <argsstring>((const char *string))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a7556f52d81c422132ae9460f9eb787f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC double trio_to_double</type>
+        <definition>TRIO_STRING_PUBLIC double trio_to_double TRIO_PROTO</definition>
+        <argsstring>((const char *source, char **endp))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *source, char **endp)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a1d80ac065d337eac035ef2649fd7bfb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC long trio_to_long</type>
+        <definition>TRIO_STRING_PUBLIC long trio_to_long TRIO_PROTO</definition>
+        <argsstring>((const char *source, char **endp, int base))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *source, char **endp, int base)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a1c5797ca41954bff8208206c92b6fdb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_to_upper</type>
+        <definition>TRIO_STRING_PUBLIC int trio_to_upper TRIO_PROTO</definition>
+        <argsstring>((int source))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(int source)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1aa7b5772a6237371491863a7049b86bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_append</type>
+        <definition>TRIO_STRING_PUBLIC int trio_append TRIO_PROTO</definition>
+        <argsstring>((char *target, const char *source))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *target, const char *source)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1aa4d90de539dfc89d16b3c4efe74b50b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_contains</type>
+        <definition>TRIO_STRING_PUBLIC int trio_contains TRIO_PROTO</definition>
+        <argsstring>((const char *string, const char *substring))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string, const char *substring)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1aa5147f778047c2c77ac5ab8b80039412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_duplicate_max</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_duplicate_max TRIO_PROTO</definition>
+        <argsstring>((const char *source, size_t max))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *source, size_t max)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1abe81dfdc0e7d1d03f4556c9e738833b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC size_t trio_format_date_max</type>
+        <definition>TRIO_STRING_PUBLIC size_t trio_format_date_max TRIO_PROTO</definition>
+        <argsstring>((char *target, size_t max, const char *format, const struct tm *datetime))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *target, size_t max, const char *format, const struct tm *datetime)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a6b90837016003ae395ef136755a06a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC unsigned long trio_hash</type>
+        <definition>TRIO_STRING_PUBLIC unsigned long trio_hash TRIO_PROTO</definition>
+        <argsstring>((const char *string, int type))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string, int type)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a3c2376f52f927bc0014a70915b2de6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_index</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_index TRIO_PROTO</definition>
+        <argsstring>((const char *string, int character))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string, int character)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1ad6bc8ad22ce430cc58f234670a5c0f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_lower</type>
+        <definition>TRIO_STRING_PUBLIC int trio_lower TRIO_PROTO</definition>
+        <argsstring>((char *target))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *target)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a5032e287aa21e1d0fddd3b3732a2d400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_match</type>
+        <definition>TRIO_STRING_PUBLIC int trio_match TRIO_PROTO</definition>
+        <argsstring>((const char *string, const char *pattern))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string, const char *pattern)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a493c241f9556f53e012b49b21ede2087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC size_t trio_span_function</type>
+        <definition>TRIO_STRING_PUBLIC size_t trio_span_function TRIO_PROTO</definition>
+        <argsstring>((char *target, const char *source, int(*Function) TRIO_PROTO((int))))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *target, const char *source, int(*Function) TRIO_PROTO((int)))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a651ed39accf35d27b9624f1345f80919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_substring_max</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_substring_max TRIO_PROTO</definition>
+        <argsstring>((const char *string, size_t max, const char *substring))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *string, size_t max, const char *substring)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1afc56f00af735b386d78a3e5d0d27c999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_tokenize</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_tokenize TRIO_PROTO</definition>
+        <argsstring>((char *string, const char *delimiters))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(char *string, const char *delimiters)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a0d51814ef714fa58c9a0fc38e6d8729d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC void trio_string_destroy</type>
+        <definition>TRIO_STRING_PUBLIC void trio_string_destroy TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1adda141fa5a86e09531026109da49f4ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_xstring_append_char</type>
+        <definition>TRIO_STRING_PUBLIC int trio_xstring_append_char TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, char character))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, char character)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1ae2e0b890efa14fee445b0c00c6bad7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC trio_string_t *trio_xstring_duplicate</type>
+        <definition>TRIO_STRING_PUBLIC trio_string_t* trio_xstring_duplicate TRIO_PROTO</definition>
+        <argsstring>((const char *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(const char *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1ae73c20923d121145534b41d2835022fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC trio_string_t *trio_string_create</type>
+        <definition>TRIO_STRING_PUBLIC trio_string_t* trio_string_create TRIO_PROTO</definition>
+        <argsstring>((int initial_size))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(int initial_size)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a9afdca44f93f61ca56c46902de50a791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_string_get</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_string_get TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, int offset))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, int offset)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a3e9aa0e310cd10d3675aa39e87ce9ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC void trio_xstring_set</type>
+        <definition>TRIO_STRING_PUBLIC void trio_xstring_set TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, char *buffer))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, char *buffer)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a9b04f254778b5fc92c1c1e27987723bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_string_append</type>
+        <definition>TRIO_STRING_PUBLIC int trio_string_append TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, trio_string_t *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, trio_string_t *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a785c032f72cd9fed75592525bf57f644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC trio_string_t *trio_string_duplicate</type>
+        <definition>TRIO_STRING_PUBLIC trio_string_t* trio_string_duplicate TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a2a8685a08c1b7ce1386636478bdbc490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_string_equal_max</type>
+        <definition>TRIO_STRING_PUBLIC int trio_string_equal_max TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, size_t max, trio_string_t *second))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, size_t max, trio_string_t *second)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1abd98c732311ed5ae0282677059aa47a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_string_equal_case_max</type>
+        <definition>TRIO_STRING_PUBLIC int trio_string_equal_case_max TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, size_t max, trio_string_t *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, size_t max, trio_string_t *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a470bd7fad9eec09657ec151abb760498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC size_t trio_string_format_date_max</type>
+        <definition>TRIO_STRING_PUBLIC size_t trio_string_format_date_max TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, size_t max, const char *format, const struct tm *datetime))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, size_t max, const char *format, const struct tm *datetime)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a51d83439f703d9bf037d5f2f74d29f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC char *trio_string_index</type>
+        <definition>TRIO_STRING_PUBLIC char* trio_string_index TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, int character))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, int character)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a73d26d0000ad4568e2a731f7531b5efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_xstring_append</type>
+        <definition>TRIO_STRING_PUBLIC int trio_xstring_append TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, const char *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, const char *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="libxml_8framework_2_versions_22_86_830_2_headers_2triostr_8h_1a3a124a880b604ceee5bd69810d84f441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRIO_STRING_PUBLIC int trio_xstring_equal_max</type>
+        <definition>TRIO_STRING_PUBLIC int trio_xstring_equal_max TRIO_PROTO</definition>
+        <argsstring>((trio_string_t *self, size_t max, const char *other))</argsstring>
+        <name>TRIO_PROTO</name>
+        <param>
+          <type>(trio_string_t *self, size_t max, const char *other)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h" line="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>$Id:<sp/>triostr.h<sp/>3600<sp/>2007-04-17<sp/>12:44:58Z<sp/>veillard<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2001<sp/>Bjorn<sp/>Reese<sp/>and<sp/>Daniel<sp/>Stenberg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>and<sp/>distribute<sp/>this<sp/>software<sp/>for<sp/>any</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>purpose<sp/>with<sp/>or<sp/>without<sp/>fee<sp/>is<sp/>hereby<sp/>granted,<sp/>provided<sp/>that<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>appear<sp/>in<sp/>all<sp/>copies.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>WITHOUT<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>WITHOUT<sp/>LIMITATION,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTIBILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>THE<sp/>AUTHORS<sp/>AND</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>ACCEPT<sp/>NO<sp/>RESPONSIBILITY<sp/>IN<sp/>ANY<sp/>CONCEIVABLE<sp/>MANNER.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIO_TRIOSTR_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRIO_TRIOSTR_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;triodef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;triop.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>TRIO_HASH_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>TRIO_HASH_PLAIN,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>TRIO_HASH_TWOSIGNED</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(TRIO_STRING_PUBLIC)</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>if<sp/>!defined(TRIO_PUBLIC)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TRIO_PUBLIC</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TRIO_STRING_PUBLIC<sp/>TRIO_PUBLIC</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>String<sp/>functions</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_copy_max<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_create<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_destroy<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_duplicate<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_equal<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*second));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_equal_case<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*second));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_equal_locale<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*second));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_equal_max<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*second));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">TRIO_STRING_PUBLIC<sp/>TRIO_CONST<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_error<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>trio_length<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>trio_to_double<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**endp));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>trio_to_long<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**endp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>base));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">TRIO_STRING_PUBLIC<sp/>trio_long_double_t<sp/>trio_to_long_double<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**endp));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_to_upper<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>source));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(TRIO_MINIMAL)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_append<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_append_max<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_contains<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*substring));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_copy<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_duplicate_max<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_equal_case_max<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*second));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_WIN32_WCE)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>trio_format_date_max<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*datetime));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>trio_hash<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_index<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>character));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_index_last<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>character));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_lower<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_match<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pattern));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_match_case<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pattern));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>trio_span_function<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*Function)<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">))));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_substring<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*substring));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_substring_max<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*substring));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>trio_to_float<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**endp));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_to_lower<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>source));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>trio_to_unsigned_long<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*source,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**endp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>base));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_tokenize<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*delimiters));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_upper<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*target));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(TRIO_MINIMAL)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/>Dynamic<sp/>string<sp/>functions</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/>Opaque<sp/>type<sp/>for<sp/>dynamic<sp/>strings</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_trio_string_t<sp/>trio_string_t;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_string_destroy<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_string_extract<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_size<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_string_terminate<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_append_char<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>character));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">TRIO_STRING_PUBLIC<sp/>trio_string_t<sp/>*trio_xstring_duplicate<sp/>TRIO_PROTO((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(TRIO_MINIMAL)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">TRIO_STRING_PUBLIC<sp/>trio_string_t<sp/>*trio_string_create<sp/>TRIO_PROTO((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initial_size));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_string_get<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trio_xstring_set<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_append<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_contains<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_copy<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">TRIO_STRING_PUBLIC<sp/>trio_string_t<sp/>*trio_string_duplicate<sp/>TRIO_PROTO((trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_equal<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_equal_max<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/>trio_string_t<sp/>*second));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_equal_case<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_equal_case_max<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_WIN32_WCE)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>trio_string_format_date_max<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*datetime));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_string_index<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>character));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_string_index_last<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>character));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_length<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_lower<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_match<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_match_case<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_string_substring<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>trio_string_t<sp/>*other));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_string_upper<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_append<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_contains<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_copy<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_equal<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_equal_max<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_equal_case<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_equal_case_max<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_match<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trio_xstring_match_case<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">TRIO_STRING_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trio_xstring_substring<sp/>TRIO_PROTO((trio_string_t<sp/>*</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*other));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(TRIO_MINIMAL)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TRIO_TRIOSTR_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/libxml.framework/Versions/2.6.30/Headers/triostr.h"/>
+  </compounddef>
+</doxygen>

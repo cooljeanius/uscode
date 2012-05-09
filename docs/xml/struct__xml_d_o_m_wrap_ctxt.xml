@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="struct__xml_d_o_m_wrap_ctxt" kind="struct" prot="public">
+    <compoundname>_xmlDOMWrapCtxt</compoundname>
+    <includes refid="build_2_debug_2_legiscode_8applescript_8app_2_contents_2_frameworks_2libxml_8framework_2_versions_22_86_830_2_headers_2tree_8h" local="no">tree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xml_d_o_m_wrap_ctxt_1a6edb4ec2526ffa6b6fb8953f07631b92" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlDOMWrapCtxt::_private</definition>
+        <argsstring></argsstring>
+        <name>_private</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="552" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_d_o_m_wrap_ctxt_1a1d84b623242d09de1c0ea065e5411fbc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _xmlDOMWrapCtxt::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="557" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_d_o_m_wrap_ctxt_1a02a32279ef2bf5905a81dde8ec72b469" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * _xmlDOMWrapCtxt::namespaceMap</definition>
+        <argsstring></argsstring>
+        <name>namespaceMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="561" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xml_d_o_m_wrap_ctxt_1a2fc065d32c83c5d1cdbd49f8162c7340" prot="public" static="no" mutable="no">
+        <type>xmlDOMWrapAcquireNsFunction</type>
+        <definition>xmlDOMWrapAcquireNsFunction _xmlDOMWrapCtxt::getNsForNodeFunc</definition>
+        <argsstring></argsstring>
+        <name>getNsForNodeFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="566" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>xmlDOMWrapCtxt:</para><para>Context for DOM wrapper-operations. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="410">
+        <label>_xmlAttr</label>
+        <link refid="struct__xml_attr"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="410" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>ns</edgelabel>
+        </childnode>
+      </node>
+      <node id="408">
+        <label>_xmlDoc</label>
+        <link refid="struct__xml_doc"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>oldNs</edgelabel>
+        </childnode>
+        <childnode refid="411" relation="usage">
+          <edgelabel>intSubset</edgelabel>
+          <edgelabel>extSubset</edgelabel>
+        </childnode>
+      </node>
+      <node id="411">
+        <label>_xmlDtd</label>
+        <link refid="struct__xml_dtd"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>doc</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="407">
+        <label>_xmlNs</label>
+        <link refid="struct__xml_ns"/>
+        <childnode refid="408" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="409">
+        <label>_xmlNode</label>
+        <link refid="struct__xml_node"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>children</edgelabel>
+        </childnode>
+        <childnode refid="410" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>doc</edgelabel>
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>ns</edgelabel>
+          <edgelabel>nsDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="406">
+        <label>_xmlDOMWrapCtxt</label>
+        <link refid="struct__xml_d_o_m_wrap_ctxt"/>
+        <childnode refid="407" relation="usage">
+          <edgelabel>getNsForNodeFunc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" line="551" bodyfile="/Users/ericgallager/uscode/Legiscode.applescript/build/Debug/Legiscode.applescript.app/Contents/Frameworks/libxml.framework/Versions/2.6.30/Headers/tree.h" bodystart="551" bodyend="567"/>
+    <listofallmembers>
+      <member refid="struct__xml_d_o_m_wrap_ctxt_1a6edb4ec2526ffa6b6fb8953f07631b92" prot="public" virt="non-virtual"><scope>_xmlDOMWrapCtxt</scope><name>_private</name></member>
+      <member refid="struct__xml_d_o_m_wrap_ctxt_1a2fc065d32c83c5d1cdbd49f8162c7340" prot="public" virt="non-virtual"><scope>_xmlDOMWrapCtxt</scope><name>getNsForNodeFunc</name></member>
+      <member refid="struct__xml_d_o_m_wrap_ctxt_1a02a32279ef2bf5905a81dde8ec72b469" prot="public" virt="non-virtual"><scope>_xmlDOMWrapCtxt</scope><name>namespaceMap</name></member>
+      <member refid="struct__xml_d_o_m_wrap_ctxt_1a1d84b623242d09de1c0ea065e5411fbc" prot="public" virt="non-virtual"><scope>_xmlDOMWrapCtxt</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
