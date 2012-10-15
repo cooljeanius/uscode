@@ -1,0 +1,13 @@
+*~
+*pyc
+.DS_Store
+build/*
+*.pbxuser
+*.perspectivev3
+*.build
+build
+CMakeFiles/*
+CMakeLists.txt
+CMakeFiles
+docs/*
+Debug/*
