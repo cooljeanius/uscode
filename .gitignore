@@ -10,3 +10,5 @@ CMakeFiles/*
 CMakeLists.txt
 CMakeFiles
 docs/*
+*.cache
+*.log

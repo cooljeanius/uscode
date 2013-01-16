@@ -5,3 +5,6 @@
 	path = tools/uscites
 	url = git@github.com:cooljeanius/uscites.git
 
+[submodule "tools/OSXMacros"]
+	path = tools/OSXMacros
+	url = https://github.com/cooljeanius/MacOSXMacros.git
