@@ -1,1 +1,0 @@
-/Users/egall/usr/bin/../share/aclocal/ltsugar.m4
