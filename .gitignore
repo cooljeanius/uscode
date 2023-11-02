@@ -12,3 +12,7 @@ CMakeFiles
 docs/*
 *.cache
 *.log
+confdefs.h
+*.status
+Makefile
+stamp-*

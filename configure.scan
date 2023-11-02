@@ -1,37 +1,382 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ(2.61)
-AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
-AC_CONFIG_SRCDIR([Legiscode.applescript/main.m])
-AC_CONFIG_HEADER([config.h])
+AC_PREREQ([2.71])
+AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
+AC_CONFIG_SRCDIR([tools/lci/lciframework/unicode.c])
+AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
-AC_PROG_CXX
-AC_PROG_AWK
 AC_PROG_CC
-AC_PROG_CPP
 AC_PROG_INSTALL
-AC_PROG_LN_S
-AC_PROG_MAKE_SET
-AC_PROG_RANLIB
 
 # Checks for libraries.
 
 # Checks for header files.
-AC_HEADER_STDC
-AC_CHECK_HEADERS([stdlib.h string.h])
+AC_CHECK_HEADERS([unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
-AC_C_CONST
 AC_TYPE_INT32_T
 AC_C_RESTRICT
 AC_TYPE_SIZE_T
-AC_STRUCT_TM
 
 # Checks for library functions.
+AC_FUNC_ERROR_AT_LINE
+AC_FUNC_MALLOC
+AC_FUNC_REALLOC
+AC_CHECK_FUNCS([strchr strstr strtol])
 
 AC_CONFIG_FILES([Makefile
-                 docs/latex/Makefile])
+                 docs/latex/Makefile
+                 tools/lci/lciframework/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/1-EmptyMainBlock/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/10-CommasSeparate/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/11-EllipsesJoinLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/12-EllipsesJoinCR/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/13-EllipsesJoinCRLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/14-NoNewlineAfterJoinLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/15-NoNewlineAfterJoinCR/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/16-NoNewlineAfterJoinCRLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/17-Includes/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/2-MustBeginWithHAI/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/3-MustIncludeVersion/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/4-MustEndWithKTHXBYE/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/5-IndentationIgnored/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/6-WhitespaceBetweenTokens/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/7-NewlineLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/8-NewlineCR/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/9-NewlineCRLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/1-Structure/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/1-Breaks/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/2-Increment/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/3-Decrement/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/4-Until/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/5-While/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/6-UnaryFunction/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/7-EmptyBody/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/8-UntilMustIncludeVar/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/9-WhileMustIncludeVar/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/10-Loops/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/1-EllipsesJoinLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/2-EllipsesJoinCR/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/3-EllipsesJoinCRLF/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/4-Strings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/5-CodePointInString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/6-NormativeNameInString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/7-InvalidCodePointInString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/8-InvalidNormativeName/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/9-ByteOrderMark/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/11-Unicode/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/1-EndOfLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/2-SeparateLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/3-AfterCommaSeparator/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/4-BeforeHAI/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/5-AfterKTHXBYE/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/6-IgnoreContinuation/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/7-IgnoreJoin/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/1-SingleLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/1-SeparateStartEndLines/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/10-AfterKTHXBYE/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/2-SeparateStartLineOnly/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/3-SeparateEndLineOnly/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/4-MustStartOnSeparateLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/5-MustEndOnOwnLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/6-BeginAfterLineSeparator/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/7-EndBeforeLineSeparator/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/8-IgnoreEmbeddedBTW/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/9-BeforeHAI/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/2-MultipleLine/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/2-Comments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/1-Nil/1-NilToBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/1-Nil/2-NilToInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/1-Nil/3-NilToFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/1-Nil/4-NilToString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/1-Nil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/2-Boolean/1-BooleanImplicitCasts/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/2-Boolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/3-Integer/1-NegativeValue/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/3-Integer/2-MustHaveAdjacentHyphen/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/3-Integer/3-ImplicitCasts/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/3-Integer/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/4-Float/1-OnlyOneDecimalPoint/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/4-Float/2-MustHaveAdjacentHyphen/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/4-Float/3-ImplicitCasts/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/4-Float/4-Truncation/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/4-Float/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/1-Newline/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/2-Tab/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/3-Bell/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/4-DoubleQuote/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/5-Colon/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/1-Escapes/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/2-Syntax/1-IgnoreContinuation/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/2-Syntax/2-IgnoreJoins/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/2-Syntax/3-MustHaveClosingQuote/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/2-Syntax/4-IgnoreComments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/2-Syntax/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/5-String/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/3-Types/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/1-MustHaveAnArg/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/2-Booleans/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/3-Integers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/5-BasicStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/6-MixedTypes/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/7-NoNewline/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/4-Output/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/5-Input/1-ShortString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/5-Input/2-LongString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/5-Input/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/1-MustDeclare/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/2-NoRedefinition/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/3-Initialization/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/4-CaseSensitivity/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/5-UninitializedNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/6-Assignment/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/7-AssignmentSameVariable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/6-Variables/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/1-Addition/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/10-LogicalXORBinary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/10-LogicalXORBinary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/10-LogicalXORBinary/3-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/10-LogicalXORBinary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/11-LogicalNOTUnary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/11-LogicalNOTUnary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/11-LogicalNOTUnary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/12-LogicalANDNary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/12-LogicalANDNary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/12-LogicalANDNary/3-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/12-LogicalANDNary/4-ManyArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/12-LogicalANDNary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/13-LogicalORNary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/13-LogicalORNary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/13-LogicalORNary/3-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/13-LogicalORNary/4-ManyArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/13-LogicalORNary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/1-Nil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/2-Boolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/3-Integer/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/4-Float/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/5-String/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/6-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/14-Equality/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/1-Nil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/2-Boolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/3-Integer/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/4-Float/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/5-String/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/6-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/15-Inequality/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/1-Nil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/2-Boolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/3-Integers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/5-Strings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/6-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/7-ManyArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/8-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/9-OptionalMKAY/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/16-Concatenation/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/1-ToNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/2-ToBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/5-FromString/1-Numbers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/5-FromString/2-EmptyString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/5-FromString/3-NonNumber/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/3-ToInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/5-FromString/1-Numbers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/5-FromString/2-EmptyString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/5-FromString/3-NonNumber/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/4-ToFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/2-FromBoolean/1-False/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/2-FromBoolean/2-True/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/5-ToString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/17-ExplicitCast/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/1-ToNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/2-ToBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/5-FromString/1-Numbers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/5-FromString/2-EmptyString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/5-FromString/3-NonNumber/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/3-ToInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/5-FromString/1-Numbers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/5-FromString/2-EmptyString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/5-FromString/3-NonNumber/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/4-ToFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/1-FromNil/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/2-FromBoolean/1-False/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/2-FromBoolean/2-True/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/2-FromBoolean/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/3-FromInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/4-FromFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/5-FromString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/5-ToString/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/18-ExplicitRecast/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/2-Subtraction/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/3-Multiplication/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/12-IntegerDivisionBy0/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/13-FloatDivisionBy0/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/4-Division/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/12-IntegerDivisionBy0/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/13-FloatDivisionBy0/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/5-Modulo/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/6-Maximum/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/1-Intergers/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/10-ArityCheck/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/11-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/2-FloatInteger/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/3-IntegerFloat/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/4-Floats/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/5-IntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/6-FloatIntegerStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/7-IntegerFloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/8-FloatStrings/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/9-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/7-Minimum/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/8-LogicalANDBinary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/8-LogicalANDBinary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/8-LogicalANDBinary/3-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/8-LogicalANDBinary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/9-LogicalORBinary/1-TruthTable/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/9-LogicalORBinary/2-Nested/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/9-LogicalORBinary/3-OptionalAN/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/9-LogicalORBinary/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/7-Operators/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/1-IfThenElse/1-If/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/1-IfThenElse/2-Else/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/1-IfThenElse/3-ElseIf/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/1-IfThenElse/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/1-Simple/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/2-Breaks/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/3-Default/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/4-MixedTypes/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/5-LiteralsMustBeUnique/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/6-MustNotBeExpressions/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/7-MustNotBeVariables/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/2-Switch/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/8-Conditionals/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/1-VoidWithSideEffects/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/10-TooFewArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/11-EmptyBody/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/2-ReturnValue/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/3-VoidReturnValue/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/4-NilReturnValue/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/5-Recursion/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/6-DoubleRecursion/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/7-ExpressionArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/8-VoidMustHaveNoArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/9-TooManyArguments/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/9-Functions/Makefile
+                 tools/lci/lciframework/test/1.2-Tests/Makefile
+                 tools/lci/lciframework/test/Makefile])
 AC_CONFIG_SUBDIRS([tools/OSXMacros/Testing])
 AC_OUTPUT
