@@ -84,20 +84,24 @@ jobs:
         if test -e configure; then touch configure; fi
 
     # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
-    # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
 
-    # Command-line programs to run using the OS shell.
-    # See:
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-
-    #   If the Autobuild fails above, remove it and uncomment the following three lines.
-    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
-
-    # - run: |
-    #     echo "Run, Build Application using script"
-    #     ./location_of_script_within_repo/buildscript.sh
+    - name: Extra coverage build (C)
+      if: matrix.language == 'c-cpp' && success()
+      run: |
+        find . -name '*.o' -exec cp -v {} . ";" || echo "failed copying an object file"
+        # shellcheck disable=SC2001,SC2044
+        for cfile in $(find . -name '*.c' -type f); do \
+          cobjfile="$(echo "${cfile}" | sed "s/\.c/.o/g")"; \
+          if test ! -e "${cobjfile}"; then \
+            echo "One last attempt at compiling ${cfile}..."; \
+            gcc -c -I. -I.. "${cfile}" || stat "${cfile}" || echo "cfile is ${cfile}"; \
+          else \
+            echo "object file ${cobjfile} already exists for ${cfile}."; \
+            cp -v "${cobjfile}" "$(dirname "${cfile}")" || cp -v "${cobjfile}" . || cp -v "${cobjfile}" ..; \
+          fi; \
+        done
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
