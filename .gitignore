@@ -16,3 +16,6 @@ confdefs.h
 *.status
 Makefile
 stamp-*
+config.h
+libtool
+conftest*
