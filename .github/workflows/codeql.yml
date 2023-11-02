@@ -69,7 +69,13 @@ jobs:
         sudo apt-get -qq update
         sudo apt-get install gobjc gobjc-multilib
         git submodule init
-        git submodule update
+        git submodule update || git submodule sync || \
+        (if test -L m4/EbgMacOSXOptions.m4 && test -x "$(which unlink)"; then \
+          unlink m4/EbgMacOSXOptions.m4; \
+          pushd m4; \
+          wget https://raw.githubusercontent.com/cooljeanius/MacOSXMacros/master/EbgMacOSXOptions.m4; \
+          popd; \
+        fi)
 
     # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
     # If this step fails, then you should remove it and run the build manually (see below)
