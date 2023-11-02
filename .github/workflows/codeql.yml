@@ -67,7 +67,9 @@ jobs:
       if: matrix.language == 'c-cpp'
       run: |
         sudo apt-get -qq update
-        sudo apt-get install gobjc
+        sudo apt-get install gobjc gobjc-multilib
+        git submodule init
+        git submodule update
 
     # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
     # If this step fails, then you should remove it and run the build manually (see below)
