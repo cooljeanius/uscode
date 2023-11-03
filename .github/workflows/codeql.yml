@@ -29,7 +29,7 @@ jobs:
     #   - https://gh.io/supported-runners-and-hardware-resources
     #   - https://gh.io/using-larger-runners
     # Consider using larger runners for possible analysis time improvements.
-    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    runs-on: ${{ (matrix.language == 'c-cpp' && 'macos-latest') || 'ubuntu-latest' }}
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
       actions: read
@@ -66,8 +66,8 @@ jobs:
     - name: Dependencies
       if: matrix.language == 'c-cpp'
       run: |
-        sudo apt-get -qq update
-        sudo apt-get install gobjc gobjc-multilib clang gnustep
+        brew update
+        brew install wget
         git submodule init
         git submodule update || git submodule sync || stat m4/EbgMacOSXOptions.m4
         # shellcheck disable=SC2235
