@@ -67,7 +67,7 @@ jobs:
       if: matrix.language == 'c-cpp'
       run: |
         sudo apt-get -qq update
-        sudo apt-get install gobjc gobjc-multilib clang
+        sudo apt-get install gobjc gobjc-multilib clang gnustep
         git submodule init
         git submodule update || git submodule sync || stat m4/EbgMacOSXOptions.m4
         # shellcheck disable=SC2235
