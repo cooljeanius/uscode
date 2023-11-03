@@ -1,13 +1,14 @@
 dnl#                                               -*- Autoconf -*-
 dnl# Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.61])
-AC_INIT([Legiscode],[0.0.1],[egall@gwmail.gwu.edu])
-AC_CONFIG_SRCDIR([Legiscode.applescript/main.m])
-AC_CONFIG_HEADER([config.h])
-AC_CONFIG_AUX_DIR([build-aux])
-AC_CONFIG_MACRO_DIR([m4])
+AC_PREREQ([2.61])dnl
+AC_INIT([Legiscode],[0.0.1],[egall@gwmail.gwu.edu])dnl
+AC_CONFIG_SRCDIR([Legiscode.applescript/main.m])dnl
+AC_CONFIG_HEADER([config.h])dnl
+AC_CONFIG_AUX_DIR([build-aux])dnl
+AC_CONFIG_MACRO_DIR([m4])dnl
 AM_INIT_AUTOMAKE([foreign])dnl
+AM_MAINTAINER_MODE([])dnl
 
 # Checks for programs.
 AC_PROG_AWK

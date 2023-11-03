@@ -19,3 +19,6 @@ stamp-*
 config.h
 libtool
 conftest*
+*.o
+lib*.a
+.deps/*.*o
