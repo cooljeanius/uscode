@@ -67,7 +67,7 @@ jobs:
       if: matrix.language == 'c-cpp'
       run: |
         brew update
-        brew install wget
+        brew install gawk
         git submodule init
         git submodule update || git submodule sync || stat m4/EbgMacOSXOptions.m4
         # shellcheck disable=SC2235

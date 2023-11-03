@@ -22,3 +22,4 @@ conftest*
 *.o
 lib*.a
 .deps/*.*o
+hello

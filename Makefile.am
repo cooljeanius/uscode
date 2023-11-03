@@ -6,6 +6,12 @@ lib_LIBRARIES = libheaders.a
 
 libheaders_a_SOURCES = include_everything.m
 
+noinst_PROGRAMS = hello
+hello_SOURCES = hello.c
+hello_DEPS = $(lib_LIBRARIES)
+hello_LIBS = $(lib_LIBRARIES)
+hello_LDADD = $(lib_LIBRARIES)
+
 distclean-local:
 	-rm -rf autom4te.cache || rmdir autom4te.cache
 
