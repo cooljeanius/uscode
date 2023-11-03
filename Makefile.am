@@ -12,8 +12,14 @@ distclean-local:
 ## FIXME: really should use something like move-if-change here:
 include_everything.m:
 	-rm -f $@
-	for header in $(find . -name '*.h' | sed "s|\./||g"); do \
-	  echo "#include <${header}>" >> include_everything.m; \
+	echo "/* -*- Objective-C -*- */" >> $@
+	echo "#ifndef __has_include" >> $@
+	echo "# define __has_include(foo) 0" >> $@
+	echo "#endif /* !__has_include */" >> $@
+	for header in $$(find . -name '*.h' | sed "s|\./||g"); do \
+	  echo "#if __has_include(<$${header}>)" >> $@; \
+	  echo "# include <$${header}>" >> $@; \
+	  echo "#endif /* __has_include(<$${header}> */" >> $@; \
 	done
 
 include_everything.o: include_everything.m
