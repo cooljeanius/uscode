@@ -11,3 +11,6 @@ CMakeLists.txt
 CMakeFiles
 docs/*
 Debug/*
+*.xcuserstate
+*/xcuserdata/*
+*.xcuserdatad
